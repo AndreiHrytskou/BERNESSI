@@ -1,0 +1,368 @@
+.baner{
+	background-image: url('./../img/bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	max-width: 100%;
+	min-height: 650px;
+	padding: 50px 0;
+	display: flex;
+	align-items: flex-end;
+	&__block{
+		max-width: 641px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	&-text{
+		margin-top: 40px;
+	}
+	.read{
+		max-width: 315px;
+		display: flex;
+		align-items: center;
+		background-color: transparent;
+		border: 2px solid $yellow;
+		border-radius: 25px;
+		padding: 3.4px 0;
+		margin-top: 30px;
+		cursor: pointer;
+		&-text{
+			@include fonts($roboto, 12px, 900, 30px, $white);
+			text-transform: uppercase;
+			margin: 0 auto;
+		}
+		.arrow{
+			background-color: $white;
+			border-radius: 20px;
+			padding: 8.5px 8px;
+			margin-right: 5px;
+			display: flex;
+		}
+	}
+	.read:hover{
+		background-color: $yellow;
+		.read-text{
+			color: $grey;
+		}
+	}
+}
+.catalog{
+	max-width: 98%;
+	width: 100%;
+	margin: 100px auto 0;
+	.container{
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+	}
+	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+			content: none;
+		}
+		.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+			content: none;
+		}
+		.swiper-button-next{
+			position: absolute;
+			right: 0px;
+			top: 50%;
+			cursor: pointer;
+			margin: 0;
+			width: 57px;
+			display: flex;
+			justify-content: flex-end;z-index: 10;
+		}
+		.swiper-button-next:hover{
+			path{
+				fill: $current;
+			}
+		}
+		
+		.swiper-button-prev{
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			cursor: pointer;
+			margin: 0;
+			width: 57px;
+			display: flex;
+			justify-content: flex-start;
+		}
+		.swiper-button-prev:hover{
+			path{
+				fill: $current;
+			}
+		}
+	.mySwiper{
+		width: 95%;
+      height: 100%;
+		padding: 50px 10px 25px;
+		.swiper-wrapper{
+			display: flex;
+		}
+		
+	}
+	.card{
+		padding: 0 15px;
+		min-height: 616px;
+		&-top{
+			position: relative;
+			display: block;
+		}
+		&__img{
+			border-radius: 30px;
+			width: 100%;
+			height: auto;
+			margin-top: 25px;
+		}
+		.like{
+			position: absolute;
+			right: 20px;
+			top: 40px;
+		}
+	}
+	.card:hover{
+		transform: scale(1.02);
+		background-color: $white;
+		box-shadow: 0px 45px 80px 0px rgba(0, 0, 0, 0.15);
+		border-radius: 30px;
+		border: 1px solid transparent;
+		padding-bottom: 25px;
+		.size{
+			display: block;
+		}
+	}
+}
+.thing{
+	padding:30px 10px;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	&__name{
+		max-width: 180px;
+		text-align: left;
+		@include fonts($roboto, 15px, 500, 1.667, $black);
+	}
+	.price{
+		@include fonts($roboto, 15px, 700, 1.667, $black);
+			text-align: right;
+			.discount{
+				@include fonts($roboto, 15px, 700, 1.667, $grey);
+				text-decoration:line-through;
+			}
+	}
+}
+.size{
+	display: none;
+	&__list{
+		list-style: none;
+		display: flex;
+		gap: 5px;
+	}
+	&__item{
+		border: 1px solid rgba(136, 140, 149, 0.25);
+		@include fonts($roboto, 10px, 400, 2.14, $grey);
+		text-transform: uppercase;
+		text-align: center;
+		padding:0 5px;
+		border-radius: 25px;
+		min-width: 23px;
+		cursor: pointer;
+	}
+}
+.sizeActive{
+	background-color: $current;
+}
+.likeActive{
+	path{
+		fill: $current;
+		stroke: transparent;
+	}
+}
+.category{
+	&__list{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item{
+		position: relative;
+	}
+	&__bottom{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 35px 20px;
+	}
+	&__text{
+		@include fonts($roboto, 20px, 600, 1.25, $white);
+		text-transform: uppercase;
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		padding: 10px;
+		border-radius: 25px;
+	}
+	&__bg{
+		position: relative;
+	}
+	&__img{
+		width: 100%;
+	}
+}
+
+.category__item:hover{
+	.category__link{
+		background-color: $current;
+		path{
+			fill:$white;
+		}
+	}
+	.category__img::after{
+	content: '';
+	width: 100%;
+	height: 99.5%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+}
+.section{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	.container{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+}
+.regular{
+	width: 100%;
+	max-width: 48%;
+	background-image: url('./../img/2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 45px 100px 65px;
+}
+.bright{
+	width: 100%;
+	max-width: 48%;
+	background-image: url('./../img/1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 65px 100px 45px;
+}
+.regular:hover,
+.bright:hover{
+	filter: grayscale(100%);
+}
+.section__text{
+	@include fonts($roboto, 35px, 500, 1.429, $white);
+	text-transform: uppercase;
+	text-align: left;
+	position: relative;
+}
+.section__text::after{
+	content: "";
+	width: 70%;
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	border: 3px solid $yellow;
+}
+.section__bold{
+	@include fonts($roboto, 120px, 900, 0.833, $white);
+	text-transform: uppercase;
+	text-align: center;
+}
+.section__bottom{
+	@include fonts($roboto, 50px, 100, 1, $white);
+	text-transform: uppercase;
+	text-align: right;
+	position: relative;
+}
+.section__bottom::before{
+	content: "";
+	width: 50%;
+	opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	border: 3px solid $yellow;
+}
+.banner{
+	  background-image: linear-gradient( 0deg, rgb(230,220,210) 0%, rgb(215,195,186) 100%);
+	  max-height: 500px;
+	  .container{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	  }
+	&__bg{
+		height: 500px;
+		width: 900px;
+	}
+	.see-more{
+		border-radius: 25px;
+		// padding: 3.4px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 200px;
+		width: 100%;
+		height: 55px;
+		background-color: $yellow;
+		text-decoration: none;
+		margin-bottom: 25px;
+		.btn-text{
+			@include fonts($roboto, 12px, 900, 30px, $grey);
+			text-transform: uppercase;
+			margin: 0 auto;
+		}
+		.arrow{
+			background-color: $white;
+			border-radius: 20px;
+			padding: 8.5px 8px;
+			margin-right: 5px;
+			display: flex;
+		}
+		
+	}
+}
+.see-more:hover{
+	.btn-text{
+		color: $white;
+	}
+}
+.card2{
+	padding: 0 15px;
+	&__img{
+		width: 100%;
+		height: auto;
+	}
+	 .like {
+    position: absolute;
+    right: 20px;
+    top: 22px;
+	}
+}
+.mySwiper1{
+		width: 95%;
+      height: 100%;
+		padding: 50px 10px 25px;
+		.swiper-wrapper{
+			display: flex;
+		}
+		
+	}

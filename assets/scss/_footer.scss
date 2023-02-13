@@ -1,0 +1,80 @@
+.footer{
+	background-color: $grey;
+	padding-top: 65px;
+	padding-bottom: 30px;
+	&__number{
+		color:$white;
+	}
+}
+.phone:hover {
+	.footer__number{
+		color: $white;
+	}
+	.footer__phone{
+		path{
+			fill: $white;
+		}
+	}
+}
+.footer__icon:hover{
+	path{
+		stroke: transparent;
+		fill: $white;
+	}
+}
+.footer{
+	.menu__list{
+		display: flex;
+		list-style: none;
+		align-items: center;
+		gap: 42px;
+	}
+	.menu__item{
+		a{
+			text-decoration: none;
+			@include fonts($roboto, 15px, 700, 25px, $white);
+			text-transform: uppercase;
+		}
+	}
+}
+.second-menu{
+	margin-top: 35px;
+	width: 100%;
+	.menu__block{
+		justify-content: space-between;
+		align-items: inherit;
+		height: 100%;
+	}
+	.menu__item{
+		position: relative;
+    	padding-left: 80px;
+		padding-top: 20px;
+		height: auto;
+		border-left: 2px solid white;
+	}
+	.menu__item:first-child{
+		padding-left: 0;
+		border: none;
+	}
+	
+	.submenu{
+		display: flex;
+		background-color: transparent;
+		margin-left: 0;
+		gap: 0;
+		padding: 0;
+		&__item a{
+			font-weight: 400;
+			padding: 0;
+			text-transform: none;
+		}
+	}
+	.submenu__item:hover {
+    margin-left: 0;
+}
+	.submenu__item:hover a {
+    border-left: none;
+    color: $white;
+}
+}
+

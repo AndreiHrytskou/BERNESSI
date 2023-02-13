@@ -6,11 +6,34 @@ $yellow: rgba(255, 236, 83, 1);
 $bggradient: linear-gradient( 0deg, rgb(230,220,210) 0%, rgb(215,195,186) 100%);
 $bgcard: rgba(247, 247, 247, 1);
 $copyright: rgba(255, 255, 255, 0.502);
+$current: rgb(255, 40, 194);
  
 // fonts
 $roboto:  "Roboto";
-$title: "ComforterBrush";
+$title: "Comforter Brush";
 
 // mixins
 
-
+@mixin fonts($font,$size,$weight,$height, $color){
+	font-family: $font;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	color: $color;
+}
+.text__s{
+	@include fonts($roboto, 12px, 500, 12px, $grey);
+	text-transform: uppercase;
+}
+.h1{
+	@include fonts($title, 75px, 500, 75px, $white);
+}
+.h2{
+	@include fonts($roboto, 50px, 900, 50px, $grey);
+	text-transform: uppercase;
+	text-align: center;
+}
+.baner-text{
+	@include fonts($roboto, 18px, 400, 25px, $white);
+	max-width: 641px;
+}
