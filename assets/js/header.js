@@ -27,6 +27,15 @@ menu.addEventListener("mouseover", () => {
   childrenItem.setAttribute("style", "display: none");
   accItem.setAttribute("style", "display: none");
 });
+menu.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
+  womenItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
+});
 newItem.addEventListener("mouseover", () => {
   newItem.setAttribute("style", "display: block");
   womenItem.setAttribute("style", "display: none");
@@ -51,6 +60,15 @@ const womenItem = document.querySelector(".submenu__women");
 menu2.addEventListener("mouseover", () => {
   womenItem.setAttribute("style", "display: block");
   deliveryItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
+});
+menu2.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
+  womenItem.setAttribute("style", "display: none");
   newItem.setAttribute("style", "display: none");
   menItem.setAttribute("style", "display: none");
   familyItem.setAttribute("style", "display: none");
@@ -87,6 +105,15 @@ menu3.addEventListener("mouseover", () => {
   childrenItem.setAttribute("style", "display: none");
   accItem.setAttribute("style", "display: none");
 });
+menu3.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
+  womenItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
+});
 menItem.addEventListener("mouseover", () => {
   menItem.setAttribute("style", "display: block");
   womenItem.setAttribute("style", "display: none");
@@ -114,6 +141,15 @@ menu4.addEventListener("mouseover", () => {
   womenItem.setAttribute("style", "display: none");
   newItem.setAttribute("style", "display: none");
   menItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
+});
+menu4.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
+  womenItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
   childrenItem.setAttribute("style", "display: none");
   accItem.setAttribute("style", "display: none");
 });
@@ -147,6 +183,15 @@ menu5.addEventListener("mouseover", () => {
   familyItem.setAttribute("style", "display: none");
   accItem.setAttribute("style", "display: none");
 });
+menu5.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
+  womenItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
+});
 childrenItem.addEventListener("mouseover", () => {
   childrenItem.setAttribute("style", "display: block");
   womenItem.setAttribute("style", "display: none");
@@ -176,6 +221,15 @@ menu6.addEventListener("mouseover", () => {
   menItem.setAttribute("style", "display: none");
   familyItem.setAttribute("style", "display: none");
   childrenItem.setAttribute("style", "display: none");
+});
+menu6.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
+  womenItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
 });
 accItem.addEventListener("mouseover", () => {
   accItem.setAttribute("style", "display: block");
@@ -209,6 +263,15 @@ menu7.addEventListener("mouseover", () => {
 });
 deliveryItem.addEventListener("mouseover", () => {
   deliveryItem.setAttribute("style", "display: block");
+  womenItem.setAttribute("style", "display: none");
+  newItem.setAttribute("style", "display: none");
+  menItem.setAttribute("style", "display: none");
+  familyItem.setAttribute("style", "display: none");
+  childrenItem.setAttribute("style", "display: none");
+  accItem.setAttribute("style", "display: none");
+});
+menu7.addEventListener("mouseout", () => {
+  deliveryItem.setAttribute("style", "display: none");
   womenItem.setAttribute("style", "display: none");
   newItem.setAttribute("style", "display: none");
   menItem.setAttribute("style", "display: none");

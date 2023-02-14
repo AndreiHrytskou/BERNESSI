@@ -87,9 +87,8 @@
 .menu{
 	position: relative;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
-	padding: 11.25px 0;
 	&__block{
 		list-style: none;
 		display: flex;
@@ -100,7 +99,7 @@
 	&__item{
 		a{
 			text-decoration: none;
-			@include fonts($roboto, 15px, 700, 20px, $grey);
+			@include fonts($roboto, 15px, 700, 50px, $grey);
 			text-transform: uppercase;
 		}
 		a:hover{
