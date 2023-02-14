@@ -224,6 +224,10 @@
   padding-left: 0;
 }
 
+.menu .delivery__item a {
+  padding-right: 0;
+}
+
 .menu .person {
   display: -webkit-box;
   display: -webkit-flex;
