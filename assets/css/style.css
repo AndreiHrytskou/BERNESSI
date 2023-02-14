@@ -399,7 +399,7 @@
 }
 
 .baner {
-  background-image: url("./../img/bg.png");
+  background-image: url("./../img/bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
