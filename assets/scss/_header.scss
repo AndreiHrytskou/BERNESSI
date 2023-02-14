@@ -93,7 +93,6 @@
 		list-style: none;
 		display: flex;
 		align-items: flex-start;
-		gap: 42px;
 		margin-top: 5px;
 	}
 	&__item{
@@ -101,9 +100,15 @@
 			text-decoration: none;
 			@include fonts($roboto, 15px, 700, 50px, $grey);
 			text-transform: uppercase;
+			padding: 0 20px;
 		}
 		a:hover{
 			color: $current;
+		}
+	}
+	.new__item{
+		a{
+			padding-left: 0;
 		}
 	}
 	.person{

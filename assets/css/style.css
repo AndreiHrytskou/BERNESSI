@@ -202,7 +202,6 @@
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 42px;
   margin-top: 5px;
 }
 
@@ -214,10 +213,15 @@
   line-height: 50px;
   color: #888c95;
   text-transform: uppercase;
+  padding: 0 20px;
 }
 
 .menu__item a:hover {
   color: #ff28c2;
+}
+
+.menu .new__item a {
+  padding-left: 0;
 }
 
 .menu .person {
