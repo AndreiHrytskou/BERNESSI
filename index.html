@@ -23,6 +23,9 @@
 					<img src="./assets/img/logo.png" alt="logo" class="logo">
 				</a>
 				<div class="block__right">
+					<div class="about">
+						<a href="#" class="about__link">about us</a>
+					</div>
 					<a href="tel:+12345678901" class="phone"><span class="phone__img"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
 						<path fill-rule="evenodd" stroke="rgb(255, 40, 194)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter"
 							fill="none"
@@ -47,15 +50,9 @@
 					</div>
 					<div class="lang">
 						<div class="lang__item">
-							<img src="./assets/img/flag.png" alt="country" class="country">
 							<p class="lang__name text__s">EN</p>
 						</div>
 						<div class="lang__item">
-							<img src="./assets/img/flag.png" alt="country" class="country">
-							<p class="lang__name text__s">EN</p>
-						</div>
-						<div class="lang__item">
-							<img src="./assets/img/flag.png" alt="country" class="country">
 							<p class="lang__name text__s">EN</p>
 						</div>
 					</div>
@@ -67,83 +64,13 @@
 		<div class="container">
 			<nav class="menu">
 				<ul class="menu__block">
-					<li class="menu__item"><a href="#">New</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-				</li>
-					<li class="menu__item"><a href="#">Women</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Men</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Family</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Children</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Accessories</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Delivery</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-							<li class="submenu__item"><a href="#">Delivery</a></li>
-						</ul>
-					</li>
+					<li class="menu__item new__item"><a href="#">New</a></li>
+					<li class="menu__item women__item"><a href="#">Women</a></li>
+					<li class="menu__item men__item"><a href="#">Men</a></li>
+					<li class="menu__item family__item"><a href="#">Family</a></li>
+					<li class="menu__item children__item"><a href="#">Children</a></li>
+					<li class="menu__item accessories__item"><a href="#">Accessories</a></li>
+					<li class="menu__item delivery__item"><a href="#">Delivery</a></li>
 				</ul>
 				<div class="person">
 					<div class="search">
@@ -179,8 +106,54 @@
 				</div>
 			</nav>
 		</div>
+		<div class="submenu__wrapper submenu__new">
+			<ul class="submenu">
+				<li class="submenu__item"><a href="#">New</a></li>
+				<li class="submenu__item"><a href="#">Sport</a>
+					<span  class="submenu__container">
+						<ul class="submenu__list">
+							<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
+							<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
+							<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
+							<li class="list__item"><a href="#" class="item__link">Pants</a></li>
+							<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
+							<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
+						</ul>
+						<span class="all"><a href="#">All Sport Clothing</a></span>
+					</span>
+				</li>
+				<li class="submenu__item"><a href="#">Lifestyle</a>
+					<span  class="submenu__container">
+						<ul class="submenu__list">
+							<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
+							<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
+							<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
+							<li class="list__item"><a href="#" class="item__link">Pants</a></li>
+							<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
+							<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
+						</ul>
+						<span class="all"><a href="#">All Lifestyle Clothing</a></span>
+					</span>
+				</li>
+				<li class="submenu__item"><a href="#">Accessories</a>
+					<span class="submenu__container">
+						<ul class="submenu__list">
+							<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
+							<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
+							<li class="list__item"><a href="#" class="item__link">Bags</a></li>
+							<li class="list__item"><a href="#" class="item__link">Socks</a></li>
+							<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
+						</ul>
+						<span class="all"><a href="#">All Accessories</a></span>
+					</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 </header>
+
+<!--end header-->
+
 <main class="main">
 	<div class="baner">
 		<div class="container">
@@ -450,6 +423,7 @@
 			<a href="#" class="category__item">
 				<div class="category__img">
 					<img class="category__bg" src="./assets/img/category2.png" alt="category">
+					<span class="new-marker">new</span>
 				</div>
 				<div class="category__bottom">
 				<p class="category__text">category</p>
@@ -666,6 +640,8 @@
 	</div>
 </div>
 </main>
+<!-- start footer -->
+
 <footer class="footer">
 	<div class="container">
 		<div class="block">

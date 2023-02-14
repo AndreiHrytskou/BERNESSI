@@ -59,14 +59,19 @@
 	
 	.submenu{
 		display: flex;
+		flex-direction: column;
 		background-color: transparent;
 		margin-left: 0;
 		gap: 0;
 		padding: 0;
-		&__item a{
+		list-style: none;
+		&__item{
+			padding: 0;	
+		 a{
 			font-weight: 400;
 			padding: 0;
 			text-transform: none;
+		}
 		}
 	}
 	.submenu__item:hover {

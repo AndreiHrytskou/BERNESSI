@@ -16,16 +16,18 @@ document.addEventListener("click", (e) => {
 
 // menu
 
-const menu = document.querySelector(".menu");
-const menuItem = document.querySelectorAll(".menu__item");
+const menu = document.querySelector(".new__item");
+const newItem = document.querySelector(".submenu__new");
+menu.addEventListener("mouseover", func);
+newItem.addEventListener("mouseover", func);
+newItem.addEventListener("mouseout", outMouse);
+function func() {
+  newItem.setAttribute("style", "display: block");
+}
+function outMouse() {
+  newItem.setAttribute("style", "display: none");
+}
 
-menuItem.forEach((e) => {
-  e.addEventListener("click", () => {
-    if (!e.classList.contains("item-active")) {
-      e.classList.toggle("item-active");
-    }
-  });
-});
 // swiper
 var swiper = new Swiper(".mySwiper", {
   loop: true,

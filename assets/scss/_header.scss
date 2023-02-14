@@ -38,6 +38,11 @@
 	width: 118px;
 	height: 20px;
 }
+.about__link{
+	text-decoration: none;
+	@include fonts($roboto, 12px, 500, 20px, $grey);
+	text-transform: uppercase;
+}
 .phone{
 	display: flex;
 	align-items: center;
@@ -80,6 +85,7 @@
 	}
 }
 .menu{
+	position: relative;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -94,7 +100,7 @@
 	&__item{
 		a{
 			text-decoration: none;
-			@include fonts($roboto, 15px, 500, 15px, $grey);
+			@include fonts($roboto, 15px, 700, 20px, $grey);
 			text-transform: uppercase;
 		}
 		a:hover{
@@ -157,33 +163,72 @@
 		}
 	}
 }
-.submenu{
-	gap: 20px;
-   display: none;
-    flex-direction: column;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    background-color: white;
+.submenu__wrapper{
+	background-color: white;
+	background-image: url('./../img/bernessi.png');
+   background-position: bottom 0px right 20px;
+   background-repeat: no-repeat;
+	position: absolute;
+    left: 0;
     width: 100%;
-    list-style: none;
-	 border-left: 2px solid rgba(136, 140, 149, 0.25);
-	 margin-left: -20px;
-	 &__item{
-		a{
+	 display: none;
+	.submenu{
+		width: 90%;
+		max-width: 90%;
+		margin: 0 auto;
+		gap: 20px;
+		display: flex;
+		padding: 20px 0;
+		width: 100%;
+		list-style: none;
+		&__item{
+			border-left: 2px solid rgba(136, 140, 149, 0.25);
 			padding: 20px;
-			@include fonts($roboto, 15px, 500, 15px, $grey);
+			width: 18%;
+			a{
+				text-decoration: none;
+				@include fonts($roboto, 15px, 700, 20px, $grey);
+				text-transform: uppercase;
+			}
+			a:hover{
+				color: $current;
+			}
+			.item__link{
+				@include fonts($roboto, 15px, 300, 15px, $grey);
+				text-transform: none;
+			}
+			.all{
+				padding-bottom: 20px;
+				a{
+					text-transform: none;
+					@include fonts($roboto, 15px, 300, 15px, $grey);
+				}
+				a:hover{
+					color: $current;
+				}
+			}
 		}
-	 }
-}
-// .menu__item:hover{
-// 	.submenu{
-// 		display: flex;
-// 	}
-// }
-.submenu__item:hover{
-	margin-left: -1.5px;
-	a{
-		border-left: 2px solid $current;
-		color: $current;
 	}
+	.submenu__list{
+		list-style: none;
+		margin-bottom: 38px;
+		margin-top: 38px;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.submenu__container{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	// .submenu__item:hover{
+	// 	a{
+	// 		color: $current;
+	// 	}
+	// }
+}
+.item-active{
+	display: block;
 }
