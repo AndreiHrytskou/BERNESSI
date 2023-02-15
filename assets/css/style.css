@@ -559,6 +559,8 @@
   width: 95%;
   height: 100%;
   padding: 50px 10px 25px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
 }
 
 .catalog .mySwiper .swiper-wrapper {
