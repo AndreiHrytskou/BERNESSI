@@ -105,6 +105,7 @@
 	}
 	.card{
 		padding: 15px;
+		min-height: 610px;
 	&-top{
 			position: relative;
 			display: block;
@@ -204,7 +205,7 @@
 		align-items: center;
 		justify-content: center;
 		background-color: $white;
-		padding: 10px;
+		padding: 11px 10px 9px 9.5px;
 		border-radius: 25px;
 	}
 	&__bg{

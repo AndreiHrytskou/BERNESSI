@@ -22,12 +22,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	&__right{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 59px;
+		gap: 32px;
 	}
 	.head-page{
 		display: flex;
@@ -61,7 +60,7 @@
 .social{
 	display: flex;
 	align-items: center;
-	gap: 28px;
+	gap: 33px;
 	height: 22px;
 	&__icon:hover{
 		path{
@@ -71,6 +70,7 @@
 }
 .lang{
 	cursor: pointer;
+	margin-right: 6px;
 	&__item{
 		display: none;
 		align-items: center;
@@ -78,10 +78,6 @@
 	}
 	&__item:first-child{
 		display: flex;
-	}
-	.country{
-		width: 20px;
-		height: 20px;
 	}
 }
 .menu{
