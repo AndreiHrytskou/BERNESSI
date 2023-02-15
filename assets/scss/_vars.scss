@@ -28,8 +28,16 @@ $title: "Comforter Brush";
 .h1{
 	@include fonts($title, 75px, 500, 75px, $white);
 }
+.title{
+	@include fonts($roboto, 70px, 900, 75px, $grey);
+}
 .h2{
 	@include fonts($roboto, 50px, 900, 50px, $grey);
+	text-transform: uppercase;
+	text-align: center;
+}
+.h3{
+	@include fonts($roboto, 40px, 900, 50px, $grey);
 	text-transform: uppercase;
 	text-align: center;
 }
