@@ -558,7 +558,7 @@
 .catalog .mySwiper {
   width: 95%;
   height: 100%;
-  padding: 50px 10px 25px;
+  padding: 50px 10px 20px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
 }
@@ -598,8 +598,8 @@
       -ms-transform: scale(1.02);
           transform: scale(1.02);
   background-color: white;
-  -webkit-box-shadow: 0px 45px 80px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 45px 80px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 30px;
           border-radius: 30px;
   border: 1px solid transparent;
