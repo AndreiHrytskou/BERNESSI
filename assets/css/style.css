@@ -906,7 +906,7 @@ a {
 
 .regular {
   width: 100%;
-  max-width: 48%;
+  max-width: 50%;
   background-image: url("./../img/2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -917,7 +917,7 @@ a {
 
 .bright {
   width: 100%;
-  max-width: 48%;
+  max-width: 50%;
   background-image: url("./../img/1.png");
   background-position: center;
   background-repeat: no-repeat;
