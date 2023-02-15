@@ -462,34 +462,155 @@
 	<div class="main-wrapper">
 		<form class="filter">
 			<p class="filter__title">Filter</p>
-			<div class="sort">
-				<div class="sort-top">
-					<p class="sort-title">Sort by</p>
-					<img class="sort-arrow" src="./assets/img/arrow.png" alt="arrow" >
-				</div>
-				<div class="sort-input">
-					<div class="default">
-						<input class="custom-radio" type="radio" name="sort" id="Default">
-						<label class="text" for="Default">Default</label>
+			<div class="filter__block">
+				<div class="sort">
+					<div class="sort-top">
+						<p class="filter__subtitle">Sort by</p>
+						<img class="sort-arrow" src="./assets/img/arrow.png" alt="arrow" >
 					</div>
-					<div class="tohigh">
-						<input class="custom-radio" type="radio" name="sort" id="Low">
-						<label class="text" for="Low">Price Low to High</label>
-					</div>
-					<div class="tolow">
-						<input class="custom-radio" type="radio" name="sort" id="High">
-						<label class="text" for="High">Price High to Low</label>
+					<div class="sort-input">
+						<div class="default">
+							<input class="custom-radio" type="radio" name="sort" id="Default">
+							<label class="text" for="Default">Default</label>
+						</div>
+						<div class="tohigh">
+							<input class="custom-radio" type="radio" name="sort" id="Low">
+							<label class="text" for="Low">Price Low to High</label>
+						</div>
+						<div class="tolow">
+							<input class="custom-radio" type="radio" name="sort" id="High">
+							<label class="text" for="High">Price High to Low</label>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="color">
-				<div class="color-top">
-					<p class="color-title">Color</p>
-					<img class="color-arrow" src="./assets/img/arrow.png" alt="arrow">
+				<div class="color">
+					<div class="color-top">
+						<p class="filter__subtitle">Color</p>
+						<img class="color-arrow" src="./assets/img/arrow.png" alt="arrow">
+					</div>
+					<div class="color__list">
+						<div class="color__item">
+							<input class="custom-checkbox" type="checkbox" name="color" id="color1">
+							<label for="color1">Black</label>
+						</div>
+						<div class="color__item">
+							<input class="custom-checkbox"  type="checkbox" name="color" id="color2">
+							<label for="color2">Red</label>
+						</div>
+						<div class="color__item">
+							<input  class="custom-checkbox"  type="checkbox" name="color" id="color3">
+							<label for="color3">Yellow</label>
+						</div>
+					</div>
 				</div>
-			</div>
+				<div class="filter__size">
+					<div class="filter__size-top">
+						<p class="filter__subtitle">Size</p>
+						<img class="size-arrow" src="./assets/img/arrow.png" alt="arrow">
+					</div>
+					<div class="filter__size__list">
+						<div class="filter__size__item">
+							<input class="custom-checkbox" type="checkbox" name="size" id="size1">
+							<label for="size1">XS</label>
+						</div>
+						<div class="filter__size__item">
+							<input class="custom-checkbox"  type="checkbox" name="size" id="size2">
+							<label for="size2">S</label>
+						</div>
+						<div class="filter__size__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="size3">
+							<label for="size3">M</label>
+						</div>
+						<div class="filter__size__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="size4">
+							<label for="size4">L</label>
+						</div>
+						<div class="filter__size__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="size5">
+							<label for="size5">XL</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__collection">
+					<div class="filter__collection-top">
+						<p class="filter__subtitle">Collection</p>
+						<img class="collection-arrow" src="./assets/img/arrow.png" alt="arrow">
+					</div>
+					<div class="filter__collection__list">
+						<div class="filter__collection__item">
+							<input class="custom-checkbox" type="checkbox" name="size" id="collection1">
+							<label for="collection1">Summer</label>
+						</div>
+						<div class="filter__collection__item">
+							<input class="custom-checkbox"  type="checkbox" name="size" id="collection2">
+							<label for="collection2">Winter</label>
+						</div>
+						<div class="filter__collection_item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="collection3">
+							<label for="collection3">Spring</label>
+						</div>
+						<div class="filter__collection__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="collection4">
+							<label for="collection4">Autumn</label>
+						</div>
+						<div class="filter__collection__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="collection5">
+							<label for="collection5">All</label>
+						</div>
+					</div>
+				</div>
+				<div class="filter__category">
+					<div class="filter__category-top">
+						<p class="filter__subtitle">Category</p>
+						<img class="category-arrow" src="./assets/img/arrow.png" alt="arrow">
+					</div>
+					<div class="filter__category__list">
+						<div class="filter__category__item">
+							<input class="custom-checkbox" type="checkbox" name="size" id="category1">
+							<label for="category1">WOMEN</label>
+						</div>
+						<div class="filter__category__item">
+							<input class="custom-checkbox"  type="checkbox" name="size" id="category2">
+							<label for="category2">MODEST</label>
+						</div>
+						<div class="filter__category__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="category3">
+							<label for="category3">COLLECTION</label>
+						</div>
+						<div class="filter__category__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="category4">
+							<label for="category4">ACCESSORIES</label>
+						</div>
+						<div class="filter__category__item">
+							<input  class="custom-checkbox"  type="checkbox" name="size" id="category5">
+							<label for="category5">DELIVERY</label>
+						</div>
+					</div>
+				</div>
+				<button class="apply">
+					<p class="apply-text">Apply Filter</p>
+					<div class="arrow">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px">
+							<path fill-rule="evenodd" fill="rgb(136, 140, 149)"
+								d="M22.215,14.691 L14.135,22.050 L13.321,21.173 L21.401,13.813 C22.047,13.225 22.443,12.460 22.576,11.621 L-0.009,11.621 L-0.009,10.429 L22.576,10.429 C22.443,9.591 22.047,8.825 21.402,8.237 L13.321,0.877 L14.134,-0.001 L22.215,7.359 C23.247,8.299 23.840,9.635 23.840,11.025 C23.839,12.415 23.247,13.751 22.215,14.691 Z">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</button>
+			<button class="reset">
+				Reset Filter
+			</button>
 		</form>
 		<main class="main">
+			<div class="filter__show">
+				<div class="container">
+					<button class="filter__btn">
+						<p class="filter__btn-text">Filter</p>
+						<img class="filter__btn-img" src="./assets/img/filter-btn.svg" alt="arrow">
+					</button>
+				</div>
+			</div>
 			<div class="category">
 				<div class="container">
 					<h2 class="h2">[H2] More to Explore</h2>

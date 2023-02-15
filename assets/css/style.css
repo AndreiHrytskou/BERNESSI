@@ -1149,9 +1149,17 @@ a {
 }
 
 .main-wrapper .filter {
-  padding: 35px 32px;
-  width: 400px;
-  height: 600px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: none;
+  padding: 35px 30px;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
 }
 
 .main-wrapper .filter__title {
@@ -1161,9 +1169,40 @@ a {
   line-height: 50px;
   color: #888c95;
   text-transform: uppercase;
+  margin-bottom: 66px;
+}
+
+.main-wrapper .filter-active {
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.filter__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+}
+
+.filter__subtitle {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #888c95;
+  text-transform: uppercase;
 }
 
 .sort-top {
+  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1240,8 +1279,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 18px;
-  height: 18px;
+  width: 14.8px;
+  height: 14.8px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -1254,14 +1293,458 @@ a {
           border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-background-size: 10px 10px;
-          background-size: 10px 10px;
+  -webkit-background-size: 70% 70%;
+          background-size: 70% 70%;
 }
 
 .sort-input .custom-radio:checked + label::before {
   border-color: #888c95;
   background-color: white;
   background-image: url("./../img/dottedpink.png");
+}
+
+.color__list {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.color-top {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.color-top .color-arrow {
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.color .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.color .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.color .custom-checkbox + label::before {
+  content: '';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 14.8px;
+  height: 14.8px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #888c95;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 70% 70%;
+          background-size: 70% 70%;
+}
+
+.color .custom-checkbox:checked + label::before {
+  background-image: url("./../img/checkbox-pink.png");
+}
+
+.filter__size__list {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__size__item {
+  width: 100%;
+}
+
+.filter__size-top {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter__size-top .size-arrow {
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.filter__size .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.filter__size .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.filter__size .custom-checkbox + label::before {
+  content: '';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 14.8px;
+  height: 14.8px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #888c95;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 70% 70%;
+          background-size: 70% 70%;
+}
+
+.filter__size .custom-checkbox:checked + label::before {
+  background-image: url("./../img/checkbox-pink.png");
+}
+
+.filter__collection__list {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__collection__item {
+  width: 100%;
+}
+
+.filter__collection-top {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter__collection-top .collection-arrow {
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.filter__collection .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.filter__collection .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+}
+
+.filter__collection .custom-checkbox + label::before {
+  content: '';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 14.8px;
+  height: 14.8px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #888c95;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 70% 70%;
+          background-size: 70% 70%;
+}
+
+.filter__collection .custom-checkbox:checked + label::before {
+  background-image: url("./../img/checkbox-pink.png");
+}
+
+.filter__category__list {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__category__item {
+  width: 100%;
+}
+
+.filter__category-top {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter__category-top .category-arrow {
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.filter__category .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.filter__category .custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 100%;
+}
+
+.filter__category .custom-checkbox + label::before {
+  content: '';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 14.8px;
+  height: 14.8px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 2px solid #888c95;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 70% 70%;
+          background-size: 70% 70%;
+}
+
+.filter__category .custom-checkbox:checked + label::before {
+  background-image: url("./../img/checkbox-pink.png");
+}
+
+.apply {
+  cursor: pointer;
+  margin-top: 50px;
+  background-color: #ffec53;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+}
+
+.apply-text {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #888c95;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.apply .arrow {
+  background-color: white;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  padding: 8.5px 8px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reset {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 21px auto 0;
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #888c95;
+  text-transform: uppercase;
 }
 
 .input-active {
@@ -1278,6 +1761,54 @@ a {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+
+.filter__show {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  max-width: 150px;
+  width: 100%;
+  border: none;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  background-color: #888c95;
+}
+
+.filter__btn-text {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.filter__btn-img {
+  background-color: white;
+  padding: 5px;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
 }
 
 .footer {
