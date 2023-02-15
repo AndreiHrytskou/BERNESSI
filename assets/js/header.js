@@ -1,7 +1,7 @@
 const search = document.querySelector(".search");
 const searchBtn = document.querySelector(".search__btn");
 searchBtn.addEventListener("click", () => {
-  search.classList.add("search-focus");
+  search.classList.toggle("search-focus");
 });
 document.addEventListener("click", (e) => {
   let target = e.target;
