@@ -875,8 +875,8 @@ a {
 }
 
 .category__item:hover .category__bg {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .category__item:hover .category__link {
