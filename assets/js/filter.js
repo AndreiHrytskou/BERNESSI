@@ -86,14 +86,20 @@ let span;
 colorItem.forEach((e) => {
   const input = e.childNodes[1];
   input.addEventListener("input", () => {
+    let arrColor = filterShow.childNodes;
     if (input.checked) {
       color = input.nextElementSibling.innerText;
-      let arrColor = filterShow.childNodes;
       createColor();
       arrColor.forEach((col) => {
-        console.log(col);
+        if (col.innerText != color) {
+        }
       });
     } else if (!input.checked) {
+      arrColor.forEach((e) => {
+        if (e.textContent == color) {
+          e.remove();
+        }
+      });
     }
   });
 });
@@ -133,7 +139,7 @@ categoryItem.forEach((e) => {
       let arrColor = filterShow.childNodes;
       createColor();
       arrColor.forEach((col) => {
-        console.log(col);
+        console.log(col.innerText);
       });
     } else if (!input.checked) {
     }
