@@ -75,9 +75,12 @@ categoryTop.addEventListener("click", () => {
 });
 
 // filter items
-const filterShow = document.querySelector(".filter__inner");
+const filterShow = document.querySelector(".filter__box");
 const colorItem = document.querySelectorAll(".color__item");
-const itemColor = document.querySelectorAll(".item__color");
+// const itemColor = document.querySelectorAll(".item__color");
+const sizeItem = document.querySelectorAll(".filter__size__item");
+const collectionItem = document.querySelectorAll(".filter__collection__item");
+const categoryItem = document.querySelectorAll(".filter__category__item");
 let color;
 let span;
 colorItem.forEach((e) => {
@@ -85,8 +88,54 @@ colorItem.forEach((e) => {
   input.addEventListener("input", () => {
     if (input.checked) {
       color = input.nextElementSibling.innerText;
+      let arrColor = filterShow.childNodes;
       createColor();
-    } else {
+      arrColor.forEach((col) => {
+        console.log(col);
+      });
+    } else if (!input.checked) {
+    }
+  });
+});
+sizeItem.forEach((e) => {
+  const input = e.childNodes[1];
+  input.addEventListener("input", () => {
+    if (input.checked) {
+      color = input.nextElementSibling.innerText;
+      let arrColor = filterShow.childNodes;
+      createColor();
+      arrColor.forEach((col) => {
+        console.log(col);
+      });
+    } else if (!input.checked) {
+    }
+  });
+});
+collectionItem.forEach((e) => {
+  const input = e.childNodes[1];
+  input.addEventListener("input", () => {
+    if (input.checked) {
+      color = input.nextElementSibling.innerText;
+      let arrColor = filterShow.childNodes;
+      createColor();
+      arrColor.forEach((col) => {
+        console.log(col);
+      });
+    } else if (!input.checked) {
+    }
+  });
+});
+categoryItem.forEach((e) => {
+  const input = e.childNodes[1];
+  input.addEventListener("input", () => {
+    if (input.checked) {
+      color = input.nextElementSibling.innerText;
+      let arrColor = filterShow.childNodes;
+      createColor();
+      arrColor.forEach((col) => {
+        console.log(col);
+      });
+    } else if (!input.checked) {
     }
   });
 });

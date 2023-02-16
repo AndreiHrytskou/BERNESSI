@@ -47,7 +47,17 @@
 .filter__inner{
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 25px;
+}
+.filter__box{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0 46px;
+	.item__color{
+		@include fonts($roboto, 12px, 900, 30px, $grey);
+		text-transform: uppercase;
+	}
 }
 .filter__block{
 	display: flex;
