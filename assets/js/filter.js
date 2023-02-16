@@ -1,10 +1,36 @@
 const filterBtn = document.querySelector(".filter__btn");
 const filter = document.querySelector(".filter");
 const filterImg = document.querySelector(".filter__btn-img");
+const card = document.querySelectorAll(".card");
+const load = document.querySelector(".load");
+const cardArr = [];
 
 filterBtn.addEventListener("click", () => {
   filter.classList.toggle("filter-active");
   filterImg.classList.toggle("arrow-rotate");
+  card.forEach((e) => {
+    if (filter.classList.contains("filter-active")) {
+      e.style.minHeight = "492px";
+    } else {
+      e.style.minHeight = "580px";
+    }
+  });
+});
+card.forEach((e) => {
+  cardArr.push(e);
+  return cardArr;
+});
+cardArr.forEach((el) => {
+  el.style.display = "none";
+});
+const newArr = cardArr.slice(0, 16);
+newArr.forEach((e) => {
+  e.style.display = "block";
+});
+load.addEventListener("click", () => {
+  cardArr.forEach((elem) => {
+    elem.style.display = "block";
+  });
 });
 
 const sortArrow = document.querySelector(".sort-arrow");
@@ -47,3 +73,26 @@ categoryTop.addEventListener("click", () => {
   categoryList.classList.toggle("input-active");
   categoryArrow.classList.toggle("arrow-rotate");
 });
+
+// filter items
+const filterShow = document.querySelector(".filter__inner");
+const colorItem = document.querySelectorAll(".color__item");
+const itemColor = document.querySelectorAll(".item__color");
+let color;
+let span;
+colorItem.forEach((e) => {
+  const input = e.childNodes[1];
+  input.addEventListener("input", () => {
+    if (input.checked) {
+      color = input.nextElementSibling.innerText;
+      createColor();
+    } else {
+    }
+  });
+});
+function createColor() {
+  span = document.createElement("span");
+  span.className = "item__color";
+  filterShow.append(span);
+  span.append(color);
+}

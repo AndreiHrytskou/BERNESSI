@@ -611,7 +611,7 @@ a {
   top: 50%;
   cursor: pointer;
   margin: 0;
-  width: 57px;
+  width: 23px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -624,7 +624,7 @@ a {
 }
 
 .catalog .swiper-button-next:hover path {
-  fill: #ff28c2;
+  stroke: #ff28c2;
 }
 
 .catalog .swiper-button-prev {
@@ -633,7 +633,7 @@ a {
   top: 50%;
   cursor: pointer;
   margin: 0;
-  width: 57px;
+  width: 23px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -645,7 +645,7 @@ a {
 }
 
 .catalog .swiper-button-prev:hover path {
-  fill: #ff28c2;
+  stroke: #ff28c2;
 }
 
 .catalog .mySwiper {
@@ -1177,6 +1177,27 @@ a {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+
+.main-wrapper .category {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.main-wrapper .category .h2 {
+  margin-bottom: 48px;
+}
+
+.filter__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 
 .filter__block {
@@ -1771,6 +1792,7 @@ a {
 }
 
 .filter__btn {
+  margin-left: 15px;
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1809,6 +1831,126 @@ a {
   padding: 5px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
+}
+
+.subcatalog {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.subcatalog .card {
+  max-width: 25%;
+  width: 100%;
+  padding: 15px;
+  min-height: 630px;
+}
+
+.subcatalog .card-top {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.subcatalog .card__img {
+  width: 100%;
+}
+
+.subcatalog .card .like {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.subcatalog .card .price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subcatalog .card:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.subcatalog .card:hover .size {
+  display: block;
+}
+
+.load {
+  cursor: pointer;
+  margin: 20px auto;
+  width: 200px;
+  border: 2px solid #888c95;
+  background-color: transparent;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+.load-text {
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 30px;
+  color: #888c95;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3.4px 0;
+}
+
+.load__img {
+  background-color: #ff28c2;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
 }
 
 .footer {

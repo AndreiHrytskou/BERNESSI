@@ -91,13 +91,13 @@
 			top: 50%;
 			cursor: pointer;
 			margin: 0;
-			width: 57px;
+			width: 23px;
 			display: flex;
 			justify-content: flex-end;z-index: 10;
 		}
 		.swiper-button-next:hover{
 			path{
-				fill: $current;
+				stroke: $current;
 			}
 		}
 		
@@ -107,13 +107,13 @@
 			top: 50%;
 			cursor: pointer;
 			margin: 0;
-			width: 57px;
+			width: 23px;
 			display: flex;
 			justify-content: flex-start;
 		}
 		.swiper-button-prev:hover{
 			path{
-				fill: $current;
+				stroke: $current;
 			}
 		}
 	.mySwiper{
