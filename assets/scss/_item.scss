@@ -1,0 +1,187 @@
+.cloth{
+	display: flex;
+	gap: 30px;
+}
+.item__gallery{
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+}
+.preview{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 32%;
+	gap: 15px;
+}
+.preview__img{
+	opacity: 0.5;
+	cursor: pointer;
+	width: 100px;
+	height: 135px;
+	border-radius: 25px;
+}
+.preview__img.filter{
+	opacity: 1;
+}
+.item__img{
+	width: 100%;
+	max-width: 430px;
+	border-radius: 25px;
+}
+.item__description{
+	width: 100%;
+	max-width: 50%;
+	.price{
+		@include fonts($roboto, 15px, 700, 25px, $black);
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		.discount{
+			@include fonts($roboto, 15px, 400, 25px, $grey);
+			text-decoration: line-through;
+		}
+	}
+}
+.item__title{
+	margin-top: 33px;
+	margin-bottom: 31px;
+	@include fonts($roboto, 30px, 900, 40px, $grey);
+	text-transform: uppercase;
+}
+.color{
+	margin-top: 48px;
+	&__img{
+		width: 55px;
+		height: auto;
+		border-radius: 25px;
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+	&__input{
+		display: none;
+	}
+		 &__input+label {
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			gap: 10px;
+
+		}
+		&__input+label::before {
+			content: '';
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 14px;
+			height: 14px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			border: 2px solid $grey;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 70% 70%;
+		}
+		&__input:checked+label::before {
+			border-color: $grey;
+			background-color: $white;
+			background-image: url('./../img/dottedpink.png');
+		}
+		&__input:checked+label{
+			color: $black;
+		}
+}
+.color__title{
+		@include fonts($roboto, 20px, 700, 25px, $grey);
+		text-transform: uppercase;
+		margin-bottom: 17px;
+	}
+.size__block{
+	margin-top: 43px;
+}
+.size__wrap{
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	.color__text{
+		text-transform: uppercase;
+	}
+}
+.add_to_cart{
+	cursor: pointer;
+	margin-top: 44px;
+	background-color: $grey;
+	border: none;
+	border-radius: 25px;
+	max-width: 315px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	.add-text{
+		@include fonts($roboto, 12px, 900, 30px, $white);
+		text-transform: uppercase;
+		width: 100%;
+		padding: 5px 0;
+	}
+	.arrow{
+		background-color: $white;
+		border-radius: 25px;
+		padding: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.description{
+	margin-top: 55px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	&__title{
+		cursor: pointer;
+		@include fonts($roboto, 20px, 700, 25px, $grey);
+		text-transform: uppercase;
+		position: relative;
+		padding-right: 30px;
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+	&__title::after{
+		transition: 0.2s;
+		content: "";
+		position: absolute;
+		right: 0;
+		width: 16px;
+		height: 15px;
+		background-image: url('./../img/arrow_down.webp');
+		background-position: right;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&__text{
+		display: none;
+		@include fonts($roboto, 15px, 300, 25px, $grey);
+	}
+}
+.visible{
+	.description__title::after{
+		transform: rotate(180deg);
+		transition: 0.2s;
+	}
+	.description__text{
+		display: block;
+		margin-top: 23px;
+	}
+}
+.delivery, .payment{
+	margin-top: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
