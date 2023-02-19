@@ -2563,14 +2563,14 @@ a {
 .cart__item .item-price {
   font-weight: 700;
   color: black;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.cart__item .item-price .discount {
+.cart__item .discount {
+  margin-left: 10px;
   color: #888c95;
   text-decoration: line-through;
 }
