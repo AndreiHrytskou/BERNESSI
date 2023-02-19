@@ -938,9 +938,14 @@ a {
   top: 0;
 }
 
-.bright__text, .regular__text {
+.regular__text {
   position: absolute;
-  width: 90%;
+  width: 86%;
+}
+
+.bright__text {
+  position: absolute;
+  width: 70%;
 }
 
 .bright {
@@ -959,6 +964,26 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bright .section__text::after {
+  content: "";
+  width: 70%;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  border: 3px solid #ffec53;
+}
+
+.bright .section__bottom::before {
+  content: "";
+  width: 40%;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  border: 3px solid #ffec53;
 }
 
 .regular:hover .regular__img, .regular:hover .bright__img,
@@ -986,13 +1011,13 @@ a {
   opacity: 0.5;
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 0px;
   border: 3px solid #ffec53;
 }
 
 .section__bold {
   font-family: "Roboto";
-  font-size: 9.4vw;
+  font-size: 9vw;
   font-weight: 900;
   line-height: 0.833;
   color: white;

@@ -298,9 +298,13 @@
 	right: 0;
 	top: 0;
 }
-.bright__text, .regular__text{
+ .regular__text{
 	position: absolute;
-	width: 90%;
+	width: 86%;
+}
+.bright__text{
+	position: absolute;
+	width: 70%;
 }
 .bright{
 	position: relative;
@@ -309,6 +313,24 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	.section__text::after{
+		content: "";
+		width: 70%;
+		opacity: 0.5;
+		position: absolute;
+		top: 50%;
+		right: 0px;
+		border: 3px solid $yellow;
+	}
+	.section__bottom::before{
+		content: "";
+		width: 40%;
+		opacity: 0.5;
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		border: 3px solid #ffec53;
+	}
 }
 .regular:hover,
 .bright:hover{
@@ -329,11 +351,11 @@
 	opacity: 0.5;
 	position: absolute;
 	top: 50%;
-	right: 10px;
+	right: 0px;
 	border: 3px solid $yellow;
 }
 .section__bold{
-	@include fonts($roboto, 9.4vw, 900, 0.833, $white);
+	@include fonts($roboto, 9vw, 900, 0.833, $white);
 	text-transform: uppercase;
 	text-align: center;
 	position: relative;
