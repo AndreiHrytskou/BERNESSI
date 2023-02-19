@@ -277,32 +277,51 @@
 	}
 }
 .regular{
+	position: relative;
 	width: 100%;
 	max-width: 50%;
-	background-image: url('./../img/2.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 100px 45px 100px 65px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.regular__img{
+	width: 100%;
+	height: auto;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+.bright__img{
+	width: 100%;
+	height: auto;
+	position: relative;
+	right: 0;
+	top: 0;
+}
+.bright__text, .regular__text{
+	position: absolute;
+	width: 90%;
 }
 .bright{
+	position: relative;
 	width: 100%;
 	max-width: 50%;
-	background-image: url('./../img/1.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 100px 65px 100px 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .regular:hover,
 .bright:hover{
-	filter: grayscale(100%);
+	.regular__img, .bright__img{
+		filter: grayscale(100%);
+	}
 }
 .section__text{
 	@include fonts($roboto, 35px, 500, 1.429, $white);
 	text-transform: uppercase;
 	text-align: left;
 	position: relative;
+	padding-left: 6px;
 }
 .section__text::after{
 	content: "";
@@ -314,9 +333,10 @@
 	border: 3px solid $yellow;
 }
 .section__bold{
-	@include fonts($roboto, 120px, 900, 0.833, $white);
+	@include fonts($roboto, 9.4vw, 900, 0.833, $white);
 	text-transform: uppercase;
 	text-align: center;
+	position: relative;
 }
 .section__bottom{
 	@include fonts($roboto, 50px, 100, 1, $white);

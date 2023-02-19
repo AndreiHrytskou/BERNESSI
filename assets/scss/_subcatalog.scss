@@ -58,8 +58,22 @@
 	align-items: center;
 	gap: 0 46px;
 	.item__color{
-		@include fonts($roboto, 12px, 900, 30px, $grey);
-		text-transform: uppercase;
+		p{
+			@include fonts($roboto, 12px, 900, 30px, $grey);
+			text-transform: uppercase;
+		}
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		.close{
+			background-color: transparent;
+			border: 2px solid $grey;
+			border-radius: 25px;
+			padding:2px 5px;
+			@include fonts($roboto, 12px, 900, 12px, $grey);
+			margin-bottom: 3px;
+			cursor: pointer;
+		}
 	}
 }
 .filter__block{
