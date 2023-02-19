@@ -2,6 +2,10 @@
 	display: flex;
 	gap: 30px;
 }
+.item{
+	padding: 25px 0;
+	border-top: 1px solid rgba(136, 140, 149, 0.25);;
+}
 .item__gallery{
 	display: flex;
 	align-items: flex-start;

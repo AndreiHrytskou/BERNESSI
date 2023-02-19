@@ -177,6 +177,7 @@ a{
 		}
 	}
 	.cart:hover{
+		cursor: pointer;
 		path{
 			fill: $current;
 		}
