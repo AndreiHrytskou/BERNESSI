@@ -2893,7 +2893,7 @@ a {
   font-weight: 500;
 }
 
-.subtotal-price {
+.subtotal-price, .tax-price {
   font-weight: 500;
   color: black;
 }
