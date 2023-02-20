@@ -53,6 +53,11 @@ a{
 	width: 118px;
 	height: 20px;
 }
+.logo:hover{
+	path{
+		fill: $current;
+	}
+}
 .about__link{
 	text-decoration: none;
 	@include fonts($roboto, 12px, 500, 20px, $grey);
@@ -95,9 +100,15 @@ a{
 		align-items: center;
 		gap: 10px;
 	}
-	&__item:first-child{
-		display: flex;
-	}
+}
+.lang__first{
+	display: block;
+}
+.lang-visible{
+	display: block
+}
+.current-lang{
+	display: block;
 }
 .menu{
 	position: relative;
@@ -248,11 +259,6 @@ a{
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	// .submenu__item:hover{
-	// 	a{
-	// 		color: $current;
-	// 	}
-	// }
 }
 .item-active{
 	display: block;
