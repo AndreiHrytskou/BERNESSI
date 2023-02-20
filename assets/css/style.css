@@ -2834,6 +2834,9 @@ a {
 }
 
 .grey .sort-arrow {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   width: 16px;
   height: 15px;
   padding: 0;
@@ -3136,14 +3139,39 @@ a {
 
 .mail-text::after {
   content: "";
-  background-image: url("./../img/mail.webp");
+  background-image: url("./../img/mail.png");
   -webkit-background-size: cover;
           background-size: cover;
   position: absolute;
   left: -40px;
-  top: 0;
-  width: 30px;
-  height: 30px;
+  top: 5px;
+  width: 22px;
+  height: 15px;
+}
+
+.checkout__form, .delivery__container {
+  display: none;
+}
+
+.visible {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .footer {
