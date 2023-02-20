@@ -601,7 +601,7 @@ a {
 .catalog {
   max-width: 98%;
   width: 100%;
-  margin: 100px auto 0;
+  margin: 100px auto;
 }
 
 .catalog .container {
@@ -901,8 +901,8 @@ a {
 }
 
 .section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .section .container {
