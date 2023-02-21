@@ -65,3 +65,72 @@
 .sidebar-hide{
 	display: none;
 }
+.address__block{
+	display: flex;
+	flex-direction: column;
+	margin-top: 33px;
+}
+.address__wrapper{
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.address__container{
+	display: flex;
+	gap: 30px;
+}
+.address__label{
+	max-width: 48%;
+	width: 100%;
+	border: 1px solid rgba(136, 140, 149, 0.35);
+	border-radius: 25px;
+	padding: 11.7px 20px;
+}
+.address__input{
+	border: none;
+	outline: none;
+	width: 100%;
+}
+.address__input::placeholder{
+	@include fonts($roboto, 12px, 400, 50px, $grey);
+	opacity: 0.65;
+}
+.address___btn{
+	max-width: 430px;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+}
+.address__checkbox{
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+.address__checkout {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+   }
+   .address__checkout+label {
+      display: inline-flex;
+      align-items: center;
+		gap: 10px;
+      user-select: none;
+   }
+   .address__checkout+label::before {
+      content: '';
+      display: flex;
+		align-items: center;
+		justify-content: center;
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 2px solid $grey;
+      border-radius: 6px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 70% 70%;
+   }
+   .address__checkout:checked+label::before {
+      background-image: url("./../img/checkbox-pink.png");
+   }
