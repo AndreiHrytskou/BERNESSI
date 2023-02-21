@@ -43,6 +43,7 @@ a{
 		align-items: center;
 		justify-content: space-between;
 		gap: 32px;
+		position: relative;
 	}
 	.head-page{
 		display: flex;
@@ -86,6 +87,7 @@ a{
 	align-items: center;
 	gap: 33px;
 	height: 22px;
+	padding-right: 60px;
 	&__icon:hover{
 		path{
 			stroke: $current;
@@ -94,12 +96,26 @@ a{
 }
 .lang{
 	cursor: pointer;
-	margin-right: 6px;
+	padding: 0 10px 10px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	background-color: $white;
+	border-radius: 0 0 25px 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	box-shadow: 0 45px 120px rgba(0, 0, 0, 0.25);
+	z-index: 10;
 	&__item{
 		display: none;
 		align-items: center;
 		gap: 10px;
 	}
+}
+.lang__name{
+	@include fonts($roboto, 12px, 500, 20px, $grey);
+	text-transform: uppercase;
 }
 .lang__first{
 	display: block;

@@ -11,11 +11,13 @@ lang.addEventListener("click", () => {
   rus.classList.toggle("lang-visible");
   langItem.forEach((e) => {
     e.addEventListener("click", () => {
-      e.classList.toggle("current-lang");
-      if (e.classList.contains("current-lang")) {
-        console.log("asds");
-        first.style.display = "none";
-      }
+      langItem.forEach((el) => {
+        if (el.classList.contains("current-lang")) {
+          el.classList.remove("current-lang");
+        }
+      });
+      first.classList.remove("lang__first");
+      e.classList.add("current-lang");
     });
   });
 });
