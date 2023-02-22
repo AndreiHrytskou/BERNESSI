@@ -233,3 +233,29 @@
 			display: flex;
 		}
 	}
+	.change__wrapper{
+		display: flex;
+		gap: 30px;
+	}
+	.change__container{
+		margin-top: 33px;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		width: 100%;
+	}
+	.data__box,
+	.password__box{
+		.sort-top{
+			justify-content: flex-start;
+			margin-bottom: 25px;
+		}
+	}
+	.data__wrapper{
+		display: none;	
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	.data-visible{
+		display: flex;
+	}
