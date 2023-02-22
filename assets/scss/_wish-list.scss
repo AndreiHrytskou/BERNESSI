@@ -33,21 +33,22 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 14.8px;
-		height: 14.8px;
+		width: 12px;
+		height: 12px;
 		flex-shrink: 0;
 		flex-grow: 0;
 		border: 2px solid $grey;
 		border-radius: 50%;
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 70% 70%;
+		background-size: 100% 100%;
 		margin-right: 5px;
 	}
 	.custom-radio:checked+label::before {
-		border-color: $grey;
+		border-color: transparent;
 		background-color: $white;
 		background-image: url('./../img/dottedpink.png');
+		background-size: 14px 14px;
 	}
 }
 .sidebar-account{

@@ -64,3 +64,6 @@ card2.forEach((e) => {
     el.preventDefault();
   });
 });
+card.forEach((e) => {
+  console.log(e);
+});

@@ -126,9 +126,17 @@
 		}
 		
 	}
-	.card{
+
+}
+.card:hover{
+	.size{
+		opacity: 1;
+		position: relative;
+	}
+}
+.card, .card2{
+	position: relative;
 		padding: 15px;
-		min-height: 610px;
 	&-top{
 			position: relative;
 			display: block;
@@ -144,21 +152,21 @@
 			top: 20px;
 		}
 	}
-	.card:hover{
-		transform: scale(1.02);
-		background-color: $white;
-		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-		border-radius: 30px;
-		border: 1px solid transparent;
-	.size{
-			display: block;
-		}
-	}
+.card:hover::before, .card2:hover::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 25px;
 }
 .thing{
 	padding:30px 10px;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 	gap: 10px;
 	&__name{
 		max-width: 180px;
@@ -168,6 +176,8 @@
 	.price{
 		@include fonts($roboto, 15px, 700, 1.667, $black);
 			text-align: right;
+			display: flex;
+			flex-direction: column;
 			.discount{
 				@include fonts($roboto, 15px, 700, 1.667, $grey);
 				text-decoration:line-through;
@@ -175,7 +185,7 @@
 	}
 }
 .size{
-	display: none;
+	opacity: 0;
 	&__list{
 		list-style: none;
 		display: flex;
@@ -249,7 +259,6 @@
 		width: 85px;
 		@include fonts($roboto, 15px, 500, 25px, $black);
 		text-transform: uppercase;
-		// text-align: center;
 		background-color: $new;
 		border-radius: 0 25px 25px 0;
 		padding: 12.5px 31px 12.5px 21px;
@@ -419,28 +428,8 @@
 		color: $white;
 	}
 }
-.card2{
-	padding: 15px;
-	min-height: 580px;
-	&__img{
-		width: 100%;
-		height: auto;
-		border-radius: 30px;
-	}
-	 .like {
-		cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 22px;
-	}
-}
-.card2:hover{
-		transform: scale(1.02);
-		background-color: $white;
-		box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
-		border-radius: 30px;
-		border: 1px solid transparent;
-	}
+
+
 .mySwiper1{
 		width: 95%;
       height: 100%;
