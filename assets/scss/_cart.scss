@@ -317,12 +317,13 @@
 	}
 }
 .checkout__btn{
-	background-color: $current;
+	background-color: rgb(255, 66, 201);
 	border-radius: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 5px;
+	position: relative;
 }
 .checkout__btn:hover{
 	box-shadow: 4px 1px 20px 10px rgba(193, 0, 138, 0.2) inset;
@@ -335,12 +336,14 @@
 	padding: 5px 0;
 }
 .checkout__img{
+	position:absolute;
+	right: 5px;
 	background-color: $white;
 	border-radius: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 5px;
+	padding: 8px;
 }
 .delivery__block{
 	margin-top: 30px;
