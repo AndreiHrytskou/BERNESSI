@@ -57,54 +57,38 @@ categoryTop.addEventListener("click", () => {
 });
 
 // filter items
-const apply = document.querySelector(".apply");
-const reset = document.querySelector(".reset");
-const checkbox = document.querySelectorAll(".custom-checkbox");
-const filterShow = document.querySelector(".filter__box");
-const colorItem = document.querySelectorAll(".color__item");
-const sizeItem = document.querySelectorAll(".filter__size__item");
-const collectionItem = document.querySelectorAll(".filter__collection__item");
-const categoryItem = document.querySelectorAll(".filter__category__item");
-let color;
-let label;
-reset.addEventListener("click", (e) => {
-  e.preventDefault();
-  checkbox.forEach((el) => {
-    el.checked = false;
-  });
-  filterShow.childNodes.forEach((e) => {
-    e.remove();
-  });
-});
 
+const apply = document.querySelector(".apply");
+const filterShow = document.querySelector(".filter__box");
+const reset = document.querySelector(".reset");
 apply.addEventListener("click", (ap) => {
   ap.preventDefault();
-
-  checkbox.forEach((el) => {
-    if (el.checked) {
-      label = el.nextElementSibling.innerText;
-      createColor();
-    }
+  const filterBlock = [
+    ...filter.querySelectorAll(".filter__block input:checked"),
+  ].map((n) => n.value);
+  if (filterBlock != "") {
+    filterShow.innerHTML = `<span class="item__color"><p>${filterBlock.join(
+      "</p><button class='close'>x</button></span><span class='item__color'><p>"
+    )}</p><button class='close'>x</button></span>`;
+  }
+  const close = document.querySelectorAll(".close");
+  close.forEach((e) => {
+    e.addEventListener("click", () => {
+      e.parentElement.remove();
+      const input = document.querySelectorAll(".filter__block input:checked");
+      input.forEach((i) => {
+        if (e.previousElementSibling.innerHTML == i.value) {
+          i.checked = false;
+        }
+      });
+    });
   });
 });
-
-function createColor() {
-  const span = document.createElement("span");
-  const text = document.createElement("p");
-  const close = document.createElement("button");
-  span.className = "item__color";
-  text.append(label);
-  span.append(text);
-  filterShow.append(span);
-  close.className = "close";
-  filterShow.append(span);
-  close.append("x");
-  span.append(close);
-  span.className = "item__color";
-  close.addEventListener("click", () => {
-    checkbox.forEach((el) => {
-      el.checked = false;
-    });
-    span.remove();
+reset.addEventListener("click", (r) => {
+  r.preventDefault();
+  const input = document.querySelectorAll(".filter__block input:checked");
+  input.forEach((l) => {
+    l.checked = false;
   });
-}
+  filterShow.innerHTML = null;
+});

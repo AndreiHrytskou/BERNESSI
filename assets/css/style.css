@@ -1872,6 +1872,7 @@ a {
   padding: 5px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
+  position: relative;
 }
 
 .apply-text {
@@ -1882,14 +1883,16 @@ a {
   color: #888c95;
   text-transform: uppercase;
   margin: 0 auto;
+  padding: 5px;
 }
 
 .apply .arrow {
+  position: absolute;
+  right: 5px;
   background-color: white;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   padding: 8.5px 8px;
-  margin-right: 5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2165,7 +2168,7 @@ a {
   text-transform: uppercase;
 }
 
-.color {
+.color-product {
   margin-top: 48px;
 }
 
@@ -4996,6 +4999,22 @@ a {
 .second-menu .submenu__item:hover a {
   border-left: none;
   color: white;
+}
+
+.footer .social {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 1480px) {
+  .footer .menu__list {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .footer .menu__item a {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,4 +1,13 @@
-@media screen and (max-width: 1366px){}
+@media screen and (max-width: 1480px){
+	.footer .menu__list{
+		gap: 20px;
+	}
+}
+@media screen and (max-width: 1366px){
+	.footer .menu__item a {
+		padding: 0 10px;
+	}
+}
 @media screen and (max-width: 1200px){
 .catalog .mySwiper {
     width: 85%;

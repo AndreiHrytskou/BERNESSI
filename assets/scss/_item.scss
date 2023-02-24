@@ -53,8 +53,10 @@
 	@include fonts($roboto, 30px, 900, 40px, $grey);
 	text-transform: uppercase;
 }
-.color{
+.color-product{
 	margin-top: 48px;
+}
+.color{
 	&__img{
 		width: 55px;
 		height: auto;

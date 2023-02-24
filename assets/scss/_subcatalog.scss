@@ -344,16 +344,19 @@
 	width: 100%;
 	padding: 5px;
 	border-radius: 25px;
+	position: relative;
 	&-text{
 			@include fonts($roboto, 12px, 900, 30px, $grey);
 			text-transform: uppercase;
 			margin: 0 auto;
+			padding: 5px;
 		}
 	.arrow{
+		position: absolute;
+		right: 5px;
 		background-color: $white;
 		border-radius: 20px;
 		padding: 8.5px 8px;
-		margin-right: 5px;
 		display: flex;
 	}
 }
