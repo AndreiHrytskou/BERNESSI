@@ -8,7 +8,7 @@ card.forEach((e) => {
 cardArr.forEach((el) => {
   el.style.display = "none";
 });
-const newArr = cardArr.slice(0, 16);
+const newArr = cardArr.slice(0, 18);
 newArr.forEach((e) => {
   e.style.display = "block";
 });

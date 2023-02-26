@@ -6,6 +6,7 @@ const ar = document.querySelector(".lang-ar");
 const rus = document.querySelector(".lang-ru");
 let current = document.querySelector(".current-lang");
 lang.addEventListener("click", () => {
+  lang.classList.toggle("lang-active");
   eng.classList.toggle("lang-visible");
   ar.classList.toggle("lang-visible");
   rus.classList.toggle("lang-visible");

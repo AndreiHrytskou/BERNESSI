@@ -2,6 +2,9 @@
 	padding-top: 30px;
    border-top: 1px solid rgba(136, 140, 149, 0.25);
 }
+.contact-container{
+	width: 100%;
+}
 .contact-map{
 	border-radius: 25px;
 	max-width: 890px;
@@ -30,7 +33,7 @@
 	color: $grey;
 }
 .form-contact{
-	max-width: 430px;
+	max-width: 36%;
 	width: 100%;
 	background-color: rgba(136, 140, 149, .15);
 	padding: 30px;
@@ -42,6 +45,11 @@
 .constact-select{
 	background-color: $white;
 	width: 100%;
+	.select-title{
+		width: 95%;
+		padding-left: 10px;
+		left: 10px;
+	}
 }
 .contact-name{
 	border-radius: 25px;
