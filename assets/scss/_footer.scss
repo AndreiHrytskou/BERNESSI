@@ -88,3 +88,17 @@
 .footer .social{
 		padding-right: 0;
 	}
+.footer__bottom{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.documents{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+.documents__link,
+.copywriter{
+	@include fonts($roboto, 15px, 400, 25px, rgba(255, 255, 255, .5));
+}

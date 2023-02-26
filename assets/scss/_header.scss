@@ -92,9 +92,8 @@ a{
 .social{
 	display: flex;
 	align-items: center;
-	// gap: 33px;
 	height: 22px;
-	padding-right: 60px;
+	padding-right: 40px;
 	&__icon{
 		padding: 15px;
 	}
@@ -171,10 +170,11 @@ a{
 	}
 	.person{
 		display: flex;
-		gap: 30px;
 		align-items: center;
+		margin-right: 37px;
 	}
 	.search{
+		padding: 15px;
 		transition: 0.2s;
 		input{
 			display: none;
@@ -190,7 +190,7 @@ a{
 		transition: 0.2s;
 		input{
 			display: block;
-			width: 230px;
+			width: 158px;
 			border: none;
 			outline: none;
 			@include fonts($roboto, 12px, 500, 12px, $grey);
@@ -211,16 +211,25 @@ a{
 			stroke: $current;
 		}
 	}
+	.liked{
+		padding: 15px;
+	}
 	.liked:hover{
 		path{
 			fill: $current;
 		}
+	}
+	.cart{
+		padding: 15px;
 	}
 	.cart:hover{
 		cursor: pointer;
 		path{
 			fill: $current;
 		}
+	}
+	.person-info{
+		padding: 15px;
 	}
 	.person-info:hover{
 		path{
