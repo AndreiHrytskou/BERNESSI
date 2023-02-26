@@ -95,6 +95,7 @@ a{
 	height: 22px;
 	padding-right: 40px;
 	&__icon{
+		width: 54px;
 		padding: 15px;
 	}
 	&__icon:hover{
@@ -174,6 +175,7 @@ a{
 		margin-right: 37px;
 	}
 	.search{
+		width: 54px;
 		padding: 15px;
 		transition: 0.2s;
 		input{
@@ -212,6 +214,7 @@ a{
 		}
 	}
 	.liked{
+		width: 54px;
 		padding: 15px;
 	}
 	.liked:hover{
@@ -220,6 +223,7 @@ a{
 		}
 	}
 	.cart{
+		width: 54px;
 		padding: 15px;
 	}
 	.cart:hover{
@@ -229,6 +233,7 @@ a{
 		}
 	}
 	.person-info{
+		width: 54px;
 		padding: 15px;
 	}
 	.person-info:hover{
