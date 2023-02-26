@@ -5624,6 +5624,24 @@ a {
   margin-bottom: 35px;
 }
 
+.text__list {
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+  margin-bottom: 35px;
+}
+
+.text__item {
+  margin-bottom: 25px;
+}
+
+li::marker {
+  color: #ff28c2;
+}
+
+.simple__border {
+  border-top: 1px solid rgba(136, 140, 149, 0.25);
+}
+
 .footer {
   background-color: #888c95;
   padding-top: 65px;
