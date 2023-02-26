@@ -26,6 +26,7 @@
 	border-radius: 25px;
 	padding:11.7px 20px;
 	input{
+		width: 100%;
 		border: none;
 		outline: none;
 	}
@@ -33,7 +34,8 @@
 		@include fonts($roboto, 12px, 700, 20px, rgba(136, 140, 149, 0.65));
 	}
 }
-.login__btn{
+.login__btn,
+.register__btn{
 	margin: 25px auto 20px;
 	background-color: #ff42c9;
 	border: none;
@@ -106,4 +108,25 @@
 .register__link{
 	color: $black;
 	text-decoration: underline;
+}
+.name-input{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	.login__item{
+		max-width: 45%;
+	}
+}
+.privacy{
+	.register__text{
+		margin-top: 0;
+	}
+	.address__checkbox{
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+}
+.register__social{
+	height: 100%;
 }

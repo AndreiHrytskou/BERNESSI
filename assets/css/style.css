@@ -5265,6 +5265,7 @@ a {
 }
 
 .login__item input {
+  width: 100%;
   border: none;
   outline: none;
 }
@@ -5301,7 +5302,8 @@ a {
   color: rgba(136, 140, 149, 0.65);
 }
 
-.login__btn {
+.login__btn,
+.register__btn {
   margin: 25px auto 20px;
   background-color: #ff42c9;
   border: none;
@@ -5321,11 +5323,13 @@ a {
   cursor: pointer;
 }
 
-.login__btn .checkout__text {
+.login__btn .checkout__text,
+.register__btn .checkout__text {
   padding: 10px 0;
 }
 
-.login__btn .checkout__img {
+.login__btn .checkout__img,
+.register__btn .checkout__img {
   top: 5px;
 }
 
@@ -5429,6 +5433,39 @@ a {
 .register__link {
   color: black;
   text-decoration: underline;
+}
+
+.name-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.name-input .login__item {
+  max-width: 45%;
+}
+
+.privacy .register__text {
+  margin-top: 0;
+}
+
+.privacy .address__checkbox {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.register__social {
+  height: 100%;
 }
 
 .footer {
