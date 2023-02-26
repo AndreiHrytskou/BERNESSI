@@ -43,6 +43,16 @@
   text-align: center;
 }
 
+.h4 {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #888c95;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .baner-text {
   font-family: "Roboto";
   font-size: 18px;
@@ -3281,6 +3291,7 @@ a {
 
 .likecatalog .card {
   max-width: 33%;
+  width: 100%;
 }
 
 .list__wrapper {
@@ -5595,6 +5606,22 @@ a {
   -webkit-border-radius: 25px;
           border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.65);
+}
+
+.simple .h2 {
+  margin: 55px auto;
+}
+
+.simple .h3 {
+  margin: 55px auto 35px;
+}
+
+.simple .h4 {
+  margin: 45px auto 35px;
+}
+
+.simple .text {
+  margin-bottom: 35px;
 }
 
 .footer {
