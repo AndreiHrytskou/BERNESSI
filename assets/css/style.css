@@ -4962,6 +4962,8 @@ a {
 
 .checkout__wrapper {
   margin-bottom: 100px;
+  border-top: 1px solid rgba(136, 140, 149, 0.25);
+  padding: 33px 0 0;
 }
 
 .checkout {
@@ -5213,6 +5215,220 @@ a {
 .semi .thing__name {
   max-width: 100%;
   color: #ff28c2;
+}
+
+.login__forms {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  border-top: 1px solid rgba(136, 140, 149, 0.25);
+  padding: 33px 0 100px;
+}
+
+.form__title {
+  text-align: center;
+}
+
+.login__email,
+.login__social {
+  max-width: 430px;
+}
+
+.login__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.login__item {
+  border: 1px solid rgba(136, 140, 149, 0.35);
+  background-color: white;
+  width: 100%;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  padding: 11.7px 20px;
+}
+
+.login__item input {
+  border: none;
+  outline: none;
+}
+
+.login__item input::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(136, 140, 149, 0.65);
+}
+
+.login__item input:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(136, 140, 149, 0.65);
+}
+
+.login__item input::-ms-input-placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(136, 140, 149, 0.65);
+}
+
+.login__item input::placeholder {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(136, 140, 149, 0.65);
+}
+
+.login__btn {
+  margin: 25px auto 20px;
+  background-color: #ff42c9;
+  border: none;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  width: 100%;
+  max-width: 430px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.login__btn .checkout__text {
+  padding: 10px 0;
+}
+
+.login__btn .checkout__img {
+  top: 5px;
+}
+
+.forgot {
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  color: black;
+}
+
+.social__list {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.social__item {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  position: relative;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__img {
+  position: absolute;
+  left: 15px;
+}
+
+.social__text {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.apple__link {
+  background-color: black;
+}
+
+.google__link {
+  background-color: white;
+}
+
+.google__link .social__text {
+  color: #888c95;
+}
+
+.facebook__link {
+  background-color: #4267b2;
+}
+
+.register__text {
+  margin-top: 30px;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  color: #888c95;
+  text-align: center;
+}
+
+.register__link {
+  color: black;
+  text-decoration: underline;
 }
 
 .footer {
