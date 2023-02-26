@@ -33,6 +33,9 @@ a{
 	background-color: $white;
 	z-index: 100;
 }
+.burger-menu{
+	display: none;
+}
 .block{
 	padding: 15px 0;
 	display: flex;
@@ -44,6 +47,9 @@ a{
 		justify-content: space-between;
 		gap: 32px;
 		position: relative;
+		&-hide{
+			display: none;
+		}
 	}
 	.head-page{
 		display: flex;

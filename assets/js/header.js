@@ -288,3 +288,12 @@ deliveryItem.addEventListener("mouseout", () => {
   childrenItem.setAttribute("style", "display: none");
   accItem.setAttribute("style", "display: none");
 });
+//  burger menu
+
+const burger = document.querySelector(".burger-menu");
+const menuHide = document.querySelector(".menu");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("burger-menu--opened");
+  burger.classList.toggle("burger-menu--closed");
+  menuHide.classList.toggle("menu-active");
+});

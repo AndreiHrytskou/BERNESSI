@@ -394,11 +394,11 @@
 	  }
 	&__bg{
 		height: 500px;
-		width: 900px;
+		max-width: 900px;
+		width: 100%;
 	}
 	.see-more{
 		border-radius: 25px;
-		// padding: 3.4px 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
