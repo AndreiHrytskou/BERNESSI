@@ -33,7 +33,7 @@
 }
 .unit{
 	display: flex;
-	width: 200px;
+	width: 100%;
 	background-color: rgba(136, 140, 149, 0.25);
 	border-radius: 25px;
 	padding: 5px;
@@ -61,7 +61,7 @@
 	gap: 30px;
 }
 .size-text{
-	width: 200px;
+	width: 100%;
 	padding: 9.2px 20px;
 	display: flex;
 	justify-content: space-between;
@@ -84,10 +84,14 @@
 	display: flex;
 	align-items: center;
 	gap: 30px;
+	width: 60%;
+}
+.shape__item{
+	width: 100%;
 }
 .weight{
 	display: flex;
-	width: 200px;
+	width: 100%;
 	background-color: rgba(136, 140, 149, 0.25);
 	border-radius: 25px;
 	padding: 5px;
@@ -173,6 +177,7 @@
 	.shape__list{
 		display: flex;
 		gap: 30px;
+		width: 100%;
 	}
 	.shape__item{
 		max-width: 33%;
@@ -181,6 +186,9 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 40px;
+	}
+	.shape__img{
+		width: 100%;
 	}
 	.shape__input{
 		display: none;
