@@ -422,7 +422,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 54px;
-  padding: 15px;
+  padding: 10px 15px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -5557,6 +5557,44 @@ a {
 
 .register__social {
   height: 100%;
+}
+
+.simple__page {
+  background-image: url("./../img/headbaner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 550px;
+  padding-bottom: 25px;
+  background-color: black;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.simple__page .title,
+.simple__page .bread-link,
+.simple__page .bread-sep,
+.simple__page .bread-text {
+  color: white;
+  z-index: 10;
+}
+
+.simple__page::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .footer {

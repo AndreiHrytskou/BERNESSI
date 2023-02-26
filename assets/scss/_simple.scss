@@ -1,0 +1,29 @@
+.simple__page{
+	background-image: url('./../img/headbaner.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 550px;
+	padding-bottom: 25px;
+	background-color: $black;
+	border-radius: 25px;
+	align-items: flex-end;
+	position: relative;
+	.title,
+	.bread-link,
+	.bread-sep,
+	.bread-text{
+		color: $white;
+		z-index: 10;
+	}
+}
+.simple__page::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.65);
+}
