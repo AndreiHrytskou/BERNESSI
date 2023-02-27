@@ -1,9 +1,11 @@
 const filterBtn = document.querySelector(".filter__btn");
+const filterInner = document.querySelector(".filter__inner");
 const filter = document.querySelector(".filter");
 const filterImg = document.querySelector(".filter__btn-img");
 const card = document.querySelectorAll(".card");
 
 filterBtn.addEventListener("click", () => {
+  filterInner.classList.toggle("inner-active");
   filter.classList.toggle("filter-active");
   filterImg.classList.toggle("arrow-rotate");
   card.forEach((e) => {
@@ -92,3 +94,10 @@ reset.addEventListener("click", (r) => {
   });
   filterShow.innerHTML = null;
 });
+if (window.innerWidth < 400) {
+  apply.addEventListener("click", () => {
+    filterInner.classList.toggle("inner-active");
+    filter.classList.toggle("filter-active");
+    filterImg.classList.toggle("arrow-rotate");
+  });
+}
