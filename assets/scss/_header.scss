@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 body{
+	background-color: $white;
 	font-size: 15px;
 	font-family: $roboto;
 	line-height: 25px;
@@ -110,16 +111,13 @@ a{
 }
 .lang{
 	cursor: pointer;
-	padding: 0 0 10px 10px;
+	padding: 3px 0 10px 10px;
 	position: absolute;
 	top: 0px;
 	right: 0;
-	background-color: $white;
-	border-radius: 0 0 25px 25px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	box-shadow: 0 45px 120px rgba(0, 0, 0, 0.25);
 	z-index: 10;
 	&__item{
 		display: none;
@@ -128,6 +126,9 @@ a{
 	}
 }
 .lang-active{
+	background-color: $white;
+	border-radius: 0 0 25px 25px;
+	box-shadow: 0 45px 120px rgba(0, 0, 0, 0.25);
 	padding-right: 10px;
 	right: -10px;
 }
