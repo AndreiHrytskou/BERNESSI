@@ -1,5 +1,130 @@
 .account-data{
-	max-width: 100%;
+	max-width: 68%;
 	width: 100%;
 	margin-top: 33px;
+}
+.hello__block{
+	background-color: $yellow;
+	border-radius: 25px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.account__name{
+		@include fonts($roboto, 30px, 300, 40px, $grey);
+		.account__span{
+			font-weight: 700;
+		}
+	}
+}
+.offers{
+	margin-top: 30px;
+	display: none;
+}
+.points__block{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.points__amount{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.points__earn{
+	@include fonts($roboto, 12px, 300, 15px, $grey);
+}
+.points__count{
+	@include fonts($roboto, 15px, 500, 15px, $grey);
+	text-transform: uppercase;
+	display: flex;
+	gap: 5px;
+}
+.orders{
+	margin-top: 30px;
+	position: relative;
+	.table{
+		margin-top: 30px;
+		display: none;
+	}
+	.swiper-button-next{
+		cursor: pointer;
+		position: absolute;
+		right: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.swiper-button-prev{
+		cursor: pointer;
+		position: absolute;
+		left: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.swiper-button-next:hover{
+		path{
+			stroke: $current;
+		}
+	}
+	.swiper-button-prev:hover{
+		path{
+			stroke: $current;
+		}
+	}
+}
+.table__price{
+	width: 8%;
+}
+.table__shipping{
+	width: 20%;
+}
+.order__info{
+	color: $black;
+	position: relative;
+	z-index: 10;
+}
+.mySwiper3{
+	overflow: hidden;
+	width: 90%;
+   margin: 0 auto;
+	position: relative;
+	.swiper-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.swiper-slide {
+			text-align: center;
+			height: calc((100% - 30px) / 2) !important;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		 }
+	.card{
+		width: 100%;
+		max-width: 50%;
+		.thing{
+			align-items: flex-start;
+			.like{
+				position: relative;
+				right: auto;
+				left: 0;
+				margin-bottom: 10px;
+			}
+			flex-direction: column;
+			.price{
+				flex-direction: row;
+				gap: 10px;
+			}
+		}
+	}
+	.card:hover::before{
+		content: none;
+	}
+	.card__img{
+		width: 130px;
+	}
+	.like{
+		cursor: pointer;
+	}
+	
 }

@@ -13,7 +13,8 @@
 	<script src="./assets/js/cart.js" defer></script>
 	<script src="./assets/js/swiper.js" defer></script>
 	<script src="./assets/js/checkAccount.js" defer></script>
-	<script src="./assets/js/address.js" defer></script>
+	<script src="./assets/js/account.js" defer></script>
+	<script src="./assets/js/like.js" defer></script>
 	<title>Bernessi</title>
 </head>
 
@@ -550,10 +551,194 @@
 					<div class="account-data">
 						<div class="hello__block">
 							<p class="account__name">Hi, <span class="account__span">{Your_name}</span>!</p>
-							<div class="points">
-								<img class="points__img" src="" alt="points">
+							<div class="points__block">
+								<img class="points__img" src="./assets/img/points.webp" alt="points">
 								<div class="points__amount">
-									.points__
+									<p class="points__earn">You earned</p>
+									<p class="points__count"><span class="amount">145</span>points</p>
+								</div>
+							</div>
+						</div>
+						<div class="orders grey">
+							<div class="sort-top">
+								<p class="filter__subtitle">Current Orders</p>
+								<img class="sort-arrow rotate" src="./assets/img/arrow.png" alt="arrow">
+							</div>
+							<table class="table visible">
+								<tbody class="table__body">
+									<tr class="table__head-box">
+											<th class="table__head-name table__price">Order</th>
+											<th class="table__head-name">Date</th>
+											<th class="table__head-name table__price">Price</th>
+											<th class="table__head-name table__shipping">Shipping method</th>
+											<th class="table__head-name">Status</th>
+											<th class="table__head-name">Updated</th>
+											<th class="table__head-name">Action</th>
+									</tr>
+									<tr class="table__list">
+											<td class="table__item table__price">AA2368</td>
+											<td class="table__item">21.01.2023</td>
+											<td class="table__item table__price">$123.34</td>
+											<td class="table__item table__shipping">Pickup in the store</td>
+											<td class="table__item"><span>Payment waiting<span class="waiting"></span></span></td>
+											<td class="table__item">22.01.2023</td>
+											<td class="table__item"><a class="order__info" href="#">Full Info</a></td>
+									</tr>
+									<tr class="table__list">
+											<td class="table__item table__price">AA2350</td>
+											<td class="table__item">21.01.2023</td>
+											<td class="table__item table__price">$123.34</td>
+											<td class="table__item table__shipping">Pickup in the store</td>
+											<td class="table__item"><span>Shipping waiting<span class="waiting"></span></span></td>
+											<td class="table__item">19.01.2023</td>
+											<td class="table__item"><a class="order__info" href="#">Full Info</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="orders grey">
+							<div class="sort-top">
+								<p class="filter__subtitle">Special Offers for you</p>
+								<img class="sort-arrow rotate" src="./assets/img/arrow.png" alt="arrow">
+							</div>
+							<div class="offers visible">
+								<div class="swiper mySwiper3">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide card">
+											<a href="#" class="card-top">
+												<img class="card__img" src="./assets/img/product.png" alt="product">
+												
+											</a>
+											<div class="thing">
+												<div class="like">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+														<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
+															stroke-linejoin="miter" fill="none"
+															d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
+													</svg>
+												</div>
+												<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
+												<p class="price">
+													$146.00
+													<span class="discount">$199.00</span>
+												</p>
+											</div>
+										</div>
+										<div class="swiper-slide card">
+											<a href="#" class="card-top">
+												<img class="card__img" src="./assets/img/product.png" alt="product">
+												
+											</a>
+											<div class="thing">
+												<div class="like">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+														<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
+															stroke-linejoin="miter" fill="none"
+															d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
+													</svg>
+												</div>
+												<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
+												<p class="price">
+													$146.00
+													<span class="discount">$199.00</span>
+												</p>
+											</div>
+											
+										</div>
+										<div class="swiper-slide card">
+											<a href="#" class="card-top">
+												<img class="card__img" src="./assets/img/product.png" alt="product">
+												
+											</a>
+											<div class="thing">
+												<div class="like">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+														<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
+															stroke-linejoin="miter" fill="none"
+															d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
+													</svg>
+												</div>
+												<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
+												<p class="price">
+													$146.00
+													<span class="discount">$199.00</span>
+												</p>
+											</div>
+										</div>
+										<div class="swiper-slide card">
+											<a href="#" class="card-top">
+												<img class="card__img" src="./assets/img/product.png" alt="product">
+												
+											</a>
+											<div class="thing">
+												<div class="like">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+														<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
+															stroke-linejoin="miter" fill="none"
+															d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
+													</svg>
+												</div>
+												<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
+												<p class="price">
+													$146.00
+													<span class="discount">$199.00</span>
+												</p>
+											</div>
+										</div>
+										<div class="swiper-slide card">
+											<a href="#" class="card-top">
+												<img class="card__img" src="./assets/img/product.png" alt="product">
+												
+											</a>
+											<div class="thing">
+												<div class="like">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+														<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
+															stroke-linejoin="miter" fill="none"
+															d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
+													</svg>
+												</div>
+												<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
+												<p class="price">
+													$146.00
+													<span class="discount">$199.00</span>
+												</p>
+											</div>
+										</div>
+										<div class="swiper-slide card">
+											<a href="#" class="card-top">
+												<img class="card__img" src="./assets/img/product.png" alt="product">
+											</a>
+											<div class="thing">
+												<div class="like">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+														<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
+															stroke-linejoin="miter" fill="none"
+															d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
+													</svg>
+												</div>
+												<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
+												<p class="price">
+													$146.00
+													<span class="discount">$199.00</span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-next">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.719" viewBox="0 0 24 22.719">
+										<path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)"
+											d="M1570,749.994h22.01M1583,761l7.65-7.648a4.821,4.821,0,0,0,0-6.707l-7.65-7.648"
+											transform="translate(-1569.25 -738.625)" />
+									</svg>
+								</div>
+								<div class="swiper-button-prev">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+										<path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)"
+											d="M1592.04,750.006h-22.02m9.01-11-7.65,7.648a4.821,4.821,0,0,0,0,6.707l7.65,7.648"
+											transform="translate(-1568.78 -738.015)" />
+									</svg>
 								</div>
 							</div>
 						</div>
