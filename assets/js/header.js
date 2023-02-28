@@ -16,216 +16,216 @@ document.addEventListener("click", (e) => {
 
 // menu
 
-const menu = document.querySelector(".new__item");
-const newItem = document.querySelector(".submenu__new");
-menu.addEventListener("mouseover", () => {
-  newItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menu.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-newItem.addEventListener("mouseover", () => {
-  newItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-newItem.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-//
-const menu2 = document.querySelector(".women__item");
-const womenItem = document.querySelector(".submenu__women");
-menu2.addEventListener("mouseover", () => {
-  womenItem.setAttribute("style", "display: block");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menu2.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-womenItem.addEventListener("mouseover", () => {
-  womenItem.setAttribute("style", "display: block");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-womenItem.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-//
-const menu3 = document.querySelector(".men__item");
-const menItem = document.querySelector(".submenu__men");
-menu3.addEventListener("mouseover", () => {
-  menItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menu3.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menItem.addEventListener("mouseover", () => {
-  menItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menItem.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-//
-const menu4 = document.querySelector(".family__item");
-const familyItem = document.querySelector(".submenu__family");
-menu4.addEventListener("mouseover", () => {
-  familyItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menu4.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-familyItem.addEventListener("mouseover", () => {
-  familyItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-familyItem.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-//
-const menu5 = document.querySelector(".children__item");
-const childrenItem = document.querySelector(".submenu__children");
-menu5.addEventListener("mouseover", () => {
-  childrenItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-menu5.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-childrenItem.addEventListener("mouseover", () => {
-  childrenItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-childrenItem.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-//
-const menu6 = document.querySelector(".accessories__item");
-const accItem = document.querySelector(".submenu__accessories");
-menu6.addEventListener("mouseover", () => {
-  accItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-});
-menu6.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-accItem.addEventListener("mouseover", () => {
-  accItem.setAttribute("style", "display: block");
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-});
-accItem.addEventListener("mouseout", () => {
-  womenItem.setAttribute("style", "display: none");
-  newItem.setAttribute("style", "display: none");
-  menItem.setAttribute("style", "display: none");
-  familyItem.setAttribute("style", "display: none");
-  childrenItem.setAttribute("style", "display: none");
-  accItem.setAttribute("style", "display: none");
-});
-//
+// const menu = document.querySelector(".new__item");
+// const newItem = document.querySelector(".submenu__new");
+// menu.addEventListener("mouseover", () => {
+//   newItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menu.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// newItem.addEventListener("mouseover", () => {
+//   newItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// newItem.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// //
+// const menu2 = document.querySelector(".women__item");
+// const womenItem = document.querySelector(".submenu__women");
+// menu2.addEventListener("mouseover", () => {
+//   womenItem.setAttribute("style", "display: block");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menu2.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// womenItem.addEventListener("mouseover", () => {
+//   womenItem.setAttribute("style", "display: block");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// womenItem.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// //
+// const menu3 = document.querySelector(".men__item");
+// const menItem = document.querySelector(".submenu__men");
+// menu3.addEventListener("mouseover", () => {
+//   menItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menu3.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menItem.addEventListener("mouseover", () => {
+//   menItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menItem.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// //
+// const menu4 = document.querySelector(".family__item");
+// const familyItem = document.querySelector(".submenu__family");
+// menu4.addEventListener("mouseover", () => {
+//   familyItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menu4.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// familyItem.addEventListener("mouseover", () => {
+//   familyItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// familyItem.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// //
+// const menu5 = document.querySelector(".children__item");
+// const childrenItem = document.querySelector(".submenu__children");
+// menu5.addEventListener("mouseover", () => {
+//   childrenItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// menu5.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// childrenItem.addEventListener("mouseover", () => {
+//   childrenItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// childrenItem.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// //
+// const menu6 = document.querySelector(".accessories__item");
+// const accItem = document.querySelector(".submenu__accessories");
+// menu6.addEventListener("mouseover", () => {
+//   accItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+// });
+// menu6.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// accItem.addEventListener("mouseover", () => {
+//   accItem.setAttribute("style", "display: block");
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+// });
+// accItem.addEventListener("mouseout", () => {
+//   womenItem.setAttribute("style", "display: none");
+//   newItem.setAttribute("style", "display: none");
+//   menItem.setAttribute("style", "display: none");
+//   familyItem.setAttribute("style", "display: none");
+//   childrenItem.setAttribute("style", "display: none");
+//   accItem.setAttribute("style", "display: none");
+// });
+// //
 
 //  burger menu
 
@@ -236,3 +236,44 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("burger-menu--closed");
   menuHide.classList.toggle("menu-active");
 });
+
+const menuItem = document.querySelectorAll(".menu__block-span");
+const submenuItem = document.querySelectorAll(".submenu__item-span");
+const arrowBack = document.querySelectorAll(".arrow-back");
+const arrowBack2 = document.querySelectorAll(".mobile2-arrow");
+if (window.innerWidth < 1200) {
+  menuItem.forEach((e) => {
+    e.addEventListener("click", () => {
+      e.parentElement.classList.add("submenu-active");
+      e.parentNode.childNodes[3].childNodes[1].addEventListener("click", () => {
+        e.parentElement.classList.remove("submenu-active");
+      });
+    });
+  });
+  submenuItem.forEach((e) => {
+    e.addEventListener("click", () => {
+      e.parentElement.classList.add("submenu-item-active");
+      e.parentNode.childNodes[3].childNodes[1].addEventListener("click", () => {
+        e.parentElement.classList.remove("submenu-item-active");
+      });
+    });
+  });
+}
+if (window.innerWidth > 1200) {
+  menuItem.forEach((e) => {
+    e.addEventListener("mouseover", () => {
+      e.parentElement.childNodes[3].setAttribute("style", "display: block");
+    });
+    e.parentElement.childNodes[3].addEventListener("mouseover", () => {
+      e.parentElement.childNodes[3].setAttribute("style", "display: block");
+    });
+  });
+  menuItem.forEach((e) => {
+    e.addEventListener("mouseout", () => {
+      e.parentElement.childNodes[3].setAttribute("style", "display: none");
+    });
+    e.parentElement.childNodes[3].addEventListener("mouseout", () => {
+      e.parentElement.childNodes[3].setAttribute("style", "display: none");
+    });
+  });
+}
