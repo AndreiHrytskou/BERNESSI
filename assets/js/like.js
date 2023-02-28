@@ -11,6 +11,15 @@ size.forEach((e) => {
     e.classList.toggle("sizeActive");
   });
 });
+
+const card = document.querySelectorAll(".card");
+if (card !== undefined) {
+  card.forEach((e) => {
+    e.addEventListener("click", (el) => {
+      el.preventDefault();
+    });
+  });
+}
 const card2 = document.querySelectorAll(".card2");
 if (card2 !== undefined) {
   card2.forEach((e) => {

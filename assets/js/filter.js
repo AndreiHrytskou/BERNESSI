@@ -2,7 +2,6 @@ const filterBtn = document.querySelector(".filter__btn");
 const filterInner = document.querySelector(".filter__inner");
 const filter = document.querySelector(".filter");
 const filterImg = document.querySelector(".filter__btn-img");
-const card = document.querySelectorAll(".card");
 
 filterBtn.addEventListener("click", () => {
   filterInner.classList.toggle("inner-active");
