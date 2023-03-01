@@ -687,12 +687,6 @@
 					</div>
 				</nav>
 			</div>
-	
-	
-	
-	
-	
-	
 		</div>
 	</header>
 	<div class="cart-wrapper">
@@ -1071,7 +1065,12 @@
 </div>
 <div class="banner">
 	<div class="container">
-		<img src="./assets/img/banner.webp" class="banner__bg">
+		<picture>
+			<source  media="(min-width: 768px)" srcset="./assets/img/banner.webp">
+			<source media="(min-width: 465px)" srcset="./assets/img/regular.webp">
+			<source media="(max-width: 465px)" srcset="./assets/img/bright.webp">
+			<img class="banner__bg" src="./assets/img/banner.webp"  alt="baner">
+		</picture>
 			<a href="" class="see-more">
 				<p class="btn-text">see more</p>
 				<div class="arrow">
@@ -1081,7 +1080,6 @@
 				</div>
 			</a>
 	</div>
-
 </div>
 <div class="catalog">
 	<div class="container">
