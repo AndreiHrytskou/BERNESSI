@@ -7095,6 +7095,14 @@ li::marker {
 }
 
 @media screen and (max-width: 768px) {
+  .catalog {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .menu__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7275,6 +7283,13 @@ li::marker {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer .head-page {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .documents {
     -webkit-box-orient: vertical;
