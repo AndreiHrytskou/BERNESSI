@@ -7051,6 +7051,9 @@ li::marker {
     width: 100%;
     max-width: 30%;
   }
+  .address__wrapper .address__label {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7139,6 +7142,9 @@ li::marker {
   }
   .sidebar-account {
     display: none;
+  }
+  .address__wrapper .address__label {
+    max-width: 47%;
   }
 }
 
@@ -7398,6 +7404,9 @@ li::marker {
   .likecatalog .card {
     max-width: 50%;
     min-height: auto !important;
+  }
+  .address__wrapper .address__label {
+    max-width: 100%;
   }
 }
 

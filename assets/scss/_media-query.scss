@@ -276,6 +276,12 @@
 		width: 100%;
 		max-width: 30%;
 	}
+	// addressChange
+	.address__wrapper{
+		.address__label{
+			max-width: 100%;
+		}
+	} 
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -340,6 +346,12 @@
 	.sidebar-account{
 		display: none;
 	}
+		// addressChange
+	.address__wrapper{
+		.address__label{
+			max-width: 47%;
+		}
+	} 
 }
 @media screen and (max-width: 768px){
 	.catalog{
@@ -518,6 +530,12 @@
 		max-width: 50%;
 		min-height: auto !important;
 	}
+		// addressChange
+	.address__wrapper{
+		.address__label{
+			max-width: 100%;
+		}
+	} 
 }
 @media screen and (max-width: 414px){
 	.filter__block{
