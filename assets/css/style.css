@@ -6676,6 +6676,9 @@ li::marker {
   .footer .menu__item a {
     padding: 0 10px;
   }
+  .data__wrapper .address__label {
+    max-width: 47%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -7068,6 +7071,9 @@ li::marker {
             justify-content: center;
     margin-bottom: 20px;
   }
+  .data__wrapper .address__label {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7173,6 +7179,15 @@ li::marker {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-bottom: 0px;
+  }
+  .data__wrapper {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .data__wrapper .address__label {
+    max-width: 47%;
   }
 }
 
@@ -7449,6 +7464,9 @@ li::marker {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 20px;
+  }
+  .data__wrapper .address__label {
+    max-width: 100%;
   }
 }
 

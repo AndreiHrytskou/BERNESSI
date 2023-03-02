@@ -10,6 +10,10 @@
 	.footer .menu__item a {
 		padding: 0 10px;
 	}
+	// change-account-info
+	.data__wrapper .address__label{
+		max-width: 47%;
+	}
 }
 @media screen and (max-width: 1200px){
 	.header{
@@ -292,6 +296,10 @@
 			margin-bottom: 20px;
 		}
 	}
+	// change-account-info
+	.data__wrapper .address__label{
+		max-width: 100%;
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -372,6 +380,12 @@
 			margin-bottom: 0px;
 		}
 	}
+	// change-account-info
+	.data__wrapper{
+		justify-content: space-between;
+	 .address__label{
+		max-width: 47%;
+	}}
 }
 @media screen and (max-width: 768px){
 	.catalog{
@@ -566,6 +580,10 @@
 			justify-content: center;
 			margin-bottom: 20px;
 		}
+		// change-account-info
+	.data__wrapper .address__label{
+		max-width: 100%;
+	}
 }
 @media screen and (max-width: 414px){
 	.filter__block{
