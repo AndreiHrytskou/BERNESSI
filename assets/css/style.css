@@ -7137,6 +7137,9 @@ li::marker {
   .sidebar {
     max-width: 100%;
   }
+  .sidebar-account {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -7392,6 +7395,10 @@ li::marker {
     width: 100%;
     height: 100%;
   }
+  .likecatalog .card {
+    max-width: 50%;
+    min-height: auto !important;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -7410,5 +7417,8 @@ li::marker {
   .bread-text,
   .bread-sep {
     font-size: 11px;
+  }
+  .likecatalog .card {
+    max-width: 100%;
   }
 }
