@@ -7054,6 +7054,20 @@ li::marker {
   .address__wrapper .address__label {
     max-width: 100%;
   }
+  .address__list .address__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address__list .check-default {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7145,6 +7159,20 @@ li::marker {
   }
   .address__wrapper .address__label {
     max-width: 47%;
+  }
+  .address__list .address__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .address__list .check-default {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0px;
   }
 }
 
@@ -7300,6 +7328,13 @@ li::marker {
   .item__description .add_to_cart {
     margin: 44px auto 0;
   }
+  .address__list .address__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -7407,6 +7442,13 @@ li::marker {
   }
   .address__wrapper .address__label {
     max-width: 100%;
+  }
+  .address__list .check-default {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
   }
 }
 

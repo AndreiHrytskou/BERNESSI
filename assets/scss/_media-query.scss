@@ -282,6 +282,16 @@
 			max-width: 100%;
 		}
 	} 
+	// address book
+	.address__list{
+		.address__item{
+			flex-direction: column;
+		}
+		.check-default{
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -352,6 +362,16 @@
 			max-width: 47%;
 		}
 	} 
+	// address book
+	.address__list{
+		.address__item{
+			flex-direction: row;
+		}
+		.check-default{
+			justify-content: flex-end;
+			margin-bottom: 0px;
+		}
+	}
 }
 @media screen and (max-width: 768px){
 	.catalog{
@@ -463,6 +483,12 @@
 			margin: 44px auto 0;
 		}
 	}
+	// address book
+	.address__list{
+		.address__item{
+			flex-direction: column;
+		}
+	}
 }
 @media screen and (max-width: 576px){
 	.block__right{
@@ -536,6 +562,10 @@
 			max-width: 100%;
 		}
 	} 
+	.address__list .check-default{
+			justify-content: center;
+			margin-bottom: 20px;
+		}
 }
 @media screen and (max-width: 414px){
 	.filter__block{
