@@ -6,3 +6,10 @@ filterBtn.addEventListener("click", () => {
     sidebar.classList.remove("sidebar-hide");
   }
 });
+
+const likeActive = document.querySelectorAll(".likeActive");
+likeActive.forEach((e) => {
+  e.addEventListener("click", () => {
+    e.parentElement.parentElement.remove();
+  });
+});

@@ -119,20 +119,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 14.8px;
-			height: 14.8px;
+			width: 18px;
+			height: 18px;
 			flex-shrink: 0;
 			flex-grow: 0;
-			border: 2px solid $grey;
-			border-radius: 50%;
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: 70% 70%;
+			background-image: url('./../img/radio.png');
 		}
 		.custom-radio:checked+label::before {
-			border-color: $grey;
-			background-color: $white;
-			background-image: url('./../img/dottedpink.png');
+			background-image: url('./../img/radiochecked.png');
 		}
 	}
 }
@@ -168,18 +162,14 @@
       display: flex;
 		align-items: center;
 		justify-content: center;
-      width: 14.8px;
-      height: 14.8px;
+      width: 18px;
+      height: 18px;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 2px solid $grey;
-      border-radius: 6px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70% 70%;
+      background-image: url('./../img/uncheckbox.png');
    }
    .custom-checkbox:checked+label::before {
-      background-image: url("./../img/checkbox-pink.png");
+      background-image: url("./../img/checkbox.png");
    }
 }
 .filter__size{
@@ -219,18 +209,14 @@
       display: flex;
 		align-items: center;
 		justify-content: center;
-      width: 14.8px;
-      height: 14.8px;
+      width: 18px;
+      height: 18px;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 2px solid $grey;
-      border-radius: 6px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70% 70%;
+      background-image: url('./../img/uncheckbox.png');
    }
    .custom-checkbox:checked+label::before {
-      background-image: url("./../img/checkbox-pink.png");
+      background-image: url("./../img/checkbox.png");
    }
 }
 .filter__collection{
@@ -269,18 +255,14 @@
       display: flex;
 		align-items: center;
 		justify-content: center;
-      width: 14.8px;
-      height: 14.8px;
+      width: 18px;
+      height: 18px;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 2px solid $grey;
-      border-radius: 6px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70% 70%;
+      background-image: url('./../img/uncheckbox.png');
    }
    .custom-checkbox:checked+label::before {
-      background-image: url("./../img/checkbox-pink.png");
+      background-image: url("./../img/checkbox.png");
    }
 }
 .filter__category{
@@ -319,18 +301,14 @@
       display: flex;
 		align-items: center;
 		justify-content: center;
-      width: 14.8px;
-      height: 14.8px;
+      width: 18px;
+      height: 18px;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 2px solid $grey;
-      border-radius: 6px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70% 70%;
+      background-image: url('./../img/uncheckbox.png');
    }
    .custom-checkbox:checked+label::before {
-      background-image: url("./../img/checkbox-pink.png");
+      background-image: url("./../img/checkbox.png");
    }
 }
 .apply{

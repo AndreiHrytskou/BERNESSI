@@ -1740,8 +1740,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14.8px;
-  height: 14.8px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -1749,19 +1749,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
+  background-image: url("./../img/radio.png");
 }
 
 .sort-input .custom-radio:checked + label::before {
-  border-color: #888c95;
-  background-color: white;
-  background-image: url("./../img/dottedpink.png");
+  background-image: url("./../img/radiochecked.png");
 }
 
 .color__list {
@@ -1833,8 +1825,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14.8px;
-  height: 14.8px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -1842,17 +1834,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
+  background-image: url("./../img/uncheckbox.png");
 }
 
 .color .custom-checkbox:checked + label::before {
-  background-image: url("./../img/checkbox-pink.png");
+  background-image: url("./../img/checkbox.png");
 }
 
 .filter__size__list {
@@ -1930,8 +1916,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14.8px;
-  height: 14.8px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -1939,17 +1925,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
+  background-image: url("./../img/uncheckbox.png");
 }
 
 .filter__size .custom-checkbox:checked + label::before {
-  background-image: url("./../img/checkbox-pink.png");
+  background-image: url("./../img/checkbox.png");
 }
 
 .filter__collection__list {
@@ -2026,8 +2006,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14.8px;
-  height: 14.8px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -2035,17 +2015,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
+  background-image: url("./../img/uncheckbox.png");
 }
 
 .filter__collection .custom-checkbox:checked + label::before {
-  background-image: url("./../img/checkbox-pink.png");
+  background-image: url("./../img/checkbox.png");
 }
 
 .filter__category__list {
@@ -2122,8 +2096,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14.8px;
-  height: 14.8px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -2131,17 +2105,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
+  background-image: url("./../img/uncheckbox.png");
 }
 
 .filter__category .custom-checkbox:checked + label::before {
-  background-image: url("./../img/checkbox-pink.png");
+  background-image: url("./../img/checkbox.png");
 }
 
 .apply {
@@ -2515,9 +2483,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 12px;
-  height: 12px;
-  padding: 2px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -2525,24 +2492,12 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  background-image: url("./../img/radio.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
 }
 
 .color__input:checked + label::before {
-  border-color: #888c95;
-  background-color: white;
-  background-image: url("./../img/dottedpink.png");
-  background-position: center center;
-  width: 12px;
-  height: 12px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  background-image: url("./../img/radiochecked.png");
 }
 
 .color__input:checked + label {
@@ -3776,8 +3731,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -3785,17 +3740,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
+  background-image: url("./../img/checkbox.png");
 }
 
 .address__checkout:checked + label::before {
-  background-image: url("./../img/checkbox-pink.png");
+  background-image: url("./../img/uncheckbox.png");
 }
 
 .address__list {
@@ -3986,7 +3935,7 @@ a {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   width: 100%;
 }
 
@@ -3996,10 +3945,10 @@ a {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 25px;
 }
 
 .data__wrapper {
+  margin-top: 25px;
   display: none;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -4012,6 +3961,12 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.likeActive {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 .general {
@@ -4063,6 +4018,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: 30%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   width: 100%;
   background-color: rgba(136, 140, 149, 0.25);
   -webkit-border-radius: 25px;
@@ -4108,6 +4067,7 @@ a {
 }
 
 .size-text {
+  max-width: 30%;
   width: 100%;
   padding: 9.2px 20px;
   display: -webkit-box;
@@ -4190,10 +4150,14 @@ a {
 }
 
 .weight {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-width: 30%;
   width: 100%;
   background-color: rgba(136, 140, 149, 0.25);
   -webkit-border-radius: 25px;
@@ -4404,8 +4368,8 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   padding: 2px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -4414,13 +4378,8 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 2px solid #888c95;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  background-image: url("./../img/radio.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 70% 70%;
-          background-size: 70% 70%;
 }
 
 .shape__input:checked + .shape__label::before {
@@ -4436,14 +4395,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-color: #888c95;
-  background-color: white;
-  background-image: url("./../img/dottedpink.png");
-  background-position: center center;
-  width: 12px;
-  height: 12px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  background-image: url("./../img/radiochecked.png");
 }
 
 .select-wrapper {
@@ -4452,7 +4404,7 @@ a {
   border: 1px solid rgba(136, 140, 149, 0.35);
   -webkit-border-radius: 25px;
           border-radius: 25px;
-  padding: 16.7px 20px;
+  padding: 10px 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4465,43 +4417,63 @@ a {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-
-.select-wrapper:hover {
-  -webkit-box-shadow: 0px 0px 3px gray;
-          box-shadow: 0px 0px 3px gray;
+  position: relative;
 }
 
 .select-title {
-  width: 80%;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  border: 1px solid rgba(136, 140, 149, 0.35);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 3px gray;
+          box-shadow: 0px 0px 3px gray;
+  background-color: white;
+  width: 100%;
+  left: 0;
   opacity: 1;
   z-index: 2;
-  padding: 10px 20px 10px 0px;
-  background: transparent;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0px;
+  list-style: none;
+  display: none;
+}
+
+.outputsize {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  border: none;
+  outline: none;
+  padding: 0 20px 0 0;
+  width: 100%;
+  background-color: transparent;
   font-family: "Roboto";
   font-size: 12px;
   font-weight: 400;
   line-height: 30px;
   color: #888c95;
-  border: 0;
-  outline: none;
-  appearance: none;
-  /* remove arrow        */
-  -webkit-appearance: none;
-  /* remove arrow Chrome */
-  -moz-appearance: none;
-  /* remove arrow FF     */
+  cursor: pointer;
 }
 
-.select-wrapper select::-ms-expand {
-  display: none;
-  /* remove arrow IE     */
+.select-output {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.select-arrow {
+  position: relative;
+  z-index: 10;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .select-top {
@@ -4525,7 +4497,18 @@ a {
   font-weight: 400;
   line-height: 30px;
   color: #888c95;
-  padding: 10px;
+  cursor: pointer;
+}
+
+.select-active {
+  display: block;
+}
+
+.outputft-hide {
+  display: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .bra {
@@ -4916,6 +4899,14 @@ a {
   text-transform: uppercase;
   text-decoration: underline;
   text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .order__box {

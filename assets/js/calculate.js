@@ -1,9 +1,15 @@
 const unitInput = document.querySelectorAll(".unit-input");
 const type = document.querySelector(".type");
+const outputft = document.querySelector(".outputft");
 unitInput.forEach((e) => {
   e.addEventListener("input", () => {
     if (e.checked) {
-      type.innerHTML = e.nextElementSibling.innerHTML;
+      type.innerHTML = e.value;
+      if (e.value == "cm") {
+        outputft.classList.add("outputft-hide");
+      } else {
+        outputft.classList.remove("outputft-hide");
+      }
     }
   });
 });
@@ -12,11 +18,33 @@ const type2 = document.querySelector(".type2");
 weightInput.forEach((e) => {
   e.addEventListener("input", () => {
     if (e.checked) {
-      type2.innerHTML = e.nextElementSibling.innerHTML;
+      type2.innerHTML = e.value;
     }
   });
 });
 
+// select
+
+const selectOutput = document.querySelector(".select-output");
+const outputsize = document.querySelector(".outputsize");
+const selectTitle = document.querySelector(".select-title");
+const selectOption = document.querySelectorAll(".select__option");
+const selectArrow = document.querySelector(".select-arrow");
+selectOutput.addEventListener("click", () => {
+  selectTitle.classList.toggle("select-active");
+  selectArrow.classList.toggle("rotate");
+  selectOption.forEach((e) => {
+    e.addEventListener("click", () => {
+      outputsize.innerHTML = e.value;
+      selectTitle.classList.remove("select-active");
+      selectArrow.classList.toggle("rotate");
+    });
+  });
+});
+
+//  input
+
+//
 const recommendItem = document.querySelector(".recommend__item");
 const sizeOutput = document.querySelector(".size-output");
 sizeOutput.innerHTML = "87%";

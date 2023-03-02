@@ -790,27 +790,27 @@
 							</div>
 							<div class="block__middle">
 								<div class="unit">
-										<input class="unit-input" type="radio" name="unit" id="in">
+										<input class="unit-input" type="radio" name="unit" id="in" value="in">
 										<label for="in" class="unit-label">in</label>
-										<input class="unit-input" type="radio" name="unit" id="cm">
+										<input class="unit-input" type="radio" name="unit" id="cm" value="cm">
 										<label for="cm" class="unit-label">cm</label>
 								</div>
-								<label for="" class="size-text">
-									<input class="size-input" type="text" name="" id="" placeholder="Height">, <span>ft</span>
+								<label for="" class="size-text outputft">
+									<input class="size-input" type="number" name="" id="outputft" placeholder="Height"><span>ft</span>
 								</label>
 								<label for="" class="size-text">
-									<input class="size-input" type="text" name="" id="" placeholder="Height">, <span class="type">in</span>
+									<input class="size-input" type="number" name="" id="outputin" placeholder="Height"><span class="type">in</span>
 								</label>
 							</div>
 							<div class="block__weight">
 								<div class="weight">
-									<input class="weight-input" type="radio" name="weight" id="KG">
+									<input class="weight-input" type="radio" name="weight" id="KG" value="KG">
 									<label for="KG" class="weight-label">KG</label>
-									<input class="weight-input" type="radio" name="weight" id="LBS">
+									<input class="weight-input" type="radio" name="weight" id="LBS" value="LBS">
 									<label for="LBS" class="weight-label">LBS</label>
 								</div>
 								<label for="" class="size-text">
-									<input class="size-input" type="text" name="" id="" placeholder="Weight">, <span class="type2">LBS</span>
+									<input class="size-input" type="number" name="" id="" placeholder="Weight"><span class="type2">LBS</span>
 								</label>
 								<label for="" class="size-text" style="opacity: 0">
 									<input class="size-input" type="text" name="" id="" placeholder="Weight" hidden>
@@ -927,18 +927,20 @@
 									<div class="bra__size">
 										<h3 class="bra__title">Size:</h3>
 										<div class="select-wrapper">
-											<select class="select-title" name="" id="">
-												<option class="select__option" value="1" selected="true" disabled="disabled">European size</option>
-												<option class="select__option" value="2">2</option>
-												<option class="select__option" value="3">3</option>
-												<option class="select__option" value="4">4</option>
-												<option class="select__option" value="5">5</option>
-												<option class="select__option" value="6">6</option>
-												<option class="select__option" value="7">7</option>
-												<option class="select__option" value="8">8</option>
-												<option class="select__option" value="9">9</option>
-											</select>
-											<img class="select-arrow" src="./assets/img/arrow_down.webp" alt="arrow">
+											<div class="select-output">
+												<span class="outputsize">European size</span>
+												<img class="select-arrow" src="./assets/img/arrow_down.webp" alt="arrow">
+											</div>
+											<ul class="select-title" name="" id="">
+												<li class="select__option" value="2">2</li>
+												<li class="select__option" value="3">3</li>
+												<li class="select__option" value="4">4</li>
+												<li class="select__option" value="5">5</li>
+												<li class="select__option" value="6">6</li>
+												<li class="select__option" value="7">7</li>
+												<li class="select__option" value="8">8</li>
+												<li class="select__option" value="9">9</li>
+											</ul>
 										</div>
 									</div>
 									<div class="bra__bust">
@@ -1174,7 +1176,7 @@
 						</div>
 					</div>
 					<aside class="sidebar-account">
-						<a href="#">
+						<a href="./account.html">
 							<span class="account">
 								<input class="custom-radio" type="radio" name="account" id="account">
 								<label class="label" for="account">My Account</label>
@@ -1186,7 +1188,7 @@
 								<label class="label" for="info">Change account info</label>
 							</span>
 						</a>
-						<a href="#">
+						<a href="./order-history.html">
 							<span class="history">
 								<input class="custom-radio" type="radio" name="account" id="history">
 								<label class="label" for="history">Orders History</label>
@@ -1198,7 +1200,7 @@
 								<label class="label" for="wish">Wish List</label>
 							</span>
 						</a>
-						<a href="#">
+						<a href="./size-calculator.html">
 							<span class="calculator">
 								<input class="custom-radio" type="radio" name="account" id="calculator">
 								<label class="label" for="calculator">Size Calculator</label>

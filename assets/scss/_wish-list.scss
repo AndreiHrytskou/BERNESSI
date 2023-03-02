@@ -149,18 +149,14 @@
       display: flex;
 		align-items: center;
 		justify-content: center;
-      width: 14px;
-      height: 14px;
+      width: 18px;
+      height: 18px;
       flex-shrink: 0;
       flex-grow: 0;
-      border: 2px solid $grey;
-      border-radius: 6px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70% 70%;
+		background-image: url('./../img/checkbox.png');
    }
    .address__checkout:checked+label::before {
-      background-image: url("./../img/checkbox-pink.png");
+      background-image: url("./../img/uncheckbox.png");
    }
 	.address__list{
 		margin-top: 33px;
@@ -257,21 +253,26 @@
 		margin-top: 33px;
 		display: flex;
 		flex-direction: column;
-		gap: 50px;
+		gap: 40px;
 		width: 100%;
 	}
 	.data__box,
 	.password__box{
 		.sort-top{
 			justify-content: flex-start;
-			margin-bottom: 25px;
 		}
 	}
 	.data__wrapper{
+		margin-top: 25px;
 		display: none;	
 		flex-wrap: wrap;
 		gap: 30px;
 	}
 	.data-visible{
 		display: flex;
+	}
+	.likeActive{
+		position: absolute;
+		right: 20px;
+		top: 20px;
 	}
