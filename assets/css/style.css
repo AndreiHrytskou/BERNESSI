@@ -6667,6 +6667,11 @@ li::marker {
   .footer .menu__list {
     gap: 20px;
   }
+  .block__middle .bra__size,
+  .block__middle .bra__bust,
+  .block__middle .bra__cup {
+    max-width: 33%;
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -7074,6 +7079,10 @@ li::marker {
   .data__wrapper .address__label {
     max-width: 100%;
   }
+  .select-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7350,6 +7359,22 @@ li::marker {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .step4 .bra {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .step4 .bra .bra__size,
+  .step4 .bra .bra__bust,
+  .step4 .bra .bra__cup {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -7468,6 +7493,28 @@ li::marker {
   .data__wrapper .address__label {
     max-width: 100%;
   }
+  .step1 .block__middle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .step1 .block__middle .unit,
+  .step1 .block__middle .size-text {
+    max-width: 100%;
+  }
+  .step1 .block__weight {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .step1 .block__weight .weight,
+  .step1 .block__weight .size-text {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -7488,6 +7535,18 @@ li::marker {
     font-size: 11px;
   }
   .likecatalog .card {
+    max-width: 100%;
+  }
+  .step2 .block__middle .shape__list,
+  .step3 .block__middle .shape__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .step2 .block__middle .shape__list .shape__item,
+  .step3 .block__middle .shape__list .shape__item {
     max-width: 100%;
   }
 }

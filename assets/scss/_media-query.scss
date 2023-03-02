@@ -2,6 +2,14 @@
 	.footer .menu__list{
 		gap: 20px;
 	}
+	// size calculator 
+	.block__middle {
+		.bra__size,
+		.bra__bust,
+		.bra__cup{
+			max-width: 33%;
+		}
+	}
 }
 @media screen and (max-width: 1366px){
 	.footer .menu__list{
@@ -300,6 +308,11 @@
 	.data__wrapper .address__label{
 		max-width: 100%;
 	}
+	// size calculator
+	.select-wrapper{
+		width: 100%;
+		padding: 10px;
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -503,6 +516,21 @@
 			flex-direction: column;
 		}
 	}
+	//  size calculator
+	.step4{
+		.bra{
+			flex-direction: column;
+			.bra__size,
+			.bra__bust,
+			.bra__cup{
+				max-width: 100%;
+			}
+		}
+	}
+	.title{
+		font-size: 40px;
+		line-height: 50px;
+	}
 }
 @media screen and (max-width: 576px){
 	.block__right{
@@ -584,6 +612,23 @@
 	.data__wrapper .address__label{
 		max-width: 100%;
 	}
+	// size-calculator
+	.step1{
+		.block__middle{
+			flex-direction: column;
+			.unit,
+			.size-text{
+				max-width: 100%;
+			}
+		}
+		.block__weight{
+			flex-direction: column;
+			.weight,
+			.size-text{
+				max-width: 100%;
+			}
+		}
+	}
 }
 @media screen and (max-width: 414px){
 	.filter__block{
@@ -603,5 +648,17 @@
 	// wish list 
 	.likecatalog .card{
 		max-width: 100%;
+	}
+	// 
+	.step2,
+	.step3{
+		.block__middle{
+			.shape__list{
+				flex-direction: column;
+				.shape__item{
+					max-width: 100%;
+				}
+			}
+		}
 	}
 }
