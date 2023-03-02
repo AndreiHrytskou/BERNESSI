@@ -22,6 +22,13 @@
 	.data__wrapper .address__label{
 		max-width: 47%;
 	}
+	// 
+	.order-history{
+		flex-direction: column;
+		.sidebar-account{
+			max-width: 100%;
+		}
+	}
 }
 @media screen and (max-width: 1200px){
 	.header{
@@ -39,7 +46,7 @@
     display: block;
     transition: all .3s;
     cursor: pointer;
-    height: 30px;;
+    height: 30px;
     .bar{
 		transition: all .3s;
       height: 2px;
@@ -399,6 +406,15 @@
 	 .address__label{
 		max-width: 47%;
 	}}
+	// 
+	.order-history{
+		.order__box{
+			overflow-x: scroll;
+			.table{
+				width: 1000px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 768px){
 	.catalog{

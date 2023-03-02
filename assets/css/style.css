@@ -6684,6 +6684,16 @@ li::marker {
   .data__wrapper .address__label {
     max-width: 47%;
   }
+  .order-history {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order-history .sidebar-account {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -7197,6 +7207,12 @@ li::marker {
   }
   .data__wrapper .address__label {
     max-width: 47%;
+  }
+  .order-history .order__box {
+    overflow-x: scroll;
+  }
+  .order-history .order__box .table {
+    width: 1000px;
   }
 }
 
