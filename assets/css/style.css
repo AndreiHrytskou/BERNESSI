@@ -2382,6 +2382,7 @@ a {
   max-width: 430px;
   -webkit-border-radius: 25px;
           border-radius: 25px;
+  height: 600px;
 }
 
 .item__description {
@@ -7031,6 +7032,25 @@ li::marker {
     display: flex;
     width: 100%;
   }
+  .item__gallery {
+    max-width: 430px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .preview {
+    max-width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .preview__img {
+    width: 100%;
+    max-width: 30%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7082,6 +7102,27 @@ li::marker {
     height: auto;
     -webkit-border-radius: 25px;
             border-radius: 25px;
+  }
+  .item__gallery {
+    max-width: 35%;
+  }
+  .item__description {
+    max-width: 60%;
+  }
+  .item__img {
+    width: 100%;
+    max-width: 430px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    height: 400px;
+  }
+  .preview__img {
+    max-width: 47%;
+  }
+  .size__wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 
@@ -7205,6 +7246,38 @@ li::marker {
   .baner-wrapper .see-more {
     margin-bottom: 0;
   }
+  .cloth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+  }
+  .item__gallery {
+    max-width: 100%;
+  }
+  .item__img {
+    margin: 0 auto;
+  }
+  .preview__img {
+    max-width: 30%;
+  }
+  .item__description {
+    max-width: 100%;
+  }
+  .item__description .bread {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .item__description .item__title {
+    text-align: center;
+  }
+  .item__description .add_to_cart {
+    margin: 44px auto 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -7308,5 +7381,10 @@ li::marker {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+  .bread-link,
+  .bread-text,
+  .bread-sep {
+    font-size: 11px;
   }
 }
