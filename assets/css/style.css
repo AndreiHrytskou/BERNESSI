@@ -6447,6 +6447,7 @@ li::marker {
 }
 
 .search-box input {
+  width: 100%;
   border: none;
   outline: none;
 }
@@ -7480,6 +7481,9 @@ li::marker {
   }
   .faq .h2 {
     text-align: center;
+  }
+  .search-box {
+    max-width: 100%;
   }
 }
 
