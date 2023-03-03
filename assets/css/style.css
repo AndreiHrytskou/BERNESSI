@@ -7401,6 +7401,17 @@ li::marker {
     font-size: 40px;
     line-height: 50px;
   }
+  .checkout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout__shipping,
+  .checkout__payment {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {

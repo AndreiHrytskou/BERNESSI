@@ -560,6 +560,13 @@
 		font-size: 40px;
 		line-height: 50px;
 	}
+	.checkout{
+		flex-direction: column;
+	}
+	.checkout__shipping,
+	.checkout__payment{
+		max-width: 100%;
+	}
 }
 @media screen and (max-width: 576px){
 	.block__right{
