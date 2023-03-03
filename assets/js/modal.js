@@ -47,7 +47,7 @@ function modalAttention() {
     let its_link = target == link;
     let its_regText = target == regText;
     if (!its_day && !its_title && !its_text && !its_regText && !its_link) {
-      span.classList.toggle("div-hide");
+      span.classList.remove("div-hide");
       modal.remove();
     }
   });
@@ -90,7 +90,7 @@ function modalDone() {
     let its_title = target == title;
     let its_text = target == text;
     if (!its_day && !its_title && !its_text) {
-      span.classList.toggle("div-hide");
+      span.classList.remove("div-hide");
       modal.remove();
     }
   });
@@ -132,7 +132,7 @@ function modalReload() {
     let its_title = target == title;
     let its_text = target == text;
     if (!its_day && !its_title && !its_text) {
-      span.classList.toggle("div-hide");
+      span.classList.remove("div-hide");
       modal.remove();
     }
   });

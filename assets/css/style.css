@@ -7256,6 +7256,9 @@ li::marker {
   .address__container .account-data {
     max-width: 100%;
   }
+  .cart-wrapper {
+    max-width: 40%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -7485,6 +7488,14 @@ li::marker {
   .search-box {
     max-width: 100%;
   }
+  .cart-wrapper {
+    max-width: 50%;
+  }
+  .modal__wrapper {
+    top: 50px;
+    max-width: 80%;
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -7649,6 +7660,9 @@ li::marker {
   .order-page .products__list .order__product__item .price {
     margin-left: 0;
   }
+  .cart-wrapper {
+    max-width: 80%;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -7690,6 +7704,20 @@ li::marker {
             justify-content: flex-start;
   }
   .mySwiper4 .card .thing .price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .register__text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
