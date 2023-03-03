@@ -6164,14 +6164,14 @@ li::marker {
   z-index: 10;
 }
 
-.mySwiper3 {
+.mySwiper4 {
   overflow: hidden;
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
 
-.mySwiper3 .swiper-wrapper {
+.mySwiper4 .swiper-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6181,7 +6181,7 @@ li::marker {
           flex-wrap: wrap;
 }
 
-.mySwiper3 .swiper-slide {
+.mySwiper4 .swiper-slide {
   text-align: center;
   height: -webkit-calc((100% - 30px) / 2) !important;
   height: calc((100% - 30px) / 2) !important;
@@ -6199,12 +6199,12 @@ li::marker {
           align-items: center;
 }
 
-.mySwiper3 .card {
+.mySwiper4 .card {
   width: 100%;
   max-width: 50%;
 }
 
-.mySwiper3 .card .thing {
+.mySwiper4 .card .thing {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -6216,14 +6216,14 @@ li::marker {
           flex-direction: column;
 }
 
-.mySwiper3 .card .thing .like {
+.mySwiper4 .card .thing .like {
   position: relative;
   right: auto;
   left: 0;
   margin-bottom: 10px;
 }
 
-.mySwiper3 .card .thing .price {
+.mySwiper4 .card .thing .price {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -6232,15 +6232,15 @@ li::marker {
   gap: 10px;
 }
 
-.mySwiper3 .card:hover::before {
+.mySwiper4 .card:hover::before {
   content: none;
 }
 
-.mySwiper3 .card__img {
+.mySwiper4 .card__img {
   width: 130px;
 }
 
-.mySwiper3 .like {
+.mySwiper4 .like {
   cursor: pointer;
 }
 
@@ -6697,6 +6697,9 @@ li::marker {
 }
 
 @media screen and (max-width: 1200px) {
+  .sidebar-account {
+    padding: 30px;
+  }
   .header {
     position: relative;
   }
@@ -7102,6 +7105,12 @@ li::marker {
         -ms-flex-align: center;
             align-items: center;
   }
+  .orders {
+    overflow: auto;
+  }
+  .orders .table {
+    width: 1000px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7231,6 +7240,9 @@ li::marker {
             flex-direction: column;
   }
   .contact .form-contact {
+    max-width: 100%;
+  }
+  .address__container .account-data {
     max-width: 100%;
   }
 }
@@ -7437,6 +7449,12 @@ li::marker {
   .title {
     text-align: center;
   }
+  .mySwiper3 .swiper-slide {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -7590,6 +7608,14 @@ li::marker {
   .login__forms .login__email .login__list .name-input .login__item {
     max-width: 100%;
   }
+  .hello__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -7623,5 +7649,18 @@ li::marker {
   .step2 .block__middle .shape__list .shape__item,
   .step3 .block__middle .shape__list .shape__item {
     max-width: 100%;
+  }
+  .mySwiper4 .swiper-slide {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .mySwiper4 .card .thing .price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

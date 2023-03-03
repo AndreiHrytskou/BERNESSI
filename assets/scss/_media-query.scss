@@ -36,6 +36,9 @@
 	}
 }
 @media screen and (max-width: 1200px){
+	.sidebar-account{
+		padding: 30px;
+	}
 	.header{
 		position: relative;
 	}
@@ -334,6 +337,13 @@
 	.simple__page{
 		align-items: center;
 	}
+	// account
+	.orders{
+		overflow: auto;
+		.table{
+			width: 1000px;
+		}
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -435,6 +445,12 @@
 			flex-direction: column;
 		}
 		.form-contact{
+			max-width: 100%;
+		}
+	}
+	// account
+	.address__container{
+		.account-data{
 			max-width: 100%;
 		}
 	}
@@ -590,6 +606,12 @@
 	.title{
 		text-align: center;
 	}
+	// account
+	.mySwiper3{
+		.swiper-slide{
+			justify-content: center;
+		}
+	}
 }
 @media screen and (max-width: 576px){
 	.block__right{
@@ -709,6 +731,11 @@
 			}
 		}
 	}
+	// account
+	.hello__block{
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 @media screen and (max-width: 414px){
 	.filter__block{
@@ -741,4 +768,12 @@
 			}
 		}
 	}
+	// account
+	.mySwiper4 .swiper-slide{
+		justify-content: flex-start;
+	}
+		.mySwiper4 .card .thing .price{
+			flex-direction: column;
+		}
+	
 }
