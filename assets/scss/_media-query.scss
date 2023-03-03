@@ -324,6 +324,12 @@
 		width: 100%;
 		padding: 10px;
 	}
+	// login
+	.login__forms{
+		.login__email, .login__social{
+			max-width: 50%;
+		}
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -566,6 +572,16 @@
 	.checkout__shipping,
 	.checkout__payment{
 		max-width: 100%;
+	}
+	// login
+	.login__forms{
+		flex-direction: column;
+		.login__email, .login__social{
+			max-width: 100%;
+		}
+	}
+	.grey {
+		padding: 20px;
 	}
 }
 @media screen and (max-width: 576px){
