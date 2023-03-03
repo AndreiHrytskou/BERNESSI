@@ -7096,6 +7096,12 @@ li::marker {
   .login__forms .login__email, .login__forms .login__social {
     max-width: 50%;
   }
+  .simple__page {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -7427,6 +7433,9 @@ li::marker {
   }
   .grey {
     padding: 20px;
+  }
+  .title {
+    text-align: center;
   }
 }
 

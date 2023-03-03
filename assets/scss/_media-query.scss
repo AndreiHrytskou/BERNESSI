@@ -330,6 +330,10 @@
 			max-width: 50%;
 		}
 	}
+	// simple__page
+	.simple__page{
+		align-items: center;
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -582,6 +586,9 @@
 	}
 	.grey {
 		padding: 20px;
+	}
+	.title{
+		text-align: center;
 	}
 }
 @media screen and (max-width: 576px){
