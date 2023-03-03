@@ -7478,6 +7478,9 @@ li::marker {
   .order-page .order__details .products__list {
     max-width: 100%;
   }
+  .faq .h2 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
