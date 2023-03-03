@@ -7571,6 +7571,16 @@ li::marker {
   .contact .contacts-data svg {
     width: 30px;
   }
+  .login__forms .login__email .login__list .name-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login__forms .login__email .login__list .name-input .login__item {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 414px) {

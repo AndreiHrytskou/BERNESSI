@@ -689,6 +689,19 @@
 			}
 		}
 	}
+	// register
+	.login__forms{
+		.login__email{
+			.login__list{
+				.name-input{
+					flex-direction: column;
+					.login__item{
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 414px){
 	.filter__block{
