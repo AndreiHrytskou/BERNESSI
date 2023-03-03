@@ -16,7 +16,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 50px;
 	background-color: rgba(136, 140, 149, .15);
 	padding: 25px 33px;
 	border-radius: 25px;
@@ -42,14 +41,8 @@
 	flex-direction: column;
 	gap: 25px;
 }
-.constact-select{
-	background-color: $white;
+.contact-select {
 	width: 100%;
-	.select-title{
-		width: 95%;
-		padding-left: 10px;
-		left: 10px;
-	}
 }
 .contact-name{
 	border-radius: 25px;

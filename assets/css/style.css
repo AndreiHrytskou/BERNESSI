@@ -5250,7 +5250,6 @@ input::-webkit-inner-spin-button {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 50px;
   background-color: rgba(136, 140, 149, 0.15);
   padding: 25px 33px;
   -webkit-border-radius: 25px;
@@ -5295,15 +5294,8 @@ input::-webkit-inner-spin-button {
   gap: 25px;
 }
 
-.constact-select {
-  background-color: white;
+.contact-select {
   width: 100%;
-}
-
-.constact-select .select-title {
-  width: 95%;
-  padding-left: 10px;
-  left: 10px;
 }
 
 .contact-name {
@@ -6694,6 +6686,14 @@ li::marker {
   .order-history .sidebar-account {
     max-width: 100%;
   }
+  .contacts-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -7214,6 +7214,16 @@ li::marker {
   .order-history .order__box .table {
     width: 1000px;
   }
+  .contact .change__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .form-contact {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -7530,6 +7540,9 @@ li::marker {
   .step1 .block__weight .weight,
   .step1 .block__weight .size-text {
     max-width: 100%;
+  }
+  .contact .contacts-data svg {
+    width: 30px;
   }
 }
 
