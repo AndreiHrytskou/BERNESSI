@@ -298,10 +298,7 @@
 		max-width: 100%;
 		justify-content: center;
 	}
-	.preview__img{
-		width: 100%;
-		max-width: 30%;
-	}
+	
 	// addressChange
 	.address__wrapper{
 		.address__label{
@@ -387,19 +384,12 @@
 		border-radius: 25px;
 	}
 	// item
-	.item__gallery{
-		max-width: 35%;
-		align-items: center;
-	}
 	.item__description{
 		max-width: 60%;
 	}
 	.item__img {
 		width: 430px;
 		border-radius: 25px;
-	}
-	.preview__img {
-		max-width: 47%;
 	}
 	.size__wrap{
 		flex-wrap: wrap;
@@ -508,6 +498,9 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.preview{
+		margin: 0 auto;
+	}
 	.catalog{
 		margin-top: 70px;
 		margin-bottom: 50px;
@@ -610,9 +603,6 @@
 	}
 	.item__img{
 		margin: 0 auto;
-	}
-	.preview__img {
-		max-width: 30%;
 	}
 	.item__description{
 		max-width: 100%;
