@@ -6895,16 +6895,6 @@ li::marker {
   .data__wrapper .address__label {
     max-width: 47%;
   }
-  .order-history {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .order-history .sidebar-account {
-    max-width: 100%;
-  }
   .contacts-data {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -7326,16 +7316,6 @@ li::marker {
   .orders .table {
     width: 1000px;
   }
-  .order-page {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .order-page .sidebar-account {
-    max-width: 100%;
-  }
   .subcatalog .card {
     max-width: 33%;
   }
@@ -7386,7 +7366,7 @@ li::marker {
   .main-wrapper .filter-active {
     position: absolute;
     background-color: white;
-    z-index: 2;
+    z-index: 20;
     height: auto;
     -webkit-border-radius: 25px;
             border-radius: 25px;
@@ -7463,7 +7443,8 @@ li::marker {
     max-width: 100%;
   }
   .address__container .account-data {
-    max-width: 100%;
+    max-width: -webkit-calc(100% - 45px);
+    max-width: calc(100% - 45px);
   }
   .cart-wrapper {
     max-width: 40%;

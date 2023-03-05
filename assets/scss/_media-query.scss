@@ -23,12 +23,6 @@
 		max-width: 47%;
 	}
 	// order-history
-	.order-history{
-		flex-direction: column;
-		.sidebar-account{
-			max-width: 100%;
-		}
-	}
 	// 
 	.contacts-data{
 		flex-direction: column;
@@ -342,12 +336,6 @@
 		}
 	}
 	// order
-	.order-page{
-		flex-direction: column;
-		.sidebar-account{
-			max-width: 100%;
-		}
-	}
 	.subcatalog{
 		.card{
 			max-width: 33%;
@@ -379,7 +367,7 @@
 	.main-wrapper .filter-active{
 		position: absolute;
 		background-color: $white;
-		z-index: 2;
+		z-index: 20;
 		height: auto;
 		border-radius: 25px;
 	}
@@ -451,7 +439,7 @@
 	// account
 	.address__container{
 		.account-data{
-			max-width: 100%;
+			max-width: calc(100% - 45px);
 		}
 	}
 	// cart modal
