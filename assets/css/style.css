@@ -4714,12 +4714,14 @@ a {
 }
 
 .range__label {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
 }
 
 .range-grid {
   position: relative;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   display: block;
 }
 
@@ -4750,7 +4752,8 @@ a {
      -moz-appearance: none;
           appearance: none;
   display: block;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   height: 10px;
   background-color: #e1e2e4;
   outline: none;
@@ -4792,7 +4795,8 @@ a {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   position: absolute;
   top: -5px;
   z-index: 1;
@@ -4837,6 +4841,7 @@ a {
 }
 
 .recommend {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4849,12 +4854,14 @@ a {
 }
 
 .recommend__size {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   position: relative;
 }
 
 .recommend__background {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   height: 25px;
   background-color: rgba(136, 140, 149, 0.25);
   -webkit-border-radius: 25px;
@@ -4888,6 +4895,7 @@ a {
 }
 
 .recommend2 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4900,12 +4908,14 @@ a {
 }
 
 .recommend2__size {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   position: relative;
 }
 
 .recommend2__background {
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   height: 25px;
   background-color: rgba(136, 140, 149, 0.25);
   -webkit-border-radius: 25px;
@@ -7326,6 +7336,18 @@ li::marker {
   .cart-wrapper {
     max-width: 40%;
   }
+  .order__box::-webkit-scrollbar {
+    background-color: rgba(136, 140, 149, 0.25);
+  }
+  .order__box::-webkit-scrollbar-thumb {
+    background-color: #888c95;
+  }
+  .orders::-webkit-scrollbar {
+    background-color: rgba(136, 140, 149, 0.25);
+  }
+  .orders::-webkit-scrollbar-thumb {
+    background-color: #888c95;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -7778,6 +7800,12 @@ li::marker {
   .step2 .block__middle .shape__list .shape__item,
   .step3 .block__middle .shape__list .shape__item {
     max-width: 100%;
+  }
+  .shape__list {
+    gap: 40px;
+  }
+  .shape__item {
+    gap: 20px;
   }
   .mySwiper4 .swiper-slide {
     -webkit-box-pack: start;

@@ -42,9 +42,6 @@ selectOutput.addEventListener("click", () => {
   });
 });
 
-//  input
-
-//
 const recommendItem = document.querySelector(".recommend__item");
 const sizeOutput = document.querySelector(".size-output");
 sizeOutput.innerHTML = "87%";
@@ -63,6 +60,7 @@ stepBtn.forEach((e) => {
     e.parentElement.parentElement.nextElementSibling.classList.add(
       "step-visible"
     );
+    window.scrollTo(pageXOffset, 250);
   });
 });
 prevBtn.forEach((e) => {
@@ -74,5 +72,6 @@ prevBtn.forEach((e) => {
       "step-hide"
     );
     e.parentElement.parentElement.classList.remove("step-visible");
+    window.scrollTo(pageXOffset, 250);
   });
 });

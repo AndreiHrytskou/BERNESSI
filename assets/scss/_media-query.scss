@@ -468,6 +468,18 @@
 	.cart-wrapper{
 		max-width: 40%;
 	}
+	.order__box::-webkit-scrollbar{
+		background-color: rgba(136, 140, 149, 0.25);
+	}
+	.order__box::-webkit-scrollbar-thumb{
+		background-color: $grey;
+	}
+	.orders::-webkit-scrollbar{
+		background-color: rgba(136, 140, 149, 0.25);
+	}
+	.orders::-webkit-scrollbar-thumb{
+		background-color: $grey;
+	}
 }
 @media screen and (max-width: 768px){
 	.catalog{
@@ -841,6 +853,12 @@
 				}
 			}
 		}
+	}
+	.shape__list{
+		gap: 40px;
+	}
+	.shape__item{
+		gap: 20px;
 	}
 	// account
 	.mySwiper4 .swiper-slide{
