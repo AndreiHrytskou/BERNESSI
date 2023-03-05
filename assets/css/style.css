@@ -7509,10 +7509,11 @@ li::marker {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    right: 25px;
+    right: 0px;
     z-index: 10;
     width: 100%;
     background: white;
+    height: auto;
   }
 }
 
