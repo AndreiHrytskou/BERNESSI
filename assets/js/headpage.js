@@ -46,8 +46,8 @@ var swiper = new Swiper(".mySwiper1", {
   },
 });
 // const card = document.querySelectorAll(".card");
-card.forEach((e) => {
-  e.addEventListener("click", (el) => {
-    el.preventDefault();
-  });
-});
+// card.forEach((e) => {
+//   e.addEventListener("click", (el) => {
+//     el.preventDefault();
+//   });
+// });

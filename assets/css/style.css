@@ -1054,8 +1054,10 @@ a {
 
 .card .like, .card2 .like {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 40px;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .card:hover::before, .card2:hover::before {
@@ -3997,8 +3999,9 @@ a {
 
 .likeActive {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 40px;
+  z-index: 10;
 }
 
 .general {
@@ -7361,6 +7364,9 @@ li::marker {
   .bright .bright__text {
     width: 100%;
     padding: 20px;
+  }
+  .banner__bg {
+    height: auto;
   }
   .h2 {
     font-size: 40px;
