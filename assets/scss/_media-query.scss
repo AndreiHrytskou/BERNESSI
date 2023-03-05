@@ -389,16 +389,14 @@
 	// item
 	.item__gallery{
 		max-width: 35%;
+		align-items: center;
 	}
 	.item__description{
 		max-width: 60%;
 	}
 	.item__img {
-		width: 100%;
-		max-width: 430px;
-		-webkit-border-radius: 25px;
+		width: 430px;
 		border-radius: 25px;
-		height: 400px;
 	}
 	.preview__img {
 		max-width: 47%;
@@ -804,6 +802,10 @@
 	// cart modal
 	.cart-wrapper{
 		max-width: 80%;
+	}
+	.item__img{
+		width: 300px;
+		height: auto;
 	}
 }
 @media screen and (max-width: 414px){
