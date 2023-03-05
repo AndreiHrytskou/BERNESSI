@@ -480,6 +480,22 @@
 	.orders::-webkit-scrollbar-thumb{
 		background-color: $grey;
 	}
+	.side{
+		max-width: fit-content;
+		.nav-icon-3{
+			display: inline-block;
+			position: relative;
+			z-index: 11;
+		}
+		.side-open{
+			display: flex;
+			position: absolute;
+			right: 25px;
+			z-index: 10;
+			width: 100%;
+			background: $white;
+		}
+	}
 }
 @media screen and (max-width: 768px){
 	.catalog{

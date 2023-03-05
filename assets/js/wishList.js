@@ -6,6 +6,13 @@ filterBtn.addEventListener("click", () => {
     sidebar.classList.remove("sidebar-hide");
   }
 });
+cross.addEventListener("click", () => {
+  if (filter.classList.contains("filter-active")) {
+    sidebar.classList.add("sidebar-hide");
+  } else {
+    sidebar.classList.remove("sidebar-hide");
+  }
+});
 
 const likeActive = document.querySelectorAll(".likeActive");
 likeActive.forEach((e) => {

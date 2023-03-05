@@ -1,6 +1,6 @@
 const icon = document.querySelector(".icon");
-icon.forEach((e) => {
-  e.addEventListener("click", (event) => {
-    e.classList.toggle("open");
-  });
+const side = document.querySelector(".sidebar-account");
+icon.addEventListener("click", (event) => {
+  icon.classList.toggle("open");
+  side.classList.toggle("side-open");
 });
