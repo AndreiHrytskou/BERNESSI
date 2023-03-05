@@ -481,8 +481,10 @@
 		background-color: $grey;
 	}
 	.side{
-		max-width: fit-content;
+		max-width: 35px;
+		width: 100%;
 		.nav-icon-3{
+   	 	margin: 33px 0 0;
 			display: inline-block;
 			position: relative;
 			z-index: 11;
@@ -496,6 +498,13 @@
 			background: $white;
 			height: auto;
 		}
+	}
+	.address__container{
+		max-width: 100%;
+		gap: 10px;
+	}
+	.address__list{
+		max-width: calc(100% - 45px);
 	}
 }
 @media screen and (max-width: 768px){
