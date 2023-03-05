@@ -351,6 +351,11 @@
 			max-width: 100%;
 		}
 	}
+	.subcatalog{
+		.card{
+			max-width: 33%;
+		}
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -470,6 +475,11 @@
 	.catalog{
 		margin-top: 70px;
 		margin-bottom: 50px;
+	}
+	.subcatalog{
+		.card{
+			max-width: 50%;
+		}
 	}
 	.section{
 		margin-top: 50px;
@@ -800,7 +810,7 @@
 	.filter__block{
 		padding: 0 10px;
 	}
-	.filter__title{
+	.filter__top{
 		    padding: 0 10px 23px;
 	}
 	.size__list{

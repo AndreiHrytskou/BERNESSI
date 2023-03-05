@@ -62,6 +62,7 @@ categoryTop.addEventListener("click", () => {
 const apply = document.querySelector(".apply");
 const filterShow = document.querySelector(".filter__box");
 const reset = document.querySelector(".reset");
+const cross = document.querySelector(".filter__cross");
 apply.addEventListener("click", (ap) => {
   ap.preventDefault();
   const filterBlock = [
@@ -84,6 +85,11 @@ apply.addEventListener("click", (ap) => {
       });
     });
   });
+});
+cross.addEventListener("click", () => {
+  filterInner.classList.toggle("inner-active");
+  filter.classList.toggle("filter-active");
+  filterImg.classList.toggle("arrow-rotate");
 });
 reset.addEventListener("click", (r) => {
   r.preventDefault();
