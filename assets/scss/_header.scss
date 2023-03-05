@@ -486,3 +486,33 @@ a{
 .mobile2-arrow{
 	display: none;
 }
+
+// lang
+.rtl{
+	.header{
+		.social{
+			padding-left: 40px;
+			padding-right: 0;
+		}
+		.lang{
+			left: 0;
+			right: auto;
+		}
+		.menu .person{
+			margin-right: auto;
+			margin-left: 37px;
+		}
+	}
+	.footer{
+		.second-menu .menu__item a{
+			padding-right: 0;
+		}
+	}
+	.address__buttons{
+		flex-direction: row-reverse;
+	}
+	.baner-catalog .see-more .arrow{
+		margin-left: 5px;
+		margin-right: auto;
+	}
+}

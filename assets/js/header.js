@@ -277,3 +277,9 @@ if (window.innerWidth > 1200) {
     });
   });
 }
+
+// lang
+
+if (window.document.dir == "rtl") {
+  document.body.classList.add("rtl");
+}

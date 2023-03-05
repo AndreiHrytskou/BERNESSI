@@ -59,7 +59,7 @@
 			background-color: $white;
 			border-radius: 20px;
 			padding: 8.5px 8px;
-			margin-right: 5px;
+			margin:0 5px;
 			display: flex;
 		}
 	}
@@ -283,6 +283,8 @@
 		display: flex;
 		align-items: center;
 		gap: 20px;
+		border-radius: 25vw;
+		overflow: hidden;
 	}
 }
 .regular{
@@ -299,7 +301,7 @@
 	position: relative;
 	left: 0;
 	top: 0;
-	border-radius: 25vw 0 0 25vw;
+	// border-radius: 25vw 0 0 25vw;
 }
 .bright__img{
 	width: 100%;
@@ -307,7 +309,7 @@
 	position: relative;
 	right: 0;
 	top: 0;
-	border-radius: 0 25vw 25vw 0;
+	// border-radius: 0 25vw 25vw 0;
 }
  .regular__text{
 	position: absolute;
