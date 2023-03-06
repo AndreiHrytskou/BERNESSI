@@ -3809,11 +3809,11 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  background-image: url("./../img/checkbox.png");
+  background-image: url("./../img/uncheckbox.png");
 }
 
 .address__checkout:checked + label::before {
-  background-image: url("./../img/uncheckbox.png");
+  background-image: url("./../img/checkbox.png");
 }
 
 .address__list {
