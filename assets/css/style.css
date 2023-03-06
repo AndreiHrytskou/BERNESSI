@@ -7088,8 +7088,8 @@ li::marker {
   .list2 .card {
     max-width: 33%;
   }
-  .catalog__list .semi,
-  .list2 .semi {
+  .catalog__list .card.semi,
+  .list2 .card.semi {
     max-width: 66%;
   }
   .menu-active {
