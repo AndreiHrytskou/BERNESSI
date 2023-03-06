@@ -86,9 +86,7 @@
 			content: none;
 		}
 		.swiper-button-next{
-			position: absolute;
-			right: 0px;
-			top: 50%;
+			position: relative;
 			cursor: pointer;
 			margin: 0;
 			width: 24px;
@@ -104,9 +102,7 @@
 		}
 		
 		.swiper-button-prev{
-			position: absolute;
-			left: 0px;
-			top: 50%;
+			position: relative;
 			cursor: pointer;
 			margin: 0;
 			width: 24px;
@@ -123,7 +119,7 @@
 	.mySwiper{
 		width: 95%;
       height: 100%;
-		padding: 50px 10px 20px;
+		padding: 50px 15px 20px;
 		border-radius: 25px;
 		.swiper-wrapper{
 			display: flex;
@@ -131,6 +127,10 @@
 		
 	}
 
+}
+.swiper__wrapper{
+	display: flex;
+	align-items: center;
 }
 .card:hover{
 	.size{
@@ -166,7 +166,7 @@
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
 	border-radius: 25px;
 }
 .thing{
