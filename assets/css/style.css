@@ -3088,6 +3088,12 @@ a {
   height: 23.5px;
 }
 
+.cart__list-description .like.likeActive {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
 .sidebar {
   display: -webkit-box;
   display: -webkit-flex;

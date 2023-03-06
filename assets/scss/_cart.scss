@@ -203,7 +203,11 @@
 	}
 }
 
-
+.cart__list-description .like.likeActive{
+	position: relative;
+	top: auto;
+	right: auto;
+}
 .sidebar{
 	display: flex;
 	flex-direction: column;
