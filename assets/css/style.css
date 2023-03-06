@@ -7984,4 +7984,10 @@ li::marker {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .prev__btn .btn-text {
+    margin: 0 8vw 0 auto;
+  }
+  .next__btn .btn-text {
+    margin: 0 auto 0 8vw;
+  }
 }
