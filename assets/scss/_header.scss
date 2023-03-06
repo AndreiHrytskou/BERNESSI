@@ -349,7 +349,7 @@ a{
 	.submenu__wrapper::before{
 		content: "";
 		width: 96.45vw;
-		height: 100vh;
+		height: 100%;
 		background-color: $white;
 		position: absolute;
 		left: 0;
@@ -359,7 +359,7 @@ a{
 	.submenu__wrapper::after{
 		content: "";
 		width: 100vw;
-		height: 100vh;
+		height: 100%;
 		background-color: $white;
 		position: absolute;
 		right: 0;
