@@ -878,10 +878,10 @@
 	.register__text{
 		flex-direction: column;
 	}
-	.prev__btn .btn-text{
-			margin: 0 8vw 0 auto;
+	.prev__btn .arrow{
+			position: relative;
 		}
-	.next__btn .btn-text{
-			margin: 0 auto 0 8vw;
+	.next__btn .arrow{
+			position: relative;
 		}
 }
