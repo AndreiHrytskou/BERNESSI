@@ -17,6 +17,6 @@ cross.addEventListener("click", () => {
 const likeActive = document.querySelectorAll(".likeActive");
 likeActive.forEach((e) => {
   e.addEventListener("click", () => {
-    e.parentElement.parentElement.remove();
+    e.parentElement.remove();
   });
 });
