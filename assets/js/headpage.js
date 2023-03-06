@@ -1,6 +1,6 @@
 // swiper
 var swiper = new Swiper(".mySwiper", {
-  loop: true,
+  //   loop: true,
   slidesPerView: 4,
   //   spaceBetween: 30,
   navigation: {
@@ -45,9 +45,3 @@ var swiper = new Swiper(".mySwiper1", {
     },
   },
 });
-// const card = document.querySelectorAll(".card");
-// card.forEach((e) => {
-//   e.addEventListener("click", (el) => {
-//     el.preventDefault();
-//   });
-// });

@@ -978,7 +978,9 @@ a {
   top: 50%;
   cursor: pointer;
   margin: 0;
-  width: 23px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1000,7 +1002,9 @@ a {
   top: 50%;
   cursor: pointer;
   margin: 0;
-  width: 23px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1036,6 +1040,10 @@ a {
 }
 
 .card, .card2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
   padding: 15px;
 }
@@ -1155,6 +1163,7 @@ a {
 
 .sizeActive {
   background-color: #ff28c2;
+  color: white;
 }
 
 .likeActive path {
@@ -1234,6 +1243,10 @@ a {
 }
 
 .category__img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 100%;
   position: relative;
 }
@@ -6445,6 +6458,7 @@ li::marker {
   position: relative;
   right: auto;
   left: 0;
+  top: 0;
   margin-bottom: 10px;
 }
 
