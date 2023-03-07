@@ -362,6 +362,10 @@
 	.orders::-webkit-scrollbar-thumb{
 		background-color: $grey;
 	}
+	// returns
+	.return__item{
+		max-width: 100%;
+	}
 }
 @media screen and (max-width: 992px){
 	.footer__bottom{
@@ -828,6 +832,21 @@
 	}
 	.cart__list .desctiption-bottom{
 		margin-top: 20px;
+	}
+	// 
+	.returns-tabs{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.questions__link{
+		width: 200px;
+	}
+	.return__item{
+		flex-direction: column;
+		align-items: center;
+	}
+	.questions{
+		padding: 30px 15px;
 	}
 }
 @media screen and (max-width: 414px){

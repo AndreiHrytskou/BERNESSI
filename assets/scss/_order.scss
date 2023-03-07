@@ -38,9 +38,11 @@
 	@include fonts($roboto, 15px, 300, 25px, $black);
 	text-align: left;
 	
-	span{
+	.status-data{
 		position: relative;
-		.waiting{
+	}
+}
+	.waiting{
 	width: 5px;
 	height: 5px;
 	position: absolute;
@@ -48,7 +50,7 @@
 	right: -10px;
 	top: 0;
 	border-radius: 50%;
-}
+	}
 .accepted{
 	width: 5px;
 	height: 5px;
@@ -67,8 +69,7 @@
 	top: 0;
 	border-radius: 50%;
 }
-	}
-}
+	
 .table__list:hover::before{
 	content: "";
 	position: absolute;
