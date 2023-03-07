@@ -1,47 +1,49 @@
 // swiper
-var swiper = new Swiper(".mySwiper", {
-  //   loop: true,
-  slidesPerView: 4,
-  //   spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiper", {
+    //   loop: true,
+    slidesPerView: 4,
+    //   spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    768: {
-      slidesPerView: 3,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
     },
-    1200: {
-      slidesPerView: 3,
+  });
+  var swiper = new Swiper(".mySwiper1", {
+    loop: true,
+    slidesPerView: 4,
+    //   spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-    1440: {
-      slidesPerView: 4,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 4,
+      },
     },
-  },
-});
-var swiper = new Swiper(".mySwiper1", {
-  loop: true,
-  slidesPerView: 4,
-  //   spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-    1440: {
-      slidesPerView: 4,
-    },
-  },
+  });
 });
