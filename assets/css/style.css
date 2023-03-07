@@ -97,7 +97,7 @@ a {
   margin: auto;
 }
 
-.wrapper:first-child {
+.line {
   border-bottom: 1px solid rgba(136, 140, 149, 0.25);
 }
 
@@ -5846,12 +5846,17 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
-.baner-catalog .container {
+.baner-catalog .wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin: 0 auto;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .baner-catalog .see-more {
@@ -5897,6 +5902,11 @@ input::-webkit-inner-spin-button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.semi .card__img, .semi .card2__img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .catalog__list {
@@ -5961,7 +5971,6 @@ input::-webkit-inner-spin-button {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  border-top: 1px solid rgba(136, 140, 149, 0.25);
   padding: 33px 0 100px;
 }
 
@@ -6493,6 +6502,7 @@ li::marker {
 
 .mySwiper4 .card__img {
   width: 130px;
+  height: 175px;
 }
 
 .mySwiper4 .like {

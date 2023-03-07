@@ -105,7 +105,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapper wrapper-menu">
+		<div class="line"></div>
+		<div class="wrapper">
 			<div class="container">
 				<nav class="menu">
 					<ul class="menu__block">
@@ -687,12 +688,6 @@
 					</div>
 				</nav>
 			</div>
-	
-	
-	
-	
-	
-	
 		</div>
 	</header>
 	<div class="cart-wrapper">
@@ -752,22 +747,24 @@
 	<!--end header-->
 
 	<div class="prime">
-		<div class="container">
-			<div class="prime-wrapper prime-center">
-				<div class="prime-title">
-					<h1 class="title upper">[H1] Checkout</h1>
-					<div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-						<div class="bread" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-							<a href="./index.html" class="bread-link" itemprop="item">
-								<span itemprop="name">Home</span>
-								<meta itemprop="position" content="1">
-							</a>
-							<span class="bread-sep">›</span>
-							<a href="./cart.html" class="bread-before">
-								<span class="bread-text">Cart</span>
-							</a>
-							<span class="bread-sep">›</span>
-							<span class="bread-text">Checkout</span>
+		<div class="wrapper">
+			<div class="container">
+				<div class="prime-wrapper prime-center">
+					<div class="prime-title">
+						<h1 class="title upper">[H1] Checkout</h1>
+						<div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<div class="bread" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+								<a href="./index.html" class="bread-link" itemprop="item">
+									<span itemprop="name">Home</span>
+									<meta itemprop="position" content="1">
+								</a>
+								<span class="bread-sep">›</span>
+								<a href="./cart.html" class="bread-before">
+									<span class="bread-text">Cart</span>
+								</a>
+								<span class="bread-sep">›</span>
+								<span class="bread-text">Checkout</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -775,111 +772,113 @@
 		</div>
 	</div>
 	<main class="main">
-		<div class="container">
-			<div class="checkout__wrapper">
-				<div class="checkout">
-					<div class="checkout__shipping grey">
-						<div class="shipping__list">
-							<div class="sort-top">
-								<p class="filter__subtitle">Shipping</p>
-								<img class="sort-arrow" src="./assets/img/arrow.png" alt="arrow">
+		<div class="wrapper">
+			<div class="container">
+				<div class="checkout__wrapper">
+					<div class="checkout">
+						<div class="checkout__shipping grey">
+							<div class="shipping__list">
+								<div class="sort-top">
+									<p class="filter__subtitle">Shipping</p>
+									<img class="sort-arrow" src="./assets/img/arrow.png" alt="arrow">
+								</div>
+								<div class="shipping__item">
+									<input class="shape__input" type="radio" name="shipping" id="address">
+									<label class="shape__label" for="address">
+										<div class="data__list">
+											<span class="data-person">
+												<p class="name">Name</p>
+												<p class="last-name">Last Name</p>
+											</span>
+											<p class="address__line">Address line 1</p>
+											<p class="address__line2">Address line 2</p>
+											<p class="address__line3">Address line 3</p>
+											<p class="postcode">Postcode</p>
+										</div>
+									</label>
+									<span class="check-default">
+										<input class="custom-radio" type="radio" name="default-address" id="default1">
+										<label class="label" for="default1">Default</label>
+									</span>
+								</div>
+								<div class="shipping__item">
+									<input class="shape__input" type="radio" name="shipping" id="address2">
+									<label class="shape__label" for="address2">
+										<div class="data__list">
+											<span class="data-person">
+												<p class="name">Name</p>
+												<p class="last-name">Last Name</p>
+											</span>
+											<p class="address__line">Address line 1</p>
+											<p class="address__line2">Address line 2</p>
+											<p class="address__line3">Address line 3</p>
+											<p class="postcode">Postcode</p>
+										</div>
+									</label>
+									<span class="check-default">
+										<input class="custom-radio" type="radio" name="default-address" id="default2">
+										<label class="label" for="default2">Default</label>
+									</span>
+								</div>
 							</div>
-							<div class="shipping__item">
-								<input class="shape__input" type="radio" name="shipping" id="address">
-								<label class="shape__label" for="address">
-									<div class="data__list">
-										<span class="data-person">
-											<p class="name">Name</p>
-											<p class="last-name">Last Name</p>
-										</span>
-										<p class="address__line">Address line 1</p>
-										<p class="address__line2">Address line 2</p>
-										<p class="address__line3">Address line 3</p>
-										<p class="postcode">Postcode</p>
-									</div>
-								</label>
-								<span class="check-default">
-									<input class="custom-radio" type="radio" name="default-address" id="default1">
-									<label class="label" for="default1">Default</label>
-								</span>
-							</div>
-							<div class="shipping__item">
-								<input class="shape__input" type="radio" name="shipping" id="address2">
-								<label class="shape__label" for="address2">
-									<div class="data__list">
-										<span class="data-person">
-											<p class="name">Name</p>
-											<p class="last-name">Last Name</p>
-										</span>
-										<p class="address__line">Address line 1</p>
-										<p class="address__line2">Address line 2</p>
-										<p class="address__line3">Address line 3</p>
-										<p class="postcode">Postcode</p>
-									</div>
-								</label>
-								<span class="check-default">
-									<input class="custom-radio" type="radio" name="default-address" id="default2">
-									<label class="label" for="default2">Default</label>
-								</span>
-							</div>
+							<a class="add__btn add__address" href="./addressChange.html">
+								<span class="btn-text">Add Address</span>
+								<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="arrow">
+							</a>
 						</div>
-						<a class="add__btn add__address" href="./addressChange.html">
-							<span class="btn-text">Add Address</span>
-							<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="arrow">
-						</a>
-					</div>
-					<div class="checkout__payment grey">
-						<div class="shipping__list">
-							<div class="sort-top">
-								<p class="filter__subtitle">Payment</p>
-								<img class="sort-arrow" src="./assets/img/arrow.png" alt="arrow">
+						<div class="checkout__payment grey">
+							<div class="shipping__list">
+								<div class="sort-top">
+									<p class="filter__subtitle">Payment</p>
+									<img class="sort-arrow" src="./assets/img/arrow.png" alt="arrow">
+								</div>
+								<div class="shipping__item">
+									<input class="shape__input" type="radio" name="payment" id="payment-item1">
+									<label class="shape__label" for="payment-item1">
+										<div class="data__list">
+											<p class="payment-data">MasterCard **** **** **** 1234</p>
+											<p class="address__line2">02/23</p>
+											<span class="data-person">
+												<p class="name">Name</p>
+												<p class="last-name">Last Name</p>
+											</span>
+										</div>
+									</label>
+									<span class="check-default">
+										<input class="custom-radio" type="radio" name="default-payment" id="payment1">
+										<label class="label" for="payment1">Default</label>
+									</span>
+								</div>
+								<div class="shipping__item">
+									<input class="shape__input" type="radio" name="payment" id="payment-item2">
+									<label class="shape__label" for="payment-item2">
+										<div class="data__list">
+											<p class="payment-data">PayPal **** **** **** 1234</p>
+											<p class="address__line2">02/23</p>
+											<span class="data-person">
+												<p class="name">Name</p>
+												<p class="last-name">Last Name</p>
+											</span>
+										</div>
+									</label>
+									<span class="check-default">
+										<input class="custom-radio" type="radio" name="default-payment" id="payment2">
+										<label class="label" for="payment2">Default</label>
+									</span>
+								</div>
 							</div>
-							<div class="shipping__item">
-								<input class="shape__input" type="radio" name="payment" id="payment-item1">
-								<label class="shape__label" for="payment-item1">
-									<div class="data__list">
-										<p class="payment-data">MasterCard **** **** **** 1234</p>
-										<p class="address__line2">02/23</p>
-										<span class="data-person">
-											<p class="name">Name</p>
-											<p class="last-name">Last Name</p>
-										</span>
-									</div>
-								</label>
-								<span class="check-default">
-									<input class="custom-radio" type="radio" name="default-payment" id="payment1">
-									<label class="label" for="payment1">Default</label>
-								</span>
-							</div>
-							<div class="shipping__item">
-								<input class="shape__input" type="radio" name="payment" id="payment-item2">
-								<label class="shape__label" for="payment-item2">
-									<div class="data__list">
-										<p class="payment-data">PayPal **** **** **** 1234</p>
-										<p class="address__line2">02/23</p>
-										<span class="data-person">
-											<p class="name">Name</p>
-											<p class="last-name">Last Name</p>
-										</span>
-									</div>
-								</label>
-								<span class="check-default">
-									<input class="custom-radio" type="radio" name="default-payment" id="payment2">
-									<label class="label" for="payment2">Default</label>
-								</span>
-							</div>
+							<a class="add__btn add__address" href="#">
+								<span class="btn-text">Add Card</span>
+								<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="arrow">
+							</a>
 						</div>
-						<a class="add__btn add__address" href="#">
-							<span class="btn-text">Add Card</span>
-							<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="arrow">
-						</a>
 					</div>
+					<button class="pay">
+						<span class="checkout__text">Pay now</span>
+						<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="checkout__img">
+					</button>
+					<a class="back" href="./cart.html">Back to Cart</a>
 				</div>
-				<button class="pay">
-					<span class="checkout__text">Pay now</span>
-					<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="checkout__img">
-				</button>
-				<a class="back" href="./cart.html">Back to Cart</a>
 			</div>
 		</div>
 	</main>

@@ -5,9 +5,11 @@
 	min-height: 550px;
 	margin: 20px 0;
 	display: flex;
-	.container{
+	.wrapper{
 		display: flex;
 		width: 100%;
+		margin: 0 auto;
+		align-items: flex-end;
 	}
 	.see-more{
 		border-radius: 25px;
@@ -33,6 +35,11 @@
 			display: flex;
 		}
 		
+	}
+}
+.semi{
+	.card__img, .card2__img{
+		object-fit: contain;
 	}
 }
 .catalog__list{
