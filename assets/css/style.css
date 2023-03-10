@@ -3158,6 +3158,7 @@ a {
 }
 
 .cart__list .desctiption-bottom {
+  margin-top: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
