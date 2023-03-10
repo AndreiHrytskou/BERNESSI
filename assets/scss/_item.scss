@@ -80,6 +80,22 @@
 			display: none;
 		}
 }
+.color__label.label-active::before{
+	background-image: url('./../img/radiochecked.png');
+}
+.label-active .color__text{
+	color: $black;
+}
+.size__wrapper .size__label.label-active::before{
+	background-image: url('./../img/radiochecked.png');
+}
+.label-active .size__text{
+
+	color: $black;
+}
+.error-text{
+	color: red;
+}
 .size__wrapper{
 	.size__label{
 		position: relative;

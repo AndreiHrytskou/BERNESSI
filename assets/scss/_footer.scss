@@ -103,3 +103,27 @@
 .copywriter{
 	@include fonts($roboto, 15px, 400, 25px, rgba(255, 255, 255, .5));
 }
+
+/*Мои*/
+#button-coupon{
+  background: transparent;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.login__item.error, .address__label.error{
+  border-color: red;
+}
+
+.modal__title, .modal__text{
+  text-align: center;
+}
+
+.div-hide{
+  display: none;
+}
+
+.div-hide.show{
+  display: flex;
+}

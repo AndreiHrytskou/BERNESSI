@@ -24,22 +24,63 @@ previewImg.forEach((e) => {
   });
 });
 //
-const colorContainer = document.querySelectorAll(".color__container");
+const colorContainer = document.querySelector(".color__wrap");
+const sizeWrap = document.querySelector(".size__wrap");
 
 let colorInput = document.querySelectorAll(".color__input");
 let colorLabel = document.querySelectorAll(".color__label");
-let inputCheck;
-let labelCheck;
 colorInput.forEach((e) => {
   e.addEventListener("click", () => {
     inputCheck = e.dataset.input;
+    colorLabel.forEach((el) => {
+      labelCheck = el.dataset.label;
+      if (inputCheck == labelCheck) {
+        el.classList.add("label-active");
+      } else {
+        el.classList.remove("label-active");
+      }
+    });
   });
 });
-colorLabel.forEach((e) => {
+
+//
+let sizeInput = document.querySelectorAll(".size__input");
+let sizeLabel = document.querySelectorAll(".size__label");
+sizeInput.forEach((e) => {
   e.addEventListener("click", () => {
-    labelCheck = e.dataset.label;
-    console.log(labelCheck);
+    inputCheck = e.dataset.insize;
+    sizeLabel.forEach((el) => {
+      labelCheck = el.dataset.size;
+      if (inputCheck == labelCheck) {
+        el.classList.add("label-active");
+      } else {
+        el.classList.remove("label-active");
+      }
+    });
   });
 });
 //
-addProduct.addEventListener("click", modalSuccess);
+const spanError = document.createElement("span");
+spanError.append("Выберите размер!");
+const spanError2 = document.createElement("span");
+spanError2.append("Выберите цвет!");
+// addProduct.addEventListener("click", modalSuccess);
+addProduct.addEventListener("click", () => {
+  sizeInput.forEach((s) => {
+    colorInput.forEach((c) => {
+      if (s.checked && c.checked) {
+        modalSuccess();
+      } else {
+        console.log("nope");
+      }
+    });
+  });
+});
+function createError() {
+  sizeWrap.append(spanError);
+  spanError.className = "error-text";
+}
+function createError2() {
+  colorContainer.append(spanError2);
+  spanError2.className = "error-text";
+}
