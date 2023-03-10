@@ -90,7 +90,7 @@ function modalDone() {
     let its_title = target == title;
     let its_text = target == text;
     if (!its_day && !its_title && !its_text) {
-      span.classList.remove("div-hide");
+      span.remove();
       modal.remove();
     }
   });
@@ -133,6 +133,58 @@ function modalReload() {
     let its_text = target == text;
     if (!its_day && !its_title && !its_text) {
       span.classList.remove("div-hide");
+      modal.remove();
+    }
+  });
+}
+function modalSuccess() {
+  span.classList = "div-hide";
+  document.body.append(span);
+  const modal = document.createElement("div");
+  const title = document.createElement("h2");
+  const text = document.createElement("p");
+  const link = document.createElement("a");
+  const textBtn = document.createElement("span");
+  const imgBtn = document.createElement("img");
+  const cross = document.createElement("img");
+  const regText = document.createElement("p");
+  const regLink = document.createElement("a");
+  span.append(modal);
+  modal.append(title);
+  modal.append(cross);
+  modal.append(text);
+  modal.append(link);
+  modal.append(regText);
+  title.append("Added successfly!");
+  text.append("Proceed to checkout now or continue shopping");
+  link.append(textBtn);
+  link.append(imgBtn);
+  textBtn.append("Go to Cart");
+  regText.append(regLink);
+  regLink.append("Continue shopping");
+  modal.className = "modal__wrapper";
+  title.className = "modal__title";
+  text.className = "modal__text";
+  textBtn.className = "btn-text";
+  imgBtn.className = "arrow";
+  regText.className = "register__text";
+  regLink.className = "register__link";
+  link.className = "modal__link";
+  cross.className = "modal__cross";
+  regLink.href = "./catalog.html";
+  link.href = "./cart.html";
+  imgBtn.src = "./assets/img/arrow-right-grey.webp";
+  cross.src = "./assets/img/modal_cross.webp";
+
+  span.addEventListener("click", (e) => {
+    let target = e.target;
+    let its_day = target == modal;
+    let its_title = target == title;
+    let its_text = target == text;
+    let its_link = target == link;
+    let its_regText = target == regText;
+    if (!its_day && !its_title && !its_text && !its_regText && !its_link) {
+      span.remove();
       modal.remove();
     }
   });

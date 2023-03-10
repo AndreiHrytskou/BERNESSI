@@ -25,10 +25,17 @@
 	justify-content: center;
 	background-color: rgba(237, 238, 239, 1);
 	.register__text{
+		cursor: pointer;
 		margin-top: 0;
 		gap: 5px;
 		display: flex;
 	}
+}
+.modal__cross{
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	cursor: pointer;
 }
 .modal__title{
 	@include fonts($roboto, 20px, 700, 25px, $grey);
@@ -45,6 +52,7 @@
 	font-weight: 700;
 }
 .modal__link{
+	position: relative;
 	cursor: pointer;
 	border: none;
 	margin-top: 25px;
@@ -64,10 +72,11 @@
 			margin: 0 auto;
 		}
 		.arrow{
+			position: absolute;
+			right: 5px;
 			background-color: $white;
 			border-radius: 20px;
 			padding: 8.5px 8px;
-			margin-right: 5px;
 			display: flex;
 		}
 }

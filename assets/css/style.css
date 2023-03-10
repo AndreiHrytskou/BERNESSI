@@ -6709,12 +6709,20 @@ li::marker {
 }
 
 .modal__wrapper .register__text {
+  cursor: pointer;
   margin-top: 0;
   gap: 5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.modal__cross {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -6749,6 +6757,7 @@ li::marker {
 }
 
 .modal__link {
+  position: relative;
   cursor: pointer;
   border: none;
   margin-top: 25px;
@@ -6785,11 +6794,12 @@ li::marker {
 }
 
 .modal__link .arrow {
+  position: absolute;
+  right: 5px;
   background-color: white;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   padding: 8.5px 8px;
-  margin-right: 5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

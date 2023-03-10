@@ -2,6 +2,7 @@ const cart__btn = document.querySelector(".cart__btn");
 const attention = document.querySelector(".attention");
 const doneBtn = document.querySelector(".done__btn");
 const reloadBtn = document.querySelector(".reload__btn");
+const successBtn = document.querySelector(".success__btn");
 cart__btn.addEventListener("click", () => {
   div.className = "background";
   document.body.append(div);
@@ -14,3 +15,4 @@ close.addEventListener("click", () => {
 attention.addEventListener("click", modalAttention);
 doneBtn.addEventListener("click", modalDone);
 reloadBtn.addEventListener("click", modalReload);
+successBtn.addEventListener("click", modalSuccess);

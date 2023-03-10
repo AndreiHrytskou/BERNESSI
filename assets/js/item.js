@@ -1,4 +1,5 @@
 const title = document.querySelectorAll(".description__title");
+const addProduct = document.querySelector(".add_to_cart");
 title.forEach((e) => {
   e.addEventListener("click", () => {
     e.parentElement.classList.toggle("visible");
@@ -24,9 +25,21 @@ previewImg.forEach((e) => {
 });
 //
 const colorContainer = document.querySelectorAll(".color__container");
-colorContainer.forEach((e) => {
+
+let colorInput = document.querySelectorAll(".color__input");
+let colorLabel = document.querySelectorAll(".color__label");
+let inputCheck;
+let labelCheck;
+colorInput.forEach((e) => {
   e.addEventListener("click", () => {
-    let colorLabel = document.querySelector(".color__label");
-    console.log(colorLabel.dataset.label);
+    inputCheck = e.dataset.input;
   });
 });
+colorLabel.forEach((e) => {
+  e.addEventListener("click", () => {
+    labelCheck = e.dataset.label;
+    console.log(labelCheck);
+  });
+});
+//
+addProduct.addEventListener("click", modalSuccess);
