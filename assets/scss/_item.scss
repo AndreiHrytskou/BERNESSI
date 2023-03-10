@@ -137,9 +137,14 @@
 		text-transform: uppercase;
 	}
 }
+.btn__inner{
+	margin-top: 44px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
 .add_to_cart{
 	cursor: pointer;
-	margin-top: 44px;
 	background-color: $grey;
 	border: none;
 	border-radius: 25px;
