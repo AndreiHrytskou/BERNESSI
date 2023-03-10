@@ -1,6 +1,6 @@
 const span = document.createElement("div");
 function modalAttention() {
-  span.classList = "div-hide";
+  span.classList = "div-hide show";
   document.body.append(span);
   const modal = document.createElement("div");
   const title = document.createElement("h2");
@@ -54,7 +54,7 @@ function modalAttention() {
 }
 
 function modalDone() {
-  span.classList = "div-hide";
+  span.classList = "div-hide show";
   document.body.append(span);
   const modal = document.createElement("div");
   const title = document.createElement("h2");
@@ -96,7 +96,7 @@ function modalDone() {
   });
 }
 function modalReload() {
-  span.classList = "div-hide";
+  span.classList = "div-hide show";
   document.body.append(span);
   const modal = document.createElement("div");
   const title = document.createElement("h2");
@@ -138,7 +138,7 @@ function modalReload() {
   });
 }
 function modalSuccess() {
-  span.classList = "div-hide";
+  span.classList = "div-hide show";
   document.body.append(span);
   const modal = document.createElement("div");
   const title = document.createElement("h2");

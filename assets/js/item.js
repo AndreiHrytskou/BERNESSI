@@ -60,27 +60,27 @@ sizeInput.forEach((e) => {
   });
 });
 //
-const spanError = document.createElement("span");
-spanError.append("Выберите размер!");
-const spanError2 = document.createElement("span");
-spanError2.append("Выберите цвет!");
-// addProduct.addEventListener("click", modalSuccess);
-addProduct.addEventListener("click", () => {
-  sizeInput.forEach((s) => {
-    colorInput.forEach((c) => {
-      if (s.checked && c.checked) {
-        modalSuccess();
-      } else {
-        console.log("nope");
-      }
-    });
-  });
-});
-function createError() {
-  sizeWrap.append(spanError);
-  spanError.className = "error-text";
-}
-function createError2() {
-  colorContainer.append(spanError2);
-  spanError2.className = "error-text";
-}
+// const spanError = document.createElement("span");
+// spanError.append("Выберите размер!");
+// const spanError2 = document.createElement("span");
+// spanError2.append("Выберите цвет!");
+addProduct.addEventListener("click", modalSuccess);
+// addProduct.addEventListener("click", () => {
+//   sizeInput.forEach((s) => {
+//     colorInput.forEach((c) => {
+//       if (s.checked && c.checked) {
+//         modalSuccess();
+//       } else {
+//         console.log("nope");
+//       }
+//     });
+//   });
+// });
+// function createError() {
+//   sizeWrap.append(spanError);
+//   spanError.className = "error-text";
+// }
+// function createError2() {
+//   colorContainer.append(spanError2);
+//   spanError2.className = "error-text";
+// }
