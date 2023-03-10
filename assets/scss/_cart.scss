@@ -189,6 +189,7 @@
 	}
 	.desctiption-bottom{
 		display: flex;
+		align-items: center;
 		gap: 30px;
 	}
 	.like{
@@ -442,4 +443,40 @@
 .rotate{
 	transform: rotate(180deg);
 	transition: 0.2s;
+}
+.counter{
+	display: flex;
+	justify-content: space-between;
+	max-width: 150px;
+	width: 100%;
+	border: 1px solid rgba(136, 140, 149, 0.35);
+	border-radius: 25px;
+	padding: 5px;
+}
+.counter__value{
+	width: 30px;
+	outline: none;
+	border: none;
+	@include fonts($roboto, 12px, 400, 30px, $grey);
+	text-align: center;
+}
+.minus{
+	cursor: pointer;
+	background-color: $grey;
+	border-radius: 25px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.plus{
+	cursor: pointer;
+	background-color: $grey;
+	border-radius: 25px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

@@ -2536,14 +2536,8 @@ a {
   margin-top: 48px;
 }
 
-.color__img {
-  width: 55px;
-  height: auto;
-  -webkit-border-radius: 25px;
-          border-radius: 25px;
-}
-
-.color__wrap {
+.color__wrap .color__label {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2552,30 +2546,10 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
-}
-
-.color__input {
-  display: none;
-}
-
-.color__input + label {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   gap: 10px;
 }
 
-.color__input + label::before {
+.color__wrap .color__label::before {
   content: '';
   display: -webkit-box;
   display: -webkit-flex;
@@ -2602,12 +2576,84 @@ a {
   background-repeat: no-repeat;
 }
 
-.color__input:checked + label::before {
-  background-image: url("./../img/radiochecked.png");
+.color__wrap .color__input {
+  display: none;
 }
 
-.color__input:checked + label {
-  color: black;
+.size__wrapper .size__label {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.size__wrapper .size__label::before {
+  content: '';
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 18px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  background-image: url("./../img/radio.png");
+  background-repeat: no-repeat;
+}
+
+.size__wrapper .size__input {
+  display: none;
+}
+
+.color__img {
+  width: 55px;
+  height: auto;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+}
+
+.color__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.size__text,
+.color__text {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #888c95;
+}
+
+.size__text {
+  text-transform: uppercase;
 }
 
 .color__title {
@@ -3116,6 +3162,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 }
 
@@ -3510,6 +3560,77 @@ a {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 150px;
+  width: 100%;
+  border: 1px solid rgba(136, 140, 149, 0.35);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  padding: 5px;
+}
+
+.counter__value {
+  width: 30px;
+  outline: none;
+  border: none;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #888c95;
+  text-align: center;
+}
+
+.minus {
+  cursor: pointer;
+  background-color: #888c95;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plus {
+  cursor: pointer;
+  background-color: #888c95;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .likecatalog {

@@ -57,28 +57,14 @@
 .color-product{
 	margin-top: 48px;
 }
-.color{
-	&__img{
-		width: 55px;
-		height: auto;
-		border-radius: 25px;
-	}
-	&__wrap{
+.color__wrap{
+	.color__label{
+		position: relative;
 		display: flex;
 		align-items: center;
-		gap: 30px;
-	}
-	&__input{
-		display: none;
-	}
-		 &__input+label {
-			display: inline-flex;
-			align-items: center;
-			user-select: none;
-			gap: 10px;
-
-		}
-		&__input+label::before {
+		gap: 10px;
+	}	
+	.color__label::before{
 			content: '';
 			display: flex;
 			align-items: center;
@@ -90,12 +76,50 @@
 			background-image: url('./../img/radio.png');
 			background-repeat: no-repeat;
 		}
-		&__input:checked+label::before {
-			background-image: url('./../img/radiochecked.png');
+		.color__input{
+			display: none;
 		}
-		&__input:checked+label{
-			color: $black;
+}
+.size__wrapper{
+	.size__label{
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}	
+	.size__label::before {
+			content: '';
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 18px;
+			height: 18px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			background-image: url('./../img/radio.png');
+			background-repeat: no-repeat;
 		}
+		.size__input{
+			display: none;
+		}
+}
+.color{
+	&__img{
+		width: 55px;
+		height: auto;
+		border-radius: 25px;
+	}
+	&__wrap{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}}
+.size__text,
+.color__text{
+	@include fonts($roboto, 12px, 400, 15px, $grey);
+}
+.size__text{
+	text-transform: uppercase;
 }
 .color__title{
 		@include fonts($roboto, 20px, 700, 25px, $grey);

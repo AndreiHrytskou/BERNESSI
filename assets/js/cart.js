@@ -31,3 +31,16 @@ itemPrice.forEach((e) => {
   const reducer = (accumulator, currentValue) => accumulator + currentValue;
   sum.innerText = arr.reduce(reducer);
 });
+// counter
+
+const counter = document.querySelectorAll(".counter__value");
+counter.forEach((e) => {
+  const minus = e.previousElementSibling;
+  const plus = e.nextElementSibling;
+  minus.addEventListener("click", () => {
+    if (e.value > 0) e.value--;
+  });
+  plus.addEventListener("click", () => {
+    e.value++;
+  });
+});

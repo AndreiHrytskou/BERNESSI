@@ -22,3 +22,11 @@ previewImg.forEach((e) => {
     }
   });
 });
+//
+const colorContainer = document.querySelectorAll(".color__container");
+colorContainer.forEach((e) => {
+  e.addEventListener("click", () => {
+    let colorLabel = document.querySelector(".color__label");
+    console.log(colorLabel.dataset.label);
+  });
+});
