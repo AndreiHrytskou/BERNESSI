@@ -37,6 +37,7 @@
 .item__description{
 	width: 100%;
 	max-width: 50%;
+	position: relative;
 	.price{
 		@include fonts($roboto, 15px, 700, 25px, $black);
 		display: flex;
@@ -231,4 +232,32 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+// 
+.preview__pic{
+	position: relative;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*установите размер объектива:*/
+  width: 100px;
+  height: 100px;
+}
+
+.img-zoom-result{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: $white;
+  border: 1px solid #d4d4d4;
+  /*установите размер результата div:*/
+  width: 430px;
+  height: 600px;
+}
+.result-active{
+	opacity: 1;
+	z-index: 10;
 }

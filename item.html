@@ -17,6 +17,7 @@
 	<script src="./assets/js/headpage.js" defer></script>
 	<script src="./assets/js/modal.js" defer></script>
 	<script src="./assets/js/item.js" defer></script>
+	<script src="./assets/js/zoom.js" defer></script>
 	<title>Bernessi</title>
 </head>
 
@@ -761,9 +762,13 @@
 							<img src="./assets/img/item.webp" alt="picture4" class="preview__img">
 							<img src="./assets/img/item.webp" alt="picture5" class="preview__img">
 						</div>
-						<img class="item__img" src="" alt="item" >
+						<div class="preview__pic">
+							<img class="item__img" src="" alt="item" id="myimage" >
+						</div>
 					</div>
+					
 					<div class="item__description">
+						<div id="myresult" class="img-zoom-result"></div>
 						<div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
 							<div class="bread" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
 								<a href="./index.html" class="bread-link" itemprop="item">
