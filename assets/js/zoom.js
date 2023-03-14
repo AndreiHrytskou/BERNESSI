@@ -1,18 +1,26 @@
-function imageZoom(imgID, resultID) {
-  var img, lens, result, cx, cy;
-  img = document.getElementById(imgID);
-  result = document.getElementById(resultID);
+function imageZoom() {
+	let img = document.getElementById("myimage");
+  var lens, cx, cy;
+  let result = document.getElementById("myresult");
   /*создать линзу:*/
   lens = document.createElement("DIV");
   lens.setAttribute("class", "img-zoom-lens");
+	lens.addEventListener("mouseover",()=>{
+		lens.classList.add("lens-visble")
+	})
+	lens.addEventListener("mouseout",()=>{
+		lens.classList.remove("lens-visble")
+	})
   /*вставить линзы:*/
   img.parentElement.insertBefore(lens, img);
   /*вычислите соотношение между результатом DIV и объективом:*/
   cx = result.offsetWidth / lens.offsetWidth;
   cy = result.offsetHeight / lens.offsetHeight;
   /*задайте свойства фона для результата DIV:*/
-  result.style.backgroundImage = "url('" + img.src + "')";
-  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  img.addEventListener("load",()=>{
+	  result.style.backgroundImage = "url('" + img.src + "')";
+	  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  })
   /*выполните функцию, когда кто-то перемещает курсор на изображение или объектив:*/
   lens.addEventListener("mousemove", moveLens);
   img.addEventListener("mousemove", moveLens);
@@ -53,11 +61,13 @@ function imageZoom(imgID, resultID) {
     return {x : x, y : y};
   }
 }
-imageZoom("myimage", "myresult");
+
+
+imageZoom()
 const itemImg = document.querySelector(".img-zoom-lens")
 const itemResult = document.querySelector(".img-zoom-result")
 itemImg.addEventListener("mouseover", ()=>{
-	itemResult.classList.add("result-active")
+	itemResult.classList.add("result-active");
 })
 itemImg.addEventListener("mouseout", ()=>{
 	itemResult.classList.remove("result-active")

@@ -2992,6 +2992,7 @@ a {
   /*установите размер объектива:*/
   width: 100px;
   height: 100px;
+  opacity: 0;
 }
 
 .img-zoom-result {
@@ -3009,6 +3010,10 @@ a {
 .result-active {
   opacity: 1;
   z-index: 10;
+}
+
+.lens-visble {
+  opacity: 1;
 }
 
 .background {
