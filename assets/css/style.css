@@ -8133,6 +8133,9 @@ li::marker {
 }
 
 @media screen and (max-width: 992px) {
+  .img-zoom-result {
+    display: none;
+  }
   .footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

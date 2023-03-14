@@ -1,4 +1,4 @@
-function imageZoom() {
+if(window.innerWidth > 992){function imageZoom() {
 	let img = document.getElementById("myimage");
   var lens, cx, cy;
   let result = document.getElementById("myresult");
@@ -71,4 +71,4 @@ itemImg.addEventListener("mouseover", ()=>{
 })
 itemImg.addEventListener("mouseout", ()=>{
 	itemResult.classList.remove("result-active")
-})
+})}
