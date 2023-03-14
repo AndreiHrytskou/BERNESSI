@@ -6570,6 +6570,10 @@ input::-webkit-inner-spin-button {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+.simple {
+  padding-top: 33px;
+}
+
 .simple .h2 {
   margin: 55px auto;
 }
