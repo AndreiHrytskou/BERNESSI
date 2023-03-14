@@ -14,8 +14,9 @@ if(window.innerWidth > 992){function imageZoom() {
   /*вставить линзы:*/
   img.parentElement.insertBefore(lens, img);
   /*вычислите соотношение между результатом DIV и объективом:*/
-  cx = result.offsetWidth / lens.offsetWidth;
+  cx = result.offsetWidth / (lens.offsetWidth - 25);
   cy = result.offsetHeight / lens.offsetHeight;
+  console.log(cx);
   /*задайте свойства фона для результата DIV:*/
   img.addEventListener("load",()=>{
 	  result.style.backgroundImage = "url('" + img.src + "')";
