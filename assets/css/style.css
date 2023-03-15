@@ -8456,9 +8456,6 @@ li::marker {
   .item__description .item__title {
     text-align: center;
   }
-  .item__description .add_to_cart {
-    margin: 44px auto 0;
-  }
   .address__list .address__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
