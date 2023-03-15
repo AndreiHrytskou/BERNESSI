@@ -190,6 +190,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	&__block{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
 	&__title{
 		cursor: pointer;
 		@include fonts($roboto, 20px, 700, 25px, $grey);

@@ -2905,6 +2905,18 @@ a {
           align-items: flex-start;
 }
 
+.description__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
 .description__title {
   cursor: pointer;
   font-family: "Roboto";
