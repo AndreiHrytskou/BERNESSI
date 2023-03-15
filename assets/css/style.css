@@ -8441,6 +8441,7 @@ li::marker {
   .item__gallery {
     max-width: 100%;
   }
+  .preview__pic,
   .item__img {
     margin: 0 auto;
   }
