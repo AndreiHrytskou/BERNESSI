@@ -238,11 +238,6 @@
 	flex-direction: column;
 	align-items: flex-start;
 }
-.collections{
-	@include fonts($roboto, 20px, 700, 25px, $grey);
-	text-transform: uppercase;
-	margin-top: 33px;
-}
 
 // 
 .preview__pic{
@@ -265,8 +260,8 @@
 	background-color: $white;
   border: 1px solid #d4d4d4;
   /*установите размер результата div:*/
-  width: 430px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
 }
 .result-active{
 	opacity: 1;

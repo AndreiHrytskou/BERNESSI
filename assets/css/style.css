@@ -2994,16 +2994,6 @@ a {
           align-items: flex-start;
 }
 
-.collections {
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
-  color: #888c95;
-  text-transform: uppercase;
-  margin-top: 33px;
-}
-
 .preview__pic {
   position: relative;
 }
@@ -3025,8 +3015,8 @@ a {
   background-color: white;
   border: 1px solid #d4d4d4;
   /*установите размер результата div:*/
-  width: 430px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
 }
 
 .result-active {
