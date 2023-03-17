@@ -691,6 +691,9 @@
 	}
 }
 @media screen and (max-width: 576px){
+	.subcatalog .card{
+		max-width: 100%;
+	}
 	.block__right{
 		display: none;
 	}
@@ -738,7 +741,7 @@
 		flex-direction: column;
 	}
 	.catalog__list .card, .list2 .card{
-		max-width: 50%;
+		max-width: 100%;
 	}
 	.catalog__list .semi, .list2 .semi{
 		max-width: 100%;
@@ -753,7 +756,7 @@
 	}
 	// wish list 
 	.likecatalog .card{
-		max-width: 50%;
+		max-width: 100%;
 		min-height: auto !important;
 	}
 		// addressChange
@@ -848,6 +851,9 @@
 	}
 	.questions{
 		padding: 30px 15px;
+	}
+	.subcatalog .card.semi{
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 414px){

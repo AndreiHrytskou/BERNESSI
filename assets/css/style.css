@@ -8545,6 +8545,9 @@ li::marker {
 }
 
 @media screen and (max-width: 576px) {
+  .subcatalog .card {
+    max-width: 100%;
+  }
   .block__right {
     display: none;
   }
@@ -8627,7 +8630,7 @@ li::marker {
             flex-direction: column;
   }
   .catalog__list .card, .list2 .card {
-    max-width: 50%;
+    max-width: 100%;
   }
   .catalog__list .semi, .list2 .semi {
     max-width: 100%;
@@ -8644,7 +8647,7 @@ li::marker {
     height: 100%;
   }
   .likecatalog .card {
-    max-width: 50%;
+    max-width: 100%;
     min-height: auto !important;
   }
   .address__wrapper .address__label {
@@ -8743,6 +8746,9 @@ li::marker {
   }
   .questions {
     padding: 30px 15px;
+  }
+  .subcatalog .card.semi {
+    max-width: 100%;
   }
 }
 
