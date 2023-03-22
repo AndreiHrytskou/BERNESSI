@@ -41,7 +41,7 @@
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
-		object-fit: contain;
+		max-width: 100%;
 	}
 }
 .catalog__list{

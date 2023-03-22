@@ -6263,8 +6263,7 @@ input::-webkit-inner-spin-button {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  max-width: 100%;
 }
 
 .catalog__list {
