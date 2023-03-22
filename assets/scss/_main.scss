@@ -148,7 +148,7 @@
 		}
 		&__img{
 			border-radius: 30px;
-			height: 100%;
+					height: calc(442px + (639 - 442) * ((100vw - 1366px) / (1920 - 1366)));
 			object-fit: cover;
 			object-position: center;
 			background-color: white;

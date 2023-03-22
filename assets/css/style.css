@@ -1092,7 +1092,8 @@ a {
 .card__img, .card2__img {
   -webkit-border-radius: 30px;
           border-radius: 30px;
-  height: 100%;
+  height: -webkit-calc(442px + (639 - 442) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(442px + (639 - 442) * ((100vw - 1366px) / (1920 - 1366)));
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -6253,6 +6254,15 @@ input::-webkit-inner-spin-button {
 }
 
 .semi .card__img, .semi .card2__img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -7744,6 +7754,10 @@ li::marker {
 }
 
 @media screen and (max-width: 1366px) {
+  .card__img, .card2__img {
+    height: -webkit-calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
+    height: calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
+  }
   .footer .menu__list {
     gap: 15px;
   }
@@ -8602,6 +8616,10 @@ li::marker {
 }
 
 @media screen and (max-width: 576px) {
+  .card__img, .card2__img {
+    height: 100%;
+    max-width: 100%;
+  }
   .subcatalog .card {
     max-width: 100%;
   }

@@ -12,6 +12,9 @@
 	}
 }
 @media screen and (max-width: 1366px){
+	.card__img, .card2__img{
+		height: calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
+	}
 	.footer .menu__list{
 		gap: 15px;
 	}
@@ -691,6 +694,10 @@
 	}
 }
 @media screen and (max-width: 576px){
+	.card__img, .card2__img{
+		height: 100%;
+		max-width: 100%;
+	}
 	.subcatalog .card{
 		max-width: 100%;
 	}

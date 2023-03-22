@@ -38,6 +38,9 @@
 }
 .semi{
 	.card__img, .card2__img{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
 		object-fit: contain;
 	}
 }
