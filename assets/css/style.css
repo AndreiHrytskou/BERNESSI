@@ -1092,7 +1092,7 @@ a {
 .card__img, .card2__img {
   -webkit-border-radius: 30px;
           border-radius: 30px;
-  height: 640px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

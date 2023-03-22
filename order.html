@@ -14,7 +14,8 @@
 	<script src="./assets/js/cart.js" defer></script>
 	<script src="./assets/js/swiper.js" defer></script>
 	<script src="./assets/js/checkAccount.js" defer></script>
-	<script src="./assets/js/order.js" defer></script>
+	<script src="./assets/js/common.js"></script>
+	<!--<script src="./assets/js/order.js" defer></script>-->
 	<script src="./assets/js/burger2.js" defer></script>
 	<title>Bernessi</title>
 </head>
@@ -784,7 +785,7 @@
 							<div class="order__details">
 								<div class="order__list">
 									<div class="order__item grey">
-										<div class="sort-top">
+										<div class="sort-top" onclick="showBlock(this)">
 											<p class="filter__subtitle">Order Details</p>
 											<img class="sort-arrow rotate" src="./assets/img/arrow.png" alt="arrow">
 										</div>
@@ -814,7 +815,7 @@
 										</table>
 									</div>
 									<div class="order__item grey">
-										<div class="sort-top">
+										<div class="sort-top" onclick="showBlock(this)">
 											<p class="filter__subtitle">Shipping Address</p>
 											<img class="sort-arrow rotate" src="./assets/img/arrow.png" alt="arrow">
 										</div>
@@ -832,7 +833,7 @@
 									</div>
 								</div>
 								<div class="products__list">
-									<div class="sort-top">
+									<div class="sort-top" onclick="showBlock(this)">
 										<p class="filter__subtitle">Products List</p>
 										<img class="sort-arrow rotate" src="./assets/img/arrow.png" alt="arrow">
 									</div>
