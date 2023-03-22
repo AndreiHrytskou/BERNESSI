@@ -52,6 +52,9 @@
 		top: 5px;
 	}
 }
+.login__btn:hover{
+	box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2) inset;
+}
 .forgot{
 	text-decoration: underline;
 	border: none;
@@ -128,4 +131,22 @@
 }
 .register__social{
 	height: 100%;
+}
+.password__item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.password__btn{
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	display: flex;
+	align-items: center;
+}
+.password__btn-img{
+	height: 20px;
+}
+.path-current path{
+	fill: $current;
 }

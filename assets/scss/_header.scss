@@ -144,6 +144,9 @@ a{
 	@include fonts($roboto, 12px, 500, 20px, $grey);
 	text-transform: uppercase;
 }
+.lang__name:hover{
+	color: $current;
+}
 .lang__first{
 	display: block;
 }
@@ -204,6 +207,7 @@ a{
 		display: flex;
 		align-items: center;
 		margin-right: 37px;
+		position: relative;
 	}
 	.search{
 		
@@ -213,7 +217,8 @@ a{
 		}
 	}
 	.search-focus{
-		width: 100%;
+		position: absolute;
+		left: -219px;
 		border: 1px solid $grey;
 		padding: 5.45px 10px;
 		border-radius: 25px;
@@ -523,4 +528,7 @@ a{
 		margin-left: 5px;
 		margin-right: auto;
 	}
+}
+.submenu__active{
+	display: block;
 }

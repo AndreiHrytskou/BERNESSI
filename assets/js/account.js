@@ -1,5 +1,11 @@
 var swiper = new Swiper(".mySwiper4", {
+  autoHeight: false,
   slidesPerView: 2,
+  slidesPerGroup: 2,
+  //   centeredSlides: false,
+  //   initialSlide: 0,
+  //   slidesPerColumn: 2,
+  loop: true,
   grid: {
     rows: 2,
   },

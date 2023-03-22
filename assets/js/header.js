@@ -48,21 +48,29 @@ if (window.innerWidth < 1200) {
 }
 if (window.innerWidth > 1200) {
   menuItem.forEach((e) => {
-    e.addEventListener("mouseover", () => {
-      e.parentElement.childNodes[3].setAttribute("style", "display: block");
+    e.addEventListener("click", () => {
+      menuItem.forEach((el) => {
+        let item = e.parentElement.childNodes[3];
+        let item2 = el.parentElement.childNodes[3];
+        if (item2.classList.contains("submenu__active")) {
+          item2.classList.remove("submenu__active");
+        } else {
+          item.classList.add("submenu__active");
+        }
+      });
     });
-    e.parentElement.childNodes[3].addEventListener("mouseover", () => {
-      e.parentElement.childNodes[3].setAttribute("style", "display: block");
-    });
+    //  e.parentElement.childNodes[3].addEventListener("click", () => {
+    //    e.parentElement.childNodes[3].classList.toggle("submenu__active");
+    //  });
   });
-  menuItem.forEach((e) => {
-    e.addEventListener("mouseout", () => {
-      e.parentElement.childNodes[3].setAttribute("style", "display: none");
-    });
-    e.parentElement.childNodes[3].addEventListener("mouseout", () => {
-      e.parentElement.childNodes[3].setAttribute("style", "display: none");
-    });
-  });
+  //   menuItem.forEach((e) => {
+  //     e.addEventListener("mouseout", () => {
+  //       e.parentElement.childNodes[3].setAttribute("style", "display: none");
+  //     });
+  //     e.parentElement.childNodes[3].addEventListener("mouseout", () => {
+  //       e.parentElement.childNodes[3].setAttribute("style", "display: none");
+  //     });
+  //   });
 }
 
 // lang

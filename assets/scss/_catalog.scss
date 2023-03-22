@@ -21,7 +21,6 @@
 		height: 55px;
 		background-color: $yellow;
 		text-decoration: none;
-		margin-bottom: 25px;
 		.btn-text{
 			@include fonts($roboto, 12px, 900, 30px, $grey);
 			text-transform: uppercase;
@@ -65,7 +64,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-   align-items: flex-end;
+   align-items: center;
 }
 .baner__title{
 	@include fonts($roboto, 105px, 900, 125px, $white);
