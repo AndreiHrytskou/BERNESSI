@@ -29,28 +29,37 @@
 }
 .simple{
 	padding-top: 33px;
-	.h2{
+	h2{
 		margin: 55px auto;
+		@include fonts($roboto, 50px, 900, 50px, $grey);
+		text-transform: uppercase;
+		text-align: center;
 	}
-	.h3{
+	h3{
 		margin: 55px auto 35px;
+		@include fonts($roboto, 40px, 900, 50px, $grey);
+		text-transform: uppercase;
+		text-align: center;
 	}
-	.h4{
+	h4{
 		margin: 45px auto 35px;
+		@include fonts($roboto, 30px, 700, 40px, $grey);
+		text-transform: uppercase;
+		text-align: center;
 	}
-	.text{
+   p{
 		margin-bottom: 35px;
 	}
-}
-.text__list{
-	margin-inline-start: 30px;
-	margin-bottom: 35px;
-}
-.text__item{
-	margin-bottom: 25px;
-}
-li::marker{
-	color: $current;
+	ul{
+		margin-inline-start: 30px;
+		margin-bottom: 35px;
+	}
+	li{
+		margin-bottom: 25px;
+	}
+	li::marker{
+		color: $current;
+	}
 }
 .simple__border{
 	border-top: 1px solid rgba(136, 140, 149, 0.25)

@@ -6652,33 +6652,54 @@ input::-webkit-inner-spin-button {
   padding-top: 33px;
 }
 
-.simple .h2 {
+.simple h2 {
   margin: 55px auto;
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #888c95;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.simple .h3 {
+.simple h3 {
   margin: 55px auto 35px;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  color: #888c95;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.simple .h4 {
+.simple h4 {
   margin: 45px auto 35px;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #888c95;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.simple .text {
+.simple p {
   margin-bottom: 35px;
 }
 
-.text__list {
+.simple ul {
   -webkit-margin-start: 30px;
           margin-inline-start: 30px;
   margin-bottom: 35px;
 }
 
-.text__item {
+.simple li {
   margin-bottom: 25px;
 }
 
-li::marker {
+.simple li::marker {
   color: #ff28c2;
 }
 
