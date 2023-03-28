@@ -33,6 +33,13 @@
 	}
 }
 @media screen and (max-width: 1200px){
+	.table__wrapper{
+		overflow-x: scroll;
+		width: 100%;
+		.table{
+			width: 1200px;
+		}
+	}
 	.menu .search-focus{
 		position: relative;
 		left: auto;
