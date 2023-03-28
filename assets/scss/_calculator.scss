@@ -282,6 +282,9 @@
 	@include fonts($roboto, 12px, 400, 30px, $grey);
 	cursor: pointer;
 }
+.select__option:hover{
+	color: $current;
+}
 .select-active{
 	display: block;
 }

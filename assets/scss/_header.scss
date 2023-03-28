@@ -532,3 +532,8 @@ a{
 .submenu__active{
 	display: block;
 }
+.menu__active {
+ 	.submenu__wrapper {
+ 		display: block;
+ 	}
+ }

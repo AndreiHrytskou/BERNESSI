@@ -33,6 +33,10 @@
 	}
 }
 @media screen and (max-width: 1200px){
+	.menu .search-focus{
+		position: relative;
+		left: auto;
+	}
 	.sidebar-account{
 		padding: 30px;
 	}
@@ -499,6 +503,17 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.menu-active .person{
+		padding-top: 25px;
+	}
+	.menu .search{
+		position: absolute;
+		top: 0;
+	}
+	.menu .search-focus{
+		position: absolute;
+		left: auto;
+	}
 	.preview{
 		margin: 0 auto;
 	}
