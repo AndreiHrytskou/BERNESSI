@@ -5847,6 +5847,11 @@ input::-webkit-inner-spin-button {
   padding-bottom: 50px;
 }
 
+.simple p > a {
+  margin-left: 10px;
+  color: #ff28c2;
+}
+
 .contact {
   padding-top: 30px;
   border-top: 1px solid rgba(136, 140, 149, 0.25);
