@@ -8033,7 +8033,7 @@ input::-webkit-inner-spin-button {
 }
 
 .table__subtotal-title {
-  width: 13%;
+  width: 18%;
   color: black;
   font-weight: 700;
   text-align: right;
@@ -8041,7 +8041,7 @@ input::-webkit-inner-spin-button {
 
 .table__subtotal-count {
   color: black;
-  width: 13%;
+  width: 18%;
   text-align: right;
 }
 
