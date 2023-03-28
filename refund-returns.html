@@ -12,6 +12,8 @@
 	<script src="./assets/js/lang.js" defer></script>
 	<script src="./assets/js/cart.js" defer></script>
 	<script src="./assets/js/swiper.js" defer></script>
+	<script src="./assets/js/refund.js" defer></script>
+	<script src="./assets/js/common.js"></script>
 	<title>Bernessi</title>
 </head>
 
@@ -774,6 +776,24 @@
 						Card refunds will be returned through the original card used on the transaction. Please allow 7-14 days for your refund to appear back into your account - once the item(s) have been received back to us.</p>
 					<p>We have the right to refuse a refund if we suspect the item has been worn or if it is not in the same condition as it was sent out. 
 						Please notice that we cannot accept returns on sale items.</p>
+					<form class="login__email grey">
+						<h4 class="h4">Please process your free return here:</h4>
+						<div class="login__list">
+							<label class="login__item" for="">
+								<input type="text" class="form__name" name="" id="" placeholder="Name" required>
+							</label>
+							<label class="login__item" for="">
+								<input type="email" class="form__email" name="" id="" placeholder="E-mail" required>
+							</label>
+							<label class="login__item" for="">
+								<input oninput="phoneMask(this)" class="form__phone" type="text" name="" id="" placeholder="Phone..." required>
+							</label>
+						</div>
+						<button class="register__btn">
+							<span class="checkout__text">Send</span>
+							<img src="./assets/img/arrow-right-grey.webp" alt="arrow" class="checkout__img">
+						</button>
+					</form>	
 					<h2>EXCHANGES</h2>
 					<p> If you would like to switch your item/s, please contact us - we will arrange a delivery for you (free for one-time, all the extra exchanges will be charged at 20 AED rate)</p>
 					<p>You can always contact us for any questions at sales@bernessi.ae.</p>

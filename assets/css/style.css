@@ -5852,6 +5852,15 @@ input::-webkit-inner-spin-button {
   color: #ff28c2;
 }
 
+.simple .login__email {
+  margin: 0 auto;
+}
+
+.register__btn:disabled {
+  opacity: 0.8;
+  cursor: auto;
+}
+
 .contact {
   padding-top: 30px;
   border-top: 1px solid rgba(136, 140, 149, 0.25);

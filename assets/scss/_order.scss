@@ -220,3 +220,10 @@
 	margin-left: 10px;
 	color:$current;
 }
+.simple .login__email{
+	margin: 0 auto;
+}
+.register__btn:disabled{
+	opacity: 0.8;
+	cursor: auto;
+}
