@@ -180,17 +180,17 @@
 			display: flex;
 		}
 	}
-	.footer-email{
-		background-color: $grey;
-		padding: 25px;
-		.footer__top{
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			.head-page{
-				height: 21px;
-			}
+.footer-email{
+	background-color: $grey;
+	padding: 25px;
+	.footer__top{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.head-page{
+			height: 21px;
 		}
+	}
 	.social{
 		padding-right: 0;
 	}
