@@ -5856,9 +5856,50 @@ input::-webkit-inner-spin-button {
   margin: 0 auto;
 }
 
-.register__btn:disabled {
-  opacity: 0.8;
-  cursor: auto;
+.form__return {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 430px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+.form__return .cross {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: 2px solid #ff28c2;
+  padding: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+}
+
+.div__form {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.pay:hover {
+  -webkit-box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.6) inset;
+          box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.6) inset;
 }
 
 .contact {

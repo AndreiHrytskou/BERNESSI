@@ -223,7 +223,31 @@
 .simple .login__email{
 	margin: 0 auto;
 }
-.register__btn:disabled{
-	opacity: 0.8;
-	cursor: auto;
+.form__return{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 430px;
+	width: 100%;
+	background-color: $white;
+	position: relative;
+	.cross{
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		border: 2px solid $current;
+		padding: 5px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
+.div__form{
+	position: fixed;
+   z-index: 999;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.pay:hover{
+	box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.6) inset;
 }
