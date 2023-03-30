@@ -17,7 +17,6 @@
 	<script src="./assets/js/headpage.js" defer></script>
 	<script src="./assets/js/modal.js" defer></script>
 	<script src="./assets/js/item.js" defer></script>
-	<script src="./assets/js/zoom.js" defer></script>
 	<title>Bernessi</title>
 </head>
 
@@ -756,14 +755,52 @@
 				<div class="cloth">
 					<div class="item__gallery">
 						<div class="preview">
-							<img src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview__img filter">
-							<img src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview__img">
-							<img src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview__img">
-							<img src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview__img">
-							<img src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview__img">
+							<div class="pictures">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img data-img="1" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview__img filter">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="2" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview__img">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="3" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview__img">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="4" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview__img">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="5" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview__img">
+									</div>
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<span class="close__img">
+									<img class="close__pic" src="./assets/img/close.png" alt="close">
+								</span>
+							</div>					
+							<div thumbsSlider="" class="swiper preview__list">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img data-img="1" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview__img filter">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="2" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview__img">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="3" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview__img">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="4" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview__img">
+									</div>
+									<div class="swiper-slide">
+										<img data-img="5" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview__img">
+									</div>
+								</div>	
+							</div>
 						</div>
 						<div class="preview__pic">
-							<img class="item__img" src="" alt="item" id="myimage" >
+							<img data-output="" class="item__img" src="" alt="item" id="myimage" >
 						</div>
 					</div>
 					

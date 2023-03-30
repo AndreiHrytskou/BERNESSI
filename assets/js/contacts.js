@@ -14,3 +14,5 @@ selectOutput.addEventListener("click", () => {
     });
   });
 });
+const d = document.querySelector(".contact-input");
+console.log(d);
