@@ -3087,6 +3087,13 @@ a {
           border-radius: 0;
   height: -webkit-calc(1795px + (3835 - 1795) * ((100vw - 1201px) / (2560 - 1201)));
   height: calc(1795px + (3835 - 1795) * ((100vw - 1201px) / (2560 - 1201)));
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.pictures .preview__img:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 .pictures {
