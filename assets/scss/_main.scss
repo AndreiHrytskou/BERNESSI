@@ -20,18 +20,54 @@
 .bread-sep{
 	@include fonts($roboto, 15px, 400, 25px, $grey);
 }
+.baner .h1 {
+    font-family: "Roboto";
+    font-size: 12.1vw;
+    font-weight: 900;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 24px #000000;
+}
+.banner__subtitle {
+    margin-bottom: 2%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 43px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.baner .container{
+	margin-top: 60px;
+}
 .baner{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 	max-width: 100%;
-	min-height: 650px;
-	padding: 50px 0;
+	height: calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+	padding: 50px 40px;
 	display: flex;
 	align-items: flex-end;
+	&__bg{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		picture{
+			width: 100%;
+		}
+		img{
+			width: 100%;
+		}
+	}
 	&__block{
-		max-width: 641px;
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -41,13 +77,14 @@
 	}
 	.read{
 		max-width: 315px;
+		width: 100%;
 		display: flex;
 		align-items: center;
 		background-color: transparent;
 		border: 2px solid $yellow;
 		border-radius: 25px;
 		padding: 3.4px 0;
-		margin-top: 30px;
+		margin-top: 20px;
 		cursor: pointer;
 		&-text{
 			@include fonts($roboto, 12px, 900, 30px, $white);

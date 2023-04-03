@@ -12,6 +12,15 @@
 	}
 }
 @media screen and (max-width: 1366px){
+	.baner{
+		height: calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
+		padding: 50px 74px;
+	}
+	.baner__block{
+		position: absolute;
+   	bottom: 20px;
+   	left: 56px;
+	}
 	.card__img, .card2__img{
 		height: calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
 	}
@@ -518,8 +527,18 @@
 	.address__list{
 		max-width: calc(100% - 45px);
 	}
+
 }
 @media screen and (max-width: 768px){
+	.baner{
+		height: calc(350px + (650 - 350) * ((100vw - 414px) / (768 - 414)));
+	}
+	.baner__block{
+		position: relative;
+		left: auto;
+		bottom: -15px;
+		align-items: center;
+	}
 	.menu-active .person{
 		padding-top: 25px;
 	}
@@ -896,6 +915,13 @@
 	}
 }
 @media screen and (max-width: 414px){
+	.baner{
+		padding: 50px;
+		height: calc(554px + (650 - 554) * ((100vw - 320px) / (414 - 320)));
+	}
+	.baner__block{
+		bottom: auto;
+	}
 	.preview__list .swiper-wrapper .swiper-slide{
 		max-width: 50%;
 		display: flex;

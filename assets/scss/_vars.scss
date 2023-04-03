@@ -25,9 +25,7 @@ $title: "Comforter Brush";
 	@include fonts($roboto, 12px, 500, 12px, $grey);
 	text-transform: uppercase;
 }
-.h1{
-	@include fonts($title, 75px, 500, 75px, $white);
-}
+
 .title{
 	@include fonts($roboto, 70px, 900, 75px, $grey);
 }

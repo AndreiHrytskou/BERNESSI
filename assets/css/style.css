@@ -8,14 +8,6 @@
   text-transform: uppercase;
 }
 
-.h1 {
-  font-family: "Comforter Brush";
-  font-size: 75px;
-  font-weight: 500;
-  line-height: 75px;
-  color: white;
-}
-
 .title {
   font-family: "Roboto";
   font-size: 70px;
@@ -895,6 +887,31 @@ a {
   color: #888c95;
 }
 
+.baner .h1 {
+  font-family: "Roboto";
+  font-size: 12.1vw;
+  font-weight: 900;
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 24px #000000;
+}
+
+.banner__subtitle {
+  margin-bottom: 2%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 43px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.baner .container {
+  margin-top: 60px;
+}
+
 .baner {
   background-position: center;
   background-repeat: no-repeat;
@@ -902,8 +919,9 @@ a {
           background-size: cover;
   width: 100%;
   max-width: 100%;
-  min-height: 650px;
-  padding: 50px 0;
+  height: -webkit-calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  padding: 50px 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -914,8 +932,25 @@ a {
           align-items: flex-end;
 }
 
+.baner__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.baner__bg picture {
+  width: 100%;
+}
+
+.baner__bg img {
+  width: 100%;
+}
+
 .baner__block {
-  max-width: 641px;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -937,6 +972,7 @@ a {
 
 .baner .read {
   max-width: 315px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -950,7 +986,7 @@ a {
   -webkit-border-radius: 25px;
           border-radius: 25px;
   padding: 3.4px 0;
-  margin-top: 30px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -8381,6 +8417,16 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 1366px) {
+  .baner {
+    height: -webkit-calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
+    height: calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
+    padding: 50px 74px;
+  }
+  .baner__block {
+    position: absolute;
+    bottom: 20px;
+    left: 56px;
+  }
   .card__img, .card2__img {
     height: -webkit-calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
     height: calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
@@ -9022,6 +9068,19 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 768px) {
+  .baner {
+    height: -webkit-calc(350px + (650 - 350) * ((100vw - 414px) / (768 - 414)));
+    height: calc(350px + (650 - 350) * ((100vw - 414px) / (768 - 414)));
+  }
+  .baner__block {
+    position: relative;
+    left: auto;
+    bottom: -15px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .menu-active .person {
     padding-top: 25px;
   }
@@ -9488,6 +9547,14 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 414px) {
+  .baner {
+    padding: 50px;
+    height: -webkit-calc(554px + (650 - 554) * ((100vw - 320px) / (414 - 320)));
+    height: calc(554px + (650 - 554) * ((100vw - 320px) / (414 - 320)));
+  }
+  .baner__block {
+    bottom: auto;
+  }
   .preview__list .swiper-wrapper .swiper-slide {
     max-width: 50%;
     display: -webkit-box;
