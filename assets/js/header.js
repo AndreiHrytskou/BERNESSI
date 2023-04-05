@@ -13,16 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const submenu = document.querySelectorAll(".submenu__wrapper");
     menuItem.forEach((e) => {
       e.addEventListener("click", () => {
-        if (!e.classList.contains("menu__active")) {
-          let cat = e.dataset.cat;
-          for (let i = 0; i < submenu.length; i++) {
-            if (submenu[i].dataset.cat != cat) {
-              e.classList.remove("menu__active");
+        let category = e.dataset.cat;
+        submenu.forEach((el) => {
+          let subcategory = el.dataset.cat;
+          if (category != subcategory) {
+            // e.classList.remove("menu__active");
+            el.classList.remove("submenu__active");
+          } else {
+            if (!e.classList.contains("menu__active")) {
+              //   e.classList.add("menu__active");
+              el.classList.toggle("submenu__active");
+              console.log(el);
             } else {
-              e.classList.toggle("menu__active");
+              //   e.classList.remove("menu__active");
+              el.classList.remove("submenu__active");
             }
           }
-        }
+        });
       });
     });
   }
