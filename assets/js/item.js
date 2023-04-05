@@ -11,6 +11,7 @@ const headImage = document.querySelector(".item__img");
 const previewImg = document.querySelectorAll(".preview__img");
 let img;
 previewImg.forEach((e) => {
+  //   console.log(e.dataset.img);
   if (e.classList.contains("filter")) {
     headImage.src = e.src;
     img = e.dataset.img;

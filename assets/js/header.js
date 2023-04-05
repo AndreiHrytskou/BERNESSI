@@ -8,19 +8,21 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.classList.toggle("burger-menu--closed");
     menuHide.classList.toggle("menu-active");
   });
-  if (window.innerWidth > 1200) {
+  if (window.innerWidth >= 1201) {
     const menuItem = document.querySelectorAll(".menu__item");
+    const submenu = document.querySelectorAll(".submenu__wrapper");
     menuItem.forEach((e) => {
       e.addEventListener("click", () => {
-        menuItem.forEach((el) => {
-          if (!el.classList.contains("menu__active")) {
-            el.classList.remove("menu__active");
-            e.classList.toggle("menu__active");
-          } else if (el.classList.contains("menu__active")) {
-            e.classList.toggle("menu__active");
-            el.classList.remove("menu__active");
+        if (!e.classList.contains("menu__active")) {
+          let cat = e.dataset.cat;
+          for (let i = 0; i < submenu.length; i++) {
+            if (submenu[i].dataset.cat != cat) {
+              e.classList.remove("menu__active");
+            } else {
+              e.classList.toggle("menu__active");
+            }
           }
-        });
+        }
       });
     });
   }

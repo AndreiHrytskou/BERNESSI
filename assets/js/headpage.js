@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
     //   loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     //   spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -12,14 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
       320: {
         slidesPerView: 1,
       },
-      576: {
+      577: {
         slidesPerView: 2,
       },
-      1024: {
+      993: {
         slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 4,
       },
     },
   });
@@ -37,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var swiper = new Swiper(".mySwiper1", {
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     //   spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -47,14 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
       320: {
         slidesPerView: 1,
       },
-      576: {
+      577: {
         slidesPerView: 2,
       },
-      1024: {
+      993: {
         slidesPerView: 3,
-      },
-      1440: {
-        slidesPerView: 4,
       },
     },
   });

@@ -21,9 +21,6 @@
    	bottom: 20px;
    	left: 56px;
 	}
-	.card__img, .card2__img{
-		height: calc(411px + (442 - 411) * ((100vw - 577px) / (1366 - 577)));
-	}
 	.footer .menu__list{
 		gap: 15px;
 	}
@@ -400,6 +397,10 @@
 	}
 }
 @media screen and (max-width: 992px){
+	.card__img,
+	.card2__img{
+    	height: calc(294px + (552 - 294) * ((100vw - 577px) / (992 - 577)));
+	}
 	.preview__list .swiper-wrapper .swiper-slide{
 		width: 100%;
 		max-width: 33%;
