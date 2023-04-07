@@ -2649,6 +2649,8 @@ a {
   height: -webkit-calc(500px + (1067 - 500) * ((100vw - 1201px) / (2560 - 1201)));
   height: calc(500px + (1067 - 500) * ((100vw - 1201px) / (2560 - 1201)));
   max-height: 800px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .item__description {
@@ -3077,6 +3079,7 @@ a {
 
 .pictures {
   display: none;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .preview__list {
@@ -3107,17 +3110,28 @@ a {
   margin-bottom: 10px;
 }
 
-.pictures .preview__img {
-  opacity: 1;
+.wrapper-picture {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(212, 212, 212, 0.8);
+}
+
+.preview2__img {
   -webkit-border-radius: 0;
           border-radius: 0;
   height: -webkit-calc(1491px + (3835 - 1491) * ((100vw - 993px) / (2560 - 993)));
   height: calc(1491px + (3835 - 1491) * ((100vw - 993px) / (2560 - 993)));
   cursor: -webkit-grab;
   cursor: grab;
+  z-index: 1000;
 }
 
-.pictures .preview__img:active {
+.pictures .preview2__img:active {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
@@ -3167,6 +3181,38 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+figure.candle {
+  background-position: 50% 50%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+figure.candle img:hover {
+  opacity: 0;
+}
+
+figure.candle img {
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;
+}
+
+.div__back {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4d4d4;
 }
 
 .background {

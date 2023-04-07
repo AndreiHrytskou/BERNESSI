@@ -17,6 +17,7 @@
 	<script src="./assets/js/headpage.js" defer></script>
 	<script src="./assets/js/modal.js" defer></script>
 	<script src="./assets/js/item.js" defer></script>
+	<script src="./assets/js/zoom.js" defer></script>
 	<title>Bernessi</title>
 </head>
 
@@ -758,19 +759,29 @@
 							<div class="pictures">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
-										<img data-img="1" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview__img filter">
+										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST1497  BS-LL1497 (222).jpg')">
+											<img data-img="1" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview2__img"/>
+										</figure>
 									</div>
 									<div class="swiper-slide">
-										<img data-img="2" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview__img">
+										<figure  class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST1797   BS-LL1797 (333).jpg')">
+											<img data-img="2" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview2__img"/>
+										</figure>
 									</div>
 									<div class="swiper-slide">
-										<img data-img="3" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview__img">
+										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST7446  BS-LL7446 (111).jpg')">
+											<img data-img="3" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview2__img"/>
+										</figure>
 									</div>
 									<div class="swiper-slide">
-										<img data-img="4" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview__img">
+										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST7446  BS-LL7446 (444).jpg')">
+											<img data-img="4" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview2__img"/>
+										</figure>
 									</div>
 									<div class="swiper-slide">
-										<img data-img="5" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview__img">
+										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-SST1797    BS-SL1797 (5555).jpg')">
+											<img data-img="5" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview2__img"/>
+										</figure>
 									</div>
 								</div>
 								<div class="swiper-button-next"></div>
@@ -800,7 +811,7 @@
 							</div>
 						</div>
 						<div class="preview__pic">
-							<img data-output="" class="item__img" src="" alt="item" id="myimage" >
+							<img data-output="" class="item__img" src="" alt="item" >
 						</div>
 					</div>
 					

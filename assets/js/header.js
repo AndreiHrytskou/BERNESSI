@@ -16,22 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
         let category = e.dataset.cat;
         submenu.forEach((el) => {
           let subcategory = el.dataset.cat;
-          if (category != subcategory) {
-            // e.classList.remove("menu__active");
-            el.classList.remove("submenu__active");
+          if (category == subcategory) {
+            e.classList.toggle("menu__active");
+            // el.classList.remove("submenu__active");
           } else {
-            if (!e.classList.contains("menu__active")) {
-              //   e.classList.add("menu__active");
-              el.classList.toggle("submenu__active");
-              console.log(el);
+            if (e.classList.contains("menu__active")) {
+              e.classList.remove("menu__active");
+              //   el.classList.toggle("submenu__active");
+              console.log();
             } else {
-              //   e.classList.remove("menu__active");
-              el.classList.remove("submenu__active");
+              e.classList.add("menu__active");
+              //   el.classList.remove("submenu__active");
             }
           }
         });
       });
     });
+    document.body.addEventListener("click", () => {});
   }
 
   const menuItem = document.querySelectorAll(".menu__block-span");
