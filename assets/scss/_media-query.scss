@@ -397,19 +397,10 @@
 	}
 }
 @media screen and (max-width: 992px){
-	.delivery__wrapper{
-		overflow-x: scroll;
+	.delivery__name,
+	.delivery__items{
+		padding: 10px;
 	}
-	.delivery__table{
-		width: 1000px;
-		box-shadow: 0 0 0 1px #FF42C9 inset;
-	}
-	.delivery__wrapper::-webkit-scrollbar{
-		background-color: rgba(255, 66, 201, 0.15);
-	}
-	.delivery__wrapper::-webkit-scrollbar-thumb{
-		background-color: #FF42C9;
-	}	
 	.link__block{
 		flex-direction: column;
 		align-items: center;
@@ -766,6 +757,12 @@
 	}
 }
 @media screen and (max-width: 576px){
+	.delivery__name,
+	.delivery__items{
+		padding: 10px 5px;
+		font-size: 12px;
+		line-height: 15px;
+	}
 	.card__img, .card2__img{
 		height: 100%;
 		max-width: 100%;
