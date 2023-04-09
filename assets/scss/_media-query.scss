@@ -397,6 +397,26 @@
 	}
 }
 @media screen and (max-width: 992px){
+	.delivery__wrapper{
+		overflow-x: scroll;
+	}
+	.delivery__table{
+		width: 1000px;
+		box-shadow: 0 0 0 1px #FF42C9 inset;
+	}
+	.delivery__wrapper::-webkit-scrollbar{
+		background-color: rgba(255, 66, 201, 0.15);
+	}
+	.delivery__wrapper::-webkit-scrollbar-thumb{
+		background-color: #FF42C9;
+	}	
+	.link__block{
+		flex-direction: column;
+		align-items: center;
+	}
+	.link__box{
+		max-width: 450px;
+	}
 	.card__img,
 	.card2__img{
     	height: calc(294px + (552 - 294) * ((100vw - 577px) / (992 - 577)));

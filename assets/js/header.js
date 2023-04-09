@@ -13,33 +13,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const submenu = document.querySelectorAll(".submenu__wrapper");
     menuItem.forEach((e) => {
       e.addEventListener("click", () => {
-        let category = e.dataset.cat;
-        submenu.forEach((el) => {
-          let subcategory = el.dataset.cat;
-          if (category == subcategory) {
-            e.classList.toggle("menu__active");
-            // el.classList.remove("submenu__active");
-          } else {
-            if (e.classList.contains("menu__active")) {
-              e.classList.remove("menu__active");
-              //   el.classList.toggle("submenu__active");
-              console.log();
-            } else {
-              e.classList.add("menu__active");
-              //   el.classList.remove("submenu__active");
-            }
-          }
-        });
+        //   let category = e.dataset.cat;
+        //   submenu.forEach((el) => {
+        //     let subcategory = el.dataset.cat;
+        //     if (!e.classList.contains("menu__active")) {
+        //       e.classList.remove("menu__active");
+        //     }
+        //   });
+        e.classList.toggle("menu__active");
       });
     });
-    document.body.addEventListener("click", () => {});
   }
 
   const menuItem = document.querySelectorAll(".menu__block-span");
   const submenuItem = document.querySelectorAll(".submenu__item-span");
   const arrowBack = document.querySelectorAll(".arrow-back");
   const arrowBack2 = document.querySelectorAll(".mobile2-arrow");
-  if (window.innerWidth < 1200) {
+  if (window.innerWidth <= 1200) {
     menuItem.forEach((e) => {
       e.addEventListener("click", () => {
         e.parentElement.classList.add("submenu-active");
