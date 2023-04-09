@@ -8609,6 +8609,120 @@ input::-webkit-inner-spin-button {
   background-color: #888c95;
 }
 
+.ambassador {
+  background-image: url("./../img/ambassadorbg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
+  height: -webkit-calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  margin-bottom: 131px;
+  overflow: hidden;
+}
+
+.ambassador__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 156px 0 113px;
+}
+
+.ambassador__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: -webkit-calc(463px + (648 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(463px + (648 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+}
+
+.ambassador__title {
+  max-width: 60%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6.5vw;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.partnership {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 78px;
+  margin-bottom: 130px;
+}
+
+.partnership__text {
+  max-width: 53.9%;
+  width: 100%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 79px;
+  line-height: 104%;
+}
+
+.partnership__text-pink {
+  color: #ff28c2;
+  font-style: italic;
+}
+
+.partnership__text-logo {
+  background-color: #ffec53;
+}
+
+.partnership__box {
+  max-width: 39.7%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.partnership__box__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: #888C95;
+}
+
+.partnership__box .login__email {
+  max-width: 100%;
+  padding: 68px 60.5px;
+}
+
+.partnership__box .login__email .register__btn {
+  margin-bottom: 0;
+}
+
+.partnership__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #888C95;
+}
+
 @media screen and (max-width: 1480px) {
   .footer .menu__list {
     gap: 20px;
@@ -8621,6 +8735,21 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 1366px) {
+  .ambassador {
+    background-image: url("./../img/ambassadorbg1366.png");
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
+    height: calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
+  }
+  .ambassador__wrapper {
+    padding: 9.3vw 0;
+  }
+  .ambassador__img {
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
+    height: calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
+  }
+  .ambassador__title {
+    max-width: 55%;
+  }
   .baner {
     height: -webkit-calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
     height: calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
@@ -9110,6 +9239,22 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 992px) {
+  .partnership {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partnership__text,
+  .partnership__box {
+    max-width: 100%;
+    text-align: center;
+  }
   .delivery__name,
   .delivery__items {
     padding: 10px;
@@ -9291,6 +9436,24 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 768px) {
+  .ambassador {
+    background-image: url("./../img/ambassadorbg768.png");
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+    height: calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+  }
+  .ambassador__wrapper {
+    padding: 9.3vw 0;
+  }
+  .ambassador__img {
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+    height: calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+  }
+  .ambassador__title {
+    z-index: 2;
+    max-width: 46%;
+    font-size: 6vw;
+    line-height: 79.5%;
+  }
   .baner {
     height: -webkit-calc(350px + (650 - 350) * ((100vw - 414px) / (768 - 414)));
     height: calc(350px + (650 - 350) * ((100vw - 414px) / (768 - 414)));
@@ -9558,6 +9721,19 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 576px) {
+  .partnership__box .login__email {
+    padding: 20px;
+  }
+  .partnership__text {
+    font-size: 50px;
+  }
+  .partnership__box .name-input {
+    gap: 10px;
+  }
+  .partnership__box .name-input .login__item {
+    max-width: 49%;
+    padding: 11.7px 9px;
+  }
   .delivery__name,
   .delivery__items {
     padding: 10px 5px;
@@ -9776,6 +9952,29 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 414px) {
+  .ambassador {
+    background-image: url("./../img/ambassadorbg375.png");
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+    height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+  }
+  .ambassador__img {
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+    height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+  }
+  .ambassador__wrapper {
+    padding: 27px 0;
+    height: -webkit-calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+    height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .ambassador__title {
+    max-width: 60%;
+    font-size: 20px;
+    line-height: 100%;
+  }
   .baner {
     padding: 50px;
     height: -webkit-calc(554px + (650 - 554) * ((100vw - 320px) / (414 - 320)));

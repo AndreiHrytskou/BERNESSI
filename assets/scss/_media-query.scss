@@ -12,6 +12,19 @@
 	}
 }
 @media screen and (max-width: 1366px){
+	.ambassador{
+		background-image: url('./../img/ambassadorbg1366.png');
+		height: calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
+	}
+	.ambassador__wrapper{
+		padding: 9.3vw 0;
+	}
+	.ambassador__img{
+		height: calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
+	}
+	.ambassador__title{
+		max-width: 55%;
+	}
 	.baner{
 		height: calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
 		padding: 50px 74px;
@@ -397,6 +410,15 @@
 	}
 }
 @media screen and (max-width: 992px){
+	.partnership{
+		flex-direction: column;
+		align-items: center;
+	}
+	.partnership__text,
+	.partnership__box{
+		max-width: 100%;
+		text-align: center;
+	}
 	.delivery__name,
 	.delivery__items{
 		padding: 10px;
@@ -542,6 +564,22 @@
 
 }
 @media screen and (max-width: 768px){
+	.ambassador{
+		background-image: url('./../img/ambassadorbg768.png');
+		height: calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+	}
+	.ambassador__wrapper{
+		padding: 9.3vw 0;
+	}
+	.ambassador__img{
+		height: calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+	}
+	.ambassador__title{
+		z-index: 2;
+		max-width: 46%;
+		font-size: 6vw;
+		line-height: 79.5%;
+	}
 	.baner{
 		height: calc(350px + (650 - 350) * ((100vw - 414px) / (768 - 414)));
 	}
@@ -757,6 +795,20 @@
 	}
 }
 @media screen and (max-width: 576px){
+	.partnership__box .login__email {
+		padding: 20px;
+	}
+	.partnership__text{
+		font-size: 50px;
+	}
+	.partnership__box {
+		.name-input{
+			gap: 10px;
+			.login__item{
+				max-width: 49%;
+				padding: 11.7px 9px;
+			}
+	}}
 	.delivery__name,
 	.delivery__items{
 		padding: 10px 5px;
@@ -933,6 +985,23 @@
 	}
 }
 @media screen and (max-width: 414px){
+	.ambassador{
+		background-image: url('./../img/ambassadorbg375.png');
+		height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+	}
+	.ambassador__img{
+		height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+	}
+	.ambassador__wrapper{
+		padding: 27px 0;
+		height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+		align-items: flex-end;
+	}
+	.ambassador__title{
+		max-width: 60%;
+		font-size: 20px;
+		line-height: 100%;
+	}
 	.baner{
 		padding: 50px;
 		height: calc(554px + (650 - 554) * ((100vw - 320px) / (414 - 320)));
