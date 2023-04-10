@@ -9518,6 +9518,7 @@ input::-webkit-inner-spin-button {
     background-image: url("./../img/ambassadorbg768.png");
     height: -webkit-calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
     height: calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
+    margin-bottom: 50px;
   }
   .ambassador__wrapper {
     padding: 9.3vw 0;
