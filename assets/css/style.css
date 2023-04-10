@@ -8668,8 +8668,8 @@ input::-webkit-inner-spin-button {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 79px;
-  line-height: 104%;
+  font-size: 5.2vw;
+  line-height: 105%;
 }
 
 .partnership__text-pink {
@@ -8723,9 +8723,87 @@ input::-webkit-inner-spin-button {
   color: #888C95;
 }
 
+.about {
+  background-image: url("./../img/aboutusbg.png");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0 76px;
+  min-height: 1721px;
+}
+
+.about__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.about__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 150px;
+  line-height: 99.5%;
+  text-transform: uppercase;
+  color: white;
+  max-width: 80%;
+}
+
+.yellow {
+  color: #FFEC53;
+}
+
+.typed-cursor {
+  opacity: 1;
+  font-size: 100%;
+  -webkit-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite;
+  color: #FFEC53;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .partnership__text {
+    font-size: 5.4vw;
+  }
+}
+
 @media screen and (max-width: 1480px) {
   .footer .menu__list {
     gap: 20px;
+  }
+  .partnership__text {
+    font-size: 79px;
+    line-height: 104%;
   }
   .block__middle .bra__size,
   .block__middle .bra__bust,
