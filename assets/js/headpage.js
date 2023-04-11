@@ -65,4 +65,43 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  //  my slider
+
+  let offset = 0;
+  const sliderLine = document.querySelector(".section__wrapper");
+
+  document.querySelector(".next").addEventListener("click", () => {
+    offset += 299;
+    if (offset > 299) {
+      offset = 0;
+    }
+    sliderLine.style.left = -offset + "px";
+  });
+  document.querySelector(".prev").addEventListener("click", () => {
+    offset -= 299;
+    if (offset < 0) {
+      offset = 299;
+    }
+    sliderLine.style.left = -offset + "px";
+  });
+
+  // scroll
+
+  const banerBg = document.querySelector(".baner__swiper");
+  const main = document.querySelector(".main");
+  const baner = document.querySelector(".baner");
+
+  window.addEventListener("scroll", () => {
+    //   console.log(pageYOffset);
+    banerBg.classList.add("baner__scroll");
+    //  if (pageYOffset > baner.clientHeight) {
+    //    main.classList.add("main__background");
+    //  }
+    //   banerBg.style.transition = "1s";
+    //   banerBg.style.borderRadius = "40px";
+    //   banerBg.style.maxWidth = "95%";
+    //   banerBg.style.overflow = "hidden";
+    //   banerBg.style.margin = "0px auto";
+  });
 });

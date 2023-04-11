@@ -923,6 +923,7 @@ a {
   top: 0;
   bottom: 0;
   width: 100%;
+  margin: 0 auto;
 }
 
 .baner__bg picture {
@@ -1002,6 +1003,37 @@ a {
 
 .baner .read:hover .read-text {
   color: #888c95;
+}
+
+.baner__scroll {
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  max-width: 95%;
+  overflow: hidden;
+  margin: 100px auto 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  z-index: 10;
+}
+
+.baner__scroll .baner {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  height: -webkit-calc(440px + (615 - 440) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(440px + (615 - 440) * ((100vw - 1366px) / (1920 - 1366)));
+}
+
+.main__background {
+  position: fixed;
+  top: 0;
+  z-index: -2;
+  height: 130vh;
+  opacity: 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
 }
 
 .catalog {
@@ -10107,18 +10139,29 @@ input::-webkit-inner-spin-button {
         -ms-flex-direction: row;
             flex-direction: row;
     height: 306px;
-    width: 618px;
+    width: 598px;
+    position: relative;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    gap: 0;
   }
   .section .arrows .prev {
     position: absolute;
     left: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     cursor: pointer;
   }
   .section .arrows .next {
     position: absolute;
     right: 10px;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     cursor: pointer;
   }
   .section__bold {

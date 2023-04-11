@@ -59,6 +59,7 @@
 		top: 0;
 		bottom: 0;
 		width: 100%;
+		margin: 0 auto;
 		picture{
 			width: 100%;
 		}
@@ -105,6 +106,27 @@
 			color: $grey;
 		}
 	}
+}
+.baner__scroll{
+	border-radius: 40px;
+	max-width: 95%;
+	overflow: hidden;
+	margin: 100px auto 0 ;
+	transition: 1s;
+	z-index: 10;
+	.baner{
+		transition: 1s;
+		height: calc(440px + (615 - 440) * ((100vw - 1366px) / (1920 - 1366)));
+	}
+}
+.main__background{
+	position: fixed;
+	top: 0;
+	z-index: -2;
+	height: 130vh;
+	opacity: 0;
+	background-size: cover;
+	width: 100%;
 }
 .catalog{
 	max-width: 98%;

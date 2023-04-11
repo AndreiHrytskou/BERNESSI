@@ -1024,19 +1024,24 @@
 	.section__wrapper{
 		flex-direction: row;
 		height: 306px;
-		width: 618px;
+		width: 598px;
+		position: relative;
+		transition: 0.5s;
+		gap: 0;
 	}
 	.section .arrows{
 		.prev{
 			position: absolute;
 			left: 10px;
 			top: 50%;
+			transform: translateY(-50%);
 			cursor: pointer;
 		}
 		.next{
 			position: absolute;
 			right: 10px;
 			top: 50%;
+			transform: translateY(-50%);
 			cursor: pointer;
 		}
 	}
