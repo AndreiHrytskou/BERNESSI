@@ -48,3 +48,8 @@ input.addEventListener("input", onInput);
 function isEmailValid(value) {
   return EMAIL_REGEXP.test(value);
 }
+
+function noDigits(event) {
+  if ("1234567890!@#$%^&*()_+=-?/><,.".indexOf(event.key) != -1)
+    event.preventDefault();
+}

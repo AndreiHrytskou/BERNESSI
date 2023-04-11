@@ -8638,8 +8638,8 @@ input::-webkit-inner-spin-button {
   left: 0;
   top: 0;
   bottom: 0;
-  height: -webkit-calc(463px + (648 - 463) * ((100vw - 1366px) / (1920 - 1366)));
-  height: calc(463px + (648 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  height: -webkit-calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
 }
 
 .ambassador__title {
@@ -8721,6 +8721,11 @@ input::-webkit-inner-spin-button {
   line-height: 50px;
   text-transform: uppercase;
   color: #888C95;
+}
+
+.register__btn:hover {
+  -webkit-box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2) inset;
 }
 
 .about {
@@ -9331,7 +9336,6 @@ input::-webkit-inner-spin-button {
   .partnership__text,
   .partnership__box {
     max-width: 100%;
-    text-align: center;
   }
   .delivery__name,
   .delivery__items {
@@ -9811,7 +9815,9 @@ input::-webkit-inner-spin-button {
   }
   .partnership__box .name-input .login__item {
     max-width: 49%;
-    padding: 11.7px 9px;
+  }
+  .partnership__title {
+    font-size: 32px;
   }
   .delivery__name,
   .delivery__items {
@@ -10039,6 +10045,10 @@ input::-webkit-inner-spin-button {
   .ambassador__img {
     height: -webkit-calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
     height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .ambassador__wrapper {
     padding: 27px 0;

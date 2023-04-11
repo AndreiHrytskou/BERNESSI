@@ -426,7 +426,6 @@
 	.partnership__text,
 	.partnership__box{
 		max-width: 100%;
-		text-align: center;
 	}
 	.delivery__name,
 	.delivery__items{
@@ -816,9 +815,11 @@
 			gap: 10px;
 			.login__item{
 				max-width: 49%;
-				padding: 11.7px 9px;
 			}
 	}}
+	.partnership__title{
+		font-size: 32px;
+	}
 	.delivery__name,
 	.delivery__items{
 		padding: 10px 5px;
@@ -1001,6 +1002,8 @@
 	}
 	.ambassador__img{
 		height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	.ambassador__wrapper{
 		padding: 27px 0;
