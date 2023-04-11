@@ -21,6 +21,10 @@
 	}
 }
 @media screen and (max-width: 1366px){
+	.banner {
+		height: calc(280px + (500 - 280) * ((100vw - 768px) / (1366 - 768)));
+		padding: 0;
+	}
 	.ambassador{
 		background-image: url('./../img/ambassadorbg1366.png');
 		height: calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
@@ -81,7 +85,9 @@
 	.header{
 		position: relative;
 	}
-.catalog .mySwiper {
+.catalog .mySwiper,
+.catalog .mySwiper1,
+.catalog .swiper-noname {
     width: 85%;
 }
 .burger{
@@ -572,6 +578,10 @@
 
 }
 @media screen and (max-width: 768px){
+	.banner {
+		height: -webkit-calc(269px + (500 - 269) * ((100vw - 414px) / (768 - 414)));
+		height: calc(269px + (500 - 269) * ((100vw - 414px) / (768 - 414)));
+	}
 	.ambassador{
 		background-image: url('./../img/ambassadorbg768.png');
 		height: calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
@@ -639,7 +649,7 @@
 	.category__item{
 		max-width: 100%;
 	}
-	.section .container{
+	.section__wrapper{
 		flex-direction: column;
 		border-radius: 0;
 	}
@@ -648,6 +658,7 @@
 		border-radius: 25px;
 		.regular__img{
 			border-radius: 25px;
+			height: 100%;
 		}
 		.regular__text{
 			width: 100%;
@@ -659,6 +670,7 @@
 		border-radius: 25px;
 		.bright__img{
 			border-radius: 25px;
+			height: 100%;
 		}
 		.bright__text{
 			width: 100%;
@@ -997,6 +1009,55 @@
 	}
 }
 @media screen and (max-width: 414px){
+	.banner {
+		height: -webkit-calc(426px + (551 - 426) * ((100vw - 320px) / (414 - 320)));
+		height: calc(426px + (551 - 426) * ((100vw - 320px) / (414 - 320)));
+	}
+	.section{
+		position: relative;
+	}
+	.section .container{
+		width: 299px;
+		height: 306px;
+		overflow: hidden;
+	}
+	.section__wrapper{
+		flex-direction: row;
+		height: 306px;
+		width: 618px;
+	}
+	.section .arrows{
+		.prev{
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			cursor: pointer;
+		}
+		.next{
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			cursor: pointer;
+		}
+	}
+	.section__bold{
+		font-size: 25px;
+		line-height: 86.69%;
+	}
+	.regular .regular__text{
+		padding: 0;
+		max-width: 110px;
+		transform: translateX(0);
+		bottom: 60px;
+	}
+	.bright .bright__text{
+		padding: 0;
+		max-width: 110px;
+		transform: translateX(0);
+		bottom: 60px;
+		left: auto;
+		right: 50%;
+	}
 	.ambassador{
 		background-image: url('./../img/ambassadorbg375.png');
 		height: calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));

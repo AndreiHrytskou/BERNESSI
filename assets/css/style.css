@@ -1067,7 +1067,8 @@ a {
   stroke: #ff28c2;
 }
 
-.catalog .mySwiper {
+.catalog .mySwiper,
+.catalog .swiper-noname {
   width: 95%;
   height: 100%;
   padding: 50px 15px 20px;
@@ -1075,7 +1076,8 @@ a {
           border-radius: 25px;
 }
 
-.catalog .mySwiper .swiper-wrapper {
+.catalog .mySwiper .swiper-wrapper,
+.catalog .swiper-noname .swiper-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1312,6 +1314,10 @@ a {
 .category__bg {
   position: relative;
   width: 100%;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .category__img {
@@ -1341,16 +1347,8 @@ a {
 }
 
 .category__item:hover .category__bg {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-.category__item:hover .category__link {
-  background-color: #ff28c2;
-}
-
-.category__item:hover .category__link path {
-  fill: white;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .section {
@@ -1358,7 +1356,7 @@ a {
   margin-bottom: 150px;
 }
 
-.section .container {
+.section__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1397,6 +1395,9 @@ a {
   position: relative;
   left: 0;
   top: 0;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  height: 500px;
 }
 
 .bright__img {
@@ -1405,16 +1406,35 @@ a {
   position: relative;
   right: 0;
   top: 0;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  height: 500px;
 }
 
 .regular__text {
   position: absolute;
-  width: 86%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .bright__text {
   position: absolute;
-  width: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.bright__text .section__bold {
+  text-align: left;
 }
 
 .bright {
@@ -1435,31 +1455,24 @@ a {
           justify-content: center;
 }
 
-.bright .section__text::after {
-  content: "";
-  width: 70%;
-  opacity: 0.5;
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  border: 3px solid #ffec53;
-}
-
-.bright .section__bottom::before {
-  content: "";
-  width: 40%;
-  opacity: 0.5;
-  position: absolute;
-  top: 50%;
-  left: 10px;
-  border: 3px solid #ffec53;
-}
-
 .regular:hover .regular__img, .regular:hover .bright__img,
 .bright:hover .regular__img,
 .bright:hover .bright__img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.regular:hover .regular__text,
+.regular:hover .bright__text,
+.bright:hover .regular__text,
+.bright:hover .bright__text {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .section__text {
@@ -1491,8 +1504,9 @@ a {
   line-height: 0.833;
   color: white;
   text-transform: uppercase;
-  text-align: center;
+  text-align: right;
   position: relative;
+  text-shadow: 0px 0px 36.628px #000000;
 }
 
 .section__bottom {
@@ -1516,23 +1530,29 @@ a {
   border: 3px solid #ffec53;
 }
 
-.banner {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#e6dcd2), to(#d7c3ba));
-  background-image: -webkit-linear-gradient(bottom, #e6dcd2 0%, #d7c3ba 100%);
-  background-image: -o-linear-gradient(bottom, #e6dcd2 0%, #d7c3ba 100%);
-  background-image: linear-gradient(0deg, #e6dcd2 0%, #d7c3ba 100%);
-  max-height: 500px;
+.banner__background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.banner .container {
+.banner {
+  margin: 120px auto 0;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 95%;
+  height: -webkit-calc(499px + (650 - 499) * ((100vw - 1366px) / (1920 - 1366)));
+  height: calc(499px + (650 - 499) * ((100vw - 1366px) / (1920 - 1366)));
+  padding: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -1540,9 +1560,27 @@ a {
 }
 
 .banner__bg {
-  height: 500px;
-  max-width: 900px;
   width: 100%;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+}
+
+.banner__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 25px;
+  position: relative;
 }
 
 .banner .see-more {
@@ -1597,7 +1635,7 @@ a {
 .mySwiper1 {
   width: 95%;
   height: 100%;
-  padding: 50px 10px 25px;
+  padding: 50px 15px 20px;
 }
 
 .mySwiper1 .swiper-wrapper {
@@ -8817,6 +8855,11 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 1366px) {
+  .banner {
+    height: -webkit-calc(280px + (500 - 280) * ((100vw - 768px) / (1366 - 768)));
+    height: calc(280px + (500 - 280) * ((100vw - 768px) / (1366 - 768)));
+    padding: 0;
+  }
   .ambassador {
     background-image: url("./../img/ambassadorbg1366.png");
     height: -webkit-calc(365px + (650 - 365) * ((100vw - 768px) / (1366 - 768)));
@@ -8882,7 +8925,9 @@ input::-webkit-inner-spin-button {
   .header {
     position: relative;
   }
-  .catalog .mySwiper {
+  .catalog .mySwiper,
+  .catalog .mySwiper1,
+  .catalog .swiper-noname {
     width: 85%;
   }
   .burger {
@@ -9517,6 +9562,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    height: -webkit-calc(269px + (500 - 269) * ((100vw - 414px) / (768 - 414)));
+    height: calc(269px + (500 - 269) * ((100vw - 414px) / (768 - 414)));
+  }
   .ambassador {
     background-image: url("./../img/ambassadorbg768.png");
     height: -webkit-calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
@@ -9600,7 +9649,7 @@ input::-webkit-inner-spin-button {
   .category__item {
     max-width: 100%;
   }
-  .section .container {
+  .section__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -9617,6 +9666,7 @@ input::-webkit-inner-spin-button {
   .regular .regular__img {
     -webkit-border-radius: 25px;
             border-radius: 25px;
+    height: 100%;
   }
   .regular .regular__text {
     width: 100%;
@@ -9630,6 +9680,7 @@ input::-webkit-inner-spin-button {
   .bright .bright__img {
     -webkit-border-radius: 25px;
             border-radius: 25px;
+    height: 100%;
   }
   .bright .bright__text {
     width: 100%;
@@ -10037,6 +10088,61 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 414px) {
+  .banner {
+    height: -webkit-calc(426px + (551 - 426) * ((100vw - 320px) / (414 - 320)));
+    height: calc(426px + (551 - 426) * ((100vw - 320px) / (414 - 320)));
+  }
+  .section {
+    position: relative;
+  }
+  .section .container {
+    width: 299px;
+    height: 306px;
+    overflow: hidden;
+  }
+  .section__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 306px;
+    width: 618px;
+  }
+  .section .arrows .prev {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    cursor: pointer;
+  }
+  .section .arrows .next {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+  }
+  .section__bold {
+    font-size: 25px;
+    line-height: 86.69%;
+  }
+  .regular .regular__text {
+    padding: 0;
+    max-width: 110px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    bottom: 60px;
+  }
+  .bright .bright__text {
+    padding: 0;
+    max-width: 110px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    bottom: 60px;
+    left: auto;
+    right: 50%;
+  }
   .ambassador {
     background-image: url("./../img/ambassadorbg375.png");
     height: -webkit-calc(365px + (650 - 365) * ((100vw - 320px) / (414 - 320)));
