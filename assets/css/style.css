@@ -9818,6 +9818,7 @@ input::-webkit-inner-spin-button {
   }
   .partnership__title {
     font-size: 32px;
+    line-height: 36px;
   }
   .delivery__name,
   .delivery__items {
