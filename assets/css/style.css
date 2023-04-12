@@ -115,8 +115,8 @@ a {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: white;
   z-index: 100;
@@ -900,25 +900,19 @@ a {
 }
 
 .baner__bg {
+  position: relative;
   width: 100%;
   margin: 0 auto;
 }
 
 .baner__block {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .baner-text {
@@ -1009,6 +1003,15 @@ a {
   display: none;
 }
 
+.baner__scroll .baner__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 20px;
+  left: 56px;
+}
+
 .baner__scroll .baner__img {
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -1018,12 +1021,40 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-border-radius: 40px;
           border-radius: 40px;
   height: 100%;
 }
 
+.baner__bg-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 79px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.baner__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
 .main__background {
+  width: 100%;
+  opacity: 0;
+}
+
+.main__background-img {
   width: 100%;
 }
 
@@ -8897,16 +8928,6 @@ input::-webkit-inner-spin-button {
   }
   .ambassador__title {
     max-width: 55%;
-  }
-  .baner {
-    height: -webkit-calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
-    height: calc(366px + (650 - 366) * ((100vw - 768px) / (1366 - 768)));
-    padding: 50px 74px;
-  }
-  .baner__block {
-    position: absolute;
-    bottom: 20px;
-    left: 56px;
   }
   .footer .menu__list {
     gap: 15px;

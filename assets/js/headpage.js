@@ -80,29 +80,48 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
   const banerImg = document.querySelector(".baner__img");
-
-  baner.style.translate = "none";
-  baner.style.rotate = "none";
-  baner.style.scale = "none";
   banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
+  baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
+  baner.style.marginTop = `${header.clientHeight}px`;
   //   banerImg.style.height = `100vh`;
+  var scrollCoef = 0.001;
   window.addEventListener("scroll", () => {
     baner.classList.add("baner__scroll");
 
-    if (pageYOffset < 800) {
+    if (pageYOffset < 600) {
       baner.style.height = banerImg.clientHeight + "px";
       banerImg.style.height = `100%`;
       let r = pageYOffset + 50 + "px";
-      baner.style.translate = "none";
-      baner.style.rotate = "none";
-      baner.style.scale = "none";
       baner.style.maxWidth = "95%";
-      baner.style.transform = `translate(0px, ${r})`;
+      baner.style.transform = `translateX(-50%)`;
+      baner.style.position = "fixed";
+      baner.style.top = header.clientHeight + "px";
+      baner.style.left = "50%";
+      baner.style.marginTop = 0;
+
       // baner.style.marginBottom = "900px";
     }
-    //  if (pageYOffset > 800) {
-    //    baner.style.marginBottom = "50px";
-    //    baner.style.transform = `translate(0px, 0px)`;
+    //   background
+    const background = document.querySelector(".main__background");
+    let elem = background.getBoundingClientRect();
+    let top = elem.top - window.pageYOffset;
+    console.log(top);
+
+    if (pageYOffset > 600) {
+      let i = pageYOffset * 0.001;
+      baner.style.top = elem.top - banerImg.clientHeight - 27 + "px";
+      background.style.opacity = i;
+    }
+
+    //  if (pageYOffset > 1100) {
+    //    // background.style.opacity = i--;var scrollCoef = 0.0035;
+    //    let win = document.querySelector("window");
+    //    background.style.opacity = 1 - window.scrollY * scrollCoef;
+    //  }
+    background.style.marginTop =
+      header.clientHeight + banerImg.clientHeight + 600 + "px";
+    //  if (top >= 0) {
+    //    console.log(top);
     //  }
   });
 });
