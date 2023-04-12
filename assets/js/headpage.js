@@ -18,17 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  var swiper = new Swiper(".baner__swiper", {
-    slidesPerView: 1,
-    autoplay: {
-      delay: 5000,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
   var swiper = new Swiper(".mySwiper1", {
     slidesPerView: 3,
     navigation: {
@@ -88,20 +77,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // scroll
 
-  const banerBg = document.querySelector(".baner__swiper");
-  const main = document.querySelector(".main");
+  const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
+  const banerImg = document.querySelector(".baner__img");
 
+  baner.style.translate = "none";
+  baner.style.rotate = "none";
+  baner.style.scale = "none";
+  banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
+  //   banerImg.style.height = `100vh`;
   window.addEventListener("scroll", () => {
-    //   console.log(pageYOffset);
-    banerBg.classList.add("baner__scroll");
-    //  if (pageYOffset > baner.clientHeight) {
-    //    main.classList.add("main__background");
+    baner.classList.add("baner__scroll");
+
+    if (pageYOffset < 800) {
+      baner.style.height = banerImg.clientHeight + "px";
+      banerImg.style.height = `100%`;
+      let r = pageYOffset + 50 + "px";
+      baner.style.translate = "none";
+      baner.style.rotate = "none";
+      baner.style.scale = "none";
+      baner.style.maxWidth = "95%";
+      baner.style.transform = `translate(0px, ${r})`;
+      // baner.style.marginBottom = "900px";
+    }
+    //  if (pageYOffset > 800) {
+    //    baner.style.marginBottom = "50px";
+    //    baner.style.transform = `translate(0px, 0px)`;
     //  }
-    //   banerBg.style.transition = "1s";
-    //   banerBg.style.borderRadius = "40px";
-    //   banerBg.style.maxWidth = "95%";
-    //   banerBg.style.overflow = "hidden";
-    //   banerBg.style.margin = "0px auto";
   });
 });

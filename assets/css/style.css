@@ -892,46 +892,16 @@ a {
   color: #FFFFFF;
 }
 
-.baner .container {
-  margin-top: 60px;
-}
-
 .baner {
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  width: 100%;
+  position: relative;
   max-width: 100%;
-  height: -webkit-calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
-  height: calc(463px + (650 - 463) * ((100vw - 1366px) / (1920 - 1366)));
-  padding: 50px 40px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  width: 100%;
+  top: 0;
 }
 
 .baner__bg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   width: 100%;
   margin: 0 auto;
-}
-
-.baner__bg picture {
-  width: 100%;
-}
-
-.baner__bg img {
-  width: 100%;
 }
 
 .baner__block {
@@ -1005,34 +975,55 @@ a {
   color: #888c95;
 }
 
-.baner__scroll {
-  -webkit-border-radius: 40px;
-          border-radius: 40px;
-  max-width: 95%;
-  overflow: hidden;
-  margin: 100px auto 0;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
-  z-index: 10;
+.baner__img {
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  max-width: 100%;
+  width: 100%;
+  -o-object-position: right;
+     object-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.baner__scroll .baner {
+.baner__img:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.baner__logo {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  height: 90%;
+}
+
+.baner__scroll {
+  margin: 0 auto;
+  margin-bottom: 900px;
+}
+
+.baner__scroll .baner__logo {
+  display: none;
+}
+
+.baner__scroll .baner__img {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  height: -webkit-calc(440px + (615 - 440) * ((100vw - 1366px) / (1920 - 1366)));
-  height: calc(440px + (615 - 440) * ((100vw - 1366px) / (1920 - 1366)));
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  height: 100%;
 }
 
 .main__background {
-  position: fixed;
-  top: 0;
-  z-index: -2;
-  height: 130vh;
-  opacity: 0;
-  -webkit-background-size: cover;
-          background-size: cover;
   width: 100%;
 }
 
