@@ -140,14 +140,26 @@ document.addEventListener("DOMContentLoaded", function () {
       // background.style.marginTop =
       //   header.clientHeight + banerImg.clientHeight + 600 + "px";
       const catalog = document.querySelector(".catalog1");
+      const catalog2 = document.querySelector(".catalog2");
+      const catalog3 = document.querySelector(".catalog3");
       const category = document.querySelector(".category");
+      const section = document.querySelector(".section");
       const banner = document.querySelector(".banner");
+      const headlink = document.querySelector(".headlink");
       let el = catalog.getBoundingClientRect();
+      let link = headlink.getBoundingClientRect();
+      let sec = section.getBoundingClientRect();
+      let el2 = catalog2.getBoundingClientRect();
+      let el3 = catalog3.getBoundingClientRect();
       let cat = category.getBoundingClientRect();
       let bann = banner.getBoundingClientRect();
       // let elTop = el.top + scrollTop - 200;
       // let elTopCat = cat.top + scrollTop - 200;
       let elScroll = scrollTop + catalog.clientHeight - 100;
+      let linkScroll = scrollTop + headlink.clientHeight - 100;
+      let sectionScroll = scrollTop + section.clientHeight - 100;
+      let elScroll2 = scrollTop + catalog2.clientHeight - 100;
+      let elScroll3 = scrollTop + catalog3.clientHeight - 100;
       let elScrollCat = scrollTop + category.clientHeight - 100;
       let elScrollBan = scrollTop + banner.clientHeight - 100;
       if (elScroll > bottomBlock + 200) {
@@ -158,6 +170,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       if (elScrollBan > cat.bottom + scrollTop + 100) {
         banner.style.transform = "translateY(0)";
+      }
+      if (elScroll2 > bann.bottom + scrollTop + 100) {
+        catalog2.style.transform = "translateY(0)";
+      }
+      if (sectionScroll > el2.bottom + scrollTop + 100) {
+        section.style.transform = "translateY(0)";
+      }
+      if (elScroll3 > sec.bottom + scrollTop + 100) {
+        catalog3.style.transform = "translateY(0)";
+      }
+      if (linkScroll > el3.bottom + scrollTop) {
+        headlink.style.transform = "translateY(0)";
       }
     });
   }

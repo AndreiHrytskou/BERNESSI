@@ -1142,6 +1142,14 @@ a {
 	transform: translateY(1000%);
 	transition: 0.5s;
 }
+.catalog.catalog2{
+	transform: translateY(1000%);
+	transition: 0.5s;
+}
+.catalog.catalog3{
+	transform: translateY(1000%);
+	transition: 0.5s;
+}
 .catalog .swiper-noname {
 	width: 95%;
 	height: 100%;
@@ -1489,8 +1497,14 @@ a {
 }
 
 .section {
+	transform: translateY(1000%);
+	transition: 0.5s;
 	margin-top: 150px;
 	margin-bottom: 150px;
+}
+.headlink{
+	transform: translateY(1000%);
+		transition: 0.5s;
 }
 .section .arrows{
 	display: none;
