@@ -83,8 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
   banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
   baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
   baner.style.marginTop = `${header.clientHeight}px`;
-  //   banerImg.style.height = `100vh`;
-  var scrollCoef = 0.001;
   window.addEventListener("scroll", () => {
     baner.classList.add("baner__scroll");
 
@@ -98,30 +96,25 @@ document.addEventListener("DOMContentLoaded", function () {
       baner.style.top = header.clientHeight + "px";
       baner.style.left = "50%";
       baner.style.marginTop = 0;
-
-      // baner.style.marginBottom = "900px";
     }
+
     //   background
     const background = document.querySelector(".main__background");
     let elem = background.getBoundingClientRect();
     let top = elem.top - window.pageYOffset;
     console.log(top);
 
-    if (pageYOffset > 600) {
-      let i = pageYOffset * 0.001;
+    if (pageYOffset > 500) {
+      let i = pageYOffset * 0.0008;
       baner.style.top = elem.top - banerImg.clientHeight - 27 + "px";
       background.style.opacity = i;
     }
-
-    //  if (pageYOffset > 1100) {
-    //    // background.style.opacity = i--;var scrollCoef = 0.0035;
-    //    let win = document.querySelector("window");
-    //    background.style.opacity = 1 - window.scrollY * scrollCoef;
-    //  }
+    if (pageYOffset > 1400) {
+      let b = elem.bottom * 0.0014;
+      background.style.opacity = b;
+      console.log(elem.bottom * 0.001);
+    }
     background.style.marginTop =
       header.clientHeight + banerImg.clientHeight + 600 + "px";
-    //  if (top >= 0) {
-    //    console.log(top);
-    //  }
   });
 });
