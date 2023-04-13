@@ -933,7 +933,7 @@ a {
 	position: relative;
 	max-width: 100%;
 	width: 100%;
-	top: 0;
+	top: 108px;
 }
 
 .baner__bg {
@@ -979,7 +979,7 @@ a {
 }
 .baner__scroll {
 	margin: 0 auto;
-	margin-bottom: 900px;
+	margin-bottom: 108px;
 }
 	.baner__scroll .baner__logo {
 	display: none;
@@ -1036,10 +1036,10 @@ a {
 }
 .main__background{
 	width: 100%;
-		opacity: 0;
+	opacity: 0;
 }
 .main__background-img{
-			width: 100%;
+	width: 100%;
 }
 .baner .read {
 	max-width: 315px;
@@ -1103,15 +1103,6 @@ a {
 	left: 80px;
 	height: 90%;
 }
-
-.baner__scroll {
-	margin: 0 auto;
-	margin-bottom: 900px;
-}
-.baner__scroll .baner__logo {
-		display: none;
-	}
-
 .baner__scroll .baner__block {
 		display: flex;
 		bottom: 20px;
@@ -1124,6 +1115,7 @@ a {
 	display: flex;
 	justify-content: center;
 	border-radius: 40px;
+	max-width: 95%;
 	height: 100%;
 }
 
@@ -1144,6 +1136,11 @@ a {
 	max-width: 98%;
 	width: 100%;
 	margin: 0px auto 100px;
+	transition: 0.5s;
+}
+.catalog.catalog1{
+	transform: translateY(1000%);
+	transition: 0.5s;
 }
 .catalog .swiper-noname {
 	width: 95%;
@@ -1384,7 +1381,10 @@ a {
 	fill: #ff28c2;
 	stroke: transparent;
 }
-
+.category{
+	transform: translateY(1000%);
+	transition: 0.5s;
+}
 .category__list {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1644,6 +1644,8 @@ a {
 }
 
 .banner {
+	transform: translateY(1000%);
+	transition: 0.5s;
 	margin: 120px auto 0;
 	border-radius: 40px;
 	position: relative;
@@ -9191,12 +9193,12 @@ li::marker {
 	}
 }
 
-@media screen and (max-width: 994px) {
+/* @media screen and (max-width: 994px) {
+} */
+@media screen and (max-width: 992px) {
 	.main__background {
 			display: none;
 		}
-}
-@media screen and (max-width: 992px) {
 	.baner__img {
 			height: calc(350px + (472 - 350) * ((100vw - 414px) / (992 - 414)));
 	}
