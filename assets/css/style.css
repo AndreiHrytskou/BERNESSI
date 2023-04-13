@@ -1495,7 +1495,6 @@ a {
 .category__item:hover .category__bg {
 	filter: none;
 }
-
 .section {
 	transform: translateY(1000%);
 	transition: 0.5s;
