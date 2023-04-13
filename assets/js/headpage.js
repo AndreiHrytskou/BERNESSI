@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
   const banerImg = document.querySelector(".baner__img");
-  if (window.innerWidth <= 992) {
+  if (window.innerWidth >= 992) {
     banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
     baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
     baner.style.marginTop = `${header.clientHeight}px`;
