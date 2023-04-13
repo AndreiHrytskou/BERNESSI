@@ -1,0 +1,53 @@
+// color
+$white: rgba(255, 255, 255, 1);
+$grey: rgba(136, 140, 149, 1);
+$black: rgba(0, 0, 0, 1);
+$yellow: rgba(255, 236, 83, 1);
+$bggradient: linear-gradient( 0deg, rgb(230,220,210) 0%, rgb(215,195,186) 100%);
+$bgcard: rgba(247, 247, 247, 1);
+$copyright: rgba(255, 255, 255, 0.502);
+$current: rgb(255, 40, 194);
+ $new: rgba(228, 252, 82, 1);
+// fonts
+$roboto:  "Roboto";
+$title: "Comforter Brush";
+
+// mixins
+
+@mixin fonts($font,$size,$weight,$height, $color){
+	font-family: $font;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	color: $color;
+}
+.text__s{
+	@include fonts($roboto, 12px, 500, 12px, $grey);
+	text-transform: uppercase;
+}
+
+.title{
+	@include fonts($roboto, 70px, 900, 75px, $grey);
+}
+.h2{
+	@include fonts($roboto, 50px, 900, 50px, $grey);
+	text-transform: uppercase;
+	text-align: center;
+}
+.h3{
+	@include fonts($roboto, 40px, 900, 50px, $grey);
+	text-transform: uppercase;
+	text-align: center;
+}
+.h4{
+	@include fonts($roboto, 30px, 700, 40px, $grey);
+	text-transform: uppercase;
+	text-align: center;
+}
+.baner-text{
+	@include fonts($roboto, 18px, 400, 25px, $white);
+	max-width: 641px;
+}
+.upper{
+	text-transform: uppercase;
+}

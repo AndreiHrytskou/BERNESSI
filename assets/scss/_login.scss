@@ -1,0 +1,152 @@
+.login__forms{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding: 33px 0 100px;
+}
+.form__title{
+	text-align: center;
+}
+.login__email,
+.login__social{
+	max-width: 30%;
+}
+.login__list{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 25px;
+	margin-top: 30px;
+}
+.login__item{
+	border: 1px solid rgba(136, 140, 149, 0.35);
+	background-color: $white;
+	width: 100%;
+	border-radius: 25px;
+	padding:11.7px 20px;
+	input{
+		width: 100%;
+		border: none;
+		outline: none;
+	}
+	input::placeholder{
+		@include fonts($roboto, 12px, 700, 20px, rgba(136, 140, 149, 0.65));
+	}
+}
+.login__btn,
+.register__btn{
+	margin: 25px auto 20px;
+	background-color: #ff42c9;
+	border: none;
+	border-radius: 25px;
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	.checkout__text{
+		padding: 10px 0;
+	}
+	.checkout__img{
+		top: 5px;
+	}
+}
+.login__btn:hover{
+	box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2) inset;
+}
+.forgot{
+	text-decoration: underline;
+	border: none;
+	background-color: transparent;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	@include fonts($roboto, 15px, 300, 25px, $black);
+}
+.social__list{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.social__item{
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	border-radius: 25px;
+	position: relative;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social__img{
+	position: absolute;
+	left: 15px;
+}
+.social__text{
+		@include fonts($roboto, 12px, 900, 30px, $white);
+		text-transform: uppercase;
+		text-align: center;
+	}
+.apple__link{
+	background-color: $black;
+}
+.google__link{
+	background-color: $white;
+	.social__text{
+		color: $grey;
+	}
+}
+.facebook__link{
+	background-color: #4267b2;;
+}
+.register__text{
+	margin-top: 30px;
+	@include fonts($roboto, 15px, 300, 25px, $grey);
+	text-align: center;
+}
+.register__link{
+	color: $black;
+	text-decoration: underline;
+}
+.name-input{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	.login__item{
+		max-width: 45%;
+	}
+}
+.privacy{
+	.register__text{
+		margin-top: 0;
+	}
+	.address__checkbox{
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+}
+.register__social{
+	height: 100%;
+}
+.password__item{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.password__btn{
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	display: flex;
+	align-items: center;
+}
+.password__btn-img{
+	height: 20px;
+}
+.path-current path{
+	fill: $current;
+}

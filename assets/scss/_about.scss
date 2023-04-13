@@ -1,0 +1,51 @@
+// about 
+
+.about{
+	background-image: url('./../img/aboutusbg.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 50px 0 76px;	
+	min-height: 1721px;
+}
+.about__title{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 60px;
+}
+.about__subtitle{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 150px;
+	line-height: 99.5%;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 1);
+	max-width: 80%;
+}
+.yellow{
+	color: #FFEC53;
+}
+.typed-cursor{
+	opacity: 1;
+  font-size: 100%;
+  animation: blink 0.7s infinite;
+  color: #FFEC53;
+}
+  
+  
+  
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+// 
