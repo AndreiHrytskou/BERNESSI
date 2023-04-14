@@ -135,16 +135,17 @@ document.addEventListener("DOMContentLoaded", function () {
     banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
     baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
     //  baner.style.marginTop = `${header.clientHeight}px`;
+    baner.style.top = header.clientHeight + "px";
     window.addEventListener("scroll", () => {
+      baner.style.top = header.clientHeight + "px";
       baner.classList.add("baner__scroll");
       if (pageYOffset < 600) {
-        baner.style.height = banerImg.clientHeight + "px";
-        banerImg.style.height = `100%`;
+        //   baner.style.height = `60%`;
+        banerImg.style.height = `60%`;
         //   let r = pageYOffset + 50 + "px";
         //   baner.style.maxWidth = "95%";
         //   baner.style.transform = `translateX(-50%)`;
         //   baner.style.position = "fixed";
-        //   baner.style.top = header.clientHeight + "px";
         //   baner.style.left = "50%";
         //   baner.style.marginTop = 0;
       }
@@ -155,23 +156,25 @@ document.addEventListener("DOMContentLoaded", function () {
       let top = elem.top - document.documentElement.scrollTop;
       let middle = top + background.clientHeight;
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      let scroll = scrollTop + background.clientHeight - 100;
+      let scroll = scrollTop + background.clientHeight;
       let topBlock = elem.top + scrollTop;
       let bottomBlock = elem.bottom + scrollTop;
 
-      // console.log(middle);
-
+      console.log(scroll, topBlock);
       if (scroll > topBlock) {
-        let i = pageYOffset * 0.001;
+        let i = pageYOffset * 0.0008;
         //   baner.style.position = "relative";
+        baner.style.top =
+          elem.top - (banerImg.clientHeight + header.clientHeight + 326) + "px";
+        background.style.marginTop =
+          header.clientHeight + banerImg.clientHeight + 800 + "px";
         background.style.opacity = i;
       }
       if (middle < 0) {
         let b = elem.bottom * 0.0014;
         background.style.opacity = b;
       }
-      // background.style.marginTop =
-      //   header.clientHeight + banerImg.clientHeight + 600 + "px";
+
       const catalog = document.querySelector(".catalog1");
       const catalog2 = document.querySelector(".catalog2");
       const catalog3 = document.querySelector(".catalog3");
@@ -213,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
         regular.style.transform = "translateX(0)";
         bright.style.transform = "translateX(0)";
       }
-      if (elScroll3 > sec.bottom + scrollTop + 100) {
+      if (elScroll3 > sec.bottom + scrollTop + 300) {
         catalog3.style.transform = "translateY(0)";
       }
       if (linkScroll > el3.bottom + scrollTop) {
