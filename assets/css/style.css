@@ -1516,7 +1516,7 @@ a {
 }
 
 .regular {
-	transform: translateX(-1000%);
+	transform: translateX(-100%);
 	transition: 0.5s;
 	position: relative;
 	width: 100%;
@@ -1563,7 +1563,7 @@ a {
 	text-align: left;
 }
 .bright {
-	transform: translateX(1000%);
+	transform: translateX(100%);
 	transition: 0.5s;
 	position: relative;
 	width: 100%;

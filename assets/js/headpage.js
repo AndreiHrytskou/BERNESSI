@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //   baner.style.maxWidth = "95%";
         //   baner.style.transform = `translateX(-50%)`;
         //   baner.style.position = "fixed";
-        baner.style.top = header.clientHeight + "px";
+        //   baner.style.top = header.clientHeight + "px";
         //   baner.style.left = "50%";
         //   baner.style.marginTop = 0;
       }
