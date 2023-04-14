@@ -92,24 +92,41 @@ document.addEventListener("DOMContentLoaded", function () {
       sliderLine.style.left = -offset + "px";
     });
   }
+  //   var lastScrollTop = 0;
 
+  //   // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+  //   window.addEventListener(
+  //     "scroll",
+  //     function () {
+  //       // or window.addEventListener("scroll"....
+  //       var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+  //       if (st > lastScrollTop) {
+  //         console.log("down");
+  //       } else if (st < lastScrollTop) {
+  //         console.log("up");
+  //         // upscroll code
+  //       } // else was horizontal scroll
+  //       lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  //     },
+  //     false
+  //   );
   // scroll
 
   const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
   const banerImg = document.querySelector(".baner__img");
   //   const body = document.querySelector("body");
-  //   const html = document.querySelector("html");
-  //   body.style.height = "100vh";
-  //   body.style.overflow = "hidden";
-  //   //   html.style.height = "100vh";
-  //   //   html.style.overflow = "hidden";
-  //   //   window.addEventListener("scrollend", () => {
-  //   //     body.style.overflow = "auto";
-  //   //     //  html.style.overflow = "auto";
-  //   //     //  html.style.height = "auto";
-  //   //     body.style.height = "auto";
-  //   //   });
+  //   //   const html = document.querySelector("html");
+  //   //   body.style.height = "100vh";
+  //   //   body.style.overflow = "hidden";
+  //   //   //   html.style.height = "100vh";
+  //   //   //   html.style.overflow = "hidden";
+  //   window.addEventListener("scroll", () => {
+  //     body.style.overflowY = "visible";
+  //     //  html.style.overflow = "auto";
+  //     //  html.style.height = "auto";
+  //     body.style.height = "auto";
+  //   });
   //   document.onscroll = () => {
   //     body.style.height = "auto";
   //   };

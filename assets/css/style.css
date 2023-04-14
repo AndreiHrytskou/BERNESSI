@@ -1139,15 +1139,15 @@ a {
 	transition: 0.5s;
 }
 .catalog.catalog1{
-	transform: translateY(1000%);
+	transform: translateY(100%);
 	transition: 0.5s;
 }
 .catalog.catalog2{
-	transform: translateY(1000%);
+	transform: translateY(100%);
 	transition: 0.5s;
 }
 .catalog.catalog3{
-	transform: translateY(1000%);
+	transform: translateY(100%);
 	transition: 0.5s;
 }
 .catalog .swiper-noname {
@@ -1391,7 +1391,7 @@ a {
 	stroke: transparent;
 }
 .category{
-	transform: translateY(1000%);
+	transform: translateY(100%);
 	transition: 0.5s;
 }
 .category__list {
@@ -1501,8 +1501,8 @@ a {
 	margin-bottom: 150px;
 }
 .headlink{
-	transform: translateY(1000%);
-		transition: 0.5s;
+	transform: translateY(100%);
+	transition: 0.5s;
 }
 .section .arrows{
 	display: none;
@@ -1660,9 +1660,9 @@ a {
 }
 
 .banner {
-	transform: translateY(1000%);
+	transform: translateY(100%);
 	transition: 0.5s;
-	margin: 120px auto 0;
+	margin: 120px auto 50px;
 	border-radius: 40px;
 	position: relative;
 	width: 100%;
