@@ -1263,7 +1263,8 @@ a {
 .card-top,
 .card2-top {
 	position: relative;
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 .card__img,
@@ -1496,8 +1497,6 @@ a {
 	filter: none;
 }
 .section {
-	transform: translateY(1000%);
-	transition: 0.5s;
 	margin-top: 150px;
 	margin-bottom: 150px;
 }
@@ -1517,6 +1516,8 @@ a {
 }
 
 .regular {
+	transform: translateX(-1000%);
+	transition: 0.5s;
 	position: relative;
 	width: 100%;
 	max-width: 50%;
@@ -1562,6 +1563,8 @@ a {
 	text-align: left;
 }
 .bright {
+	transform: translateX(1000%);
+	transition: 0.5s;
 	position: relative;
 	width: 100%;
 	max-width: 50%;
@@ -1682,6 +1685,7 @@ a {
 .banner__bg {
 	width: 100%;
 	border-radius: 40px;
+	height: calc(280px + (500 - 280) * ((100vw - 768px) / (1366 - 768)));
 }
 
 .MsoNormal {

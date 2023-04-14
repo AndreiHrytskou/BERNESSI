@@ -98,6 +98,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
   const banerImg = document.querySelector(".baner__img");
+  //   const body = document.querySelector("body");
+  //   const html = document.querySelector("html");
+  //   body.style.height = "100vh";
+  //   body.style.overflow = "hidden";
+  //   //   html.style.height = "100vh";
+  //   //   html.style.overflow = "hidden";
+  //   //   window.addEventListener("scrollend", () => {
+  //   //     body.style.overflow = "auto";
+  //   //     //  html.style.overflow = "auto";
+  //   //     //  html.style.height = "auto";
+  //   //     body.style.height = "auto";
+  //   //   });
+  //   document.onscroll = () => {
+  //     body.style.height = "auto";
+  //   };
+
   if (window.outerWidth > 992) {
     banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
     baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
@@ -113,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //   baner.style.position = "fixed";
         baner.style.top = header.clientHeight + "px";
         //   baner.style.left = "50%";
-        baner.style.marginTop = 0;
+        //   baner.style.marginTop = 0;
       }
 
       //   background
@@ -146,6 +162,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const section = document.querySelector(".section");
       const banner = document.querySelector(".banner");
       const headlink = document.querySelector(".headlink");
+      const regular = document.querySelector(".regular");
+      const bright = document.querySelector(".bright");
       let el = catalog.getBoundingClientRect();
       let link = headlink.getBoundingClientRect();
       let sec = section.getBoundingClientRect();
@@ -162,20 +180,21 @@ document.addEventListener("DOMContentLoaded", function () {
       let elScroll3 = scrollTop + catalog3.clientHeight - 100;
       let elScrollCat = scrollTop + category.clientHeight - 100;
       let elScrollBan = scrollTop + banner.clientHeight - 100;
-      if (elScroll > bottomBlock + 200) {
+      if (elScroll > bottomBlock + 300) {
         catalog.style.transform = "translateY(0)";
       }
-      if (elScrollCat > el.bottom + scrollTop + 100) {
+      if (elScrollCat > el.bottom + scrollTop) {
         category.style.transform = "translateY(0)";
       }
       if (elScrollBan > cat.bottom + scrollTop + 100) {
         banner.style.transform = "translateY(0)";
       }
-      if (elScroll2 > bann.bottom + scrollTop + 100) {
+      if (elScroll2 > bann.bottom + scrollTop + 300) {
         catalog2.style.transform = "translateY(0)";
       }
       if (sectionScroll > el2.bottom + scrollTop + 100) {
-        section.style.transform = "translateY(0)";
+        regular.style.transform = "translateX(0)";
+        bright.style.transform = "translateX(0)";
       }
       if (elScroll3 > sec.bottom + scrollTop + 100) {
         catalog3.style.transform = "translateY(0)";
