@@ -161,11 +161,11 @@ document.addEventListener("DOMContentLoaded", function () {
       let bottomBlock = elem.bottom + scrollTop;
 
       console.log(scroll, topBlock);
-      if (scroll > topBlock) {
+      if (scroll - 100 > topBlock) {
         let i = pageYOffset * 0.0008;
         //   baner.style.position = "relative";
         baner.style.top =
-          elem.top - (banerImg.clientHeight + header.clientHeight + 326) + "px";
+          elem.top - (banerImg.clientHeight + header.clientHeight + 180) + "px";
         background.style.marginTop =
           header.clientHeight + banerImg.clientHeight + 800 + "px";
         background.style.opacity = i;
