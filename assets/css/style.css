@@ -992,7 +992,9 @@ a {
 }
 .baner__scroll .baner__img {
 	transition: 1s;
-	/* margin: 0 auto; */
+	margin: 0 auto;
+	display: flex;
+	max-width: 95%;
 	border-radius: 40px;
 	height: 100%;
 }
@@ -1092,30 +1094,6 @@ a {
 
 .baner .read:hover .read-text {
 	color: #888c95;
-}
-.baner__scroll .baner__img{
-	border-radius: 40px;
-}
-.baner__logo {
-	position: absolute;
-	top: 0;
-	left: 80px;
-	height: 90%;
-}
-.baner__scroll .baner__block {
-		display: flex;
-		bottom: 20px;
-		left: 56px;
-	}
-
-.baner__scroll .baner__img {
-	transition: 1s;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	border-radius: 40px;
-	max-width: 95%;
-	height: 100%;
 }
 
 .baner__bg-title {
