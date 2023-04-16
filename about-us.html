@@ -1,924 +1,1708 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/header.js" defer></script>
+    <script src="./assets/js/lang.js" defer></script>
+    <script src="./assets/js/cart.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="./assets/js/about.js" defer></script>
+    <title>Bernessi</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="./assets/css/fonts/stylesheet.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<script src="./assets/js/header.js" defer></script>
-	<script src="./assets/js/lang.js" defer></script>
-	<script src="./assets/js/cart.js" defer></script>
-	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-	<script src="./assets/js/about.js" defer></script>
-	<title>Bernessi</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="container">
+          <div class="block">
+            <div class="burger">
+              <div class="burger-menu burger-menu--closed">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <a href="./index.html" class="head-page">
+              <svg
+                class="logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="118"
+                height="20"
+                viewBox="0 0 119 21"
+                fill="none"
+              >
+                <path
+                  d="M0.829956 1.18546H8.19311C12.3451 1.18546 14.1824 3.44434 14.1824 6.14151C14.1824 8.59304 12.8787 9.63579 11.8747 10.0765C13.2696 10.6761 14.8377 12.0921 14.8377 14.7821C14.8377 18.5364 12.0923 20.6797 8.0597 20.6797H0.829956V1.18546ZM7.52841 8.85312C9.51782 8.85312 10.4376 8.20292 10.4376 6.54608C10.4376 4.93741 9.37037 4.21255 7.72267 4.21255H4.61919V8.85312H7.52841ZM4.61919 17.6791H7.77416C9.52718 17.6791 10.8987 16.8122 10.8987 14.7917C10.8987 12.8941 9.8174 11.8634 7.48394 11.8634H4.61919V17.6791Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M27.6589 12.174H20.9464V17.4215H30.0391V20.6797H17.1829V1.18546H30.0415V4.47022H20.9487V8.88684H27.6612C28.5436 8.88684 29.2574 9.62374 29.2574 10.5316C29.2551 11.4371 28.5412 12.174 27.6589 12.174Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M36.3538 12.6268V20.6797H32.5623V1.18546H40.2788C43.8551 1.18546 46.4109 3.01086 46.4109 6.45698C46.4109 9.11562 45.0487 10.392 43.4642 11.0157C45.3436 11.7646 46.0177 13.2914 46.0177 15.7116L46.0856 20.646L42.2799 20.7351L42.1957 15.6394C42.1957 13.407 41.4069 12.6243 38.9307 12.6243H36.3538V12.6268ZM36.3538 9.47203H39.2373C41.0722 9.47203 42.5842 8.96631 42.5842 6.81098C42.5842 5.00725 41.3157 4.34259 39.7686 4.34259H36.3538V9.47203Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M49.5189 20.6508V1.15656H54.448C60.0722 13.0337 60.9826 14.9579 61.2728 15.885H61.3243C61.1324 13.5708 61.1066 10.3871 61.1066 7.1987V1.15656H64.6314V20.6508H59.9013C53.8652 7.58642 53.1888 6.03554 52.9103 5.30345H52.8822C53.0203 7.76703 53.039 11.1361 53.039 14.6159V20.6508H49.5189Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M77.799 12.1451H71.5523V17.3926H80.1817V20.6508H67.7888V1.15656H80.1817V4.44132H71.5523V8.85794H77.799C78.6814 8.85794 79.3953 9.59485 79.3953 10.5027C79.3976 11.4082 78.6814 12.1451 77.799 12.1451Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M86.0983 14.864C86.3698 16.634 87.4909 17.7899 89.5107 17.7899C91.6687 17.7899 92.4223 16.8242 92.4223 15.4468C92.4223 13.6767 91.3808 12.9495 88.6447 12.1475C84.254 10.8953 82.7538 9.27457 82.7538 6.45699C82.7538 2.8423 85.5647 0.869995 89.1737 0.869995C93.7189 0.869995 95.6428 3.30227 95.8604 6.43532H92.0689C91.8348 4.99763 91.1537 3.90431 89.1409 3.90431C87.4417 3.90431 86.6062 4.71587 86.6062 6.06927C86.6062 7.52382 87.5564 7.93562 90.241 8.73754C95.0764 10.1921 96.3473 12.1813 96.3473 14.9772C96.3473 18.156 94.2947 20.87 89.3352 20.87C85.1996 20.87 82.515 18.7267 82.2833 14.864H86.0983Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M101.562 14.864C101.833 16.634 102.955 17.7899 104.974 17.7899C107.132 17.7899 107.886 16.8242 107.886 15.4468C107.886 13.6767 106.844 12.9495 104.108 12.1475C99.7176 10.8953 98.2174 9.27457 98.2174 6.45699C98.2174 2.8423 101.028 0.869995 104.637 0.869995C109.183 0.869995 111.106 3.30227 111.324 6.43532H107.532C107.298 4.99763 106.617 3.90431 104.605 3.90431C102.905 3.90431 102.07 4.71587 102.07 6.06927C102.07 7.52382 103.02 7.93562 105.705 8.73754C110.54 10.1921 111.811 12.1813 111.811 14.9772C111.811 18.156 109.758 20.87 104.799 20.87C100.663 20.87 97.9787 18.7267 97.7469 14.864H101.562Z"
+                  fill="#888C95"
+                />
+                <path
+                  d="M118.83 1.12769H114.968V20.622H118.83V1.12769Z"
+                  fill="#888C95"
+                />
+              </svg>
+            </a>
+            <div class="block__right">
+              <a href="tel:+12345678901" class="phone"
+                ><span class="phone__img"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23.5px"
+                    height="23.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(255, 40, 194)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M20.589,16.011 C19.760,15.158 17.402,13.562 15.856,13.562 C15.498,13.562 15.185,13.642 14.930,13.806 C14.174,14.289 13.572,14.664 13.282,14.664 C13.123,14.664 12.952,14.522 12.577,14.199 L12.515,14.142 C11.475,13.238 11.253,13.005 10.850,12.585 L10.747,12.477 C10.673,12.403 10.611,12.335 10.549,12.272 C10.196,11.909 9.941,11.647 9.037,10.625 L8.998,10.579 C8.566,10.091 8.282,9.772 8.264,9.539 C8.247,9.312 8.446,8.943 8.952,8.255 C9.566,7.426 9.588,6.403 9.026,5.216 C8.577,4.278 7.844,3.380 7.196,2.591 L7.140,2.523 C6.583,1.841 5.935,1.500 5.213,1.500 C4.412,1.500 3.747,1.932 3.395,2.159 C3.367,2.176 3.338,2.199 3.310,2.216 C2.520,2.716 1.946,3.404 1.730,4.102 C1.406,5.153 1.190,6.517 2.742,9.352 C4.083,11.806 5.299,13.454 7.230,15.437 C9.049,17.301 9.855,17.903 11.663,19.209 C13.674,20.664 15.606,21.499 16.958,21.499 C18.214,21.499 19.202,21.499 20.612,19.800 C22.089,18.016 21.475,16.925 20.589,16.011 L20.589,16.011 Z"
+                    /></svg></span
+                ><span class="phone__number text__s">+1 234 567 89 10</span></a
+              >
+              <div class="social">
+                <a href="void(0)" class="social__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23.5px"
+                    height="23.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M11.502,21.500 C9.996,21.500 9.117,20.951 8.410,20.509 C8.095,20.310 7.795,20.121 7.476,20.014 C6.791,19.785 6.192,19.761 5.711,19.743 C5.240,19.724 4.867,19.710 4.566,19.499 C4.471,19.432 4.389,19.347 4.324,19.248 L4.320,19.242 C4.258,19.151 4.231,19.077 4.197,18.985 C4.144,18.842 4.072,18.648 3.885,18.481 L3.857,18.457 L3.827,18.436 C3.692,18.344 3.544,18.277 3.387,18.236 C2.975,18.125 2.574,17.962 2.197,17.751 L2.190,17.748 C2.043,17.668 1.909,17.565 1.794,17.442 C1.534,17.171 1.447,16.872 1.547,16.597 C1.655,16.298 1.881,16.172 2.306,15.955 C2.384,15.915 2.463,15.875 2.542,15.833 L2.547,15.830 C3.588,15.255 4.407,14.529 4.983,13.673 C5.150,13.427 5.298,13.163 5.420,12.888 L5.429,12.868 L5.437,12.847 C5.501,12.669 5.570,12.398 5.429,12.105 L5.415,12.075 L5.397,12.047 C5.317,11.919 5.212,11.812 5.087,11.729 C4.922,11.618 4.753,11.507 4.637,11.430 L4.510,11.346 C4.360,11.246 4.242,11.168 4.164,11.113 C3.832,10.876 3.605,10.635 3.469,10.374 C3.295,10.039 3.272,9.645 3.407,9.293 C3.595,8.788 4.053,8.490 4.633,8.490 C4.766,8.490 4.897,8.504 5.024,8.532 C5.061,8.540 5.098,8.548 5.134,8.558 L5.854,8.748 L5.843,7.992 C5.835,7.461 5.851,6.966 5.888,6.521 C6.034,4.805 6.626,3.984 7.171,3.350 C7.544,2.924 7.982,2.566 8.472,2.286 C9.373,1.764 10.392,1.500 11.503,1.500 C12.618,1.500 13.638,1.764 14.535,2.284 C15.026,2.566 15.463,2.923 15.837,3.348 C16.381,3.982 16.973,4.803 17.119,6.520 C17.157,6.966 17.172,7.460 17.164,7.989 L17.152,8.746 L17.873,8.556 C17.909,8.546 17.947,8.538 17.984,8.530 C18.110,8.502 18.241,8.488 18.372,8.488 C18.953,8.488 19.411,8.786 19.598,9.287 C19.733,9.642 19.710,10.035 19.536,10.369 C19.400,10.631 19.173,10.872 18.841,11.109 C18.739,11.182 18.576,11.290 18.369,11.426 C18.248,11.506 18.070,11.623 17.898,11.739 L17.891,11.743 C17.774,11.825 17.677,11.928 17.602,12.049 L17.586,12.075 L17.573,12.103 C17.437,12.389 17.500,12.651 17.559,12.822 L17.567,12.846 L17.577,12.869 C17.702,13.149 17.852,13.419 18.023,13.672 C18.611,14.547 19.455,15.285 20.530,15.865 C20.587,15.895 20.639,15.921 20.691,15.948 C20.736,15.971 20.780,15.993 20.824,16.017 L20.836,16.023 L20.848,16.028 C20.883,16.045 20.922,16.065 20.960,16.088 L20.971,16.094 C21.257,16.256 21.384,16.386 21.459,16.593 C21.555,16.859 21.477,17.147 21.239,17.407 L21.228,17.419 L21.220,17.429 C21.103,17.559 20.966,17.667 20.813,17.750 L20.808,17.753 C20.427,17.966 20.020,18.130 19.599,18.242 C19.445,18.284 19.303,18.350 19.174,18.439 L19.144,18.460 L19.116,18.485 C18.931,18.651 18.859,18.844 18.807,18.985 C18.780,19.058 18.757,19.120 18.717,19.189 L18.714,19.195 C18.646,19.316 18.550,19.422 18.437,19.502 C18.138,19.712 17.766,19.727 17.294,19.745 C16.811,19.764 16.212,19.787 15.529,20.016 C15.221,20.120 14.922,20.307 14.606,20.504 C13.892,20.948 13.006,21.500 11.502,21.500 Z"
+                    /></svg
+                ></a>
+                <a href="void(0)" class="social__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23.5px"
+                    height="17.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M21.082,13.314 C20.852,14.174 20.174,14.852 19.314,15.082 C17.754,15.500 11.500,15.500 11.500,15.500 C11.500,15.500 5.246,15.500 3.686,15.082 C2.826,14.852 2.148,14.174 1.918,13.314 C1.500,11.754 1.500,8.500 1.500,8.500 C1.500,8.500 1.500,5.246 1.918,3.686 C2.148,2.825 2.826,2.148 3.686,1.918 C5.246,1.500 11.500,1.500 11.500,1.500 C11.500,1.500 17.754,1.500 19.314,1.918 C20.174,2.148 20.852,2.825 21.082,3.686 C21.500,5.246 21.500,8.500 21.500,8.500 C21.500,8.500 21.500,11.754 21.082,13.314 ZM9.455,5.545 L9.455,11.455 L14.682,8.500 L9.455,5.545 Z"
+                    /></svg
+                ></a>
+                <a href="void(0)" class="social__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="14px"
+                    height="22px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M13.051,8.248 L9.026,8.282 L9.026,6.670 C9.026,5.992 9.511,5.617 9.846,5.617 L13.049,5.617 C13.295,5.617 13.495,5.436 13.495,5.213 L13.495,1.904 C13.495,1.681 13.295,1.500 13.049,1.500 L9.846,1.500 C7.100,1.500 4.780,3.883 4.780,6.703 L4.817,8.247 L1.949,8.247 C1.703,8.247 1.503,8.427 1.503,8.651 L1.503,11.957 C1.503,12.180 1.703,12.361 1.949,12.361 L4.780,12.328 L4.780,21.095 C4.780,21.318 4.980,21.499 5.227,21.499 L8.580,21.499 C8.826,21.499 9.026,21.318 9.026,21.095 L8.989,12.363 L13.051,12.363 C13.298,12.363 13.498,12.182 13.498,11.959 L13.498,8.653 C13.498,8.430 13.298,8.248 13.051,8.248 Z"
+                    /></svg
+                ></a>
+                <a href="void(0)" class="social__icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="22px"
+                    height="22px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M19.845,19.926 C18.797,20.935 17.346,21.500 15.611,21.500 L7.385,21.500 C5.733,21.500 4.279,20.974 3.191,19.926 C2.064,18.839 1.499,17.347 1.499,15.613 L1.499,7.347 C1.499,3.840 3.838,1.500 7.346,1.500 L15.651,1.500 C17.344,1.500 18.837,2.065 19.885,3.153 C20.933,4.201 21.498,5.654 21.498,7.347 L21.498,15.653 C21.498,17.385 20.933,18.879 19.845,19.926 ZM11.497,6.297 C8.675,6.297 6.335,8.594 6.335,11.459 C6.335,14.321 8.633,16.621 11.497,16.621 C14.360,16.621 16.659,14.282 16.659,11.459 C16.659,8.636 14.320,6.297 11.497,6.297 ZM15.691,6.177 C15.691,7.735 18.031,7.735 18.031,6.177 C18.031,4.617 15.691,4.617 15.691,6.177 ZM11.498,14.887 C9.619,14.887 8.112,13.378 8.112,11.500 C8.112,9.621 9.646,8.113 11.498,8.113 C13.350,8.113 14.885,9.648 14.885,11.500 C14.885,13.352 13.376,14.887 11.498,14.887 Z"
+                    /></svg
+                ></a>
+              </div>
+              <div class="lang">
+                <div class="lang__item lang__first lang-en">
+                  <p class="lang__name">EN</p>
+                </div>
+                <div class="lang__item lang-ar">
+                  <p class="lang__name">AR</p>
+                </div>
+                <div class="lang__item lang-ru">
+                  <p class="lang__name">RU</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="wrapper">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__block">
+              <li class="menu__item new__item" data-cat="women">
+                <span class="menu__block-span">
+                  <span class="menu__block-title">Women</span>
+                  <span class="mobile-arrow">
+                    <img src="./assets/img/arrow-right-grey.webp" alt="arrow" />
+                  </span>
+                </span>
+                <div class="submenu__wrapper submenu__new" data-cat="women">
+                  <span class="arrow-back">
+                    <img src="./assets/img/left-arrow.svg" alt="arrow" />
+                  </span>
 
-<body>
-	<header class="header">
-		<div class="wrapper">
-			<div class="container">
-				<div class="block">
-					<div class="burger">
-						<div class="burger-menu burger-menu--closed">
-							<span class="bar"></span>
-							<span class="bar"></span>
-							<span class="bar"></span>
-						</div>
-					</div>
-					<a href="./index.html" class="head-page">
-						<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="118" height="20" viewBox="0 0 119 21"
-							fill="none">
-							<path
-								d="M0.829956 1.18546H8.19311C12.3451 1.18546 14.1824 3.44434 14.1824 6.14151C14.1824 8.59304 12.8787 9.63579 11.8747 10.0765C13.2696 10.6761 14.8377 12.0921 14.8377 14.7821C14.8377 18.5364 12.0923 20.6797 8.0597 20.6797H0.829956V1.18546ZM7.52841 8.85312C9.51782 8.85312 10.4376 8.20292 10.4376 6.54608C10.4376 4.93741 9.37037 4.21255 7.72267 4.21255H4.61919V8.85312H7.52841ZM4.61919 17.6791H7.77416C9.52718 17.6791 10.8987 16.8122 10.8987 14.7917C10.8987 12.8941 9.8174 11.8634 7.48394 11.8634H4.61919V17.6791Z"
-								fill="#888C95" />
-							<path
-								d="M27.6589 12.174H20.9464V17.4215H30.0391V20.6797H17.1829V1.18546H30.0415V4.47022H20.9487V8.88684H27.6612C28.5436 8.88684 29.2574 9.62374 29.2574 10.5316C29.2551 11.4371 28.5412 12.174 27.6589 12.174Z"
-								fill="#888C95" />
-							<path
-								d="M36.3538 12.6268V20.6797H32.5623V1.18546H40.2788C43.8551 1.18546 46.4109 3.01086 46.4109 6.45698C46.4109 9.11562 45.0487 10.392 43.4642 11.0157C45.3436 11.7646 46.0177 13.2914 46.0177 15.7116L46.0856 20.646L42.2799 20.7351L42.1957 15.6394C42.1957 13.407 41.4069 12.6243 38.9307 12.6243H36.3538V12.6268ZM36.3538 9.47203H39.2373C41.0722 9.47203 42.5842 8.96631 42.5842 6.81098C42.5842 5.00725 41.3157 4.34259 39.7686 4.34259H36.3538V9.47203Z"
-								fill="#888C95" />
-							<path
-								d="M49.5189 20.6508V1.15656H54.448C60.0722 13.0337 60.9826 14.9579 61.2728 15.885H61.3243C61.1324 13.5708 61.1066 10.3871 61.1066 7.1987V1.15656H64.6314V20.6508H59.9013C53.8652 7.58642 53.1888 6.03554 52.9103 5.30345H52.8822C53.0203 7.76703 53.039 11.1361 53.039 14.6159V20.6508H49.5189Z"
-								fill="#888C95" />
-							<path
-								d="M77.799 12.1451H71.5523V17.3926H80.1817V20.6508H67.7888V1.15656H80.1817V4.44132H71.5523V8.85794H77.799C78.6814 8.85794 79.3953 9.59485 79.3953 10.5027C79.3976 11.4082 78.6814 12.1451 77.799 12.1451Z"
-								fill="#888C95" />
-							<path
-								d="M86.0983 14.864C86.3698 16.634 87.4909 17.7899 89.5107 17.7899C91.6687 17.7899 92.4223 16.8242 92.4223 15.4468C92.4223 13.6767 91.3808 12.9495 88.6447 12.1475C84.254 10.8953 82.7538 9.27457 82.7538 6.45699C82.7538 2.8423 85.5647 0.869995 89.1737 0.869995C93.7189 0.869995 95.6428 3.30227 95.8604 6.43532H92.0689C91.8348 4.99763 91.1537 3.90431 89.1409 3.90431C87.4417 3.90431 86.6062 4.71587 86.6062 6.06927C86.6062 7.52382 87.5564 7.93562 90.241 8.73754C95.0764 10.1921 96.3473 12.1813 96.3473 14.9772C96.3473 18.156 94.2947 20.87 89.3352 20.87C85.1996 20.87 82.515 18.7267 82.2833 14.864H86.0983Z"
-								fill="#888C95" />
-							<path
-								d="M101.562 14.864C101.833 16.634 102.955 17.7899 104.974 17.7899C107.132 17.7899 107.886 16.8242 107.886 15.4468C107.886 13.6767 106.844 12.9495 104.108 12.1475C99.7176 10.8953 98.2174 9.27457 98.2174 6.45699C98.2174 2.8423 101.028 0.869995 104.637 0.869995C109.183 0.869995 111.106 3.30227 111.324 6.43532H107.532C107.298 4.99763 106.617 3.90431 104.605 3.90431C102.905 3.90431 102.07 4.71587 102.07 6.06927C102.07 7.52382 103.02 7.93562 105.705 8.73754C110.54 10.1921 111.811 12.1813 111.811 14.9772C111.811 18.156 109.758 20.87 104.799 20.87C100.663 20.87 97.9787 18.7267 97.7469 14.864H101.562Z"
-								fill="#888C95" />
-							<path d="M118.83 1.12769H114.968V20.622H118.83V1.12769Z" fill="#888C95" />
-						</svg>
-					</a>
-					<div class="block__right">
-						<a href="tel:+12345678901" class="phone"><span class="phone__img"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
-									<path fill-rule="evenodd" stroke="rgb(255, 40, 194)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M20.589,16.011 C19.760,15.158 17.402,13.562 15.856,13.562 C15.498,13.562 15.185,13.642 14.930,13.806 C14.174,14.289 13.572,14.664 13.282,14.664 C13.123,14.664 12.952,14.522 12.577,14.199 L12.515,14.142 C11.475,13.238 11.253,13.005 10.850,12.585 L10.747,12.477 C10.673,12.403 10.611,12.335 10.549,12.272 C10.196,11.909 9.941,11.647 9.037,10.625 L8.998,10.579 C8.566,10.091 8.282,9.772 8.264,9.539 C8.247,9.312 8.446,8.943 8.952,8.255 C9.566,7.426 9.588,6.403 9.026,5.216 C8.577,4.278 7.844,3.380 7.196,2.591 L7.140,2.523 C6.583,1.841 5.935,1.500 5.213,1.500 C4.412,1.500 3.747,1.932 3.395,2.159 C3.367,2.176 3.338,2.199 3.310,2.216 C2.520,2.716 1.946,3.404 1.730,4.102 C1.406,5.153 1.190,6.517 2.742,9.352 C4.083,11.806 5.299,13.454 7.230,15.437 C9.049,17.301 9.855,17.903 11.663,19.209 C13.674,20.664 15.606,21.499 16.958,21.499 C18.214,21.499 19.202,21.499 20.612,19.800 C22.089,18.016 21.475,16.925 20.589,16.011 L20.589,16.011 Z" />
-								</svg></span><span class="phone__number text__s">+1 234 567 89 10</span></a>
-						<div class="social">
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M11.502,21.500 C9.996,21.500 9.117,20.951 8.410,20.509 C8.095,20.310 7.795,20.121 7.476,20.014 C6.791,19.785 6.192,19.761 5.711,19.743 C5.240,19.724 4.867,19.710 4.566,19.499 C4.471,19.432 4.389,19.347 4.324,19.248 L4.320,19.242 C4.258,19.151 4.231,19.077 4.197,18.985 C4.144,18.842 4.072,18.648 3.885,18.481 L3.857,18.457 L3.827,18.436 C3.692,18.344 3.544,18.277 3.387,18.236 C2.975,18.125 2.574,17.962 2.197,17.751 L2.190,17.748 C2.043,17.668 1.909,17.565 1.794,17.442 C1.534,17.171 1.447,16.872 1.547,16.597 C1.655,16.298 1.881,16.172 2.306,15.955 C2.384,15.915 2.463,15.875 2.542,15.833 L2.547,15.830 C3.588,15.255 4.407,14.529 4.983,13.673 C5.150,13.427 5.298,13.163 5.420,12.888 L5.429,12.868 L5.437,12.847 C5.501,12.669 5.570,12.398 5.429,12.105 L5.415,12.075 L5.397,12.047 C5.317,11.919 5.212,11.812 5.087,11.729 C4.922,11.618 4.753,11.507 4.637,11.430 L4.510,11.346 C4.360,11.246 4.242,11.168 4.164,11.113 C3.832,10.876 3.605,10.635 3.469,10.374 C3.295,10.039 3.272,9.645 3.407,9.293 C3.595,8.788 4.053,8.490 4.633,8.490 C4.766,8.490 4.897,8.504 5.024,8.532 C5.061,8.540 5.098,8.548 5.134,8.558 L5.854,8.748 L5.843,7.992 C5.835,7.461 5.851,6.966 5.888,6.521 C6.034,4.805 6.626,3.984 7.171,3.350 C7.544,2.924 7.982,2.566 8.472,2.286 C9.373,1.764 10.392,1.500 11.503,1.500 C12.618,1.500 13.638,1.764 14.535,2.284 C15.026,2.566 15.463,2.923 15.837,3.348 C16.381,3.982 16.973,4.803 17.119,6.520 C17.157,6.966 17.172,7.460 17.164,7.989 L17.152,8.746 L17.873,8.556 C17.909,8.546 17.947,8.538 17.984,8.530 C18.110,8.502 18.241,8.488 18.372,8.488 C18.953,8.488 19.411,8.786 19.598,9.287 C19.733,9.642 19.710,10.035 19.536,10.369 C19.400,10.631 19.173,10.872 18.841,11.109 C18.739,11.182 18.576,11.290 18.369,11.426 C18.248,11.506 18.070,11.623 17.898,11.739 L17.891,11.743 C17.774,11.825 17.677,11.928 17.602,12.049 L17.586,12.075 L17.573,12.103 C17.437,12.389 17.500,12.651 17.559,12.822 L17.567,12.846 L17.577,12.869 C17.702,13.149 17.852,13.419 18.023,13.672 C18.611,14.547 19.455,15.285 20.530,15.865 C20.587,15.895 20.639,15.921 20.691,15.948 C20.736,15.971 20.780,15.993 20.824,16.017 L20.836,16.023 L20.848,16.028 C20.883,16.045 20.922,16.065 20.960,16.088 L20.971,16.094 C21.257,16.256 21.384,16.386 21.459,16.593 C21.555,16.859 21.477,17.147 21.239,17.407 L21.228,17.419 L21.220,17.429 C21.103,17.559 20.966,17.667 20.813,17.750 L20.808,17.753 C20.427,17.966 20.020,18.130 19.599,18.242 C19.445,18.284 19.303,18.350 19.174,18.439 L19.144,18.460 L19.116,18.485 C18.931,18.651 18.859,18.844 18.807,18.985 C18.780,19.058 18.757,19.120 18.717,19.189 L18.714,19.195 C18.646,19.316 18.550,19.422 18.437,19.502 C18.138,19.712 17.766,19.727 17.294,19.745 C16.811,19.764 16.212,19.787 15.529,20.016 C15.221,20.120 14.922,20.307 14.606,20.504 C13.892,20.948 13.006,21.500 11.502,21.500 Z" />
-								</svg></a>
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="17.5px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M21.082,13.314 C20.852,14.174 20.174,14.852 19.314,15.082 C17.754,15.500 11.500,15.500 11.500,15.500 C11.500,15.500 5.246,15.500 3.686,15.082 C2.826,14.852 2.148,14.174 1.918,13.314 C1.500,11.754 1.500,8.500 1.500,8.500 C1.500,8.500 1.500,5.246 1.918,3.686 C2.148,2.825 2.826,2.148 3.686,1.918 C5.246,1.500 11.500,1.500 11.500,1.500 C11.500,1.500 17.754,1.500 19.314,1.918 C20.174,2.148 20.852,2.825 21.082,3.686 C21.500,5.246 21.500,8.500 21.500,8.500 C21.500,8.500 21.500,11.754 21.082,13.314 ZM9.455,5.545 L9.455,11.455 L14.682,8.500 L9.455,5.545 Z" />
-								</svg></a>
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="22px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M13.051,8.248 L9.026,8.282 L9.026,6.670 C9.026,5.992 9.511,5.617 9.846,5.617 L13.049,5.617 C13.295,5.617 13.495,5.436 13.495,5.213 L13.495,1.904 C13.495,1.681 13.295,1.500 13.049,1.500 L9.846,1.500 C7.100,1.500 4.780,3.883 4.780,6.703 L4.817,8.247 L1.949,8.247 C1.703,8.247 1.503,8.427 1.503,8.651 L1.503,11.957 C1.503,12.180 1.703,12.361 1.949,12.361 L4.780,12.328 L4.780,21.095 C4.780,21.318 4.980,21.499 5.227,21.499 L8.580,21.499 C8.826,21.499 9.026,21.318 9.026,21.095 L8.989,12.363 L13.051,12.363 C13.298,12.363 13.498,12.182 13.498,11.959 L13.498,8.653 C13.498,8.430 13.298,8.248 13.051,8.248 Z" />
-								</svg></a>
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M19.845,19.926 C18.797,20.935 17.346,21.500 15.611,21.500 L7.385,21.500 C5.733,21.500 4.279,20.974 3.191,19.926 C2.064,18.839 1.499,17.347 1.499,15.613 L1.499,7.347 C1.499,3.840 3.838,1.500 7.346,1.500 L15.651,1.500 C17.344,1.500 18.837,2.065 19.885,3.153 C20.933,4.201 21.498,5.654 21.498,7.347 L21.498,15.653 C21.498,17.385 20.933,18.879 19.845,19.926 ZM11.497,6.297 C8.675,6.297 6.335,8.594 6.335,11.459 C6.335,14.321 8.633,16.621 11.497,16.621 C14.360,16.621 16.659,14.282 16.659,11.459 C16.659,8.636 14.320,6.297 11.497,6.297 ZM15.691,6.177 C15.691,7.735 18.031,7.735 18.031,6.177 C18.031,4.617 15.691,4.617 15.691,6.177 ZM11.498,14.887 C9.619,14.887 8.112,13.378 8.112,11.500 C8.112,9.621 9.646,8.113 11.498,8.113 C13.350,8.113 14.885,9.648 14.885,11.500 C14.885,13.352 13.376,14.887 11.498,14.887 Z" />
-								</svg></a>
-						</div>
-						<div class="lang">
-							<div class="lang__item lang__first lang-en">
-								<p class="lang__name">EN</p>
-							</div>
-							<div class="lang__item lang-ar">
-								<p class="lang__name">AR</p>
-							</div>
-							<div class="lang__item lang-ru">
-								<p class="lang__name">RU</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="line"></div>
-		<div class="wrapper">
-			<div class="container">
-				<nav class="menu">
-					<ul class="menu__block">
-						<li class="menu__item new__item">
-							<span class="menu__block-span">
-								<a href="#">New</a>
-								<span class="mobile-arrow">
-									<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-								</span>
-							</span>
-							<div class="submenu__wrapper submenu__new">
-								<span class="arrow-back">
-									<img src="./assets/img/left-arrow.svg" alt="arrow">
-								</span>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#">New1</a></li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Sport</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
-												<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Sport Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Lifestyle</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Lifestyle Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Accessories</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
-												<li class="list__item"><a href="#" class="item__link">Bags</a></li>
-												<li class="list__item"><a href="#" class="item__link">Socks</a></li>
-												<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
-											</ul>
-											<span class="all"><a href="#">All Accessories</a></span>
-										</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item women__item">
-							<span class="menu__block-span">
-								<a href="#">Women</a>
-								<span class="mobile-arrow">
-									<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-								</span>
-							</span>
-							<div class="submenu__wrapper submenu__new">
-								<span class="arrow-back">
-									<img src="./assets/img/left-arrow.svg" alt="arrow">
-								</span>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#">New2</a></li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Sport</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
-												<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Sport Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Lifestyle</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Lifestyle Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Accessories</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
-												<li class="list__item"><a href="#" class="item__link">Bags</a></li>
-												<li class="list__item"><a href="#" class="item__link">Socks</a></li>
-												<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
-											</ul>
-											<span class="all"><a href="#">All Accessories</a></span>
-										</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item men__item">
-							<span class="menu__block-span">
-								<a href="#">Men</a>
-								<span class="mobile-arrow">
-									<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-								</span>
-							</span>
-							<div class="submenu__wrapper submenu__new">
-								<span class="arrow-back">
-									<img src="./assets/img/left-arrow.svg" alt="arrow">
-								</span>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#">New3</a></li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Sport</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
-												<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Sport Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Lifestyle</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Lifestyle Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Accessories</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
-												<li class="list__item"><a href="#" class="item__link">Bags</a></li>
-												<li class="list__item"><a href="#" class="item__link">Socks</a></li>
-												<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
-											</ul>
-											<span class="all"><a href="#">All Accessories</a></span>
-										</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item family__item">
-							<span class="menu__block-span">
-								<a href="#">Family</a>
-								<span class="mobile-arrow">
-									<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-								</span>
-							</span>
-							<div class="submenu__wrapper submenu__new">
-								<span class="arrow-back">
-									<img src="./assets/img/left-arrow.svg" alt="arrow">
-								</span>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#">New4</a></li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Sport</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
-												<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Sport Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Lifestyle</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Lifestyle Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Accessories</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
-												<li class="list__item"><a href="#" class="item__link">Bags</a></li>
-												<li class="list__item"><a href="#" class="item__link">Socks</a></li>
-												<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
-											</ul>
-											<span class="all"><a href="#">All Accessories</a></span>
-										</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item children__item">
-							<span class="menu__block-span">
-								<a href="#">Children</a>
-								<span class="mobile-arrow">
-									<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-								</span>
-							</span>
-							<div class="submenu__wrapper submenu__new">
-								<span class="arrow-back">
-									<img src="./assets/img/left-arrow.svg" alt="arrow">
-								</span>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#">New5</a></li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Sport</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
-												<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Sport Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Lifestyle</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Lifestyle Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Accessories</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
-												<li class="list__item"><a href="#" class="item__link">Bags</a></li>
-												<li class="list__item"><a href="#" class="item__link">Socks</a></li>
-												<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
-											</ul>
-											<span class="all"><a href="#">All Accessories</a></span>
-										</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item accessories__item">
-							<span class="menu__block-span">
-								<a href="#">Accessories</a>
-								<span class="mobile-arrow">
-									<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-								</span>
-							</span>
-							<div class="submenu__wrapper submenu__new">
-								<span class="arrow-back">
-									<img src="./assets/img/left-arrow.svg" alt="arrow">
-								</span>
-								<ul class="submenu">
-									<li class="submenu__item"><a href="#">New6</a></li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Sport</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Sports Bras</a></li>
-												<li class="list__item"><a href="#" class="item__link">Leggings</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Swimwear</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Sport Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Lifestyle</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">T-shirts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Shorts</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hoodies</a></li>
-												<li class="list__item"><a href="#" class="item__link">Pants</a></li>
-												<li class="list__item"><a href="#" class="item__link">Tracksuits</a></li>
-												<li class="list__item"><a href="#" class="item__link">Dresses and Skirts</a></li>
-											</ul>
-											<span class="all"><a href="#">All Lifestyle Clothing</a></span>
-										</span>
-									</li>
-									<li class="submenu__item">
-										<span class="submenu__item-span">
-											<a href="#">Accessories</a>
-											<span class="mobile-arrow">
-												<img src="./assets/img/arrow-right-grey.webp" alt="arrow">
-											</span>
-										</span>
-										<span class="submenu__container">
-											<span class="mobile2-arrow">
-												<img src="./assets/img/left-arrow.svg" alt="arrow">
-											</span>
-											<ul class="submenu__list">
-												<li class="list__item"><a href="#" class="item__link">Scarves and scarves</a></li>
-												<li class="list__item"><a href="#" class="item__link">Hair bands</a></li>
-												<li class="list__item"><a href="#" class="item__link">Bags</a></li>
-												<li class="list__item"><a href="#" class="item__link">Socks</a></li>
-												<li class="list__item"><a href="#" class="item__link">Equipment</a></li>
-											</ul>
-											<span class="all"><a href="#">All Accessories</a></span>
-										</span>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="delivery__item"><a href="#">Delivery</a></li>
-						<li class="about__item"><a href="#">About us</a></li>
-					</ul>
-					<div class="person">
-						<div class="search">
-							<input type="text" name="search" id="search" placeholder="Type of search...">
-							<button class="search__btn">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20.84" height="20.844" viewBox="0 0 20.84 20.844">
-									<path fill='none' stroke="rgb(136, 140, 149)" stroke-width='1px' fill-rule="evenodd"
-										d="M1481,65a7,7,0,1,1-7,7A7,7,0,0,1,1481,65Zm-5,12-8,8"
-										transform="translate(-1467.66 -64.5)" />
-									</path>
-								</svg>
-							</button>
-						</div>
-						<a href="./wish-list.html" class="liked">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px"
-								height="21.5px">
-								<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M11.492,19.499 L11.114,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.590 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.477,2.790 C13.393,1.962 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.123 19.767,3.154 C20.817,4.208 21.430,5.595 21.490,7.058 L21.501,7.305 L21.492,7.305 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.598 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-							</svg></a>
-						<a href="./cart.html" class="cart"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="21.5px" height="23.5px">
-								<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M19.089,21.500 L1.908,21.500 C1.682,21.500 1.499,21.312 1.499,21.083 L1.499,6.908 C1.499,6.679 1.682,6.491 1.908,6.491 L6.408,6.491 L14.589,6.490 L19.089,6.490 C19.314,6.490 19.498,6.678 19.498,6.908 L19.498,21.083 C19.498,21.312 19.314,21.500 19.089,21.500 ZM15.181,15.474 C15.175,14.454 14.394,13.774 14.029,13.583 C13.664,13.391 13.278,13.205 12.360,13.196 C12.127,13.195 11.945,13.195 11.798,13.194 C11.387,13.127 11.073,12.765 11.073,12.327 C11.073,11.842 11.459,11.448 11.936,11.448 L12.435,11.446 C13.071,11.446 13.483,11.723 13.483,12.338 L14.924,12.338 C14.927,12.288 14.929,12.237 14.929,12.184 C14.929,11.153 14.219,10.289 12.617,10.289 L12.223,10.289 L12.223,10.289 L8.380,10.289 C6.778,10.289 6.068,11.153 6.068,12.184 C6.068,13.121 6.571,13.519 6.959,13.688 C6.421,13.917 5.816,14.458 5.816,15.487 C5.816,16.923 6.875,17.742 8.432,17.742 L8.697,17.742 L12.300,17.742 L12.565,17.742 C14.122,17.742 15.181,16.923 15.181,15.487 C15.181,15.483 15.181,15.479 15.181,15.474 ZM12.453,16.596 L11.235,16.596 L11.235,14.371 L12.340,14.371 C13.241,14.371 13.658,14.766 13.658,15.491 C13.658,16.264 13.129,16.596 12.453,16.596 ZM7.476,12.333 C7.476,11.845 7.864,11.449 8.343,11.449 L9.764,11.449 L9.764,13.217 L8.343,13.217 C7.864,13.217 7.476,12.821 7.476,12.333 ZM8.654,14.371 L9.760,14.371 L9.760,16.596 L8.542,16.596 C7.865,16.596 7.336,16.264 7.336,15.491 C7.336,14.766 7.754,14.371 8.654,14.371 Z" />
-								<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M14.589,6.490 L14.589,5.151 C14.589,3.139 12.754,1.500 10.498,1.500 C8.243,1.500 6.408,3.109 6.408,5.089 L6.408,6.491 " />
-							</svg></a>
-						<a href="./login.html" class="person-info"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="21.5px" height="22.5px">
-								<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M1.497,21.500 C1.497,18.994 2.434,16.638 4.135,14.869 C5.837,13.100 8.097,12.121 10.500,12.121 C12.902,12.121 15.166,13.096 16.864,14.869 C18.562,16.642 19.502,18.998 19.502,21.500 " />
-								<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M10.492,11.862 C7.749,11.862 5.518,9.537 5.518,6.679 C5.518,3.821 7.749,1.499 10.492,1.499 C13.235,1.499 15.467,3.824 15.467,6.683 C15.467,9.541 13.235,11.862 10.492,11.862 Z" />
-							</svg></a>
-					</div>
-					<div class="block__right-hide">
-	
-						<div class="social">
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M11.502,21.500 C9.996,21.500 9.117,20.951 8.410,20.509 C8.095,20.310 7.795,20.121 7.476,20.014 C6.791,19.785 6.192,19.761 5.711,19.743 C5.240,19.724 4.867,19.710 4.566,19.499 C4.471,19.432 4.389,19.347 4.324,19.248 L4.320,19.242 C4.258,19.151 4.231,19.077 4.197,18.985 C4.144,18.842 4.072,18.648 3.885,18.481 L3.857,18.457 L3.827,18.436 C3.692,18.344 3.544,18.277 3.387,18.236 C2.975,18.125 2.574,17.962 2.197,17.751 L2.190,17.748 C2.043,17.668 1.909,17.565 1.794,17.442 C1.534,17.171 1.447,16.872 1.547,16.597 C1.655,16.298 1.881,16.172 2.306,15.955 C2.384,15.915 2.463,15.875 2.542,15.833 L2.547,15.830 C3.588,15.255 4.407,14.529 4.983,13.673 C5.150,13.427 5.298,13.163 5.420,12.888 L5.429,12.868 L5.437,12.847 C5.501,12.669 5.570,12.398 5.429,12.105 L5.415,12.075 L5.397,12.047 C5.317,11.919 5.212,11.812 5.087,11.729 C4.922,11.618 4.753,11.507 4.637,11.430 L4.510,11.346 C4.360,11.246 4.242,11.168 4.164,11.113 C3.832,10.876 3.605,10.635 3.469,10.374 C3.295,10.039 3.272,9.645 3.407,9.293 C3.595,8.788 4.053,8.490 4.633,8.490 C4.766,8.490 4.897,8.504 5.024,8.532 C5.061,8.540 5.098,8.548 5.134,8.558 L5.854,8.748 L5.843,7.992 C5.835,7.461 5.851,6.966 5.888,6.521 C6.034,4.805 6.626,3.984 7.171,3.350 C7.544,2.924 7.982,2.566 8.472,2.286 C9.373,1.764 10.392,1.500 11.503,1.500 C12.618,1.500 13.638,1.764 14.535,2.284 C15.026,2.566 15.463,2.923 15.837,3.348 C16.381,3.982 16.973,4.803 17.119,6.520 C17.157,6.966 17.172,7.460 17.164,7.989 L17.152,8.746 L17.873,8.556 C17.909,8.546 17.947,8.538 17.984,8.530 C18.110,8.502 18.241,8.488 18.372,8.488 C18.953,8.488 19.411,8.786 19.598,9.287 C19.733,9.642 19.710,10.035 19.536,10.369 C19.400,10.631 19.173,10.872 18.841,11.109 C18.739,11.182 18.576,11.290 18.369,11.426 C18.248,11.506 18.070,11.623 17.898,11.739 L17.891,11.743 C17.774,11.825 17.677,11.928 17.602,12.049 L17.586,12.075 L17.573,12.103 C17.437,12.389 17.500,12.651 17.559,12.822 L17.567,12.846 L17.577,12.869 C17.702,13.149 17.852,13.419 18.023,13.672 C18.611,14.547 19.455,15.285 20.530,15.865 C20.587,15.895 20.639,15.921 20.691,15.948 C20.736,15.971 20.780,15.993 20.824,16.017 L20.836,16.023 L20.848,16.028 C20.883,16.045 20.922,16.065 20.960,16.088 L20.971,16.094 C21.257,16.256 21.384,16.386 21.459,16.593 C21.555,16.859 21.477,17.147 21.239,17.407 L21.228,17.419 L21.220,17.429 C21.103,17.559 20.966,17.667 20.813,17.750 L20.808,17.753 C20.427,17.966 20.020,18.130 19.599,18.242 C19.445,18.284 19.303,18.350 19.174,18.439 L19.144,18.460 L19.116,18.485 C18.931,18.651 18.859,18.844 18.807,18.985 C18.780,19.058 18.757,19.120 18.717,19.189 L18.714,19.195 C18.646,19.316 18.550,19.422 18.437,19.502 C18.138,19.712 17.766,19.727 17.294,19.745 C16.811,19.764 16.212,19.787 15.529,20.016 C15.221,20.120 14.922,20.307 14.606,20.504 C13.892,20.948 13.006,21.500 11.502,21.500 Z" />
-								</svg></a>
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="17.5px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M21.082,13.314 C20.852,14.174 20.174,14.852 19.314,15.082 C17.754,15.500 11.500,15.500 11.500,15.500 C11.500,15.500 5.246,15.500 3.686,15.082 C2.826,14.852 2.148,14.174 1.918,13.314 C1.500,11.754 1.500,8.500 1.500,8.500 C1.500,8.500 1.500,5.246 1.918,3.686 C2.148,2.825 2.826,2.148 3.686,1.918 C5.246,1.500 11.500,1.500 11.500,1.500 C11.500,1.500 17.754,1.500 19.314,1.918 C20.174,2.148 20.852,2.825 21.082,3.686 C21.500,5.246 21.500,8.500 21.500,8.500 C21.500,8.500 21.500,11.754 21.082,13.314 ZM9.455,5.545 L9.455,11.455 L14.682,8.500 L9.455,5.545 Z" />
-								</svg></a>
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="22px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M13.051,8.248 L9.026,8.282 L9.026,6.670 C9.026,5.992 9.511,5.617 9.846,5.617 L13.049,5.617 C13.295,5.617 13.495,5.436 13.495,5.213 L13.495,1.904 C13.495,1.681 13.295,1.500 13.049,1.500 L9.846,1.500 C7.100,1.500 4.780,3.883 4.780,6.703 L4.817,8.247 L1.949,8.247 C1.703,8.247 1.503,8.427 1.503,8.651 L1.503,11.957 C1.503,12.180 1.703,12.361 1.949,12.361 L4.780,12.328 L4.780,21.095 C4.780,21.318 4.980,21.499 5.227,21.499 L8.580,21.499 C8.826,21.499 9.026,21.318 9.026,21.095 L8.989,12.363 L13.051,12.363 C13.298,12.363 13.498,12.182 13.498,11.959 L13.498,8.653 C13.498,8.430 13.298,8.248 13.051,8.248 Z" />
-								</svg></a>
-							<a href="#" class="social__icon"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px">
-									<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M19.845,19.926 C18.797,20.935 17.346,21.500 15.611,21.500 L7.385,21.500 C5.733,21.500 4.279,20.974 3.191,19.926 C2.064,18.839 1.499,17.347 1.499,15.613 L1.499,7.347 C1.499,3.840 3.838,1.500 7.346,1.500 L15.651,1.500 C17.344,1.500 18.837,2.065 19.885,3.153 C20.933,4.201 21.498,5.654 21.498,7.347 L21.498,15.653 C21.498,17.385 20.933,18.879 19.845,19.926 ZM11.497,6.297 C8.675,6.297 6.335,8.594 6.335,11.459 C6.335,14.321 8.633,16.621 11.497,16.621 C14.360,16.621 16.659,14.282 16.659,11.459 C16.659,8.636 14.320,6.297 11.497,6.297 ZM15.691,6.177 C15.691,7.735 18.031,7.735 18.031,6.177 C18.031,4.617 15.691,4.617 15.691,6.177 ZM11.498,14.887 C9.619,14.887 8.112,13.378 8.112,11.500 C8.112,9.621 9.646,8.113 11.498,8.113 C13.350,8.113 14.885,9.648 14.885,11.500 C14.885,13.352 13.376,14.887 11.498,14.887 Z" />
-								</svg></a>
-						</div>
-						<a href="tel:+12345678901" class="phone"><span class="phone__img"><svg xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
-									<path fill-rule="evenodd" stroke="rgb(255, 40, 194)" stroke-width="1px" stroke-linecap="butt"
-										stroke-linejoin="miter" fill="none"
-										d="M20.589,16.011 C19.760,15.158 17.402,13.562 15.856,13.562 C15.498,13.562 15.185,13.642 14.930,13.806 C14.174,14.289 13.572,14.664 13.282,14.664 C13.123,14.664 12.952,14.522 12.577,14.199 L12.515,14.142 C11.475,13.238 11.253,13.005 10.850,12.585 L10.747,12.477 C10.673,12.403 10.611,12.335 10.549,12.272 C10.196,11.909 9.941,11.647 9.037,10.625 L8.998,10.579 C8.566,10.091 8.282,9.772 8.264,9.539 C8.247,9.312 8.446,8.943 8.952,8.255 C9.566,7.426 9.588,6.403 9.026,5.216 C8.577,4.278 7.844,3.380 7.196,2.591 L7.140,2.523 C6.583,1.841 5.935,1.500 5.213,1.500 C4.412,1.500 3.747,1.932 3.395,2.159 C3.367,2.176 3.338,2.199 3.310,2.216 C2.520,2.716 1.946,3.404 1.730,4.102 C1.406,5.153 1.190,6.517 2.742,9.352 C4.083,11.806 5.299,13.454 7.230,15.437 C9.049,17.301 9.855,17.903 11.663,19.209 C13.674,20.664 15.606,21.499 16.958,21.499 C18.214,21.499 19.202,21.499 20.612,19.800 C22.089,18.016 21.475,16.925 20.589,16.011 L20.589,16.011 Z" />
-								</svg></span><span class="phone__number text__s">+1 234 567 89 10</span>
-						</a>
-						<div class="lang-wrapper">
-							<div class="lang">
-								<div class="lang__item lang__first lang-en">
-									<p class="lang__name">EN</p>
-								</div>
-								<div class="lang__item lang-ar">
-									<p class="lang__name">AR</p>
-								</div>
-								<div class="lang__item lang-ru">
-									<p class="lang__name">RU</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<div class="cart-wrapper">
-		<div class="cart-top">
-			<h2 class="h3">cart</h2>
-			<span class="close">
-				<img src="./assets/img/close.png" alt="close">
-			</span>
-		</div>
-		<div class="cart-middle">
-			<div class="cart__item">
-				<img class="cart__img" src="./assets/img/item.webp" alt="item">
-				<div class="cart-item__description">
-					<p class="item-name">Grain de poudre tailored dress</p>
-					<p class="item-color">Color: <span class="color-data">Green</span></p>
-					<p class="item-size">Size: <span>XS</span> </p>
-					<p class="item-price"><span class="currency">$</span><span class="price">123.09</span></p>
-					<span class="discount"><span class="currency">$</span>167.10</span>
-				</div>
-			</div>
-			<div class="cart__item">
-				<img class="cart__img" src="./assets/img/item.webp" alt="item">
-				<div class="cart-item__description">
-					<p class="item-name">Grain de poudre tailored dress</p>
-					<p class="item-color">Color: <span class="color-data">Green</span></p>
-					<p class="item-size">Size: <span>XS</span> </p>
-					<p class="item-price"><span class="currency">$</span><span class="price">123.09</span></p>
-					<span class="discount"><span class="currency">$</span>167.10</span>
-				</div>
-			</div>
-			<div class="cart__item">
-				<img class="cart__img" src="./assets/img/item.webp" alt="item">
-				<div class="cart-item__description">
-					<p class="item-name">Grain de poudre tailored dress</p>
-					<p class="item-color">Color: <span class="color-data">Green</span></p>
-					<p class="item-size">Size: <span>XS</span> </p>
-					<p class="item-price"><span class="currency">$</span><span class="price">123.09</span></p>
-					<span class="discount"><span class="currency">$</span>167.10</span>
-				</div>
-			</div>
-		</div>
-		<div class="total">
-			<p class="total-name">total</p>
-			<p class="sum">0</p>
-		</div>
-		<div class="cart-bottom">
-			<a href="./cart.html" class="to-cart">
-				<span class="btn-text">Go to Cart</span>
-				<img class="arrow" src="./assets/img/arrow-right-grey.webp" alt="arrow">
-			</a>
-			<button class="reset-cart">
-				clear cart
-			</button>
-		</div>
-	</div>
-	
-	<!--end header-->
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <span class="submenu__item-span">
+                        <span class="menu__block-title">Sport</span>
+                        <span class="mobile-arrow">
+                          <img
+                            src="./assets/img/arrow-right-grey.webp"
+                            alt="arrow"
+                          />
+                        </span>
+                      </span>
+                      <span class="submenu__container">
+                        <span class="mobile2-arrow">
+                          <img src="./assets/img/left-arrow.svg" alt="arrow" />
+                        </span>
+                        <ul class="submenu__list">
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/shorts/"
+                              class="item__link"
+                              >SHORTS</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/leggings/"
+                              class="item__link"
+                              >LEGGINGS</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/sport-bra/"
+                              class="item__link"
+                              >SPORT BRA</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/short-sleeve-top/"
+                              class="item__link"
+                              >SHORT-SLEEVE TOP</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/long-sleeve-top/"
+                              class="item__link"
+                              >LONG-SLEEVE TOP</a
+                            >
+                          </li>
+                        </ul>
+                        <span class="all">
+                          <a href="http://localhost:8100/women/"
+                            >All Women Clothing</a
+                          >
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item new__item" data-cat="men">
+                <span class="menu__block-span">
+                  <span class="menu__block-title">men</span>
+                  <span class="mobile-arrow">
+                    <img src="./assets/img/arrow-right-grey.webp" alt="arrow" />
+                  </span>
+                </span>
+                <div class="submenu__wrapper submenu__new" data-cat="men">
+                  <span class="arrow-back">
+                    <img src="./assets/img/left-arrow.svg" alt="arrow" />
+                  </span>
 
-	<div class="prime">
-		<div class="wrapper">
-			<div class="container">
-				<div class="prime-wrapper prime-center">
-					<div class="prime-title">
-						<h1 class="title upper">About us</h1>
-						<div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-							<div class="bread" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-								<a href="./index.html" class="bread-link" itemprop="item">
-									<span itemprop="name">Home</span>
-									<meta itemprop="position" content="1">
-								</a>
-								<span class="bread-sep">›</span>
-								<span class="bread-text">About us</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<main class="main simple__border">
-		<div class="about">
-			<div class="wrapper">
-				<div class="container">
-					<h1 class="about__title">about us</h1>
-					<h2 class="about__subtitle"><span class="yellow">BERNESSI</span> — stylish, modern and comfortable clothes for those who prefer<br>
-					<span id="element" class="yellow"></span>
-					</h2>
-				</div>
-			</div>
-		</div>
-		<div class="about__block">
-			
-		</div>
-	</main>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <span class="submenu__item-span">
+                        <span class="menu__block-title">Sport2</span>
+                        <span class="mobile-arrow">
+                          <img
+                            src="./assets/img/arrow-right-grey.webp"
+                            alt="arrow"
+                          />
+                        </span>
+                      </span>
+                      <span class="submenu__container">
+                        <span class="mobile2-arrow">
+                          <img src="./assets/img/left-arrow.svg" alt="arrow" />
+                        </span>
+                        <ul class="submenu__list">
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/shorts/"
+                              class="item__link"
+                              >SHORTS</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/leggings/"
+                              class="item__link"
+                              >LEGGINGS</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/sport-bra/"
+                              class="item__link"
+                              >SPORT BRA</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/short-sleeve-top/"
+                              class="item__link"
+                              >SHORT-SLEEVE TOP</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/long-sleeve-top/"
+                              class="item__link"
+                              >LONG-SLEEVE TOP</a
+                            >
+                          </li>
+                        </ul>
+                        <span class="all">
+                          <a href="http://localhost:8100/women/"
+                            >All Women Clothing</a
+                          >
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item new__item" data-cat="kids">
+                <span class="menu__block-span">
+                  <span class="menu__block-title">kids</span>
+                  <span class="mobile-arrow">
+                    <img src="./assets/img/arrow-right-grey.webp" alt="arrow" />
+                  </span>
+                </span>
+                <div class="submenu__wrapper submenu__new" data-cat="kids">
+                  <span class="arrow-back">
+                    <img src="./assets/img/left-arrow.svg" alt="arrow" />
+                  </span>
 
-	<!-- start footer -->
-	
-	<footer class="footer">
-		<div class="container">
-			<div class="block">
-				<a href="./index.html" class="head-page">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118px"
-						height="21px">
-						<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-							d="M113.940,19.835 L113.940,0.311 L117.796,0.311 L117.796,19.835 L113.940,19.835 ZM110.788,14.184 C110.788,17.367 108.741,20.085 103.789,20.085 C99.661,20.085 96.980,17.937 96.749,14.070 L100.559,14.070 C100.830,15.843 101.949,17.000 103.966,17.000 C106.120,17.000 106.872,16.034 106.872,14.653 C106.872,12.880 105.833,12.151 103.100,11.349 C98.718,10.095 97.220,8.472 97.220,5.651 C97.220,2.031 100.027,0.055 103.630,0.055 C108.167,0.055 110.087,2.491 110.305,5.628 L106.519,5.628 C106.286,4.188 105.607,3.093 103.596,3.093 C101.900,3.093 101.064,3.905 101.064,5.261 C101.064,6.718 102.013,7.132 104.693,7.935 C109.521,9.392 110.788,11.384 110.788,14.184 ZM95.351,14.184 C95.351,17.367 93.303,20.085 88.351,20.085 C84.223,20.085 81.543,17.937 81.312,14.070 L85.121,14.070 C85.393,15.843 86.512,17.000 88.528,17.000 C90.683,17.000 91.434,16.034 91.434,14.653 C91.434,12.880 90.395,12.151 87.662,11.349 C83.280,10.095 81.783,8.472 81.783,5.651 C81.783,2.031 84.589,0.055 88.192,0.055 C92.730,0.055 94.650,2.491 94.868,5.628 L91.082,5.628 C90.848,4.188 90.169,3.093 88.158,3.093 C86.463,3.093 85.627,3.905 85.627,5.261 C85.627,6.718 86.575,7.132 89.256,7.935 C94.083,9.392 95.351,11.384 95.351,14.184 ZM66.844,0.341 L79.215,0.341 L79.215,3.630 L70.603,3.630 L70.603,8.053 L76.838,8.053 C77.719,8.053 78.433,8.790 78.433,9.700 C78.433,10.609 77.719,11.346 76.838,11.346 L70.603,11.346 L70.603,16.601 L79.215,16.601 L79.215,19.865 L66.844,19.865 L66.844,0.341 ZM51.995,4.493 L51.967,4.493 C52.105,6.960 52.123,10.335 52.123,13.821 L52.123,19.865 L48.608,19.865 L48.608,0.341 L53.529,0.341 C59.142,12.237 60.052,14.165 60.341,15.092 L60.393,15.092 C60.203,12.773 60.175,9.585 60.175,6.393 L60.175,0.341 L63.694,0.341 L63.694,19.865 L58.973,19.865 C52.947,6.779 52.273,5.226 51.995,4.493 ZM45.114,14.920 L45.181,19.862 L41.383,19.951 L41.298,14.848 C41.298,12.614 40.510,11.830 38.039,11.830 L35.466,11.830 L35.466,19.895 L31.681,19.895 L31.681,0.371 L39.384,0.371 C42.954,0.371 45.505,2.199 45.505,5.652 C45.505,8.314 44.145,9.593 42.564,10.218 C44.440,10.966 45.114,12.497 45.114,14.920 ZM38.875,3.531 L35.466,3.531 L35.466,8.669 L38.344,8.669 C40.176,8.669 41.685,8.162 41.685,6.003 C41.685,4.197 40.420,3.531 38.875,3.531 ZM16.328,0.371 L29.163,0.371 L29.163,3.660 L20.086,3.660 L20.086,8.083 L26.786,8.083 C27.666,8.083 28.380,8.821 28.380,9.730 C28.380,10.639 27.666,11.376 26.786,11.376 L20.086,11.376 L20.086,16.631 L29.163,16.631 L29.163,19.895 L16.328,19.895 L16.328,0.371 ZM7.221,19.895 L0.006,19.895 L0.006,0.371 L7.355,0.371 C11.499,0.371 13.335,2.634 13.335,5.334 C13.335,7.790 12.033,8.833 11.031,9.275 C12.422,9.874 13.988,11.293 13.988,13.989 C13.988,17.750 11.247,19.895 7.221,19.895 ZM6.884,3.402 L3.789,3.402 L3.789,8.050 L6.692,8.050 C8.678,8.050 9.595,7.399 9.595,5.739 C9.595,4.127 8.529,3.402 6.884,3.402 ZM6.647,11.062 L3.789,11.062 L3.789,16.889 L6.938,16.889 C8.688,16.889 10.056,16.019 10.056,13.996 C10.056,12.095 8.976,11.062 6.647,11.062 Z" />
-					</svg>
-				</a>
-				<nav class="footer__menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a href="#">New</a>
-						</li>
-						<li class="menu__item">
-							<a href="#">Women</a>
-						</li>
-						<li class="menu__item">
-							<a href="#">Men</a>
-						</li>
-						<li class="menu__item">
-							<a href="#">Family</a>
-						</li>
-						<li class="menu__item">
-							<a href="#">Children</a>
-						</li>
-						<li class="menu__item">
-							<a href="#">Accessories</a>
-						</li>
-						<li class="menu__item">
-							<a href="#">Delivery</a>
-						</li>
-					</ul>
-				</nav>
-				<div class="block__right">
-					<a href="tel:+12345678901" class="phone"><span class="phone__img footer__phone"><svg
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px"
-								height="23.5px">
-								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M20.589,16.011 C19.760,15.158 17.402,13.562 15.856,13.562 C15.498,13.562 15.185,13.642 14.930,13.806 C14.174,14.289 13.572,14.664 13.282,14.664 C13.123,14.664 12.952,14.522 12.577,14.198 L12.515,14.142 C11.475,13.238 11.254,13.005 10.850,12.585 L10.747,12.477 C10.673,12.403 10.611,12.335 10.549,12.272 C10.196,11.909 9.941,11.647 9.037,10.625 L8.998,10.579 C8.566,10.091 8.282,9.773 8.264,9.539 C8.247,9.312 8.446,8.943 8.952,8.255 C9.566,7.426 9.588,6.403 9.026,5.216 C8.577,4.278 7.844,3.380 7.196,2.591 L7.140,2.523 C6.583,1.841 5.935,1.500 5.213,1.500 C4.412,1.500 3.747,1.932 3.395,2.159 C3.367,2.176 3.338,2.199 3.310,2.216 C2.520,2.716 1.946,3.404 1.730,4.102 C1.406,5.153 1.190,6.517 2.742,9.352 C4.083,11.806 5.299,13.454 7.230,15.437 C9.049,17.300 9.855,17.903 11.663,19.210 C13.674,20.664 15.606,21.499 16.958,21.499 C18.214,21.499 19.202,21.499 20.612,19.801 C22.089,18.016 21.475,16.926 20.589,16.011 L20.589,16.011 Z" />
-							</svg></span><span class="phone__number text__s footer__number">+1 234 567 89 10</span></a>
-					<div class="social">
-						<a href="#" class="social__icon footer__icon"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
-								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M11.502,21.500 C9.996,21.500 9.117,20.951 8.410,20.509 C8.095,20.310 7.795,20.121 7.475,20.014 C6.791,19.785 6.192,19.761 5.711,19.743 C5.240,19.724 4.867,19.710 4.566,19.499 C4.471,19.432 4.389,19.347 4.324,19.248 L4.320,19.242 C4.258,19.151 4.231,19.077 4.197,18.985 C4.144,18.842 4.072,18.648 3.885,18.481 L3.857,18.457 L3.827,18.436 C3.692,18.344 3.544,18.277 3.387,18.236 C2.975,18.125 2.574,17.962 2.197,17.752 L2.190,17.748 C2.043,17.668 1.909,17.565 1.794,17.443 C1.534,17.171 1.447,16.872 1.547,16.597 C1.655,16.299 1.881,16.172 2.306,15.955 C2.384,15.915 2.463,15.875 2.542,15.833 L2.547,15.830 C3.588,15.255 4.407,14.529 4.983,13.673 C5.150,13.428 5.298,13.162 5.420,12.888 L5.429,12.868 L5.437,12.848 C5.501,12.669 5.570,12.398 5.429,12.105 L5.415,12.075 L5.397,12.047 C5.317,11.919 5.212,11.813 5.087,11.730 C4.922,11.618 4.753,11.506 4.637,11.430 L4.510,11.346 C4.360,11.247 4.242,11.168 4.164,11.113 C3.832,10.877 3.605,10.635 3.469,10.374 C3.295,10.039 3.272,9.646 3.407,9.293 C3.595,8.788 4.053,8.490 4.633,8.490 C4.766,8.490 4.897,8.504 5.024,8.532 C5.061,8.540 5.098,8.548 5.134,8.558 L5.854,8.748 L5.843,7.992 C5.835,7.461 5.851,6.966 5.888,6.521 C6.034,4.805 6.626,3.984 7.171,3.351 C7.545,2.924 7.982,2.566 8.472,2.286 C9.373,1.764 10.392,1.500 11.503,1.500 C12.618,1.500 13.638,1.764 14.534,2.284 C15.026,2.566 15.463,2.923 15.837,3.348 C16.381,3.982 16.973,4.803 17.119,6.520 C17.157,6.966 17.172,7.460 17.164,7.989 L17.152,8.746 L17.873,8.556 C17.909,8.546 17.947,8.538 17.984,8.529 C18.110,8.502 18.241,8.488 18.372,8.488 C18.953,8.488 19.411,8.786 19.598,9.287 C19.733,9.642 19.710,10.035 19.536,10.369 C19.400,10.631 19.173,10.873 18.841,11.109 C18.739,11.182 18.576,11.290 18.369,11.426 C18.248,11.506 18.070,11.623 17.898,11.739 L17.891,11.744 C17.774,11.824 17.677,11.927 17.602,12.049 L17.586,12.075 L17.573,12.103 C17.437,12.389 17.500,12.650 17.559,12.823 L17.567,12.846 L17.578,12.869 C17.702,13.149 17.852,13.419 18.023,13.672 C18.611,14.547 19.455,15.285 20.530,15.865 C20.587,15.894 20.639,15.921 20.691,15.948 C20.736,15.971 20.780,15.994 20.824,16.016 L20.836,16.023 L20.848,16.028 C20.883,16.045 20.922,16.065 20.960,16.088 L20.971,16.094 C21.257,16.256 21.384,16.386 21.459,16.593 C21.555,16.859 21.477,17.148 21.239,17.406 L21.228,17.419 L21.220,17.429 C21.103,17.558 20.966,17.666 20.813,17.750 L20.808,17.753 C20.427,17.966 20.020,18.130 19.599,18.242 C19.445,18.284 19.303,18.350 19.174,18.439 L19.144,18.460 L19.116,18.484 C18.931,18.651 18.860,18.844 18.807,18.985 C18.780,19.058 18.757,19.120 18.717,19.189 L18.714,19.194 C18.646,19.316 18.550,19.422 18.437,19.502 C18.138,19.712 17.765,19.727 17.293,19.745 C16.811,19.764 16.212,19.787 15.529,20.016 C15.221,20.120 14.922,20.307 14.606,20.504 C13.892,20.948 13.006,21.500 11.502,21.500 Z" />
-							</svg></a>
-						<a href="#" class="social__icon footer__icon"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="17.5px">
-								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M21.082,13.314 C20.852,14.174 20.174,14.852 19.314,15.082 C17.754,15.500 11.500,15.500 11.500,15.500 C11.500,15.500 5.246,15.500 3.686,15.082 C2.826,14.852 2.148,14.174 1.918,13.314 C1.500,11.754 1.500,8.500 1.500,8.500 C1.500,8.500 1.500,5.246 1.918,3.686 C2.148,2.826 2.826,2.148 3.686,1.918 C5.246,1.500 11.500,1.500 11.500,1.500 C11.500,1.500 17.754,1.500 19.314,1.918 C20.174,2.148 20.852,2.826 21.082,3.686 C21.500,5.246 21.500,8.500 21.500,8.500 C21.500,8.500 21.500,11.754 21.082,13.314 ZM9.454,5.545 L9.454,11.454 L14.682,8.500 L9.454,5.545 Z" />
-							</svg></a>
-						<a href="#" class="social__icon footer__icon"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="23.5px">
-								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M13.051,8.248 L9.026,8.282 L9.026,6.670 C9.026,5.992 9.511,5.617 9.846,5.617 L13.049,5.617 C13.295,5.617 13.495,5.436 13.495,5.213 L13.495,1.904 C13.495,1.681 13.295,1.500 13.049,1.500 L9.846,1.500 C7.100,1.500 4.781,3.883 4.781,6.703 L4.817,8.246 L1.949,8.246 C1.703,8.246 1.503,8.428 1.503,8.651 L1.503,11.957 C1.503,12.180 1.703,12.361 1.949,12.361 L4.781,12.328 L4.781,21.095 C4.781,21.318 4.980,21.499 5.227,21.499 L8.580,21.499 C8.826,21.499 9.026,21.318 9.026,21.095 L8.990,12.363 L13.051,12.363 C13.298,12.363 13.498,12.182 13.498,11.959 L13.498,8.653 C13.498,8.430 13.298,8.248 13.051,8.248 Z" />
-							</svg></a>
-						<a href="#" class="social__icon footer__icon"><svg xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" width="23.5px" height="23.5px">
-								<path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt"
-									stroke-linejoin="miter" fill="none"
-									d="M19.845,19.927 C18.797,20.934 17.346,21.500 15.611,21.500 L7.385,21.500 C5.733,21.500 4.279,20.974 3.191,19.927 C2.064,18.839 1.499,17.348 1.499,15.613 L1.499,7.347 C1.499,3.840 3.838,1.501 7.345,1.501 L15.651,1.501 C17.344,1.501 18.837,2.065 19.885,3.153 C20.933,4.201 21.498,5.654 21.498,7.347 L21.498,15.653 C21.498,17.385 20.933,18.879 19.845,19.927 ZM11.497,6.297 C8.674,6.297 6.335,8.594 6.335,11.459 C6.335,14.321 8.632,16.621 11.497,16.621 C14.360,16.621 16.659,14.281 16.659,11.459 C16.659,8.636 14.320,6.297 11.497,6.297 ZM15.691,6.177 C15.691,7.735 18.031,7.735 18.031,6.177 C18.031,4.617 15.691,4.617 15.691,6.177 ZM11.498,14.887 C9.619,14.887 8.112,13.378 8.112,11.500 C8.112,9.621 9.646,8.113 11.498,8.113 C13.350,8.113 14.885,9.648 14.885,11.500 C14.885,13.352 13.376,14.887 11.498,14.887 Z" />
-							</svg></a>
-					</div>
-				</div>
-			</div>
-			<div class="second-menu">
-				<ul class="menu__block">
-					<li class="menu__item"><a href="#">New</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Women</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-							<li class="submenu__item"><a href="#">Accessories</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Men</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-							<li class="submenu__item"><a href="#">Children</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Family</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Children</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-						</ul>
-					</li>
-					<li class="menu__item"><a href="#">Accessories</a>
-						<ul class="submenu">
-							<li class="submenu__item"><a href="#">New</a></li>
-							<li class="submenu__item"><a href="#">Women</a></li>
-							<li class="submenu__item"><a href="#">Men</a></li>
-							<li class="submenu__item"><a href="#">Family</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__bottom">
-				<div class="documents">
-					<a class="documents__link" href="#">Terms and Conditions</a>
-					<a class="documents__link" href="#">Privacy Policy</a>
-					<a class="documents__link" href="#">Cookie Policy</a>
-					<a class="documents__link" href="#">Contact Us</a>
-					<a class="documents__link" href="./faq.html">FAQ</a>
-				</div>
-				<p class="copywriter">2023 Bernessi © All Rights Reserved</p>
-			</div>
-		</div>
-	</footer>
-	</body>
-	
-	</html>
+                  <ul class="submenu">
+                    <li class="submenu__item">
+                      <span class="submenu__item-span">
+                        <span class="menu__block-title">Sport3</span>
+                        <span class="mobile-arrow">
+                          <img
+                            src="./assets/img/arrow-right-grey.webp"
+                            alt="arrow"
+                          />
+                        </span>
+                      </span>
+                      <span class="submenu__container">
+                        <span class="mobile2-arrow">
+                          <img src="./assets/img/left-arrow.svg" alt="arrow" />
+                        </span>
+                        <ul class="submenu__list">
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/shorts/"
+                              class="item__link"
+                              >SHORTS</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/leggings/"
+                              class="item__link"
+                              >LEGGINGS</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/sport-bra/"
+                              class="item__link"
+                              >SPORT BRA</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/short-sleeve-top/"
+                              class="item__link"
+                              >SHORT-SLEEVE TOP</a
+                            >
+                          </li>
+                          <li class="list__item">
+                            <a
+                              href="http://localhost:8100/women/women_sport/long-sleeve-top/"
+                              class="item__link"
+                              >LONG-SLEEVE TOP</a
+                            >
+                          </li>
+                        </ul>
+                        <span class="all">
+                          <a href="http://localhost:8100/women/"
+                            >All Women Clothing</a
+                          >
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="delivery__item">
+                <a href="http://localhost:8100/about_us">About Us</a>
+              </li>
+              <li class="delivery__item">
+                <a href="http://localhost:8100/delivery">Delivery</a>
+              </li>
+            </ul>
+            <div class="person">
+              <div class="search" id="search">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Поиск товара..."
+                />
+                <button class="search__btn" type="submit">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.84"
+                    height="20.844"
+                    viewBox="0 0 20.84 20.844"
+                  >
+                    <path
+                      fill="none"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      fill-rule="evenodd"
+                      d="M1481,65a7,7,0,1,1-7,7A7,7,0,0,1,1481,65Zm-5,12-8,8"
+                      transform="translate(-1467.66 -64.5)"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+
+              <a href="javascript:void(0)" class="cart" id="cart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21.5px"
+                  height="23.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(136, 140, 149)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M19.089,21.500 L1.908,21.500 C1.682,21.500 1.499,21.312 1.499,21.083 L1.499,6.908 C1.499,6.679 1.682,6.491 1.908,6.491 L6.408,6.491 L14.589,6.490 L19.089,6.490 C19.314,6.490 19.498,6.678 19.498,6.908 L19.498,21.083 C19.498,21.312 19.314,21.500 19.089,21.500 ZM15.181,15.474 C15.175,14.454 14.394,13.774 14.029,13.583 C13.664,13.391 13.278,13.205 12.360,13.196 C12.127,13.195 11.945,13.195 11.798,13.194 C11.387,13.127 11.073,12.765 11.073,12.327 C11.073,11.842 11.459,11.448 11.936,11.448 L12.435,11.446 C13.071,11.446 13.483,11.723 13.483,12.338 L14.924,12.338 C14.927,12.288 14.929,12.237 14.929,12.184 C14.929,11.153 14.219,10.289 12.617,10.289 L12.223,10.289 L12.223,10.289 L8.380,10.289 C6.778,10.289 6.068,11.153 6.068,12.184 C6.068,13.121 6.571,13.519 6.959,13.688 C6.421,13.917 5.816,14.458 5.816,15.487 C5.816,16.923 6.875,17.742 8.432,17.742 L8.697,17.742 L12.300,17.742 L12.565,17.742 C14.122,17.742 15.181,16.923 15.181,15.487 C15.181,15.483 15.181,15.479 15.181,15.474 ZM12.453,16.596 L11.235,16.596 L11.235,14.371 L12.340,14.371 C13.241,14.371 13.658,14.766 13.658,15.491 C13.658,16.264 13.129,16.596 12.453,16.596 ZM7.476,12.333 C7.476,11.845 7.864,11.449 8.343,11.449 L9.764,11.449 L9.764,13.217 L8.343,13.217 C7.864,13.217 7.476,12.821 7.476,12.333 ZM8.654,14.371 L9.760,14.371 L9.760,16.596 L8.542,16.596 C7.865,16.596 7.336,16.264 7.336,15.491 C7.336,14.766 7.754,14.371 8.654,14.371 Z"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(136, 140, 149)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M14.589,6.490 L14.589,5.151 C14.589,3.139 12.754,1.500 10.498,1.500 C8.243,1.500 6.408,3.109 6.408,5.089 L6.408,6.491 "
+                  ></path>
+                </svg>
+              </a>
+              <a href="/index.php?route=account/login" class="person-info">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21.5px"
+                  height="22.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(136, 140, 149)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M1.497,21.500 C1.497,18.994 2.434,16.638 4.135,14.869 C5.837,13.100 8.097,12.121 10.500,12.121 C12.902,12.121 15.166,13.096 16.864,14.869 C18.562,16.642 19.502,18.998 19.502,21.500 "
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(136, 140, 149)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M10.492,11.862 C7.749,11.862 5.518,9.537 5.518,6.679 C5.518,3.821 7.749,1.499 10.492,1.499 C13.235,1.499 15.467,3.824 15.467,6.683 C15.467,9.541 13.235,11.862 10.492,11.862 Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="block__right-hide">
+              <div class="social">
+                <a href="https://dzen.ru/?yredirect=true" class="social__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23.5px"
+                    height="23.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M11.502,21.500 C9.996,21.500 9.117,20.951 8.410,20.509 C8.095,20.310 7.795,20.121 7.476,20.014 C6.791,19.785 6.192,19.761 5.711,19.743 C5.240,19.724 4.867,19.710 4.566,19.499 C4.471,19.432 4.389,19.347 4.324,19.248 L4.320,19.242 C4.258,19.151 4.231,19.077 4.197,18.985 C4.144,18.842 4.072,18.648 3.885,18.481 L3.857,18.457 L3.827,18.436 C3.692,18.344 3.544,18.277 3.387,18.236 C2.975,18.125 2.574,17.962 2.197,17.751 L2.190,17.748 C2.043,17.668 1.909,17.565 1.794,17.442 C1.534,17.171 1.447,16.872 1.547,16.597 C1.655,16.298 1.881,16.172 2.306,15.955 C2.384,15.915 2.463,15.875 2.542,15.833 L2.547,15.830 C3.588,15.255 4.407,14.529 4.983,13.673 C5.150,13.427 5.298,13.163 5.420,12.888 L5.429,12.868 L5.437,12.847 C5.501,12.669 5.570,12.398 5.429,12.105 L5.415,12.075 L5.397,12.047 C5.317,11.919 5.212,11.812 5.087,11.729 C4.922,11.618 4.753,11.507 4.637,11.430 L4.510,11.346 C4.360,11.246 4.242,11.168 4.164,11.113 C3.832,10.876 3.605,10.635 3.469,10.374 C3.295,10.039 3.272,9.645 3.407,9.293 C3.595,8.788 4.053,8.490 4.633,8.490 C4.766,8.490 4.897,8.504 5.024,8.532 C5.061,8.540 5.098,8.548 5.134,8.558 L5.854,8.748 L5.843,7.992 C5.835,7.461 5.851,6.966 5.888,6.521 C6.034,4.805 6.626,3.984 7.171,3.350 C7.544,2.924 7.982,2.566 8.472,2.286 C9.373,1.764 10.392,1.500 11.503,1.500 C12.618,1.500 13.638,1.764 14.535,2.284 C15.026,2.566 15.463,2.923 15.837,3.348 C16.381,3.982 16.973,4.803 17.119,6.520 C17.157,6.966 17.172,7.460 17.164,7.989 L17.152,8.746 L17.873,8.556 C17.909,8.546 17.947,8.538 17.984,8.530 C18.110,8.502 18.241,8.488 18.372,8.488 C18.953,8.488 19.411,8.786 19.598,9.287 C19.733,9.642 19.710,10.035 19.536,10.369 C19.400,10.631 19.173,10.872 18.841,11.109 C18.739,11.182 18.576,11.290 18.369,11.426 C18.248,11.506 18.070,11.623 17.898,11.739 L17.891,11.743 C17.774,11.825 17.677,11.928 17.602,12.049 L17.586,12.075 L17.573,12.103 C17.437,12.389 17.500,12.651 17.559,12.822 L17.567,12.846 L17.577,12.869 C17.702,13.149 17.852,13.419 18.023,13.672 C18.611,14.547 19.455,15.285 20.530,15.865 C20.587,15.895 20.639,15.921 20.691,15.948 C20.736,15.971 20.780,15.993 20.824,16.017 L20.836,16.023 L20.848,16.028 C20.883,16.045 20.922,16.065 20.960,16.088 L20.971,16.094 C21.257,16.256 21.384,16.386 21.459,16.593 C21.555,16.859 21.477,17.147 21.239,17.407 L21.228,17.419 L21.220,17.429 C21.103,17.559 20.966,17.667 20.813,17.750 L20.808,17.753 C20.427,17.966 20.020,18.130 19.599,18.242 C19.445,18.284 19.303,18.350 19.174,18.439 L19.144,18.460 L19.116,18.485 C18.931,18.651 18.859,18.844 18.807,18.985 C18.780,19.058 18.757,19.120 18.717,19.189 L18.714,19.195 C18.646,19.316 18.550,19.422 18.437,19.502 C18.138,19.712 17.766,19.727 17.294,19.745 C16.811,19.764 16.212,19.787 15.529,20.016 C15.221,20.120 14.922,20.307 14.606,20.504 C13.892,20.948 13.006,21.500 11.502,21.500 Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="https://youtu.be/7imPLmvLyQA" class="social__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23.5px"
+                    height="17.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M21.082,13.314 C20.852,14.174 20.174,14.852 19.314,15.082 C17.754,15.500 11.500,15.500 11.500,15.500 C11.500,15.500 5.246,15.500 3.686,15.082 C2.826,14.852 2.148,14.174 1.918,13.314 C1.500,11.754 1.500,8.500 1.500,8.500 C1.500,8.500 1.500,5.246 1.918,3.686 C2.148,2.825 2.826,2.148 3.686,1.918 C5.246,1.500 11.500,1.500 11.500,1.500 C11.500,1.500 17.754,1.500 19.314,1.918 C20.174,2.148 20.852,2.825 21.082,3.686 C21.500,5.246 21.500,8.500 21.500,8.500 C21.500,8.500 21.500,11.754 21.082,13.314 ZM9.455,5.545 L9.455,11.455 L14.682,8.500 L9.455,5.545 Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/index.php"
+                  class="social__icon"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="14px"
+                    height="22px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M13.051,8.248 L9.026,8.282 L9.026,6.670 C9.026,5.992 9.511,5.617 9.846,5.617 L13.049,5.617 C13.295,5.617 13.495,5.436 13.495,5.213 L13.495,1.904 C13.495,1.681 13.295,1.500 13.049,1.500 L9.846,1.500 C7.100,1.500 4.780,3.883 4.780,6.703 L4.817,8.247 L1.949,8.247 C1.703,8.247 1.503,8.427 1.503,8.651 L1.503,11.957 C1.503,12.180 1.703,12.361 1.949,12.361 L4.780,12.328 L4.780,21.095 C4.780,21.318 4.980,21.499 5.227,21.499 L8.580,21.499 C8.826,21.499 9.026,21.318 9.026,21.095 L8.989,12.363 L13.051,12.363 C13.298,12.363 13.498,12.182 13.498,11.959 L13.498,8.653 C13.498,8.430 13.298,8.248 13.051,8.248 Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com/" class="social__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="22px"
+                    height="22px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(136, 140, 149)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M19.845,19.926 C18.797,20.935 17.346,21.500 15.611,21.500 L7.385,21.500 C5.733,21.500 4.279,20.974 3.191,19.926 C2.064,18.839 1.499,17.347 1.499,15.613 L1.499,7.347 C1.499,3.840 3.838,1.500 7.346,1.500 L15.651,1.500 C17.344,1.500 18.837,2.065 19.885,3.153 C20.933,4.201 21.498,5.654 21.498,7.347 L21.498,15.653 C21.498,17.385 20.933,18.879 19.845,19.926 ZM11.497,6.297 C8.675,6.297 6.335,8.594 6.335,11.459 C6.335,14.321 8.633,16.621 11.497,16.621 C14.360,16.621 16.659,14.282 16.659,11.459 C16.659,8.636 14.320,6.297 11.497,6.297 ZM15.691,6.177 C15.691,7.735 18.031,7.735 18.031,6.177 C18.031,4.617 15.691,4.617 15.691,6.177 ZM11.498,14.887 C9.619,14.887 8.112,13.378 8.112,11.500 C8.112,9.621 9.646,8.113 11.498,8.113 C13.350,8.113 14.885,9.648 14.885,11.500 C14.885,13.352 13.376,14.887 11.498,14.887 Z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <a href="tel:+77777777777" class="phone">
+                <span class="phone__img">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="23.5px"
+                    height="23.5px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      stroke="rgb(255, 40, 194)"
+                      stroke-width="1px"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      fill="none"
+                      d="M20.589,16.011 C19.760,15.158 17.402,13.562 15.856,13.562 C15.498,13.562 15.185,13.642 14.930,13.806 C14.174,14.289 13.572,14.664 13.282,14.664 C13.123,14.664 12.952,14.522 12.577,14.199 L12.515,14.142 C11.475,13.238 11.253,13.005 10.850,12.585 L10.747,12.477 C10.673,12.403 10.611,12.335 10.549,12.272 C10.196,11.909 9.941,11.647 9.037,10.625 L8.998,10.579 C8.566,10.091 8.282,9.772 8.264,9.539 C8.247,9.312 8.446,8.943 8.952,8.255 C9.566,7.426 9.588,6.403 9.026,5.216 C8.577,4.278 7.844,3.380 7.196,2.591 L7.140,2.523 C6.583,1.841 5.935,1.500 5.213,1.500 C4.412,1.500 3.747,1.932 3.395,2.159 C3.367,2.176 3.338,2.199 3.310,2.216 C2.520,2.716 1.946,3.404 1.730,4.102 C1.406,5.153 1.190,6.517 2.742,9.352 C4.083,11.806 5.299,13.454 7.230,15.437 C9.049,17.301 9.855,17.903 11.663,19.209 C13.674,20.664 15.606,21.499 16.958,21.499 C18.214,21.499 19.202,21.499 20.612,19.800 C22.089,18.016 21.475,16.925 20.589,16.011 L20.589,16.011 Z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="phone__number text__s">+7(777)7777777</span>
+              </a>
+              <div class="lang-wrapper">
+                <form
+                  id="form-lang"
+                  action="http://localhost:8100/index.php?route=common/language/language"
+                  method="post"
+                  enctype="multipart/form-data"
+                  class="lang"
+                >
+                  <div class="lang__item lang__first" data-code="ru-ru">
+                    <p class="lang__name">RU</p>
+                  </div>
+                  <div class="lang__item" data-code="en-gb">
+                    <p class="lang__name">EN</p>
+                  </div>
+                  <div class="lang__item" data-code="ar-en">
+                    <p class="lang__name">AR</p>
+                  </div>
+                  <input
+                    id="code-lang-input"
+                    type="hidden"
+                    name="code"
+                    value=""
+                  />
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="http://localhost:8100/"
+                  />
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="cart-wrapper">
+      <div class="cart-top">
+        <h2 class="h3">cart</h2>
+        <span class="close">
+          <img src="./assets/img/close.png" alt="close" />
+        </span>
+      </div>
+      <div class="cart-middle">
+        <div class="cart__item">
+          <img class="cart__img" src="./assets/img/item.webp" alt="item" />
+          <div class="cart-item__description">
+            <p class="item-name">Grain de poudre tailored dress</p>
+            <p class="item-color">
+              Color: <span class="color-data">Green</span>
+            </p>
+            <p class="item-size">Size: <span>XS</span></p>
+            <p class="item-price">
+              <span class="currency">$</span><span class="price">123.09</span>
+            </p>
+            <span class="discount"><span class="currency">$</span>167.10</span>
+          </div>
+        </div>
+        <div class="cart__item">
+          <img class="cart__img" src="./assets/img/item.webp" alt="item" />
+          <div class="cart-item__description">
+            <p class="item-name">Grain de poudre tailored dress</p>
+            <p class="item-color">
+              Color: <span class="color-data">Green</span>
+            </p>
+            <p class="item-size">Size: <span>XS</span></p>
+            <p class="item-price">
+              <span class="currency">$</span><span class="price">123.09</span>
+            </p>
+            <span class="discount"><span class="currency">$</span>167.10</span>
+          </div>
+        </div>
+        <div class="cart__item">
+          <img class="cart__img" src="./assets/img/item.webp" alt="item" />
+          <div class="cart-item__description">
+            <p class="item-name">Grain de poudre tailored dress</p>
+            <p class="item-color">
+              Color: <span class="color-data">Green</span>
+            </p>
+            <p class="item-size">Size: <span>XS</span></p>
+            <p class="item-price">
+              <span class="currency">$</span><span class="price">123.09</span>
+            </p>
+            <span class="discount"><span class="currency">$</span>167.10</span>
+          </div>
+        </div>
+      </div>
+      <div class="total">
+        <p class="total-name">total</p>
+        <p class="sum">0</p>
+      </div>
+      <div class="cart-bottom">
+        <a href="./cart.html" class="to-cart">
+          <span class="btn-text">Go to Cart</span>
+          <img
+            class="arrow"
+            src="./assets/img/arrow-right-grey.webp"
+            alt="arrow"
+          />
+        </a>
+        <button class="reset-cart">clear cart</button>
+      </div>
+    </div>
+
+    <!--end header-->
+
+    <div class="prime">
+      <div class="wrapper">
+        <div class="container">
+          <div class="prime-wrapper prime-center">
+            <div class="prime-title">
+              <h1 class="title upper">About us</h1>
+              <div
+                class="bread-band"
+                itemscope=""
+                itemtype="http://schema.org/BreadcrumbList"
+              >
+                <div
+                  class="bread"
+                  itemprop="itemListElement"
+                  itemscope=""
+                  itemtype="http://schema.org/ListItem"
+                >
+                  <a href="./index.html" class="bread-link" itemprop="item">
+                    <span itemprop="name">Home</span>
+                    <meta itemprop="position" content="1" />
+                  </a>
+                  <span class="bread-sep">›</span>
+                  <span class="bread-text">About us</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main simple__border">
+      <div class="about">
+        <div class="wrapper">
+          <div class="container">
+            <h1 class="about__title">about us</h1>
+            <h2 class="about__subtitle">
+              <span class="yellow">BERNESSI</span> — stylish, modern and
+              comfortable clothes for those who prefer<br />
+              <span id="element" class="yellow"></span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="about__block">
+        <div class="wrapper">
+          <div class="container">
+            <div class="description-block">
+              <p class="block-descripition">
+                Our designs are specially developed to enable people all over
+                the world choose our clothes irrespective of religion and
+                nationality
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__about">
+          <div class="block__first">
+            <div class="block__left">
+              <p class="block-text">
+                Our clothes are perfect for fitness, dances, yoga, running and
+                everyday usage!
+              </p>
+            </div>
+            <div class="block__images">
+              <img
+                class="about__img"
+                src="./assets/img/aboutusimg.png"
+                alt="picture"
+              />
+            </div>
+          </div>
+          <div class="block__second">
+            <div class="block__images">
+              <img
+                class="about__img2"
+                src="./assets/img/aboutus2img.png"
+                alt="image"
+              />
+            </div>
+            <div class="block__left">
+              <p class="block-text">
+                We have developed anatomic patterns, providing a perfect fit.
+              </p>
+              <p class="block-text">
+                All our prints are unique and made by our designers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__tech">
+        <div class="tech__text">
+          <p class="tech__text-text">
+            New advanced technologies binding with the best sourced fabrics
+            result in the <span class="yellow italic">high-quality</span> and
+            <span class="yellow italic">comfortable</span> clothes, that wll
+            serve you for a long time.
+          </p>
+        </div>
+        <div class="tech__images">
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_523)">
+                <path
+                  d="M68.8066 75.7626C68.8066 65.9786 51.1099 40.4111 51.1099 40.4111C51.1099 40.4111 33.4048 65.9786 33.4048 75.7626C33.5056 80.3904 35.4147 84.7948 38.7233 88.0321C42.0319 91.2694 46.4767 93.0823 51.1057 93.0823C55.7346 93.0823 60.1795 91.2694 63.4881 88.0321C66.7966 84.7948 68.7058 80.3904 68.8066 75.7626Z"
+                  stroke="white"
+                  stroke-width="1.50219"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M38.6909 75.7124C38.6909 78.9282 39.9684 82.0122 42.2423 84.2861C44.5162 86.56 47.6002 87.8374 50.816 87.8374"
+                  stroke="white"
+                  stroke-width="1.50219"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M50.8159 10.623V18.8798C50.8149 20.3012 51.2611 21.6868 52.0914 22.8404L53.4591 24.7619C53.9993 25.5169 54.2961 26.4189 54.3096 27.3472C54.323 28.2754 54.0527 29.1856 53.5346 29.956L51.7389 32.6411C51.1371 33.5367 50.8157 34.5913 50.8159 35.6703V36.2409"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M42.249 18.1078L50.8163 9.54053L59.3835 18.1078"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M69.6455 26.3228V34.5795C69.6444 36.0035 70.0906 37.3918 70.921 38.5485L72.2887 40.4617C72.8308 41.2175 73.1286 42.121 73.1421 43.051C73.1556 43.981 72.8841 44.8929 72.3642 45.6641L70.5685 48.3492C69.9643 49.2437 69.6428 50.299 69.6455 51.3784V51.949"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M61.0698 33.8158L69.6371 25.2485L78.2043 33.8158"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M33.3628 34.8901V43.1469C33.3617 44.5708 33.8078 45.9592 34.6382 47.1159L36.006 49.029C36.5458 49.7858 36.8422 50.689 36.8557 51.6185C36.8692 52.5479 36.5991 53.4594 36.0815 54.2315L34.2858 56.9166C33.6816 57.8111 33.3601 58.8664 33.3628 59.9458V60.5164"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24.7954 42.3832L33.3627 33.8159L41.9299 42.3832"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="1.80697"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_523">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_522)">
+                <path
+                  d="M30.7868 24.275C55.1208 22.2528 75.0495 26.3141 80.789 40.3858C86.5284 54.4576 83.9776 72.3473 74.7726 80.537C65.5676 88.7266 52.0245 94.8185 47.6611 80.5537C43.2978 66.289 48.4331 59.5761 36.157 52.8046C23.8809 46.033 18.0743 40.6376 19.1903 35.2421C20.3064 29.8467 25.1732 24.7449 30.7868 24.275Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M51.4453 29.8975L53.8032 35.5278"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M68.3784 49.8428L76.0478 52.788"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M64.5439 61.8672L72.163 69.2849"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M57.6382 72.6074V80.537"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M81.46 42.1567L87.3001 40.3862"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M83.8013 58.2842H88.8359"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M80.7891 71.9365L84.3804 74.3951"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M74.7725 80.5371L77.3317 87.4345"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M61.2212 89.1211L62.7568 95.6241"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M50.4469 85.9663L45.6724 89.1213"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M46.411 75.4185L39.48 76.568"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M37.919 53.8369L33.5977 59.5596"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M26.7086 46.9141L24.6528 53.8367"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.4307 42.1567L16.2114 44.9845"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.0042 32.7085L14.1641 29.8975"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M27.6736 25.0221L24.6528 17.8813"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M39.48 23.8136V16.8574"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M51.4453 23.7884L53.8032 16.8574"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M64.5439 26.8514L66.8431 20.3315"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M75.2759 32.7085L81.4601 29.8975"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M35.7627 31.3071L42.9454 35.5278"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M37.9189 46.9141H46.4107"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M97.7389 5.26123L5.26123 97.7389"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_522">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_531)">
+                <path
+                  d="M80.7719 21.9595L79.7147 23.0503C76.0142 26.7518 71.6208 29.688 66.7854 31.6912C61.95 33.6945 56.7673 34.7256 51.5334 34.7256C46.2994 34.7256 41.1167 33.6945 36.2813 31.6912C31.4459 29.688 27.0525 26.7518 23.3521 23.0503L22.2612 21.9595"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M80.7719 81.0405L79.7147 79.9497C76.0142 76.2482 71.6208 73.312 66.7854 71.3088C61.95 69.3055 56.7673 68.2744 51.5334 68.2744C46.2994 68.2744 41.1167 69.3055 36.2813 71.3088C31.4459 73.312 27.0525 76.2482 23.3521 79.9497L22.2612 81.0405"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M80.5542 22.4966L79.4634 23.5874C75.7619 27.2879 72.8257 31.6813 70.8224 36.5167C68.8192 41.3521 67.7881 46.5348 67.7881 51.7687C67.7881 57.0027 68.8192 62.1854 70.8224 67.0208C72.8257 71.8562 75.7619 76.2496 79.4634 79.95L80.5542 81.0409"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22.4629 22.4966L23.5537 23.5874C27.2552 27.2879 30.1914 31.6813 32.1947 36.5167C34.1979 41.3521 35.229 46.5348 35.229 51.7687C35.229 57.0027 34.1979 62.1854 32.1947 67.0208C30.1914 71.8562 27.2552 76.2496 23.5537 79.95L22.4629 81.0409"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.4307 33.0356V20.9189H33.5473"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M81.9804 33.0356V20.9189H69.8638"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.0195 69.9644V82.081H33.1362"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M81.5776 69.9644V82.081H69.4609"
+                  stroke="white"
+                  stroke-width="1.40035"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_531">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_530)">
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M56.5892 12.2847L45.0935 48.0389L76.7025 50.4807L41.4517 95.163L60.147 59.0228L26.373 56.4131L56.5892 12.2847Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M97.7389 5.26123L5.26123 97.7389"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_530">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_527)">
+                <path
+                  d="M88.6093 58.5527L51.5042 78.8842L14.3906 58.5527L26.4066 51.9741"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M88.6093 67.6318L51.5042 87.9633L14.3906 67.6318L22.6726 63.0923"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M72.0372 52.9055L51.2945 64.2669L30.3589 52.7964"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M69.931 62.0016L72.6497 52.6791L63.3188 49.9604"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M62.6306 39.0853C62.6306 32.9347 51.504 16.8574 51.504 16.8574C51.504 16.8574 40.3691 32.9347 40.3691 39.0853C40.4487 41.9844 41.6564 44.7381 43.7351 46.7605C45.8138 48.783 48.5996 49.9146 51.4999 49.9146C54.4001 49.9146 57.1859 48.783 59.2646 46.7605C61.3433 44.7381 62.551 41.9844 62.6306 39.0853Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M43.7173 39.0518C43.7173 41.0747 44.5209 43.0148 45.9513 44.4452C47.3817 45.8756 49.3218 46.6792 51.3447 46.6792"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_527">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_526)">
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M76.5934 46.2012L88.6093 52.7881L51.5042 73.1196L14.3906 52.7881L26.4066 46.2012"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M88.6093 61.8672L51.5042 82.1903L14.3906 61.8672L22.6726 57.3276"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M55.5655 20.6001L53.9544 22.916C51.434 26.527 49.8383 30.7013 49.3073 35.0727C48.7762 39.4441 49.326 43.8791 50.9085 47.9884L56.3375 62.0938"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M44.9761 24.7534L55.9348 19.5845L61.1037 30.5432"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M68.8065 33.7485L67.8835 35.0827C66.4281 37.1719 65.5065 39.5858 65.1993 42.1134C64.8921 44.641 65.2087 47.2054 66.1213 49.5824L69.2596 57.7469"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M62.6895 36.1488L69.0247 33.1616L72.0119 39.4969"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M40.1848 33.7485L39.2534 35.0827C37.7946 37.1704 36.871 39.5845 36.5638 42.1128C36.2565 44.641 36.575 47.2061 37.4913 49.5824L40.6295 57.7469"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34.0591 36.1488L40.3943 33.1616L43.3815 39.4969"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_526">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="103"
+              height="103"
+              viewBox="0 0 103 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_535)">
+                <path
+                  d="M75.813 36.3247C75.813 36.3247 64.9886 68.9575 20.793 68.8064"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34.9653 63.9228L44.1955 50.6482C44.2426 50.5842 44.306 50.534 44.3791 50.5028C44.4522 50.4716 44.5324 50.4605 44.6112 50.4708C44.69 50.4811 44.7646 50.5123 44.8273 50.5612C44.8899 50.6101 44.9383 50.6749 44.9675 50.7489L47.4848 57.747L50.3461 49.507C51.0951 47.3735 52.5214 45.5435 54.4074 44.2962L57.0589 42.5508C60.1057 40.5297 62.7752 37.9908 64.9465 35.0493L68.7477 29.8972C70.4872 27.8717 72.4084 26.0095 74.4871 24.3339C75.6037 23.3788 76.9627 22.7512 78.4138 22.5206C79.865 22.29 81.3516 22.4654 82.7092 23.0273C84.0669 23.5893 85.2425 24.516 86.1061 25.7048C86.9697 26.8935 87.4875 28.2981 87.6023 29.7629L85.4542 42.3998C85.0844 44.1727 84.1813 45.7901 82.8659 47.035C81.5505 48.2799 79.8858 49.0927 78.0953 49.3644L74.3109 49.9517L80.8391 53.7025L76.2157 60.1552C72.1734 65.8166 66.3999 70.0101 59.7659 72.1034C53.132 74.1966 45.9972 74.0761 39.4378 71.76"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M28.437 68.8066C28.437 68.8066 33.1024 71.7351 34.7806 74.9069"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M30.2078 62.0938C30.2078 62.0938 29.3183 67.3214 27.4136 68.429"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M89.9099 1.55225H13.0899C6.71784 1.55225 1.55225 6.71784 1.55225 13.0899V89.9099C1.55225 96.282 6.71784 101.448 13.0899 101.448H89.9099C96.282 101.448 101.448 96.282 101.448 89.9099V13.0899C101.448 6.71784 96.282 1.55225 89.9099 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_535">
+                  <rect width="103" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="tech__item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="102"
+              height="103"
+              viewBox="0 0 102 103"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_132_534)">
+                <path
+                  d="M90.7489 62.6726C94.2689 62.6726 97.1224 59.7912 97.1224 56.2367C97.1224 52.6822 94.2689 49.8008 90.7489 49.8008C87.229 49.8008 84.3755 52.6822 84.3755 56.2367C84.3755 59.7912 87.229 62.6726 90.7489 62.6726Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M48.1371 96.4968C51.6571 96.4968 54.5106 93.6154 54.5106 90.0609C54.5106 86.5065 51.6571 83.625 48.1371 83.625C44.6172 83.625 41.7637 86.5065 41.7637 90.0609C41.7637 93.6154 44.6172 96.4968 48.1371 96.4968Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M35.3988 49.3059C38.9188 49.3059 41.7723 46.4245 41.7723 42.87C41.7723 39.3155 38.9188 36.4341 35.3988 36.4341C31.8789 36.4341 29.0254 39.3155 29.0254 42.87C29.0254 46.4245 31.8789 49.3059 35.3988 49.3059Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.8298 58.771C17.7298 58.771 19.27 57.2157 19.27 55.2971C19.27 53.3786 17.7298 51.8232 15.8298 51.8232C13.9299 51.8232 12.3896 53.3786 12.3896 55.2971C12.3896 57.2157 13.9299 58.771 15.8298 58.771Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M59.5466 73.8745C61.4466 73.8745 62.9868 72.3192 62.9868 70.4007C62.9868 68.4821 61.4466 66.9268 59.5466 66.9268C57.6467 66.9268 56.1064 68.4821 56.1064 70.4007C56.1064 72.3192 57.6467 73.8745 59.5466 73.8745Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M75.9743 53.9209C77.8743 53.9209 79.4145 52.3656 79.4145 50.447C79.4145 48.5285 77.8743 46.9731 75.9743 46.9731C74.0744 46.9731 72.5342 48.5285 72.5342 50.447C72.5342 52.3656 74.0744 53.9209 75.9743 53.9209Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M79.4065 83.9019C81.3064 83.9019 82.8466 82.3466 82.8466 80.428C82.8466 78.5094 81.3064 76.9541 79.4065 76.9541C77.5065 76.9541 75.9663 78.5094 75.9663 80.428C75.9663 82.3466 77.5065 83.9019 79.4065 83.9019Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M89.0369 1.55225H12.9628C6.65255 1.55225 1.53711 6.71784 1.53711 13.0899V89.9099C1.53711 96.282 6.65255 101.448 12.9628 101.448H89.0369C95.3471 101.448 100.463 96.282 100.463 89.9099V13.0899C100.463 6.71784 95.3471 1.55225 89.0369 1.55225Z"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25195 76.9543C7.13846 68.2015 14.2476 60.9225 22.8469 55.8672C31.4462 50.812 41.2247 48.1633 51.175 48.1941C61.1253 48.2249 70.8876 50.934 79.4561 56.0423C88.0245 61.1507 95.0894 68.4735 99.9227 77.2564"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M96.7898 5.26123L5.20996 97.7389"
+                  stroke="white"
+                  stroke-width="2.02871"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_132_534">
+                  <rect width="102" height="103" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <div class="video__wrapper">
+            <div class="video__top">
+              <p class="video__title">
+                We are not just selling sportswear, we are also keen on sport.
+                We strongly believe that
+                <span class="bold__text"
+                  >sport - not just a healthy lifestyle</span
+                >, but a way to develop yourself as a person. We stick to the
+                “live sport” philosophy.
+              </p>
+            </div>
+            <div class="video__box"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- start footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="block">
+          <a href="./index.html" class="head-page">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="118px"
+              height="21px"
+            >
+              <path
+                fill-rule="evenodd"
+                fill="rgb(255, 255, 255)"
+                d="M113.940,19.835 L113.940,0.311 L117.796,0.311 L117.796,19.835 L113.940,19.835 ZM110.788,14.184 C110.788,17.367 108.741,20.085 103.789,20.085 C99.661,20.085 96.980,17.937 96.749,14.070 L100.559,14.070 C100.830,15.843 101.949,17.000 103.966,17.000 C106.120,17.000 106.872,16.034 106.872,14.653 C106.872,12.880 105.833,12.151 103.100,11.349 C98.718,10.095 97.220,8.472 97.220,5.651 C97.220,2.031 100.027,0.055 103.630,0.055 C108.167,0.055 110.087,2.491 110.305,5.628 L106.519,5.628 C106.286,4.188 105.607,3.093 103.596,3.093 C101.900,3.093 101.064,3.905 101.064,5.261 C101.064,6.718 102.013,7.132 104.693,7.935 C109.521,9.392 110.788,11.384 110.788,14.184 ZM95.351,14.184 C95.351,17.367 93.303,20.085 88.351,20.085 C84.223,20.085 81.543,17.937 81.312,14.070 L85.121,14.070 C85.393,15.843 86.512,17.000 88.528,17.000 C90.683,17.000 91.434,16.034 91.434,14.653 C91.434,12.880 90.395,12.151 87.662,11.349 C83.280,10.095 81.783,8.472 81.783,5.651 C81.783,2.031 84.589,0.055 88.192,0.055 C92.730,0.055 94.650,2.491 94.868,5.628 L91.082,5.628 C90.848,4.188 90.169,3.093 88.158,3.093 C86.463,3.093 85.627,3.905 85.627,5.261 C85.627,6.718 86.575,7.132 89.256,7.935 C94.083,9.392 95.351,11.384 95.351,14.184 ZM66.844,0.341 L79.215,0.341 L79.215,3.630 L70.603,3.630 L70.603,8.053 L76.838,8.053 C77.719,8.053 78.433,8.790 78.433,9.700 C78.433,10.609 77.719,11.346 76.838,11.346 L70.603,11.346 L70.603,16.601 L79.215,16.601 L79.215,19.865 L66.844,19.865 L66.844,0.341 ZM51.995,4.493 L51.967,4.493 C52.105,6.960 52.123,10.335 52.123,13.821 L52.123,19.865 L48.608,19.865 L48.608,0.341 L53.529,0.341 C59.142,12.237 60.052,14.165 60.341,15.092 L60.393,15.092 C60.203,12.773 60.175,9.585 60.175,6.393 L60.175,0.341 L63.694,0.341 L63.694,19.865 L58.973,19.865 C52.947,6.779 52.273,5.226 51.995,4.493 ZM45.114,14.920 L45.181,19.862 L41.383,19.951 L41.298,14.848 C41.298,12.614 40.510,11.830 38.039,11.830 L35.466,11.830 L35.466,19.895 L31.681,19.895 L31.681,0.371 L39.384,0.371 C42.954,0.371 45.505,2.199 45.505,5.652 C45.505,8.314 44.145,9.593 42.564,10.218 C44.440,10.966 45.114,12.497 45.114,14.920 ZM38.875,3.531 L35.466,3.531 L35.466,8.669 L38.344,8.669 C40.176,8.669 41.685,8.162 41.685,6.003 C41.685,4.197 40.420,3.531 38.875,3.531 ZM16.328,0.371 L29.163,0.371 L29.163,3.660 L20.086,3.660 L20.086,8.083 L26.786,8.083 C27.666,8.083 28.380,8.821 28.380,9.730 C28.380,10.639 27.666,11.376 26.786,11.376 L20.086,11.376 L20.086,16.631 L29.163,16.631 L29.163,19.895 L16.328,19.895 L16.328,0.371 ZM7.221,19.895 L0.006,19.895 L0.006,0.371 L7.355,0.371 C11.499,0.371 13.335,2.634 13.335,5.334 C13.335,7.790 12.033,8.833 11.031,9.275 C12.422,9.874 13.988,11.293 13.988,13.989 C13.988,17.750 11.247,19.895 7.221,19.895 ZM6.884,3.402 L3.789,3.402 L3.789,8.050 L6.692,8.050 C8.678,8.050 9.595,7.399 9.595,5.739 C9.595,4.127 8.529,3.402 6.884,3.402 ZM6.647,11.062 L3.789,11.062 L3.789,16.889 L6.938,16.889 C8.688,16.889 10.056,16.019 10.056,13.996 C10.056,12.095 8.976,11.062 6.647,11.062 Z"
+              />
+            </svg>
+          </a>
+          <nav class="footer__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#">New</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Women</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Men</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Family</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Children</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Accessories</a>
+              </li>
+              <li class="menu__item">
+                <a href="#">Delivery</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="block__right">
+            <a href="tel:+12345678901" class="phone"
+              ><span class="phone__img footer__phone"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="23.5px"
+                  height="23.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(255, 255, 255)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M20.589,16.011 C19.760,15.158 17.402,13.562 15.856,13.562 C15.498,13.562 15.185,13.642 14.930,13.806 C14.174,14.289 13.572,14.664 13.282,14.664 C13.123,14.664 12.952,14.522 12.577,14.198 L12.515,14.142 C11.475,13.238 11.254,13.005 10.850,12.585 L10.747,12.477 C10.673,12.403 10.611,12.335 10.549,12.272 C10.196,11.909 9.941,11.647 9.037,10.625 L8.998,10.579 C8.566,10.091 8.282,9.773 8.264,9.539 C8.247,9.312 8.446,8.943 8.952,8.255 C9.566,7.426 9.588,6.403 9.026,5.216 C8.577,4.278 7.844,3.380 7.196,2.591 L7.140,2.523 C6.583,1.841 5.935,1.500 5.213,1.500 C4.412,1.500 3.747,1.932 3.395,2.159 C3.367,2.176 3.338,2.199 3.310,2.216 C2.520,2.716 1.946,3.404 1.730,4.102 C1.406,5.153 1.190,6.517 2.742,9.352 C4.083,11.806 5.299,13.454 7.230,15.437 C9.049,17.300 9.855,17.903 11.663,19.210 C13.674,20.664 15.606,21.499 16.958,21.499 C18.214,21.499 19.202,21.499 20.612,19.801 C22.089,18.016 21.475,16.926 20.589,16.011 L20.589,16.011 Z"
+                  /></svg></span
+              ><span class="phone__number text__s footer__number"
+                >+1 234 567 89 10</span
+              ></a
+            >
+            <div class="social">
+              <a href="#" class="social__icon footer__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="23.5px"
+                  height="23.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(255, 255, 255)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M11.502,21.500 C9.996,21.500 9.117,20.951 8.410,20.509 C8.095,20.310 7.795,20.121 7.475,20.014 C6.791,19.785 6.192,19.761 5.711,19.743 C5.240,19.724 4.867,19.710 4.566,19.499 C4.471,19.432 4.389,19.347 4.324,19.248 L4.320,19.242 C4.258,19.151 4.231,19.077 4.197,18.985 C4.144,18.842 4.072,18.648 3.885,18.481 L3.857,18.457 L3.827,18.436 C3.692,18.344 3.544,18.277 3.387,18.236 C2.975,18.125 2.574,17.962 2.197,17.752 L2.190,17.748 C2.043,17.668 1.909,17.565 1.794,17.443 C1.534,17.171 1.447,16.872 1.547,16.597 C1.655,16.299 1.881,16.172 2.306,15.955 C2.384,15.915 2.463,15.875 2.542,15.833 L2.547,15.830 C3.588,15.255 4.407,14.529 4.983,13.673 C5.150,13.428 5.298,13.162 5.420,12.888 L5.429,12.868 L5.437,12.848 C5.501,12.669 5.570,12.398 5.429,12.105 L5.415,12.075 L5.397,12.047 C5.317,11.919 5.212,11.813 5.087,11.730 C4.922,11.618 4.753,11.506 4.637,11.430 L4.510,11.346 C4.360,11.247 4.242,11.168 4.164,11.113 C3.832,10.877 3.605,10.635 3.469,10.374 C3.295,10.039 3.272,9.646 3.407,9.293 C3.595,8.788 4.053,8.490 4.633,8.490 C4.766,8.490 4.897,8.504 5.024,8.532 C5.061,8.540 5.098,8.548 5.134,8.558 L5.854,8.748 L5.843,7.992 C5.835,7.461 5.851,6.966 5.888,6.521 C6.034,4.805 6.626,3.984 7.171,3.351 C7.545,2.924 7.982,2.566 8.472,2.286 C9.373,1.764 10.392,1.500 11.503,1.500 C12.618,1.500 13.638,1.764 14.534,2.284 C15.026,2.566 15.463,2.923 15.837,3.348 C16.381,3.982 16.973,4.803 17.119,6.520 C17.157,6.966 17.172,7.460 17.164,7.989 L17.152,8.746 L17.873,8.556 C17.909,8.546 17.947,8.538 17.984,8.529 C18.110,8.502 18.241,8.488 18.372,8.488 C18.953,8.488 19.411,8.786 19.598,9.287 C19.733,9.642 19.710,10.035 19.536,10.369 C19.400,10.631 19.173,10.873 18.841,11.109 C18.739,11.182 18.576,11.290 18.369,11.426 C18.248,11.506 18.070,11.623 17.898,11.739 L17.891,11.744 C17.774,11.824 17.677,11.927 17.602,12.049 L17.586,12.075 L17.573,12.103 C17.437,12.389 17.500,12.650 17.559,12.823 L17.567,12.846 L17.578,12.869 C17.702,13.149 17.852,13.419 18.023,13.672 C18.611,14.547 19.455,15.285 20.530,15.865 C20.587,15.894 20.639,15.921 20.691,15.948 C20.736,15.971 20.780,15.994 20.824,16.016 L20.836,16.023 L20.848,16.028 C20.883,16.045 20.922,16.065 20.960,16.088 L20.971,16.094 C21.257,16.256 21.384,16.386 21.459,16.593 C21.555,16.859 21.477,17.148 21.239,17.406 L21.228,17.419 L21.220,17.429 C21.103,17.558 20.966,17.666 20.813,17.750 L20.808,17.753 C20.427,17.966 20.020,18.130 19.599,18.242 C19.445,18.284 19.303,18.350 19.174,18.439 L19.144,18.460 L19.116,18.484 C18.931,18.651 18.860,18.844 18.807,18.985 C18.780,19.058 18.757,19.120 18.717,19.189 L18.714,19.194 C18.646,19.316 18.550,19.422 18.437,19.502 C18.138,19.712 17.765,19.727 17.293,19.745 C16.811,19.764 16.212,19.787 15.529,20.016 C15.221,20.120 14.922,20.307 14.606,20.504 C13.892,20.948 13.006,21.500 11.502,21.500 Z"
+                  /></svg
+              ></a>
+              <a href="#" class="social__icon footer__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="23.5px"
+                  height="17.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(255, 255, 255)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M21.082,13.314 C20.852,14.174 20.174,14.852 19.314,15.082 C17.754,15.500 11.500,15.500 11.500,15.500 C11.500,15.500 5.246,15.500 3.686,15.082 C2.826,14.852 2.148,14.174 1.918,13.314 C1.500,11.754 1.500,8.500 1.500,8.500 C1.500,8.500 1.500,5.246 1.918,3.686 C2.148,2.826 2.826,2.148 3.686,1.918 C5.246,1.500 11.500,1.500 11.500,1.500 C11.500,1.500 17.754,1.500 19.314,1.918 C20.174,2.148 20.852,2.826 21.082,3.686 C21.500,5.246 21.500,8.500 21.500,8.500 C21.500,8.500 21.500,11.754 21.082,13.314 ZM9.454,5.545 L9.454,11.454 L14.682,8.500 L9.454,5.545 Z"
+                  /></svg
+              ></a>
+              <a href="#" class="social__icon footer__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15.5px"
+                  height="23.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(255, 255, 255)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M13.051,8.248 L9.026,8.282 L9.026,6.670 C9.026,5.992 9.511,5.617 9.846,5.617 L13.049,5.617 C13.295,5.617 13.495,5.436 13.495,5.213 L13.495,1.904 C13.495,1.681 13.295,1.500 13.049,1.500 L9.846,1.500 C7.100,1.500 4.781,3.883 4.781,6.703 L4.817,8.246 L1.949,8.246 C1.703,8.246 1.503,8.428 1.503,8.651 L1.503,11.957 C1.503,12.180 1.703,12.361 1.949,12.361 L4.781,12.328 L4.781,21.095 C4.781,21.318 4.980,21.499 5.227,21.499 L8.580,21.499 C8.826,21.499 9.026,21.318 9.026,21.095 L8.990,12.363 L13.051,12.363 C13.298,12.363 13.498,12.182 13.498,11.959 L13.498,8.653 C13.498,8.430 13.298,8.248 13.051,8.248 Z"
+                  /></svg
+              ></a>
+              <a href="#" class="social__icon footer__icon"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="23.5px"
+                  height="23.5px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    stroke="rgb(255, 255, 255)"
+                    stroke-width="1px"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    fill="none"
+                    d="M19.845,19.927 C18.797,20.934 17.346,21.500 15.611,21.500 L7.385,21.500 C5.733,21.500 4.279,20.974 3.191,19.927 C2.064,18.839 1.499,17.348 1.499,15.613 L1.499,7.347 C1.499,3.840 3.838,1.501 7.345,1.501 L15.651,1.501 C17.344,1.501 18.837,2.065 19.885,3.153 C20.933,4.201 21.498,5.654 21.498,7.347 L21.498,15.653 C21.498,17.385 20.933,18.879 19.845,19.927 ZM11.497,6.297 C8.674,6.297 6.335,8.594 6.335,11.459 C6.335,14.321 8.632,16.621 11.497,16.621 C14.360,16.621 16.659,14.281 16.659,11.459 C16.659,8.636 14.320,6.297 11.497,6.297 ZM15.691,6.177 C15.691,7.735 18.031,7.735 18.031,6.177 C18.031,4.617 15.691,4.617 15.691,6.177 ZM11.498,14.887 C9.619,14.887 8.112,13.378 8.112,11.500 C8.112,9.621 9.646,8.113 11.498,8.113 C13.350,8.113 14.885,9.648 14.885,11.500 C14.885,13.352 13.376,14.887 11.498,14.887 Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="second-menu">
+          <ul class="menu__block">
+            <li class="menu__item">
+              <a href="#">New</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#">New</a></li>
+                <li class="submenu__item"><a href="#">Women</a></li>
+                <li class="submenu__item"><a href="#">Men</a></li>
+                <li class="submenu__item"><a href="#">Family</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#">Women</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#">New</a></li>
+                <li class="submenu__item"><a href="#">Women</a></li>
+                <li class="submenu__item"><a href="#">Men</a></li>
+                <li class="submenu__item"><a href="#">Family</a></li>
+                <li class="submenu__item"><a href="#">Children</a></li>
+                <li class="submenu__item"><a href="#">Accessories</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#">Men</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#">New</a></li>
+                <li class="submenu__item"><a href="#">Women</a></li>
+                <li class="submenu__item"><a href="#">Men</a></li>
+                <li class="submenu__item"><a href="#">Family</a></li>
+                <li class="submenu__item"><a href="#">Children</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#">Family</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#">New</a></li>
+                <li class="submenu__item"><a href="#">Women</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#">Children</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#">New</a></li>
+                <li class="submenu__item"><a href="#">Women</a></li>
+                <li class="submenu__item"><a href="#">Men</a></li>
+                <li class="submenu__item"><a href="#">Family</a></li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a href="#">Accessories</a>
+              <ul class="submenu">
+                <li class="submenu__item"><a href="#">New</a></li>
+                <li class="submenu__item"><a href="#">Women</a></li>
+                <li class="submenu__item"><a href="#">Men</a></li>
+                <li class="submenu__item"><a href="#">Family</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <div class="documents">
+            <a class="documents__link" href="#">Terms and Conditions</a>
+            <a class="documents__link" href="#">Privacy Policy</a>
+            <a class="documents__link" href="#">Cookie Policy</a>
+            <a class="documents__link" href="#">Contact Us</a>
+            <a class="documents__link" href="./faq.html">FAQ</a>
+          </div>
+          <p class="copywriter">2023 Bernessi © All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
