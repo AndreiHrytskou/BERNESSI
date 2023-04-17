@@ -1736,8 +1736,12 @@ a {
 	right: 5px;
 }
 
-.see-more:hover .btn-text {
-	color: white;
+.see-more:hover {
+	background-color: #888C95;
+	
+}
+.see-more:hover .btn-text{
+	color: #ffffff;
 }
 
 .mySwiper1 {

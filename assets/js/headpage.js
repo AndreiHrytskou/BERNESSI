@@ -110,17 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
       baner.style.height = `60vh`;
       banerImg.style.height = `60vh`;
       setTimeout(s, 2000);
-      if (pageYOffset < 600) {
-        //   baner.style.height = `60%`;
-        baner.style.height = `calc(80vh - ${header.clientHeight}px)`;
-        banerImg.style.height = `60%`;
-        //   let r = pageYOffset + 50 + "px";
-        //   baner.style.maxWidth = "95%";
-        //   baner.style.transform = `translateX(-50%)`;
-        //   baner.style.position = "fixed";
-        //   baner.style.left = "50%";
-        //   baner.style.marginTop = 0;
-      }
 
       //       //   background
       const background = document.querySelector(".main__background");
