@@ -1038,6 +1038,8 @@ a {
 .main__background{
 	width: 100%;
 	opacity: 0;
+	z-index: -2;
+	position: fixed;
 }
 .main__background-img{
 	width: 100%;

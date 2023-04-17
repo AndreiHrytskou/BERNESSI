@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("body").style.height = window.outerHeight + "px";
     $("html").on("mousewheel", function () {
       baner.classList.add("baner__scroll");
-      baner.style.height = `60vh`;
+      // baner.style.height = `60vh`;
       banerImg.style.height = `60vh`;
       setTimeout(s, 2000);
 
@@ -119,21 +119,32 @@ document.addEventListener("DOMContentLoaded", function () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       let scroll = scrollTop + background.clientHeight;
       let topBlock = elem.top + scrollTop;
-      let bottomBlock = elem.bottom + scrollTop;
-      if (scroll - 100 > topBlock) {
-        let i = pageYOffset * 0.0014;
-        //   baner.style.position = "relative";
-        //   baner.style.top =
-        //     elem.top - baner.clientHeight + header.clientHeight / 2 + "px";
-        background.style.marginTop = header.clientHeight + "px";
-        background.style.opacity = i;
+      let bottomBlock = baner.getBoundingClientRect().bottom + scrollTop;
+      // if (scroll > topBlock) {
+      //   //   baner.style.position = "relative";
+      //   //   baner.style.top =
+      //   //     elem.top - baner.clientHeight + header.clientHeight / 2 + "px";
+      // }
+      console.log(scrollTop);
+      console.log(baner.getBoundingClientRect().bottom);
+      const catalog = document.querySelector(".catalog1");
+      let el = catalog.getBoundingClientRect();
+      if (baner.getBoundingClientRect().bottom) {
+        background.style.top = header.clientHeight + baner.clientHeight + "px";
+        //   let i = pageYOffset * 0.00001;
+        let trans =
+          window.pageYOffset -
+          header.clientHeight +
+          baner.clientHeight / 2 +
+          "px";
+        background.style.transform = `translateY(-${trans} )`;
+        //   background.style.opacity = i;
       }
-      if (middle < 0) {
+      if (bottomBlock > 0) {
         let b = elem.bottom * 0.0014;
         background.style.opacity = b;
       }
 
-      const catalog = document.querySelector(".catalog1");
       const catalog2 = document.querySelector(".catalog2");
       const catalog3 = document.querySelector(".catalog3");
       const category = document.querySelector(".category");
@@ -142,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const headlink = document.querySelector(".headlink");
       const regular = document.querySelector(".regular");
       const bright = document.querySelector(".bright");
-      let el = catalog.getBoundingClientRect();
       let link = headlink.getBoundingClientRect();
       let sec = section.getBoundingClientRect();
       let el2 = catalog2.getBoundingClientRect();
