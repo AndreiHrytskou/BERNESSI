@@ -92,55 +92,27 @@ document.addEventListener("DOMContentLoaded", function () {
       sliderLine.style.left = -offset + "px";
     });
   }
-  //   var lastScrollTop = 0;
-
-  //   // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-  //   window.addEventListener(
-  //     "scroll",
-  //     function () {
-  //       // or window.addEventListener("scroll"....
-  //       var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-  //       if (st > lastScrollTop) {
-  //         console.log("down");
-  //       } else if (st < lastScrollTop) {
-  //         console.log("up");
-  //         // upscroll code
-  //       } // else was horizontal scroll
-  //       lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-  //     },
-  //     false
-  //   );
   // scroll
-
   const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
   const banerImg = document.querySelector(".baner__img");
-  //   const body = document.querySelector("body");
-  //   //   const html = document.querySelector("html");
-  //   //   body.style.height = "100vh";
-  //   //   body.style.overflow = "hidden";
-  //   //   //   html.style.height = "100vh";
-  //   //   //   html.style.overflow = "hidden";
-  //   window.addEventListener("scroll", () => {
-  //     body.style.overflowY = "visible";
-  //     //  html.style.overflow = "auto";
-  //     //  html.style.height = "auto";
-  //     body.style.height = "auto";
-  //   });
-  //   document.onscroll = () => {
-  //     body.style.height = "auto";
-  //   };
 
   if (window.outerWidth > 992) {
-    banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
     baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
-    //  baner.style.marginTop = `${header.clientHeight}px`;
-    baner.style.top = header.clientHeight + "px";
-    window.addEventListener("scroll", () => {
-      baner.style.top = header.clientHeight + "px";
+    baner.style.transform = `translateY(${header.clientHeight}px)`;
+    banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
+    document.querySelector("html").style.overflow = "hidden";
+    document.querySelector("html").style.height = window.outerHeight + "px";
+    document.querySelector("body").style.overflow = "hidden";
+    document.querySelector("body").style.height = window.outerHeight + "px";
+    $("html").on("mousewheel", function () {
       baner.classList.add("baner__scroll");
+      baner.style.height = `60vh`;
+      banerImg.style.height = `60vh`;
+      setTimeout(s, 2000);
       if (pageYOffset < 600) {
         //   baner.style.height = `60%`;
+        baner.style.height = `calc(80vh - ${header.clientHeight}px)`;
         banerImg.style.height = `60%`;
         //   let r = pageYOffset + 50 + "px";
         //   baner.style.maxWidth = "95%";
@@ -150,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //   baner.style.marginTop = 0;
       }
 
-      //   background
+      //       //   background
       const background = document.querySelector(".main__background");
       let elem = background.getBoundingClientRect();
       let top = elem.top - document.documentElement.scrollTop;
@@ -159,15 +131,12 @@ document.addEventListener("DOMContentLoaded", function () {
       let scroll = scrollTop + background.clientHeight;
       let topBlock = elem.top + scrollTop;
       let bottomBlock = elem.bottom + scrollTop;
-
-      console.log(scroll, topBlock);
       if (scroll - 100 > topBlock) {
-        let i = pageYOffset * 0.00065;
+        let i = pageYOffset * 0.0014;
         //   baner.style.position = "relative";
-        baner.style.top =
-          elem.top - (baner.clientHeight + header.clientHeight * 2 + 5) + "px";
-        background.style.marginTop =
-          header.clientHeight + banerImg.clientHeight + 800 + "px";
+        //   baner.style.top =
+        //     elem.top - baner.clientHeight + header.clientHeight / 2 + "px";
+        background.style.marginTop = header.clientHeight + "px";
         background.style.opacity = i;
       }
       if (middle < 0) {
@@ -225,3 +194,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function s() {
+  document.querySelector("html").removeAttribute("style");
+  document.querySelector("body").removeAttribute("style");
+}
+//       //   background
+//     const background = document.querySelector(".main__background");
+//     let elem = background.getBoundingClientRect();
+//     let top = elem.top - document.documentElement.scrollTop;
+//     let middle = top + background.clientHeight;
+//     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//     let scroll = scrollTop + background.clientHeight;
+//     let topBlock = elem.top + scrollTop;
+//     let bottomBlock = elem.bottom + scrollTop;
+//     if (scroll - 100 > topBlock) {
+//       let i = pageYOffset * 0.00065;
+//       background.style.opacity = i;
+//     }
+//     if (middle < 0) {
+//       let b = elem.bottom * 0.0014;
+//       background.style.opacity = b;
+//     }
+//   });
