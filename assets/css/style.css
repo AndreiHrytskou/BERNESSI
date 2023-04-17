@@ -1279,7 +1279,7 @@ a {
 }
 
 .thing {
-	padding: 20px 10px 15px;
+	padding: 20px 20px 15px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -1478,8 +1478,8 @@ a {
 	margin-bottom: 120px;
 }
 .headlink{
-	transform: translateY(100%);
-	transition: 0.5s;
+	transform: translateY(200%);
+	transition: 0.3s;
 }
 .section .arrows{
 	display: none;
