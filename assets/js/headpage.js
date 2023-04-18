@@ -110,8 +110,8 @@ document.addEventListener("DOMContentLoaded", function () {
     $("html").on("mousewheel", function () {
       baner.classList.add("baner__scroll");
       // baner.style.height = `60vh`;
-      banerImg.style.height = `60vh`;
-      setTimeout(s, 2000);
+      banerImg.style.height = `70vh`;
+      setTimeout(s, 1500);
 
       //       //   background
       const background = document.querySelector(".main__background");
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
           //  console.log(scrollPosition() + banerImg.clientHeight);
           //  console.log(bottomBlock);
           let topBlock = scrollPosition() + elem.top;
-          console.log(topBlock);
+          console.log(topBlock - header.clientHeight);
           //  background.style.opacity = scrollPosition() * 0.0005;
           //  $(window).scroll(function () {
           var scrollTop = $(this).scrollTop();
@@ -152,21 +152,47 @@ document.addEventListener("DOMContentLoaded", function () {
           });
           //  });
           //
-          background.style.top =
-            -topBlock + header.clientHeight + baner.clientHeight + "px";
-          background.style.marginTop =
-            header.clientHeight + banerImg.clientHeight + "px";
+          background.style.top = header.clientHeight + "px";
+          //  background.style.marginTop =
+          //    header.clientHeight + banerImg.clientHeight + "px";
+          console.log(elem.top + background.clientHeight / 2);
+          if (
+            topBlock - header.clientHeight >
+            elem.top + background.clientHeight / 2
+          ) {
+            var scrollTop = $(this).scrollTop();
+
+            $(".main__background").css({
+              opacity: function () {
+                var elementHeight = $(this).height(),
+                  opacity = (elementHeight - scrollTop) / elementHeight;
+                return opacity;
+              },
+            });
+          }
         } else if (scrollPosition() < lastScroll) {
           //scroll up
-          console.log("up");
+          //  console.log("up");
+          background.style.top = header.clientHeight + "px";
+          //  console.log(elem.top + background.clientHeight / 2);
           var scrollTop = $(this).scrollTop();
-
           $(".main__background").css({
             opacity: function () {
-              var elementHeight = $(this).height();
-              return 1 - (elementHeight - scrollTop) / elementHeight;
+              var elementHeight = $(this).height(),
+                opacity = (elementHeight - scrollTop) / elementHeight;
+              console.log(scrollTop);
+              console.log(background.clientHeight / 2);
+              return opacity;
             },
           });
+          //  } else {
+          //    $(".main__background").css({
+          //      opacity: function () {
+          //        var elementHeight = $(this).height();
+          //        return 1 - (elementHeight - scrollTop) / elementHeight;
+          //      },
+          //    });
+          //  }
         }
 
         lastScroll = scrollPosition();
