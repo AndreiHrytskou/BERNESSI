@@ -96,6 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector(".header");
   const baner = document.querySelector(".baner");
   const banerImg = document.querySelector(".baner__img");
+  let lastScroll = 0;
+  const defaultOffset = 200;
 
   if (window.outerWidth > 992) {
     baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
@@ -120,30 +122,74 @@ document.addEventListener("DOMContentLoaded", function () {
       let scroll = scrollTop + background.clientHeight;
       let topBlock = elem.top + scrollTop;
       let bottomBlock = baner.getBoundingClientRect().bottom + scrollTop;
-      // if (scroll > topBlock) {
-      //   //   baner.style.position = "relative";
-      //   //   baner.style.top =
-      //   //     elem.top - baner.clientHeight + header.clientHeight / 2 + "px";
-      // }
-      console.log(scrollTop);
-      console.log(baner.getBoundingClientRect().bottom);
+
       const catalog = document.querySelector(".catalog1");
       let el = catalog.getBoundingClientRect();
-      if (baner.getBoundingClientRect().bottom) {
-        background.style.top = header.clientHeight + baner.clientHeight + "px";
-        //   let i = pageYOffset * 0.00001;
-        let trans =
-          window.pageYOffset -
-          header.clientHeight +
-          baner.clientHeight / 2 +
-          "px";
-        background.style.transform = `translateY(-${trans} )`;
-        //   background.style.opacity = i;
-      }
-      if (bottomBlock > 0) {
-        let b = elem.bottom * 0.0014;
-        background.style.opacity = b;
-      }
+
+      const scrollPosition = () =>
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      window.addEventListener("scroll", () => {
+        if (
+          scrollPosition() > lastScroll &&
+          // !containHide() &&
+          scrollPosition() > defaultOffset
+        ) {
+          //  console.log("down");
+          //  console.log(scrollPosition() + banerImg.clientHeight);
+          //  console.log(bottomBlock);
+          let topBlock = scrollPosition() + elem.top;
+          console.log(topBlock);
+          //  background.style.opacity = scrollPosition() * 0.0005;
+          //  $(window).scroll(function () {
+          var scrollTop = $(this).scrollTop();
+
+          $(".main__background").css({
+            opacity: function () {
+              var elementHeight = $(this).height();
+              return 1 - (elementHeight - scrollTop) / elementHeight;
+            },
+          });
+          //  });
+          //
+          background.style.top =
+            -topBlock + header.clientHeight + baner.clientHeight + "px";
+          background.style.marginTop =
+            header.clientHeight + banerImg.clientHeight + "px";
+        } else if (scrollPosition() < lastScroll) {
+          //scroll up
+          console.log("up");
+          var scrollTop = $(this).scrollTop();
+
+          $(".main__background").css({
+            opacity: function () {
+              var elementHeight = $(this).height();
+              return 1 - (elementHeight - scrollTop) / elementHeight;
+            },
+          });
+        }
+
+        lastScroll = scrollPosition();
+      });
+      // if (scrollTop > baner.getBoundingClientRect().bottom) {
+      //   console.log("asd");
+      //   background.style.top = header.clientHeight + baner.clientHeight + "px";
+      //   let i = pageYOffset * 0.0008;
+      //   let trans =
+      //     window.pageYOffset -
+      //     header.clientHeight +
+      //     baner.clientHeight / 2 +
+      //     "px";
+      //   background.style.transform = `translateY(-${trans} )`;
+      //   background.style.opacity = i;
+      // }
+      // if (
+      //   scrollTop >
+      //   baner.getBoundingClientRect().bottom + background.clientHeight / 2
+      // ) {
+      //   let b = elem.bottom * 0.0014;
+      //   background.style.opacity = b;
+      // }
 
       const catalog2 = document.querySelector(".catalog2");
       const catalog3 = document.querySelector(".catalog3");
