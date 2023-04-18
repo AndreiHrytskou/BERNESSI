@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (elScroll3 > sec.bottom + scrollTop + 200) {
         catalog3.style.transform = "translateY(0)";
       }
-      if (linkScroll > el3.bottom + scrollTop - 200) {
+      if (linkScroll > el3.bottom + scrollTop - 400) {
         headlink.style.transform = "translateY(0)";
       }
     });

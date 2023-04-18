@@ -1167,7 +1167,7 @@ a {
 	margin: 0;
 	width: 24px;
 	height: 24px;
-	background-color: white;
+	background-color: transparent;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -1189,7 +1189,7 @@ a {
 	margin: 0;
 	width: 24px;
 	height: 24px;
-	background-color: white;
+	background-color: transparent;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -1487,7 +1487,7 @@ a {
 }
 .headlink{
 	transform: translateY(400%);
-	transition: 0.4s;
+	transition: 0.2s;
 }
 .section .arrows{
 	display: none;
