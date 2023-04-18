@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (elScroll2 > bann.bottom + scrollTop + 200) {
         catalog2.style.transform = "translateY(0)";
       }
-      if (sectionScroll > el2.bottom + scrollTop) {
+      if (sectionScroll > el2.bottom + scrollTop - 200) {
         regular.style.transform = "translateX(0)";
         bright.style.transform = "translateX(0)";
       }
