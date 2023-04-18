@@ -1486,8 +1486,8 @@ a {
 	margin-bottom: 120px;
 }
 .headlink{
-	transform: translateY(400%);
-	transition: 0.2s;
+	transform: translateY(350%);
+	transition: 0.3s;
 }
 .section .arrows{
 	display: none;
