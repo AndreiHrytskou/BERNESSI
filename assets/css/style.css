@@ -10422,7 +10422,9 @@ li::marker {
 		height: calc(426px + (523 - 426) * ((100vw - 320px) / (414 - 320)));
 		max-width: 83%;
 	}
-.catalog .swiper-noname{
+.catalog .swiper-noname,
+.mySwiper1,
+.catalog .mySwiper{
 	padding: 50px 10px 20px;
 }
 	.preview__list .swiper-wrapper .swiper-slide {
