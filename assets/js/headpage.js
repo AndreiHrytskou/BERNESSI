@@ -78,16 +78,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   if (window.innerWidth > 414) {
     document.querySelector(".next").addEventListener("click", () => {
-      offset += 250;
-      if (offset > 250) {
+      offset += 299;
+      if (offset > 299) {
         offset = 0;
       }
       sliderLine.style.left = -offset + "px";
     });
     document.querySelector(".prev").addEventListener("click", () => {
-      offset -= 250;
+      offset -= 299;
       if (offset < 0) {
-        offset = 250;
+        offset = 299;
       }
       sliderLine.style.left = -offset + "px";
     });
