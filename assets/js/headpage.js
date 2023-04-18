@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       577: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
       993: {
         slidesPerView: 3,
@@ -27,9 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       577: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
       993: {
         slidesPerView: 3,
@@ -45,9 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
+        spaceBetween: 20,
       },
       577: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
       993: {
         slidesPerView: 3,
@@ -60,23 +66,23 @@ document.addEventListener("DOMContentLoaded", function () {
   let offset = 0;
   const sliderLine = document.querySelector(".section__wrapper");
 
-  if (window.innerWidth < 415) {
+  if (window.innerWidth < 413) {
     document.querySelector(".next").addEventListener("click", () => {
-      offset += 299;
-      if (offset > 299) {
+      offset += 250;
+      if (offset > 250) {
         offset = 0;
       }
       sliderLine.style.left = -offset + "px";
     });
     document.querySelector(".prev").addEventListener("click", () => {
-      offset -= 299;
+      offset -= 250;
       if (offset < 0) {
-        offset = 299;
+        offset = 250;
       }
       sliderLine.style.left = -offset + "px";
     });
   }
-  if (window.innerWidth > 414) {
+  if (window.innerWidth >= 414) {
     document.querySelector(".next").addEventListener("click", () => {
       offset += 299;
       if (offset > 299) {
