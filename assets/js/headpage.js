@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $("html").on("mousewheel", function () {
       baner.classList.add("baner__scroll");
       // baner.style.height = `60vh`;
-      banerImg.style.height = `70vh`;
+      banerImg.style.height = `75vh`;
       setTimeout(s, 1500);
 
       //       //   background
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
           //  console.log(scrollPosition() + banerImg.clientHeight);
           //  console.log(bottomBlock);
           let topBlock = scrollPosition() + elem.top;
-          console.log(topBlock - header.clientHeight);
+          //  console.log(topBlock - header.clientHeight);
           //  background.style.opacity = scrollPosition() * 0.0005;
           //  $(window).scroll(function () {
           var scrollTop = $(this).scrollTop();
@@ -155,9 +155,10 @@ document.addEventListener("DOMContentLoaded", function () {
           background.style.top = header.clientHeight + "px";
           //  background.style.marginTop =
           //    header.clientHeight + banerImg.clientHeight + "px";
-          console.log(elem.top + background.clientHeight / 2);
+          //  console.log(topBlock - header.clientHeight - 200);
+          //  console.log(elem.top + background.clientHeight / 2);
           if (
-            topBlock - header.clientHeight >
+            topBlock - header.clientHeight - 200 >
             elem.top + background.clientHeight / 2
           ) {
             var scrollTop = $(this).scrollTop();
@@ -165,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".main__background").css({
               opacity: function () {
                 var elementHeight = $(this).height(),
-                  opacity = (elementHeight - scrollTop) / elementHeight;
+                  opacity = (elementHeight - scrollTop) / elementHeight + 0.8;
                 return opacity;
               },
             });
@@ -179,19 +180,23 @@ document.addEventListener("DOMContentLoaded", function () {
           $(".main__background").css({
             opacity: function () {
               var elementHeight = $(this).height(),
-                opacity = (elementHeight - scrollTop) / elementHeight;
-              console.log(scrollTop);
-              console.log(background.clientHeight / 2);
+                opacity = (elementHeight - scrollTop) / elementHeight + 0.8;
+              //   console.log(background.clientHeight / 2);
               return opacity;
             },
           });
+
+          if (background.style.opacity >= 0.95) {
+            $(".main__background").css({
+              opacity: function () {
+                var elementHeight = $(this).height();
+                console.log(1 - (elementHeight - scrollTop) / elementHeight);
+                return 1 - (elementHeight - scrollTop) / elementHeight;
+              },
+            });
+          }
           //  } else {
-          //    $(".main__background").css({
-          //      opacity: function () {
-          //        var elementHeight = $(this).height();
-          //        return 1 - (elementHeight - scrollTop) / elementHeight;
-          //      },
-          //    });
+          //
           //  }
         }
 
@@ -240,26 +245,26 @@ document.addEventListener("DOMContentLoaded", function () {
       let elScroll3 = scrollTop + catalog3.clientHeight - 100;
       let elScrollCat = scrollTop + category.clientHeight - 100;
       let elScrollBan = scrollTop + banner.clientHeight - 100;
-      if (elScroll > bottomBlock + 300) {
+      if (elScroll > bottomBlock) {
         catalog.style.transform = "translateY(0)";
       }
-      if (elScrollCat > el.bottom + scrollTop) {
+      if (elScrollCat > el.bottom + scrollTop - 200) {
         category.style.transform = "translateY(0)";
       }
-      if (elScrollBan > cat.bottom + scrollTop + 100) {
+      if (elScrollBan > cat.bottom + scrollTop) {
         banner.style.transform = "translateY(0)";
       }
-      if (elScroll2 > bann.bottom + scrollTop + 300) {
+      if (elScroll2 > bann.bottom + scrollTop + 200) {
         catalog2.style.transform = "translateY(0)";
       }
-      if (sectionScroll > el2.bottom + scrollTop + 100) {
+      if (sectionScroll > el2.bottom + scrollTop) {
         regular.style.transform = "translateX(0)";
         bright.style.transform = "translateX(0)";
       }
-      if (elScroll3 > sec.bottom + scrollTop + 300) {
+      if (elScroll3 > sec.bottom + scrollTop + 200) {
         catalog3.style.transform = "translateY(0)";
       }
-      if (linkScroll > el3.bottom + scrollTop) {
+      if (linkScroll > el3.bottom + scrollTop - 200) {
         headlink.style.transform = "translateY(0)";
       }
     });

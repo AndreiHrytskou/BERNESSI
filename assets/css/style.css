@@ -1037,7 +1037,7 @@ a {
 }
 .main__background{
 	width: 100%;
-	object-fit: cover;
+	background-size: cover;
 	height: 130vh;
 	opacity: 0;
 	z-index: -2;
@@ -1045,6 +1045,8 @@ a {
 }
 .main__background-img{
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .baner .read {
 	max-width: 315px;
@@ -1117,20 +1119,20 @@ a {
 	max-width: 100%;
 	width: 100%;
 	margin: 0px auto 100px;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .catalog.catalog1{
-	margin-top: 500px;
+	margin-top: 1000px;
 	transform: translateY(100%);
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .catalog.catalog2{
 	transform: translateY(100%);
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .catalog.catalog3{
 	transform: translateY(100%);
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .catalog .swiper-noname {
 	width: 100%;
@@ -1374,7 +1376,7 @@ a {
 }
 .category{
 	transform: translateY(100%);
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .category__list {
 	display: -webkit-box;
@@ -1499,7 +1501,7 @@ a {
 
 .regular {
 	transform: translateX(-120%);
-	transition: 0.5s;
+	transition: 0.3s;
 	position: relative;
 	width: 100%;
 	max-width: 50%;
@@ -1546,7 +1548,7 @@ a {
 }
 .bright {
 	transform: translateX(120%);
-	transition: 0.5s;
+	transition: 0.3s;
 	position: relative;
 	width: 100%;
 	max-width: 50%;
