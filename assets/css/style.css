@@ -1256,7 +1256,7 @@ a {
 .card__img,
 .card2__img {
 	border-radius: 40px;
-	height: calc(597px + (1766 - 597) * ((100vw - 1367px) / (3840 - 1367)));
+	height: calc(570px + (1740 - 570) * ((100vw - 1366px) / (3840 - 1366)));
 	object-fit: cover;
 	object-position: center;
 	/* background-color: white; */
@@ -8571,8 +8571,8 @@ li::marker {
 
 	.card__img,
 	.card2__img {
-		height: -webkit-calc(403px + (600 - 403) * ((100vw - 992px) / (1366 - 992)));
-		height: calc(403px + (600 - 403) * ((100vw - 992px) / (1366 - 992)));
+		height: -webkit-calc(403px + (570 - 403) * ((100vw - 992px) / (1366 - 992)));
+		height: calc(403px + (570 - 403) * ((100vw - 992px) / (1366 - 992)));
 		max-height: 600px;
 	}
 
