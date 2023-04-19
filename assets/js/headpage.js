@@ -106,9 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const defaultOffset = 200;
 
   if (window.outerWidth > 992) {
-    baner.style.height = `calc(100vh - ${header.clientHeight}px)`;
+    baner.style.height = `calc(101vh - ${header.clientHeight}px)`;
     baner.style.transform = `translateY(${header.clientHeight}px)`;
-    banerImg.style.height = `calc(100vh - ${header.clientHeight}px)`;
+    banerImg.style.height = `calc(101vh - ${header.clientHeight}px)`;
     document.querySelector("html").style.overflow = "hidden";
     document.querySelector("html").style.height = window.outerHeight + "px";
     document.querySelector("body").style.overflow = "hidden";

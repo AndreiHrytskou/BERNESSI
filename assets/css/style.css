@@ -1256,10 +1256,10 @@ a {
 .card__img,
 .card2__img {
 	border-radius: 40px;
-	height: calc(593px + (1766 - 593) * ((100vw - 1367px) / (3840 - 1367)));
+	height: calc(597px + (1766 - 597) * ((100vw - 1367px) / (3840 - 1367)));
 	object-fit: cover;
 	object-position: center;
-	background-color: white;
+	/* background-color: white; */
 	max-height: 1830px;
 	transition: 0.5s;
 }
@@ -1281,11 +1281,11 @@ a {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-	/* background-color: #ffffff; */
+	background-color: #ffffff;
 }
 
 .thing {
@@ -1401,7 +1401,7 @@ a {
 
 .category__bottom {
 	position: absolute;
-	bottom: 0;
+	bottom: 35px;
 	left: 0;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1416,7 +1416,7 @@ a {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width: 100%;
-	padding: 35px 20px;
+	padding: 0px 20px;
 }
 
 .category__text {
@@ -1426,13 +1426,14 @@ a {
 	line-height: 1.25;
 	color: white;
 	text-transform: uppercase;
+	margin-top: -35px;
 }
 
 .category__link {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
-	display: flex;
+	display: none;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -1445,6 +1446,7 @@ a {
 	padding: 11px 10px 9px 9.5px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
+	transition: 0.2s;
 }
 
 .category__bg {
@@ -1452,6 +1454,7 @@ a {
 	width: 100%;
 	border-radius: 40px;
 	filter: grayscale(100%);
+	transition: 0.2s;
 }
 
 .category__img {
@@ -1482,6 +1485,16 @@ a {
 
 .category__item:hover .category__bg {
 	filter: none;
+	transition: 0.2s;
+}
+.category__item:hover .category__link{
+	display: flex;
+	transition: 0.2s;
+	margin-top: -35px;
+}
+.category__item:hover .category__text{
+	margin-top: -25px;
+
 }
 .section {
 	margin-top: 120px;
@@ -1490,6 +1503,9 @@ a {
 .headlink{
 	transform: translateY(350%);
 	transition: 0.3s;
+}
+.link__block.headlink{
+	gap: 30px;
 }
 .headlink .link__title{
 	text-transform: uppercase;
