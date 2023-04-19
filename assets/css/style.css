@@ -9225,9 +9225,7 @@ li::marker {
 		-webkit-border-radius: 50px;
 		border-radius: 50px;
 	}
-	.main__background {
-			display: none;
-		}
+	
 		.baner{
 			height: calc(350px + (472 - 350) * ((100vw - 414px) / (992 - 414)));
 		}

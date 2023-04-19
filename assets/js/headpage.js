@@ -299,3 +299,69 @@ function s() {
 //       background.style.opacity = b;
 //     }
 //   });
+
+if (window.outerWidth <= 992) {
+  const header = document.querySelector(".header");
+  let lastScroll = 0;
+  const defaultOffset = 200;
+  const background = document.querySelector(".main__background");
+  let elem = background.getBoundingClientRect();
+  const scrollPosition = () =>
+    window.pageYOffset || document.documentElement.scrollTop;
+
+  window.addEventListener("scroll", () => {
+    if (
+      scrollPosition() > lastScroll &&
+      // !containHide() &&
+      scrollPosition() > defaultOffset
+    ) {
+      let topBlock = scrollPosition() + elem.top;
+      var scrollTop = $(this).scrollTop();
+
+      $(".main__background").css({
+        opacity: function () {
+          var elementHeight = $(this).height();
+          return 1 - (elementHeight - scrollTop) / elementHeight;
+        },
+      });
+      background.style.top = header.clientHeight + "px";
+      if (
+        topBlock - header.clientHeight - 200 >
+        elem.top + background.clientHeight / 2
+      ) {
+        var scrollTop = $(this).scrollTop();
+
+        $(".main__background").css({
+          opacity: function () {
+            var elementHeight = $(this).height(),
+              opacity = (elementHeight - scrollTop) / elementHeight + 0.8;
+            return opacity;
+          },
+        });
+      }
+    } else if (scrollPosition() < lastScroll) {
+      //scroll up
+      background.style.top = header.clientHeight + "px";
+      //  console.log(elem.top + background.clientHeight / 2);
+      var scrollTop = $(this).scrollTop();
+      $(".main__background").css({
+        opacity: function () {
+          var elementHeight = $(this).height(),
+            opacity = (elementHeight - scrollTop) / elementHeight + 0.8;
+          return opacity;
+        },
+      });
+
+      if (background.style.opacity >= 0.95) {
+        $(".main__background").css({
+          opacity: function () {
+            var elementHeight = $(this).height();
+            console.log(1 - (elementHeight - scrollTop) / elementHeight);
+            return 1 - (elementHeight - scrollTop) / elementHeight;
+          },
+        });
+      }
+    }
+    lastScroll = scrollPosition();
+  });
+}
