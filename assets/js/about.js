@@ -45,8 +45,9 @@ inner.forEach((e, i) => {
     el.preventDefault();
     inner.forEach((elem) => {
       if (elem.classList.contains("video__visible")) {
-        e.classList.remove("video__visible");
+        elem.classList.remove("video__visible");
         e.classList.add("video__visible");
+        console.log(e);
       }
     });
   });

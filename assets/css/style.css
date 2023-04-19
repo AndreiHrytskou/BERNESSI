@@ -9980,6 +9980,11 @@ li::marker {
 }
 
 @media screen and (max-width: 576px) {
+	.category, .catalog .swiper-noname,
+		.mySwiper1,
+		.catalog .mySwiper{
+		max-width: 95%;
+	}
 	.partnership__text {
 		font-size: 50px;
 	}
@@ -9993,7 +9998,7 @@ li::marker {
 		padding: 20px;
 	}
 	.link__box {
-		max-width: 96%;
+		max-width: 95%;
 	}
 	.partnership__title {
 		font-size: 32px;
