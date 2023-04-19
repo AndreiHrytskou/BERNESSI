@@ -37,9 +37,18 @@ function findVideos() {
 }
 
 let inner = document.querySelectorAll(".video__inner > .video__link");
-inner.forEach((e) => {
+inner.forEach((e, i) => {
+  if (i == 0) {
+    e.classList.add("video__visible");
+  }
   e.addEventListener("click", (el) => {
     el.preventDefault();
+    inner.forEach((elem) => {
+      if (elem.classList.contains("video__visible")) {
+        e.classList.remove("video__visible");
+        e.classList.add("video__visible");
+      }
+    });
   });
 });
 function setupVideo(video) {

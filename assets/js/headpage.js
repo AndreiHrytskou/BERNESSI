@@ -263,56 +263,6 @@ if (window.outerWidth <= 992) {
   const scrollPosition = () =>
     window.pageYOffset || document.documentElement.scrollTop;
 
-  //   window.addEventListener("scroll", () => {
-  //     if (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) {
-  //       let topBlock = scrollPosition() + elem.top;
-  //       var scrollTop = $(this).scrollTop();
-
-  //       $(".main__background").css({
-  //         opacity: function () {
-  //           var elementHeight = $(this).height();
-  //           return 1 - (elementHeight - scrollTop) / elementHeight;
-  //         },
-  //       });
-  //       background.style.top = 0;
-  //       if (
-  //         topBlock - header.clientHeight - 200 >
-  //         elem.top + background.clientHeight / 2
-  //       ) {
-  //         var scrollTop = $(this).scrollTop();
-
-  //         $(".main__background").css({
-  //           opacity: function () {
-  //             var elementHeight = $(this).height(),
-  //               opacity = (elementHeight - scrollTop) / elementHeight + 0.8;
-  //             return opacity;
-  //           },
-  //         });
-  //       }
-  //     } else if (scrollPosition() < lastScroll) {
-  //       //scroll up
-  //       background.style.top = 0;
-  //       var scrollTop = $(this).scrollTop();
-  //       $(".main__background").css({
-  //         opacity: function () {
-  //           var elementHeight = $(this).height(),
-  //             opacity = (elementHeight - scrollTop) / elementHeight + 0.8;
-  //           return opacity;
-  //         },
-  //       });
-
-  //       if (background.style.opacity >= 0.95) {
-  //         $(".main__background").css({
-  //           opacity: function () {
-  //             var elementHeight = $(this).height();
-  //             return 1 - (elementHeight - scrollTop) / elementHeight;
-  //           },
-  //         });
-  //       }
-  //     }
-  //     lastScroll = scrollPosition();
-  //   });
-
   window.addEventListener("scroll", () => {
     if (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) {
       let topBlock = scrollPosition() + elem.top;
@@ -322,14 +272,14 @@ if (window.outerWidth <= 992) {
         opacity: function () {
           var elementHeight = $(this).height();
           //  console.log(1 - (elementHeight - scrollTop) / elementHeight - 0.2);
-          return 1 - (elementHeight - scrollTop) / elementHeight - 0.2;
+          return 1 - (elementHeight - scrollTop) / elementHeight;
         },
       });
       //  });
       //
       background.style.top = 0;
       if (
-        topBlock - header.clientHeight - 500 >
+        topBlock - header.clientHeight - 200 >
         elem.top + background.clientHeight / 2
       ) {
         var scrollTop = $(this).scrollTop();
@@ -337,7 +287,7 @@ if (window.outerWidth <= 992) {
         $(".main__background").css({
           opacity: function () {
             var elementHeight = $(this).height(),
-              opacity = (elementHeight - scrollTop) / elementHeight + 1.3;
+              opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
             // console.log(`opacity${opacity}`);
             return opacity;
           },
@@ -350,7 +300,7 @@ if (window.outerWidth <= 992) {
       $(".main__background").css({
         opacity: function () {
           var elementHeight = $(this).height(),
-            opacity = (elementHeight - scrollTop) / elementHeight + 1.3;
+            opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
           return opacity;
         },
       });
