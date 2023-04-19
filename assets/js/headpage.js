@@ -136,10 +136,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.pageYOffset || document.documentElement.scrollTop;
 
       window.addEventListener("scroll", () => {
-        if (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) {
+        if (
+          scrollPosition() > lastScroll - header.clientHeight &&
+          scrollPosition() > defaultOffset - header.clientHeight
+        ) {
           let topBlock = scrollPosition() + elem.top;
           var scrollTop = $(this).scrollTop();
-
+          document.querySelector(".catalog1").style.marginTop =
+            background.clientHeight + "px";
           $(".main__background").css({
             opacity: function () {
               var elementHeight = $(this).height();
@@ -158,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".main__background").css({
               opacity: function () {
                 var elementHeight = $(this).height(),
-                  opacity = (elementHeight - scrollTop) / elementHeight + 1.3;
+                  opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
                 return opacity;
               },
             });
@@ -317,7 +321,7 @@ if (window.outerWidth <= 992) {
       $(".main__background").css({
         opacity: function () {
           var elementHeight = $(this).height();
-          console.log(1 - (elementHeight - scrollTop) / elementHeight - 0.2);
+          //  console.log(1 - (elementHeight - scrollTop) / elementHeight - 0.2);
           return 1 - (elementHeight - scrollTop) / elementHeight - 0.2;
         },
       });
@@ -334,7 +338,7 @@ if (window.outerWidth <= 992) {
           opacity: function () {
             var elementHeight = $(this).height(),
               opacity = (elementHeight - scrollTop) / elementHeight + 1.3;
-            console.log(`opacity${opacity}`);
+            // console.log(`opacity${opacity}`);
             return opacity;
           },
         });
