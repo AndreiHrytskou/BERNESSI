@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let offset = 0;
   const sliderLine = document.querySelector(".section__wrapper");
 
-  if (window.innerWidth < 413) {
+  if (window.outerWidth < 414) {
     document.querySelector(".next").addEventListener("click", () => {
       offset += 250;
       if (offset > 250) {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       sliderLine.style.left = -offset + "px";
     });
   }
-  if (window.innerWidth >= 414) {
+  if (window.outerWidth >= 414) {
     document.querySelector(".next").addEventListener("click", () => {
       offset += 299;
       if (offset > 299) {
