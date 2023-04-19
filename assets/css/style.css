@@ -1137,7 +1137,7 @@ a {
 .catalog .swiper-noname {
 	width: 100%;
 	height: 100%;
-	padding: 20px 15px 20px;
+	padding: 20px 1px 20px;
 	border-radius: 25px;
 }
 .catalog .h2 {
@@ -1145,8 +1145,8 @@ a {
 }
 
 .catalog .container {
-	width: 100%;
-	max-width: 100%;
+	/* width: 100%;
+	max-width: 100%; */
 	position: relative;
 }
 
@@ -1161,7 +1161,8 @@ a {
 }
 
 .catalog .swiper-button-next {
-	position: relative;
+	position: absolute;
+	right: -2.5%;
 	cursor: pointer;
 	margin: 0;
 	width: 24px;
@@ -1183,7 +1184,8 @@ a {
 }
 
 .catalog .swiper-button-prev {
-	position: relative;
+	position: absolute;
+	left: -2.5%;
 	cursor: pointer;
 	margin: 0;
 	width: 24px;
@@ -1206,7 +1208,7 @@ a {
 .catalog .mySwiper {
 	width: 100%;
 	height: 100%;
-	padding: 50px 15px 20px;
+	padding: 50px 1px 20px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
 }
@@ -1754,7 +1756,7 @@ a {
 .mySwiper1 {
 	width: 100%;
 	height: 100%;
-	padding: 50px 15px 25px;
+	padding: 50px 1px 25px;
 }
 
 .mySwiper1 .swiper-wrapper {
@@ -9201,12 +9203,15 @@ li::marker {
 /* @media screen and (max-width: 994px) {
 } */
 @media screen and (max-width: 992px) {
-	.category{
+	.catalog .swiper-noname,
+		.mySwiper1,
+		.catalog .mySwiper {
+			padding: 20px 2px;
+		}
+	
+	/* .category{
 		padding: 0 10px;
-	}
-	.banner{
-		max-width: 93%;
-	}
+	} */
 	.card::before,
 	.card2::before {
 		content: "";
@@ -9236,11 +9241,14 @@ li::marker {
 	}
 		.catalog.catalog1,
 		.catalog.catalog2,
-		.catalog.catalog3,
-		.category{
+		.catalog.catalog3{
 			transform: translate(0);
 			margin-top: 0;
 			margin-bottom: 0;
+		}
+		.category{
+			transform: translate(0);
+			margin: 0 auto;
 		}
 		.catalog .swiper-noname{
 			margin-top: 0;
@@ -9249,9 +9257,8 @@ li::marker {
 			margin-top: 50px;
 		}
 		.section{
-			margin-top: 50px;
-			margin-bottom: 50px;
-			padding: 0 10px;
+			margin: 50px auto;
+			max-width: 98%;
 		}
 		.banner,.regular, .bright, .headlink{
 			transform: translate(0);
@@ -9485,15 +9492,16 @@ li::marker {
 		max-width: -webkit-calc(100% - 45px);
 		max-width: calc(100% - 45px);
 	}
+		.footer .block {
+			flex-direction: column;
+		}
 }
 
 @media screen and (max-width: 768px) {
 	.banner__bg{
 		height: 100%;
 	}
-	.footer .block{
-		flex-direction: column;
-	}
+	
 	.ambassador {
 		background-image: url("./../img/ambassadorbg768.png");
 		height: -webkit-calc(365px + (650 - 365) * ((100vw - 414px) / (768 - 414)));
@@ -9966,16 +9974,16 @@ li::marker {
 	.partnership__text {
 		font-size: 50px;
 	}
-	.category{
+	/* .category{
 		padding: 0 25px;
-	}
+	} */
 	.banner {
-		max-width: 86%;
+		max-width: 91%;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
 	.link__box {
-		max-width: 93%;
+		max-width: 96%;
 	}
 	.partnership__title {
 		font-size: 32px;
@@ -10417,24 +10425,17 @@ li::marker {
 		line-height: 154px;
 
 	}
+		.catalog .swiper-noname,
+		.mySwiper1,
+		.catalog .mySwiper {
+			max-width: 91%;
+		}
 	.banner {
 		height: -webkit-calc(426px + (523 - 426) * ((100vw - 320px) / (414 - 320)));
 		height: calc(426px + (523 - 426) * ((100vw - 320px) / (414 - 320)));
-		max-width: 85%;
+		max-width: 87%;
 	}
-.catalog .swiper-noname,
-.mySwiper1,
-.catalog .mySwiper{
-	max-width: 95%;
-}
-.catalog .swiper-button-prev{
-	position: absolute;
-	left: 0;
-}
-.catalog .swiper-button-next{
-	position: absolute;
-	right: 0;
-}
+
 	.preview__list .swiper-wrapper .swiper-slide {
 		max-width: 50%;
 		display: -webkit-box;
@@ -10467,7 +10468,7 @@ li::marker {
 		max-width:90%;
 	}
 	.banner__block {
-		gap: 85px
+		padding-bottom: 0;
 	}
 
 	.size__block .color__wrap {
@@ -11100,7 +11101,7 @@ li::marker {
 .video__block .swiper-rtl .swiper-button-prev:after {
 	content: none;
 }
-.video__item{
+.video__inner{
 	position: relative;
 	width: 100%;
 	height: calc(234px + (234 - 234) * ((100vw - 1366px) / (1920 - 1366)));
@@ -11133,6 +11134,8 @@ li::marker {
 	fill: #212121;
 	fill-opacity: 0.8;
 }
+.video__inner:hover .video__button-shape,
+.video__inner:focus .video__button-shape,
 .video__item:hover .video__button-shape,
 .video__button:focus .video__button-shape{
 	fill: #ff0000;
@@ -11145,6 +11148,7 @@ li::marker {
 .video--enabled{
 	cursor: pointer;
 }
+.video__inner  .video__button,
 .video--enabled .video__button{
 	display: block;
 }
@@ -11178,6 +11182,8 @@ li::marker {
 }
 .video__preview .video__item{
 	height: 100%;
+	position: relative;
+		width: 100%;
 }
 .video__block{
 	width: 100%;

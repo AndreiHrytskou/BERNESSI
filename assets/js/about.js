@@ -36,12 +36,17 @@ function findVideos() {
   }
 }
 
+let inner = document.querySelectorAll(".video__inner > .video__link");
+inner.forEach((e) => {
+  e.addEventListener("click", (el) => {
+    el.preventDefault();
+  });
+});
 function setupVideo(video) {
   let link = video.querySelector(".video__link");
   let media = video.querySelector(".video__media");
   let button = video.querySelector(".video__button");
   let id = parseMediaURL(media);
-
   video.addEventListener("click", () => {
     let iframe = createIframe(id);
 
