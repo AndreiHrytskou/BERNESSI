@@ -9031,7 +9031,7 @@ li::marker {
 	width: 100%;
 	height: calc(555px + (1547 - 555) * ((100vw - 1366px) / (3840 - 1366)));
 	border: none;
-	border-radius: 20px;
+	border-radius: 40px;
 }
 .video__button{
 	position: absolute;
@@ -9247,7 +9247,7 @@ li::marker {
 		width: 100%;
 		height: calc(521px + (555 - 521) * ((100vw - 1200px) / (1366 - 1200)));
 		border: none;
-		border-radius: 20px;
+		border-radius: 40px;
 	}
 
 	.ambassador {
@@ -9371,7 +9371,6 @@ li::marker {
 
 	.video .video__description {
 		max-width: 100%;
-		text-align: center;
 	}
 
 	.video .video__preview {
@@ -9992,7 +9991,6 @@ li::marker {
 	}
 	.news__description{
 		max-width: 100%;
-		text-align: center;
 	}
 	.news__galery{
 		max-width: 95%;	
@@ -10346,7 +10344,6 @@ li::marker {
 	}
 	.block__left{
 		max-width: 100%;
-		text-align: center;
 	}
 	.block__images{
 		max-width: 100%;
@@ -10363,7 +10360,6 @@ li::marker {
 	}
 	.video__title{
 		max-width: 100%;
-		text-align: center;
 	}
 
 	.block-text{
