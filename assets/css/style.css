@@ -9252,10 +9252,12 @@ li::marker {
 	
 		.baner{
 			height: auto;
+			padding: 20px;
 		}
 	.baner__img {
-			height: 100%;
-			filter: none;
+		height: 100%;
+		border-radius: 40px;
+		filter: none;
 	}
 	.baner__block{
 		display: flex;
