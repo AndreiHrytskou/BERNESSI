@@ -1249,14 +1249,14 @@ a {
 .card-top,
 .card2-top {
 	position: relative;
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 }
 
 .card__img,
 .card2__img {
 	border-radius: 40px;
-	height: calc(570px + (1740 - 570) * ((100vw - 1366px) / (3840 - 1366)));
+	height: calc(600px + (1770 - 570) * ((100vw - 1366px) / (3840 - 1366)));
 	object-fit: cover;
 	object-position: center;
 	/* background-color: white; */
@@ -1281,8 +1281,8 @@ a {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	-webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	background-color: #ffffff;
@@ -1396,7 +1396,7 @@ a {
 .category__item {
 	position: relative;
 	width: 100%;
-	max-width: 32%;
+	max-width: 33%;
 }
 
 .category__bottom {
@@ -11137,9 +11137,6 @@ li::marker {
 	height: calc(234px + (234 - 234) * ((100vw - 1366px) / (1920 - 1366)));
 }
 .video__media{
-	position: absolute;
-	left: 0;
-	top: 0;
 	width: 100%;
 	height: 100%;
 	border: none;
@@ -11247,4 +11244,74 @@ li::marker {
 }
 .news{
 	padding: 185px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 150px;
+}
+
+.news__title{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 82px;
+	line-height: 104%;
+	color: #888C95;
+}
+.news__swiper{
+	position: relative;
+}
+.news__swiper .swiper-button-next:after,
+.news__swiper .swiper-button-prev:after{
+	content: none;
+}
+.news__swiper .swiper-button-next{
+	right: -2.5%;
+}
+.news__swiper .swiper-button-prev{
+	left: -2.5%;
+}
+.news__item{
+	display: flex;
+	gap: 30px;
+}
+.news__description{
+	max-width: 25%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.news__subtitle{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 25px;
+	color: #888C95;
+}
+.news__text{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 25px;
+	color: #888C95;
+}
+.news__galery{
+	max-width: 70%;
+	width: 100%;
+}
+.news__galery .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: #FF28C2;
+	border: none;
+}
+.news__galery .swiper-pagination-bullet{
+	background-color: transparent;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
+	opacity: 1;
+}
+.news__img{
+	border-radius: 40px;
+	width: 100%;
 }

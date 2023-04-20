@@ -36,22 +36,6 @@ function findVideos() {
   }
 }
 
-// let inner = document.querySelectorAll(".video__inner > .video__link");
-// inner.forEach((e, i) => {
-//   if (i == 0) {
-//     e.classList.add("video__visible");
-//   }
-//   e.addEventListener("click", (el) => {
-//     el.preventDefault();
-//     inner.forEach((elem) => {
-//       if (elem.classList.contains("video__visible")) {
-//         elem.classList.remove("video__visible");
-//         e.classList.add("video__visible");
-//         console.log(e);
-//       }
-//     });
-//   });
-// });
 function setupVideo(video) {
   let link = video.querySelector(".video__link");
   let media = video.querySelector(".video__media");
@@ -96,3 +80,21 @@ function generateURL(id) {
 }
 
 findVideos();
+
+new Swiper(".news__box", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+new Swiper(".news__galery", {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
