@@ -714,11 +714,29 @@
     <main class="main">
       <div class="baner">
         <div class="baner__bg">
-          <img
-            class="baner__img"
-            src="./assets/img/headbaner.png"
-            alt="baner"
-          />
+          <picture>
+            <source
+              media="(min-width: 1366px)"
+              srcset="./assets/img/headbaner.png"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcset="./assets/img/baner1366.png"
+            />
+            <source
+              media="(min-width: 414px)"
+              srcset="./assets/img/baner768.png"
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="./assets/img/baner375.png"
+            />
+            <img
+              class="baner__img"
+              src="./assets/img/headbaner.png"
+              alt="baner"
+            />
+          </picture>
           <div class="baner__block">
             <p class="baner__bg-title">15% off</p>
             <p class="baner__text">Use code BSF15 for 15% off at checkout</p>

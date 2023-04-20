@@ -9251,10 +9251,11 @@ li::marker {
 	}
 	
 		.baner{
-			height: calc(350px + (472 - 350) * ((100vw - 414px) / (992 - 414)));
+			height: auto;
 		}
 	.baner__img {
-			height: calc(350px + (472 - 350) * ((100vw - 414px) / (992 - 414)));
+			height: 100%;
+			filter: none;
 	}
 	.baner__block{
 		display: flex;
@@ -10393,12 +10394,12 @@ li::marker {
 }
 
 @media screen and (max-width: 414px) {
-	.baner {
+	/* .baner {
 			height: calc(230px + (450 - 230) * ((100vw - 320px) / (414 - 320)));
 		}
 	.baner__img {
 			height: calc(230px + (450 - 230) * ((100vw - 320px) / (414 - 320)));
-		}
+		} */
 	.section .container {
 			width: 250px;
 			height: 260px;
@@ -11178,6 +11179,7 @@ li::marker {
 .video__inner  .video__button,
 .video--enabled .video__button{
 	display: block;
+	cursor: pointer;
 }
 .video__description{
 	display: flex;
@@ -11215,4 +11217,32 @@ li::marker {
 .video__block{
 	width: 100%;
 	position: relative;
+}
+.btn__toChannel{
+	background-color: #888C95;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
+.channel__text{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 57px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+.channel__img{
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 9px;
+	border-radius: 50%;
+}
+.news{
+	padding: 185px 0;
 }
