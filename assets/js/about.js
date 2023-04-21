@@ -1,7 +1,7 @@
 var typed = new Typed("#element", {
   strings: ["an active lifestyle!", "an healthy lifestyle!"],
   typeSpeed: 200,
-  //   loop: true,
+  loop: true,
 });
 
 // // video swiper

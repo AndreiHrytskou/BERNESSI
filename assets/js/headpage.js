@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // scroll
   const header = document.querySelector(".header");
-  const baner = document.querySelector(".baner");
+  const baner = document.querySelector("#baner");
   const banerImg = document.querySelector(".baner__img");
   let lastScroll = 0;
   const defaultOffset = 200;
@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const catalog3 = document.querySelector(".catalog3");
       const category = document.querySelector("#category__media");
       const section = document.querySelector(".section");
-      const banner = document.querySelector(".banner");
+      const banner = document.querySelector("#banner");
       const headlink = document.querySelector(".headlink");
       const regular = document.querySelector("#regular");
       const bright = document.querySelector("#bright");
