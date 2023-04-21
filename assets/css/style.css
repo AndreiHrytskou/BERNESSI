@@ -1256,11 +1256,11 @@ a {
 .card__img,
 .card2__img {
 	border-radius: 40px;
-	height: calc(600px + (1770 - 570) * ((100vw - 1366px) / (3840 - 1366)));
+	height: calc(565px + (1740 - 565) * ((100vw - 1366px) / (3840 - 1366)));
 	object-fit: cover;
 	object-position: center;
 	/* background-color: white; */
-	max-height: 1830px;
+	max-height: 1740px;
 	transition: 0.5s;
 }
 
