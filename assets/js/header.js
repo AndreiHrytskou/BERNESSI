@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   //  burger menu
-
+  if (window.outerWidth > 1200) {
+    const page = document.querySelector(".page");
+    page.style.paddingTop =
+      document.querySelector(".header").clientHeight + "px";
+  }
   const burger = document.querySelector(".burger-menu");
   const menuHide = document.querySelector(".menu");
   burger.addEventListener("click", () => {

@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (window.outerWidth > 992) {
     baner.style.height = `calc(101vh - ${header.clientHeight}px)`;
-    baner.style.transform = `translateY(${header.clientHeight}px)`;
+    //  baner.style.transform = `translateY(${header.clientHeight}px)`;
     banerImg.style.height = `calc(101vh - ${header.clientHeight}px)`;
     document.querySelector("html").style.overflow = "hidden";
     document.querySelector("html").style.height = window.outerHeight + "px";
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const category = document.querySelector("#category__media");
       const section = document.querySelector(".section");
       const banner = document.querySelector(".banner");
-      const headlink = document.querySelector("#headlink");
+      const headlink = document.querySelector(".headlink");
       const regular = document.querySelector("#regular");
       const bright = document.querySelector("#bright");
       let link = headlink.getBoundingClientRect();
