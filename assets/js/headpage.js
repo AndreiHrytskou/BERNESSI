@@ -203,12 +203,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const catalog2 = document.querySelector(".catalog2");
       const catalog3 = document.querySelector(".catalog3");
-      const category = document.querySelector(".category");
+      const category = document.querySelector("#category__media");
       const section = document.querySelector(".section");
       const banner = document.querySelector(".banner");
-      const headlink = document.querySelector(".headlink");
-      const regular = document.querySelector(".regular");
-      const bright = document.querySelector(".bright");
+      const headlink = document.querySelector("#headlink");
+      const regular = document.querySelector("#regular");
+      const bright = document.querySelector("#bright");
       let link = headlink.getBoundingClientRect();
       let sec = section.getBoundingClientRect();
       let el2 = catalog2.getBoundingClientRect();
