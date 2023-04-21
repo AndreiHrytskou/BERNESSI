@@ -276,8 +276,6 @@ if (window.outerWidth <= 992) {
           return 1 - (elementHeight - scrollTop) / elementHeight;
         },
       });
-      //  });
-      //
       background.style.top = 0;
       if (
         topBlock - header.clientHeight - 200 >
