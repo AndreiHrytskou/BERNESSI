@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (elScrollCat > el.bottom + scrollTop - 200) {
         category.style.transform = "translateY(0)";
       }
-      if (elScrollBan > cat.bottom + scrollTop) {
+      if (elScrollBan > cat.bottom + scrollTop - 200) {
         banner.style.transform = "translateY(0)";
       }
       if (elScroll2 > bann.bottom + scrollTop + 200) {
