@@ -260,65 +260,61 @@ if (window.outerWidth <= 992) {
   let lastScroll = 0;
   const defaultOffset = 200;
   const background = document.querySelector(".main__background");
-  let elem = background.getBoundingClientRect();
+  let elem = document
+    .querySelector(".main__background")
+    .getBoundingClientRect();
   const scrollPosition = () =>
     window.pageYOffset || document.documentElement.scrollTop;
 
   window.addEventListener("scroll", () => {
     if (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) {
       let topBlock = scrollPosition() + elem.top;
-      var scrollTop = $(this).scrollTop();
+      var scrollTop = document.querySelector(this).scrollTop();
 
-      $(".main__background").css({
-        opacity: function () {
-          var elementHeight = $(this).height();
-          //  console.log(1 - (elementHeight - scrollTop) / elementHeight - 0.2);
-          return 1 - (elementHeight - scrollTop) / elementHeight;
-        },
-      });
+      document.querySelector(".main__background").style.opacity = function () {
+        var elementHeight = document.querySelector(this).height();
+        console.log(1 - (elementHeight - scrollTop) / elementHeight);
+        return 1 - (elementHeight - scrollTop) / elementHeight;
+      };
       background.style.top = 0;
       if (
         topBlock - header.clientHeight - 200 >
         elem.top + background.clientHeight / 2
       ) {
-        var scrollTop = $(this).scrollTop();
+        var scrollTop = document.querySelector(this).scrollTop;
+        //   var scrollTop = $(this).scrollTop();
 
-        $(".main__background").css({
-          opacity: function () {
-            var elementHeight = $(this).height(),
+        document.querySelector(".main__background").style.opacity =
+          function () {
+            var elementHeight = document.querySelector.height(),
               opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
             // console.log(`opacity${opacity}`);
             return opacity;
-          },
-        });
+          };
       }
     } else if (scrollPosition() < lastScroll) {
       //scroll up
       background.style.top = 0;
-      var scrollTop = $(this).scrollTop();
-      $(".main__background").css({
-        opacity: function () {
-          var elementHeight = $(this).height(),
-            opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
-          return opacity;
-        },
-      });
+      var scrollTop = document.querySelector(this).scrollTop();
+      document.querySelector(".main__background").style.opacity = function () {
+        var elementHeight = document.querySelector(this).height(),
+          opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
+        return opacity;
+      };
 
       if (scrollPosition() + 50 < elem.top) {
-        $(".main__background").css({
-          opacity: function () {
-            var elementHeight = $(this).height();
+        document.querySelector(".main__background").style.opacity =
+          function () {
+            var elementHeight = document.querySelector(this).height();
             return 1 - (elementHeight - scrollTop) / elementHeight + 0.3;
-          },
-        });
+          };
       }
       if (scrollPosition() < 100) {
-        $(".main__background").css({
-          opacity: function () {
-            var elementHeight = $(this).height();
+        document.querySelector(".main__background").style.opacity =
+          function () {
+            var elementHeight = document.querySelector(this).height();
             return 1 - (elementHeight - scrollTop) / elementHeight;
-          },
-        });
+          };
       }
     }
 

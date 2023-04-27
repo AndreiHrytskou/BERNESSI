@@ -6669,17 +6669,29 @@ input::-webkit-inner-spin-button {
 }
 
 .baner-catalog {
-	background-color: #888c95;
+	padding: 20px;
 	width: 100%;
 	max-width: 100%;
-	min-height: 550px;
+	height: calc(400px + (1400 - 400) * ((100vw - 768px) / (3840 - 768)));
 	margin: 20px 0;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	position: relative;
 }
-
+.baner__catalog__background{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+.baner__catalog__bg{
+	width: 100%;
+	height: calc(400px + (1400 - 400) * ((100vw - 768px) / (3840 - 768)));
+}
 .baner-catalog .wrapper {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -6693,7 +6705,7 @@ input::-webkit-inner-spin-button {
 	align-items: flex-end;
 }
 
-.baner-catalog .see-more {
+.baner-catalog .baner__btn {
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
 	display: -webkit-box;
@@ -6701,9 +6713,9 @@ input::-webkit-inner-spin-button {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
+	-webkit-justify-content: center;
 	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: center;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -6711,7 +6723,7 @@ input::-webkit-inner-spin-button {
 	max-width: 315px;
 	width: 100%;
 	height: 55px;
-	background-color: #ffec53;
+	background-color: #FF42C9;
 	text-decoration: none;
 	position: relative;
 }
@@ -6720,14 +6732,16 @@ input::-webkit-inner-spin-button {
 	box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
-.baner-catalog .see-more .btn-text {
-	font-family: "Roboto";
-	font-size: 12px;
+.baner-catalog .baner__btn .btn-text {
+	font-family: 'Roboto';
+	font-style: normal;
 	font-weight: 900;
+	font-size: 12px;
 	line-height: 30px;
-	color: #888c95;
+	text-align: center;
 	text-transform: uppercase;
-	margin: 0 auto;
+	color: #FFFFFF;
+	text-align: center;
 }
 
 .baner-catalog .see-more .arrow {
@@ -6787,10 +6801,7 @@ input::-webkit-inner-spin-button {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+	justify-content: flex-end;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -8852,6 +8863,11 @@ li::marker {
 	font-size: 11.7vw;
 	line-height: 99.5%;
 	color: #FFEC53;
+	display: none;
+}
+#element{
+	display: inline-flex;
+	height: calc(351px + (984 - 351) * ((100vw - 1366px) / (3840 - 1366)));
 }
 .about__block{
 	margin: 130px auto;
@@ -8954,6 +8970,15 @@ li::marker {
 	max-width: 21%;
 	width: 100%;
 	gap: 30px;
+}
+.tech__item-text{
+	font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;	
+		color: #FFFFFF;
 }
 .tech__item:hover path{
 	stroke: #ff28c2;
@@ -10346,7 +10371,10 @@ li::marker {
 }
 
 @media screen and (max-width: 768px) {
-	
+	.baner-catalog,
+	.baner__catalog__bg{
+		height: calc(400px + (650 - 400) * ((100vw - 414px) / (768 - 414)));
+	}
 	.channel__text,
 	.about__title{
 		font-size: 30px;
@@ -11244,6 +11272,10 @@ li::marker {
 }
 
 @media screen and (max-width: 414px) {
+	.baner-catalog,
+		.baner__catalog__bg {
+			height: calc(550px + (650 - 550) * ((100vw - 320px) / (414 - 320)));
+		}
 	.tech__item {
 			max-width: 40%;
 		}
