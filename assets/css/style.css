@@ -10553,8 +10553,17 @@ li::marker {
 }
 
 @media screen and (max-width: 768px) {
+	.description__block{
+		flex-wrap: wrap;
+	}
+	.description__item{
+		max-width: 25%;
+	}
+	.preview__img{
+		height: calc(185px + (305 - 185) * ((100vw - 320px) / (768 - 320)));
+	}
 	.swiper__product{
-		width: 100%;
+		width: 95%;
 		max-width: 768px;
 	}
 	.swiper__product .swiper-slide{
