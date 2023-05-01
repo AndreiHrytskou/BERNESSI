@@ -9,14 +9,15 @@
 	<link rel="stylesheet" href="./assets/css/fonts/stylesheet.css">
 	<link rel="stylesheet" href="./assets/css/swiper.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="./assets/js/smoothscroll.js"></script>
 	<script src="./assets/js/like.js" defer></script>
 	<script src="./assets/js/header.js" defer></script>
 	<script src="./assets/js/lang.js" defer></script>
 	<script src="./assets/js/cart.js" defer></script>
-	<script src="./assets/js/swiper.js" defer></script>
-	<script src="./assets/js/headpage.js" defer></script>
+	<script src="./assets/js/swiper.js"></script>
 	<script src="./assets/js/modal.js" defer></script>
 	<script src="./assets/js/item.js" defer></script>
+	<script src="./assets/js/sizeModal.js" defer></script>
 	<title>Bernessi</title>
 </head>
 
@@ -747,376 +748,570 @@
 	</div>
 	
 	<!--end header-->
-
-<main class="main">	
-	<div class="wrapper">
-		<div class="item">
-			<div class="container">
-				<div class="cloth">
-					<div class="item__gallery">
-						<div class="preview">
-							<div class="pictures">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST1497  BS-LL1497 (222).jpg')">
-											<img data-img="1" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview2__img"/>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure  class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST1797   BS-LL1797 (333).jpg')">
-											<img data-img="2" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview2__img"/>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST7446  BS-LL7446 (111).jpg')">
-											<img data-img="3" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview2__img"/>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-LST7446  BS-LL7446 (444).jpg')">
-											<img data-img="4" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview2__img"/>
-										</figure>
-									</div>
-									<div class="swiper-slide">
-										<figure class="candle" onmousemove="zoom(event)" style="background-image: url('./assets/img/BS-SST1797    BS-SL1797 (5555).jpg')">
-											<img data-img="5" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview2__img"/>
-										</figure>
-									</div>
-								</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
-								<span class="close__img">
-									<img class="close__pic" src="./assets/img/close.png" alt="close">
-								</span>
-							</div>					
-							<div thumbsSlider="" class="swiper preview__list">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<img data-img="1" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview__img filter">
-									</div>
-									<div class="swiper-slide">
-										<img data-img="2" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture2" class="preview__img">
-									</div>
-									<div class="swiper-slide">
-										<img data-img="3" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="picture3" class="preview__img">
-									</div>
-									<div class="swiper-slide">
-										<img data-img="4" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture4" class="preview__img">
-									</div>
-									<div class="swiper-slide">
-										<img data-img="5" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="picture5" class="preview__img">
-									</div>
-								</div>	
-							</div>
-						</div>
-						<div class="preview__pic">
-							<img data-output="" class="item__img" src="" alt="item" >
-						</div>
-					</div>
-					
-					<div class="item__description">
-						<div id="myresult" class="img-zoom-result"></div>
-						<div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-							<div class="bread" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-								<a href="./index.html" class="bread-link" itemprop="item">
-									<span itemprop="name">Home</span>
-									<meta itemprop="position" content="1">
-								</a>
-								<span class="bread-sep">›</span>
-								<a href="#" class="bread-before">
-									<span class="bread-text">Women</span>
-								</a>
-								<span class="bread-sep">›</span>
-								<a href="#" class="bread-before">
-									<span class="bread-text">Jackets</span>
-								</a>
-								<span class="bread-sep">›</span>
-								<span class="bread-text">Grain de poudre tailored dress</span>
-							</div>
-						</div>
-						<h1 class="item__title">[H1] Grain de poudre tailored dress</h1>
-						<p class="price">
-							$146.00
-							<span class="discount">$199.00</span>
-						</p>
-						<div class="color-product">
-							<p class="color__title">color</p>
-							<div class="color__wrap">
-								<div class="color__container">
-									<label class="color__label" data-label="1">
-										<input data-input="1" type="radio" class="color__input" name="color">
-										<img class="color__img" src="./assets/img/item.webp" alt="preview">
-										<p class="color__text">Green</p>
-									</label>
-								</div>
-								<div class="color__container">
-									<label class="color__label" data-label="2">
-									<input data-input="2" type="radio" class="color__input" name="color">
-										<img class="color__img" src="./assets/img/item.webp" alt="preview">
-										<p class="color__text">White</p>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="size__block">
-							<p class="color__title">size</p>
-							<div class="size__wrap">
-								<div class="size__wrapper">
-									<label data-size="1" class="size__label">
-										<input data-inSize="1" type="radio" class="size__input" name="size">
-										<p class="size__text">xs</p>
-									</label>
-								</div>
-								<div class="size__wrapper">
-									<label data-size="2" class="size__label">
-									<input data-inSize="2" type="radio" class="size__input" name="size">
-										<p class="size__text">s</p>
-									</label>
-								</div>
-								<div class="size__wrapper">
-									<label data-size="3" class="size__label">
-									<input data-inSize="3" type="radio" class="size__input" name="size">
-										<p class="size__text">m</p>
-									</label>
-								</div>
-								<div class="size__wrapper">
-									<label data-size="4" class="size__label">
-									<input data-inSize="4" type="radio" class="size__input" name="size">
-										<p class="size__text">l</p>
-									</label>
-								</div>
-								<div class="size__wrapper">
-									<label data-size="5" class="size__label">
-									<input data-inSize="5" type="radio" class="size__input" name="size">
-										<p class="size__text">xl</p>
-									</label>
-								</div>
-								<div class="size__wrapper">
-									<label data-size="6" class="size__label">
-										<input data-inSize="6" type="radio" class="size__input" name="size">
-										<p class="size__text">2xl</p>
-									</label>
-								</div>
-								<div class="size__wrapper">
-									<label data-size="7" class="size__label">
-									<input data-inSize="7" type="radio" class="size__input" name="size">
-										<p class="size__text">3xl</p>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="btn__inner">
-							<div class="counter">
-											<div class="minus">
-												<img class="minus__img" src="./assets/img/minus.webp" alt="minus">
-											</div>
-											<input class="counter__value" type="number" name="" value="1">
-											<div class="plus">
-												<img src="./assets/img/plus.webp" alt="plus" class="plus__img">
-											</div>
-										</div>
-							<button class="add_to_cart">
-								<p class="add-text">Add to Cart</p>
-								<span class="arrow">
-								<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px">
-									<path fill-rule="evenodd" fill="rgb(255, 40, 194)"
-										d="M22.215,14.690 L14.135,22.050 L13.321,21.172 L21.401,13.813 C22.047,13.224 22.443,12.459 22.575,11.621 L-0.009,11.621 L-0.009,10.428 L22.576,10.428 C22.443,9.590 22.047,8.824 21.402,8.237 L13.321,0.877 L14.134,-0.001 L22.215,7.359 C23.247,8.299 23.839,9.635 23.839,11.025 C23.839,12.414 23.247,13.751 22.215,14.690 Z" />
-								</svg>
-								</span>
-							</button>
-						</div>
-						<div class="description visible">
-							<p class="description__title">Description</p>
-							<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-								aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-								aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-								occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								<div class="description__block">
-									<span class="description__text">Polyamide: 95%</span>
-									<span class="description__text">Elastane: 5%</span>
-									<span class="description__text">Polyester: 0%</span>
-								</div>
-						</div>
-						<div class="delivery">
-							<p class="description__title">Delivery</p>
-							<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-							occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="payment">
-							<p class="description__title">Payment</p>
-							<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-							aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-							occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="catalog">
-			<div class="container">
-				<h2 class="h2">[H2] Related</h2>
+<div class="page">
+<div class="wrapper">
+  <div class="item" id="product">
+    <div class="container">
+      <div class="cloth">
+        <div class="item__gallery">
+          <div class="preview">
 				<div class="swiper__wrapper">
 					<div class="swiper-button-prev">
 						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-							<path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)"
-								d="M1592.04,750.006h-22.02m9.01-11-7.65,7.648a4.821,4.821,0,0,0,0,6.707l7.65,7.648"
-								transform="translate(-1568.78 -738.015)" />
+							<path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)" d="M1592.04,750.006h-22.02m9.01-11-7.65,7.648a4.821,4.821,0,0,0,0,6.707l7.65,7.648" transform="translate(-1568.78 -738.015)"></path>
 						</svg>
 					</div>
-					<div class="swiper mySwiper1">
+					<div class="swiper swiper__product">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px"
-										height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
+							<div class="swiper-slide">
+								<img src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="picture1" class="preview__img filter">
 							</div>
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
+							<div class="swiper-slide">
+								<img src="./assets/img/BS-LST421   BS-LL421 (111) -670x1000.jpg" alt="picture1" class="preview__img ">
 							</div>
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
+							<div class="swiper-slide">
+								<img src="./assets/img/BS-LST1895    BS-LL1895 (111)-670x1000.jpg" alt="picture1" class="preview__img ">
 							</div>
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
+							<div class="swiper-slide">
+								<img src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="picture1" class="preview__img ">
 							</div>
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
-							</div>
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
-							</div>
-							<div class="swiper-slide card2">
-								<a href="./item.html" class="card-top">
-									<img class="card2__img" src="./assets/img/best_product.png" alt="product">
-								</a>
-								<div class="like">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
-										<path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt"
-											stroke-linejoin="miter" fill="none"
-											d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z" />
-									</svg>
-								</div>
-								<div class="thing">
-									<p class="thing__name">Oversized Organic Fleece Pocket Hoodie</p>
-									<p class="price">
-										$146.00
-										<span class="discount">$199.00</span>
-									</p>
-								</div>
+							<div class="swiper-slide">
+								<img src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="picture1" class="preview__img ">
 							</div>
 						</div>
 					</div>
-					<div class="swiper-button-next">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.719" viewBox="0 0 24 22.719">
-						<path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)"
-							d="M1570,749.994h22.01M1583,761l7.65-7.648a4.821,4.821,0,0,0,0-6.707l-7.65-7.648"
-							transform="translate(-1569.25 -738.625)" />
-					</svg>
+					 <div class="swiper-button-next">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.719" viewBox="0 0 24 22.719">
+							<path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)" d="M1570,749.994h22.01M1583,761l7.65-7.648a4.821,4.821,0,0,0,0-6.707l-7.65-7.648" transform="translate(-1569.25 -738.625)"></path>
+						</svg>
+					</div>
 				</div>
+			 </div>
+          <div class="preview__pic">
+            <img class="item__img" src="" alt="item" id="myimage">
+          </div>
+        </div>
+        <div class="item__description">
+          <div id="myresult" class="img-zoom-result"></div>
+
+          <div class="bread-band" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <div class="bread" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            	<a href="https://test.thedev.ru/index.php?route=common/home" class="bread-link" itemprop="item">
+                <span itemprop="name">Home</span>
+                <meta itemprop="position" content="1">
+               </a>
+            	<span class="bread-sep">›</span>
+            	<span class="bread-text">Shorts TIE-DYE</span>
+            </div>
+          </div>
+          <h1 class="item__title">Shorts TIE-DYE</h1>
+          <p class="price">178 AED</p>
+          <div class="color-product">
+            <p class="color__title">Shorts TIE-DYE color</p>
+            <div id="input-option40" class="color__wrap">
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="Olive">
+                  <p class="color__text">Olive</p>
+                </div>
+              </a>
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="Garden Lilac">
+                  <p class="color__text">Garden Lilac</p>
+                </div>
+              </a>
+               <a href="javascript:void(0)" class="color__container">
+                <div class="color__label active">
+                  <img class="color__img" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="Smoke">
+                  <p class="color__text">Smoke</p>
+                </div>
+              </a>
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="Aqua">
+                  <p class="color__text">Aqua</p>
+                </div>
+              </a>
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST1895    BS-LL1895 (111)-670x1000.jpg" alt="Milk&amp;Tea">
+                  <p class="color__text">Milk&amp;Tea</p>
+                </div>
+              </a>
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST421   BS-LL421 (111) -670x1000.jpg" alt="Dusty Rose">
+                  <p class="color__text">Dusty Rose</p>
+                </div>
+              </a>
+            	<a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST433    BS-LL433(5)-670x1000.jpg" alt="Lavanda">
+                  <p class="color__text">Lavanda</p>
+                </div>
+              </a>
+            	<a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST7446  BS-LL7446 (111).jpg" alt="Red Ink">
+                  <p class="color__text">Red Ink</p>
+                </div>
+              </a>
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-LST7446  BS-LL7446 (444).jpg" alt="Ying Yang">
+                  <p class="color__text">Ying Yang</p>
+                </div>
+              </a>
+               <a href="#" class="color__container">
+                <div class="color__label">
+                  <img class="color__img" src="./assets/img/BS-SST1797    BS-SL1797 (5555).jpg" alt="Plum Ice Cream">
+                  <p class="color__text">Plum Ice Cream</p>
+                </div>
+              </a>              
+            </div>
+          </div>
+      <div class="size__container">
+         <div class="size__block">
+            <p class="color__title">Shorts TIE-DYE size</p>
+            <div id="input-option41" class="color__wrap">
+
+             <a href="https://test.thedev.ru/index.php?route=product/product&amp;product_id=436" class="size__wrapper">
+                <div class="size__label">
+                  <p class="color__text">S</p>
+                </div>
+             </a>
+              
+               <a href="https://test.thedev.ru/index.php?route=product/product&amp;product_id=437" class="size__wrapper">
+                <div class="size__label">
+                  <p class="color__text">M</p>
+                </div>
+              </a>
+              
+                                          <a href="javascript:void(0)" class="size__wrapper">
+                <div class="size__label active">
+                  <p class="color__text">L</p>
+                </div>
+              </a>
+              
+            </div>
+			</div>
+			<div class="size__modal">size table</div>
+			<div class="size__table">
+				<div class="size__buttons">
+					<input class="size-input-modal" type="radio" data-input="1" name="unit" id="cm">
+					<label class="size-label-modal" for="cm">cm</label>
+					<input class="size-input-modal" type="radio" data-input="2" name="unit" id="in">
+					<label class="size-label-modal" for="in">in</label>
+				</div>
+				<div class="table__wrapper">
+					<table class="table__cm table__visible" data-table="1">
+						<tbody class="table__cm-body">
+							<tr>
+								<th></th>
+								<th>S 44</th>
+								<th>M 46</th>
+								<th>L 48</th>
+								<th>XL 50</th>
+							</tr>
+							<tr>
+								<td>Breast volume</td>
+								<td>80 - 90 cm</td>
+								<td>90 - 94 cm</td>
+								<td>94 - 98 cm</td>
+								<td>98 - 102 cm</td>
+							</tr>
+							<tr>
+								<td>Waist volume</td>
+								<td>66 - 71 cm</td>
+								<td>71 - 76 cm</td>
+								<td>76 - 80 cm</td>
+								<td>80 - 84 cm</td>
+							</tr>
+							<tr>
+								<td>Thighs volume</td>
+								<td>94 - 98 cm</td>
+								<td>98 - 102 cm</td>
+								<td>102 - 106 cm</td>
+								<td>106 - 110 cm</td>
+							</tr>
+							<tr>
+								<td>Sleeve length</td>
+								<td>60 cm</td>
+								<td>62 cm</td>
+								<td>64 cm</td>
+								<td>66 cm</td>
+							</tr>
+							<tr>
+								<td>Leggings length</td>
+								<td>80 cm</td>
+								<td>82 cm</td>
+								<td>84 cm</td>
+								<td>86 cm</td>
+							</tr>
+							<tr>
+								<td>Shorts length</td>
+								<td>39 cm</td>
+								<td>40 cm</td>
+								<td>41 cm</td>
+								<td>41 cm</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="table__cm" data-table="2">
+						<tbody class="table__cm-body">
+							<tr>
+								<th></th>
+								<th>S 44</th>
+								<th>M 46</th>
+								<th>L 48</th>
+								<th>XL 50</th>
+							</tr>
+							<tr>
+								<td>Breast volume</td>
+								<td>80 - 90 in</td>
+								<td>90 - 94 in</td>
+								<td>94 - 98 in</td>
+								<td>98 - 102 in</td>
+							</tr>
+							<tr>
+								<td>Waist volume</td>
+								<td>66 - 71 in</td>
+								<td>71 - 76 in</td>
+								<td>76 - 80 in</td>
+								<td>80 - 84 in</td>
+							</tr>
+							<tr>
+								<td>Thighs volume</td>
+								<td>94 - 98 in</td>
+								<td>98 - 102 in</td>
+								<td>102 - 106 in</td>
+								<td>106 - 110 in</td>
+							</tr>
+							<tr>
+								<td>Sleeve length</td>
+								<td>60 in</td>
+								<td>62 in</td>
+								<td>64 in</td>
+								<td>66 in</td>
+							</tr>
+							<tr>
+								<td>Leggings length</td>
+								<td>80 in</td>
+								<td>82 in</td>
+								<td>84 in</td>
+								<td>86 in</td>
+							</tr>
+							<tr>
+								<td>Shorts length</td>
+								<td>39 in</td>
+								<td>40 in</td>
+								<td>41 in</td>
+								<td>41 in</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="table__close">
+					<p class="table__close-text">close</p>
 				</div>
 			</div>
-		</div>
-	</div>
-</main>
+      </div>
+          <input type="hidden" name="product_id" value="438">
 
+                    <div class="btn__inner">
+          <div id="tabbyPromo"><div class="styles__tabby-snippet--750cf"><div></div></div></div>
+          </div>
+          
+          <div class="btn__inner">
+
+            <div class="counter" id="item-count-product">
+              <div class="minus">
+                <img class="minus__img" src="./assets/img/minus.webp" alt="minus">
+              </div>
+              <input class="counter__value quantity" type="number" name="quantity" value="1">
+              <div class="plus">
+                <img src="./assets/img/plus.webp" alt="plus" class="plus__img">
+              </div>
+            </div>
+
+            <button class="add_to_cart" onclick="cart.add('438', '1');">
+              <p class="add-text">Add to Cart</p>
+              <span class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="23px">
+                        <path fill-rule="evenodd" fill="rgb(255, 40, 194)" d="M22.215,14.690 L14.135,22.050 L13.321,21.172 L21.401,13.813 C22.047,13.224 22.443,12.459 22.575,11.621 L-0.009,11.621 L-0.009,10.428 L22.576,10.428 C22.443,9.590 22.047,8.824 21.402,8.237 L13.321,0.877 L14.134,-0.001 L22.215,7.359 C23.247,8.299 23.839,9.635 23.839,11.025 C23.839,12.414 23.247,13.751 22.215,14.690 Z"></path>
+                    </svg>
+                    </span>
+            </button>
+          </div>
+			 <div class="description visible">
+            <p class="description__title">Description</p>
+            <div class="description__text"><p class="MsoNormal"><span lang="EN-US">Sport
+legging shorts for women are comfortable and practical, made of high quality
+elastic fabric, perfect for gym, home, street and outdoor activities. Women's
+high-waisted legging shorts have a sewn wide elastic band that hides problem
+areas, preventing them from slipping off the waist. Shorts at the bottom do not
+overtighten the legs due to the elastic seam. Stretch moderately, do not catch,
+do not roll, do not stretch, do not shine through, do not shed, pleasant to the
+body and to the touch, allow the skin to breathe.<o:p></o:p></span></p><p class="MsoNormal"><b><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;</span></b></p><p class="MsoNormal"><b><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Clothing care</span></b><b>:</b><span lang="EN-US"><o:p></o:p></span></p><p class="MsoNormal"><span lang="EN-US">&nbsp;- Do not bleach<o:p></o:p></span></p><p class="MsoNormal"><span lang="EN-US">&nbsp;- Tumble dry allowed <o:p></o:p></span></p><p class="MsoNormal"><span lang="EN-US">&nbsp;- Ironing at the lowest temperature<o:p></o:p></span></p><p class="MsoNormal"></p>
+	<p class="MsoNormal"><span lang="EN-US">&nbsp;- Dry cleaning allowed<o:p></o:p></span></p></div>
+
+  <div class="description__block">
+     <span class="description__text">Polyamide: 95%</span>
+     <span class="description__text">Elastane: 5%</span>
+  </div>
+  <div class="description__block">
+	<div class="description__item">
+		<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M30.5606 33.1002C30.5606 28.8257 22.829 17.6554 22.829 17.6554C22.829 17.6554 15.0938 28.8257 15.0938 33.1002C15.1378 35.1221 15.9719 37.0463 17.4174 38.4607C18.8629 39.875 20.8048 40.667 22.8272 40.667C24.8495 40.667 26.7914 39.875 28.2369 38.4607C29.6824 37.0463 30.5165 35.1221 30.5606 33.1002Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M17.4043 33.0782C17.4043 34.4832 17.9624 35.8306 18.9559 36.824C19.9493 37.8175 21.2967 38.3756 22.7017 38.3756" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M22.7012 4.64111V8.24845C22.7007 8.86941 22.8957 9.47478 23.2584 9.97879L23.856 10.8183C24.092 11.1481 24.2216 11.5422 24.2275 11.9478C24.2334 12.3533 24.1153 12.751 23.889 13.0875L23.1044 14.2607C22.8415 14.6519 22.7011 15.1127 22.7012 15.5841V15.8334" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M18.959 7.91119L22.702 4.16821L26.4449 7.91119" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M30.9277 11.5002V15.1076C30.9273 15.7297 31.1222 16.3362 31.485 16.8416L32.0825 17.6774C32.3194 18.0076 32.4495 18.4024 32.4554 18.8087C32.4613 19.215 32.3427 19.6134 32.1155 19.9503L31.331 21.1235C31.067 21.5142 30.9265 21.9753 30.9277 22.4469V22.6962" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M27.1816 14.774L30.9246 11.031L34.6676 14.774" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M15.0762 15.2432V18.8505C15.0757 19.4726 15.2706 20.0791 15.6334 20.5845L16.231 21.4204C16.4668 21.751 16.5963 22.1456 16.6022 22.5517C16.6081 22.9577 16.4901 23.3559 16.264 23.6933L15.4794 24.8664C15.2155 25.2572 15.075 25.7182 15.0762 26.1898V26.4391" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M11.332 18.5169L15.075 14.7739L18.818 18.5169" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+		<p class="description__item-text">Quick drying</p>
+	</div>
+	<div class="description__item">
+		<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M13.9497 10.6057C24.581 9.72216 33.2878 11.4965 35.7953 17.6444C38.3028 23.7922 37.1884 31.6081 33.1668 35.1861C29.1452 38.7641 23.2283 41.4256 21.322 35.1934C19.4157 28.9613 21.6592 26.0285 16.2959 23.07C10.9326 20.1116 8.3957 17.7543 8.88328 15.3971C9.37085 13.0399 11.4971 10.811 13.9497 10.6057Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M22.9766 13.0619L24.0067 15.5218" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M30.375 21.776L33.7257 23.0628" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M28.6992 27.0293L32.0279 30.27" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M25.6816 31.7218V35.1862" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M36.0898 18.4179L38.6414 17.6444" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M37.1113 25.464H39.3109" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M35.7969 31.4285L37.3659 32.5026" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M33.168 35.1862L34.2861 38.1996" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M27.2461 38.9364L27.917 41.7775" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M22.5391 37.5581L20.4531 38.9365" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M20.7762 32.95L17.748 33.4522" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M17.0657 23.521L15.1777 26.0212" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M12.1697 20.4966L11.2715 23.521" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M9.86228 18.418L7.58203 19.6534" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M9.23903 14.29L6.6875 13.0619" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M12.5912 10.932L11.2715 7.81226" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M17.748 10.4041V7.36499" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M22.9766 10.3931L24.0067 7.36499" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M28.6992 11.7312L29.7037 8.88269" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M33.3867 14.29L36.0886 13.0619" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M16.125 13.6779L19.2631 15.5218" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M17.0664 20.4966H20.7764" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M43.2017 2.29858L2.79883 42.7014" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+		<p class="description__item-text">Antibacterial</p>
+	</div>
+	<div class="description__item">
+		<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M35.7895 9.59387L35.3276 10.0705C33.7109 11.6876 31.7914 12.9704 29.6789 13.8456C27.5663 14.7208 25.302 15.1713 23.0154 15.1713C20.7287 15.1713 18.4644 14.7208 16.3519 13.8456C14.2393 12.9704 12.3198 11.6876 10.7031 10.0705L10.2266 9.59387" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M35.7895 35.4062L35.3276 34.9296C33.7109 33.3124 31.7914 32.0296 29.6789 31.1544C27.5663 30.2792 25.302 29.8287 23.0154 29.8287C20.7287 29.8287 18.4644 30.2792 16.3519 31.1544C14.2393 32.0296 12.3198 33.3124 10.7031 34.9296L10.2266 35.4062" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M35.6927 9.82849L35.2161 10.3051C33.5989 11.9218 32.3161 13.8412 31.4409 15.9538C30.5657 18.0663 30.1152 20.3306 30.1152 22.6173C30.1152 24.904 30.5657 27.1682 31.4409 29.2808C32.3161 31.3934 33.5989 33.3128 35.2161 34.9295L35.6927 35.4061" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M10.3145 9.82849L10.791 10.3051C12.4082 11.9218 13.691 13.8412 14.5662 15.9538C15.4414 18.0663 15.8919 20.3306 15.8919 22.6173C15.8919 24.904 15.4414 27.1682 14.5662 29.2808C13.691 31.3934 12.4082 33.3128 10.791 34.9295L10.3145 35.4061" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M9.86328 14.433V9.13928H15.157" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M36.3171 14.433V9.13928H31.0234" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M9.68359 30.567V35.8607H14.9773" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M36.1413 30.567V35.8607H30.8477" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+		<p class="description__item-text">Stretchy</p>
+	</div>
+		<div class="description__item">
+			<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M25.2227 5.36707L20.2003 20.9878L34.0101 22.0546L18.6093 41.576L26.7771 25.7866L12.0215 24.6465L25.2227 5.36707Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M43.2017 2.29858L2.79883 42.7014" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<p class="description__item-text">Antistatic</p>
+		</div>
+		<div class="description__item">
+			<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M39.2128 25.5813L23.0018 34.464L6.78711 25.5813L12.0368 22.7072" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M39.2128 29.5479L23.0018 38.4306L6.78711 29.5479L10.4054 27.5646" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M31.9726 23.1141L22.9103 28.0778L13.7637 23.0664" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M31.0529 27.088L32.2406 23.015L28.1641 21.8273" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M27.8626 17.0762C27.8626 14.389 23.0015 7.36499 23.0015 7.36499C23.0015 7.36499 18.1367 14.389 18.1367 17.0762C18.1715 18.3428 18.6991 19.5459 19.6073 20.4295C20.5155 21.313 21.7326 21.8074 22.9997 21.8074C24.2667 21.8074 25.4838 21.313 26.392 20.4295C27.3002 19.5459 27.8278 18.3428 27.8626 17.0762Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M19.5996 17.0615C19.5996 17.9453 19.9507 18.7929 20.5756 19.4179C21.2006 20.0428 22.0482 20.3939 22.932 20.3939" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<p class="description__item-text">Wash-resistant</p>
+		</div>
+		<div class="description__item">
+			<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M33.9631 20.1849L39.2128 23.0627L23.0018 31.9454L6.78711 23.0627L12.0368 20.1849" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M39.2128 27.0293L23.0018 35.9083L6.78711 27.0293L10.4054 25.046" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M24.777 9L24.0732 10.0118C22.972 11.5894 22.2749 13.4131 22.0428 15.323C21.8108 17.2328 22.051 19.1704 22.7424 20.9658L25.1143 27.1283" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M20.1504 10.8146L24.9382 8.5564L27.1964 13.3442" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M30.5612 14.7446L30.158 15.3275C29.5221 16.2403 29.1195 17.2949 28.9853 18.3992C28.8511 19.5035 28.9894 20.6238 29.3881 21.6623L30.7592 25.2294" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M27.8887 15.7931L30.6565 14.488L31.9616 17.2559" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M18.0555 14.7446L17.6485 15.3275C17.0112 16.2396 16.6077 17.2943 16.4734 18.3989C16.3392 19.5035 16.4784 20.6241 16.8787 21.6623L18.2498 25.2294" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M15.3809 15.7931L18.1487 14.488L19.4538 17.2559" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<p class="description__item-text">Breathable</p>
+		</div>
+		<div class="description__item">
+			<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M40.3665 27.3813C41.9044 27.3813 43.1511 26.1224 43.1511 24.5695C43.1511 23.0166 41.9044 21.7577 40.3665 21.7577C38.8287 21.7577 37.582 23.0166 37.582 24.5695C37.582 26.1224 38.8287 27.3813 40.3665 27.3813Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M21.7494 42.1589C23.2872 42.1589 24.5339 40.9 24.5339 39.3471C24.5339 37.7942 23.2872 36.5353 21.7494 36.5353C20.2115 36.5353 18.9648 37.7942 18.9648 39.3471C18.9648 40.9 20.2115 42.1589 21.7494 42.1589Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M16.1849 21.5414C17.7227 21.5414 18.9694 20.2825 18.9694 18.7295C18.9694 17.1766 17.7227 15.9177 16.1849 15.9177C14.6471 15.9177 13.4004 17.1766 13.4004 18.7295C13.4004 20.2825 14.6471 21.5414 16.1849 21.5414Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M7.63384 25.6766C8.46392 25.6766 9.13683 24.997 9.13683 24.1588C9.13683 23.3206 8.46392 22.6411 7.63384 22.6411C6.80377 22.6411 6.13086 23.3206 6.13086 24.1588C6.13086 24.997 6.80377 25.6766 7.63384 25.6766Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M26.7335 32.2753C27.5635 32.2753 28.2364 31.5958 28.2364 30.7576C28.2364 29.9194 27.5635 29.2399 26.7335 29.2399C25.9034 29.2399 25.2305 29.9194 25.2305 30.7576C25.2305 31.5958 25.9034 32.2753 26.7335 32.2753Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M33.9112 23.5577C34.7413 23.5577 35.4142 22.8781 35.4142 22.0399C35.4142 21.2017 34.7413 20.5222 33.9112 20.5222C33.0811 20.5222 32.4082 21.2017 32.4082 22.0399C32.4082 22.8781 33.0811 23.5577 33.9112 23.5577Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M35.4112 36.6562C36.2413 36.6562 36.9142 35.9767 36.9142 35.1384C36.9142 34.3002 36.2413 33.6207 35.4112 33.6207C34.5811 33.6207 33.9082 34.3002 33.9082 35.1384C33.9082 35.9767 34.5811 36.6562 35.4112 36.6562Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M39.6187 0.678223H6.38242C3.62553 0.678223 1.39062 2.93504 1.39062 5.71896V39.2811C1.39062 42.065 3.62553 44.3218 6.38242 44.3218H39.6187C42.3756 44.3218 44.6105 42.065 44.6105 39.2811V5.71896C44.6105 2.93504 42.3756 0.678223 39.6187 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1.70312 33.6208C3.838 29.7967 6.94393 26.6166 10.7009 24.408C14.4579 22.1994 18.73 21.0422 23.0773 21.0557C27.4245 21.0691 31.6896 22.2527 35.4331 24.4845C39.1766 26.7163 42.2632 29.9156 44.3748 33.7528" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M43.0047 2.29858L2.99414 42.7014" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<p class="description__item-text">Pilling-resistant</p>
+		</div>
+		<div class="description__item">
+			<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M33.6219 15.8701C33.6219 15.8701 28.8927 30.1271 9.58398 30.0612" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M15.7754 27.9275L19.808 22.1279C19.8286 22.0999 19.8563 22.078 19.8882 22.0644C19.9201 22.0507 19.9552 22.0459 19.9896 22.0504C20.024 22.0549 20.0566 22.0685 20.084 22.0899C20.1114 22.1113 20.1325 22.1396 20.1452 22.1719L21.245 25.2293L22.4951 21.6293C22.8224 20.6972 23.4455 19.8977 24.2695 19.3528L25.4279 18.5902C26.759 17.7072 27.9253 16.598 28.874 15.3128L30.5347 13.0619C31.2947 12.177 32.134 11.3634 33.0422 10.6314C33.53 10.2141 34.1238 9.93988 34.7577 9.83913C35.3917 9.73839 36.0412 9.81502 36.6344 10.0605C37.2275 10.3061 37.7412 10.7109 38.1185 11.2303C38.4957 11.7497 38.722 12.3633 38.7721 13.0033L37.8336 18.5242C37.6721 19.2988 37.2775 20.0054 36.7028 20.5493C36.1281 21.0932 35.4009 21.4483 34.6186 21.567L32.9652 21.8236L35.8173 23.4623L33.7974 26.2815C32.0313 28.7549 29.5089 30.587 26.6106 31.5015C23.7123 32.4161 20.5952 32.3634 17.7294 31.3515" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M12.9238 30.0612C12.9238 30.0612 14.9621 31.3406 15.6953 32.7263" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M13.6973 27.1283C13.6973 27.1283 13.3087 29.4122 12.4766 29.8961" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M39.7806 0.678223H6.21847C3.43455 0.678223 1.17773 2.93504 1.17773 5.71896V39.2811C1.17773 42.065 3.43455 44.3218 6.21847 44.3218H39.7806C42.5645 44.3218 44.8213 42.065 44.8213 39.2811V5.71896C44.8213 2.93504 42.5645 0.678223 39.7806 0.678223Z" stroke="#888C95" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+
+			<p class="description__item-text">Weightless </p>
+		</div>
+  </div>
+</div>
+          
+                      <div class="delivery">
+          <p class="description__title">Local Delivery (same day)<br></p><p class="MsoNormal"><span style="font-size:9.0pt;line-height:
+107%"><o:p></o:p>
+</span></p>
+          <div class="description__text"><p class="MsoNormal" style="margin-bottom:0cm;line-height:150%"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Delivery with fitting is carried out within Dubai.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;line-height:150%"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">You will have 15 minutes to try on and choose your
+better fit.<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;line-height:150%"></p>
+<p class="MsoNormal" style="margin-bottom:0cm;line-height:150%"><span lang="EN-US" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Goods that do not fit, you return to the courier.</span><span lang="EN-US"><o:p></o:p></span></p></div>
+        </div>            <div class="payment">
+          <p class="description__title">Payment</p>
+          <div class="description__text">You can pay online using Apple Pay, Google Pay, Visa, MasterCard or after our complimentary try-on service cash on delivery or bank card.
+          </div>
+        </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="catalog">
+    <div class="container">
+      <h2 class="h2">Popular Products</h2>
+      <div class="swiper__wrapper">
+        <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-12fc5a44e0526d4e" aria-disabled="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)" d="M1592.04,750.006h-22.02m9.01-11-7.65,7.648a4.821,4.821,0,0,0,0,6.707l7.65,7.648" transform="translate(-1568.78 -738.015)"></path>
+          </svg>
+        </div>
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card2">
+              <a href="#" class="card-top">
+                <img class="card2__img" src="./assets/img/BS-LST1497  BS-LL1497 (222).jpg" alt="product">
+              </a>
+              <div class="like">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                  <path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z"></path>
+                </svg>
+              </div>
+              <div class="thing">
+                <p class="thing__name">Leggings BASIC</p>
+                <p class="price">178 AED</p>
+               </div>
+            </div>
+            <div class="swiper-slide card2">
+              <a href="#" class="card-top">
+                <img class="card2__img" src="./assets/img/BS-LST1797   BS-LL1797 (333).jpg" alt="product">
+              </a>
+              <div class="like">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                  <path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z"></path>
+                </svg>
+              </div>
+              <div class="thing">
+                <p class="thing__name">Long-sleeve top MELANGE</p>
+                <p class="price">168 AED</p>
+               </div>
+            </div>
+            <div class="swiper-slide card2">
+              <a href="#" class="card-top">
+                <img class="card2__img" src="./assets/img/BS-LST1895    BS-LL1895 (111)-670x1000.jpg" alt="product">
+              </a>
+              <div class="like">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                  <path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z"></path>
+                </svg>
+              </div>
+              <div class="thing">
+                <p class="thing__name">Shorts BASIC</p>
+                <p class="price">148 AED</p>
+            </div>
+            </div>
+            <div class="swiper-slide card2">
+              <a href="#" class="card-top">
+                <img class="card2__img" src="./assets/img/BS-LST421   BS-LL421 (111) -670x1000.jpg" alt="product">
+              </a>
+              <div class="like">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                  <path fill-rule="evenodd" stroke="rgb(136, 140, 149)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M11.492,19.499 L11.115,19.309 C7.896,17.688 5.305,15.591 3.622,13.244 C2.160,11.202 1.408,9.004 1.504,7.057 C1.567,5.589 2.185,4.200 3.242,3.145 C4.254,2.119 5.679,1.519 7.150,1.501 C8.414,1.502 9.614,1.961 10.534,2.791 C10.890,3.102 11.216,3.451 11.505,3.828 C11.792,3.452 12.118,3.104 12.478,2.790 C13.393,1.961 14.593,1.502 15.853,1.501 C17.329,1.521 18.754,2.124 19.767,3.154 C20.817,4.209 21.430,5.596 21.490,7.059 L21.501,7.306 L21.492,7.306 C21.514,9.194 20.765,11.292 19.365,13.244 C17.676,15.599 15.084,17.696 11.870,19.309 L11.492,19.499 Z"></path>
+                </svg>
+              </div>
+              <div class="thing">
+                <p class="thing__name">Shorts BASIC</p>
+                                <p class="price">
+                                    148 AED                                  </p>
+                              </div>
+            </div>
+                      </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-12fc5a44e0526d4e" aria-disabled="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.719" viewBox="0 0 24 22.719">
+            <path fill-rule="evenodd" fill="none" stroke="rgb(136, 140, 149)" d="M1570,749.994h22.01M1583,761l7.65-7.648a4.821,4.821,0,0,0,0-6.707l-7.65-7.648" transform="translate(-1569.25 -738.625)"></path>
+          </svg>
+        </div>
+      </div>
+		<script>
+		  var swiper = new Swiper(".mySwiper1", {
+    slidesPerView: 3,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      577: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      993: {
+        slidesPerView: 3,
+      },
+    },
+  });
+		</script>
+    </div>
+  </div>
+</div>
+<div class="div-hide">
+  <div class="modal__wrapper">
+    <h2 class="modal__title">Added successfly!</h2>
+    <img class="modal__cross" onclick="closeModalCart()" src="./assets/img/modal_cross.webp">
+    <p class="modal__text">Proceed to checkout now or continue shopping</p>
+    <a class="modal__link" href="/index.php?route=checkout/cart"><span class="btn-text">Go to Cart</span><img class="arrow" src="./assets/img/arrow-right-grey.webp"></a>
+    <p class="register__text"><a onclick="closeModalCart()" class="register__link" href="javascript:void(0)">Continue shopping</a></p>
+  </div>
+</div>
+</div>
 <!-- start footer -->
 
 <footer class="footer">
