@@ -9446,6 +9446,16 @@ li::marker {
 }
 
 @media screen and (max-width: 1200px) {
+	.size__container{
+		gap: 50px;
+		justify-content: space-between;
+	}
+	.description__block{
+		flex-wrap: wrap;
+	}
+	.description__item{
+		max-width: 22%;
+	}
 	.submenu__wrapper .wrapper {
 		background: #ffffff;
 	}
@@ -10111,6 +10121,9 @@ li::marker {
 }
 
 @media screen and (max-width: 992px) {
+	.size__container{
+		flex-direction: column;
+	}
 
 	.main-filter .subcatalog .card__img,
 	.main-filter .subcatalog.card2__img {
