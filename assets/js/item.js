@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     productCatalog.style.maxWidth = window.outerWidth + "px";
   }
   const buttonAdd = document.querySelector(".add_to_cart");
+  buttonAdd.classList.add("button__fixed");
   document.addEventListener("scroll", () => {
     buttonAdd.classList.add("button__fixed");
     const counter = document.querySelector(".size__modal");
