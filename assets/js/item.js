@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     let top = counter.getBoundingClientRect().bottom;
     console.log(`position - (${top + scrollTop})`);
-    if (scrollTop + 300 > top + scrollTop) {
+    if (scrollTop + 470 > top + scrollTop) {
       buttonAdd.classList.remove("button__fixed");
     }
   });
