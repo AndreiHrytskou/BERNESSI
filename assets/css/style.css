@@ -9316,6 +9316,10 @@ li::marker {
 }
 
 @media screen and (max-width: 1366px) {
+	.size__table{
+		left: 50%;
+		transform:translateX(-50%);
+	}
 	.catalog__list .subcatalog .semi {
 		max-width: 48.4%;
 	}
@@ -9551,6 +9555,7 @@ li::marker {
 	}
 
 	.item__img {
+		width: 100%;
 		height: 100%;
 	}
 
