@@ -47,5 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
+    const productCatalog = document.querySelector(".swiper__product");
+    productCatalog.style.maxWidth = window.outerWidth + "px";
   }
 });
