@@ -50,4 +50,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const productCatalog = document.querySelector(".swiper__product");
     productCatalog.style.maxWidth = window.outerWidth + "px";
   }
+  const buttonAdd = document.querySelector(".add_to_cart");
+  document.addEventListener("scroll", () => {
+    buttonAdd.classList.add("button__fixed");
+    const counter = document.querySelector(".size__modal");
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let top = counter.getBoundingClientRect().bottom;
+    console.log(`position - (${top + scrollTop})`);
+    if (scrollTop + 300 > top + scrollTop) {
+      buttonAdd.classList.remove("button__fixed");
+    }
+  });
 });
