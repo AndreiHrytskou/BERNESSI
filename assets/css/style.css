@@ -3382,6 +3382,7 @@ a {
 }
 .swiper__product .swiper-wrapper{
 	flex-wrap: wrap;
+	gap: 10px 0;
 }
 .swiper__product .swiper-slide{
 	max-width: 50%;
