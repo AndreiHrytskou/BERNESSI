@@ -9447,6 +9447,16 @@ li::marker {
 }
 
 @media screen and (max-width: 1200px) {
+	.table__wrapper{
+		max-width: 500px;
+	}
+	.table__cm tr th,
+	.table__cm tr td{
+		padding: 10px 20px;
+	}
+	.table__cm tr td:first-child{
+		padding-left: 20px;
+	}
 	.size__container{
 		gap: 50px;
 		justify-content: space-between;
@@ -11172,6 +11182,9 @@ li::marker {
 }
 
 @media screen and (max-width: 576px) {
+	.table__wrapper{
+		max-width: 369px;
+	}
 	.table__cm td{
 		padding: 12px;
 		font-size: 11px;
