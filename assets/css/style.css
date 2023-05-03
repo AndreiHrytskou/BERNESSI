@@ -3296,19 +3296,23 @@ a {
 .table__cm.table__visible{
 	display: block;
 	width: 100%;
-	max-width: 620px;
+	max-width: 98%;
+	margin: 0 auto;
 }
 .table__wrapper{
-	max-width: 620px;
+	max-width: 98%;
 	width: 100%;
 }
 .table__cm tr th,
 .table__cm tr td {
-	width: 20%;
+	width: 19%;
+}
+.table__cm tr{
+	width: 100%;
 }
 .table__cm tr th:first-child,
 .table__cm tr td:first-child{
-	width: 25%;
+	width: 24%;
 	text-align: left;
 }
 .table__cm tr > th{
