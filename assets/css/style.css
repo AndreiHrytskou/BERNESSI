@@ -11172,6 +11172,11 @@ li::marker {
 }
 
 @media screen and (max-width: 576px) {
+	.table__cm td{
+		padding: 12px;
+		font-size: 11px;
+		line-height: 15px;
+	}
 	.main-filter .subcatalog .card {
 		max-width: 100%;
 	}
