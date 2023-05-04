@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     false
   );
-
   // scroll
   const header = document.querySelector(".header");
   const baner = document.querySelector("#baner");
