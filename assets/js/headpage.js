@@ -1,4 +1,4 @@
-// swiper
+// // swiper
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
@@ -64,47 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //  my slider
 
-  let offset = 0;
-  const sliderLine = document.querySelector(".section__wrapper");
-
-  if (window.outerWidth < 414) {
-    document.querySelector(".next").addEventListener("click", () => {
-      offset += 250;
-      if (offset > 250) {
-        offset = 0;
-      }
-      sliderLine.style.left = -offset + "px";
-    });
-    document.querySelector(".prev").addEventListener("click", () => {
-      offset -= 250;
-      if (offset < 0) {
-        offset = 250;
-      }
-      sliderLine.style.left = -offset + "px";
-    });
-  }
-  if (window.outerWidth >= 414) {
-    document.querySelector(".next").addEventListener("click", () => {
-      offset += 299;
-      if (offset > 299) {
-        offset = 0;
-      }
-      sliderLine.style.left = -offset + "px";
-    });
-    document.querySelector(".prev").addEventListener("click", () => {
-      offset -= 299;
-      if (offset < 0) {
-        offset = 299;
-      }
-      sliderLine.style.left = -offset + "px";
+  if (window.outerWidth < 577) {
+    var swiper120 = new Swiper(".section__wrapper", {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+      },
     });
   }
   // scroll
   const header = document.querySelector(".header");
   const baner = document.querySelector("#baner");
   const banerImg = document.querySelector(".baner__img");
-  let lastScroll = 0;
-  const defaultOffset = 200;
 
   if (window.outerWidth > 992) {
     baner.style.height = `calc(101vh - ${header.clientHeight}px)`;
@@ -120,14 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
       banerImg.style.height = `75vh`;
       setTimeout(s, 1500);
 
-      //       //   background
-      const background = document.querySelector(".main__background");
-      let elem = background.getBoundingClientRect();
-      let top = elem.top - document.documentElement.scrollTop;
-      let middle = top + background.clientHeight;
+      //   background
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      let scroll = scrollTop + background.clientHeight;
-      let topBlock = elem.top + scrollTop;
       let bottomBlock = baner.getBoundingClientRect().bottom + scrollTop;
 
       const catalog = document.querySelector(".catalog1");
@@ -135,71 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const scrollPosition = () =>
         window.pageYOffset || document.documentElement.scrollTop;
-
-      window.addEventListener("scroll", () => {
-        if (
-          scrollPosition() > lastScroll - header.clientHeight &&
-          scrollPosition() > defaultOffset - header.clientHeight
-        ) {
-          let topBlock = scrollPosition() + elem.top;
-          var scrollTop = $(this).scrollTop();
-          document.querySelector(".catalog1").style.marginTop =
-            background.clientHeight + "px";
-          $(".main__background").css({
-            opacity: function () {
-              var elementHeight = $(this).height();
-              return 1 - (elementHeight - scrollTop) / elementHeight + 0.3;
-            },
-          });
-          //  });
-          //
-          background.style.top = header.clientHeight / 2 + "px";
-          if (
-            topBlock - header.clientHeight - 200 >
-            elem.top + background.clientHeight / 2
-          ) {
-            var scrollTop = $(this).scrollTop();
-
-            $(".main__background").css({
-              opacity: function () {
-                var elementHeight = $(this).height(),
-                  opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
-                return opacity;
-              },
-            });
-          }
-        } else if (scrollPosition() < lastScroll) {
-          //scroll up
-          background.style.top = header.clientHeight / 2 + "px";
-          var scrollTop = $(this).scrollTop();
-          $(".main__background").css({
-            opacity: function () {
-              var elementHeight = $(this).height(),
-                opacity = (elementHeight - scrollTop) / elementHeight + 1.3;
-              return opacity;
-            },
-          });
-
-          if (scrollPosition() + 50 < elem.top) {
-            $(".main__background").css({
-              opacity: function () {
-                var elementHeight = $(this).height();
-                return 1 - (elementHeight - scrollTop) / elementHeight + 0.3;
-              },
-            });
-          }
-          if (scrollPosition() < 100) {
-            $(".main__background").css({
-              opacity: function () {
-                var elementHeight = $(this).height();
-                return 1 - (elementHeight - scrollTop) / elementHeight;
-              },
-            });
-          }
-        }
-
-        lastScroll = scrollPosition();
-      });
 
       const catalog2 = document.querySelector(".catalog2");
       const catalog3 = document.querySelector(".catalog3");
@@ -209,14 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const headlink = document.querySelector(".headlink");
       const regular = document.querySelector("#regular");
       const bright = document.querySelector("#bright");
-      let link = headlink.getBoundingClientRect();
       let sec = section.getBoundingClientRect();
       let el2 = catalog2.getBoundingClientRect();
       let el3 = catalog3.getBoundingClientRect();
       let cat = category.getBoundingClientRect();
       let bann = banner.getBoundingClientRect();
-      // let elTop = el.top + scrollTop - 200;
-      // let elTopCat = cat.top + scrollTop - 200;
       let elScroll = scrollTop + catalog.clientHeight - 100;
       let linkScroll = scrollTop + headlink.clientHeight - 100;
       let sectionScroll = scrollTop + section.clientHeight - 100;
@@ -255,69 +153,18 @@ function s() {
   document.querySelector("body").removeAttribute("style");
 }
 
-if (window.outerWidth <= 992) {
-  const header = document.querySelector(".header");
-  let lastScroll = 0;
-  const defaultOffset = 200;
+window.addEventListener("scroll", () => {
   const background = document.querySelector(".main__background");
-  let elem = document
-    .querySelector(".main__background")
-    .getBoundingClientRect();
+  background.style.top = 0;
+  const catalog = document.querySelector(".catalog.catalog1");
+  catalog.style.marginTop = background.clientHeight + "px";
   const scrollPosition = () =>
     window.pageYOffset || document.documentElement.scrollTop;
-
-  window.addEventListener("scroll", () => {
-    if (scrollPosition() > lastScroll && scrollPosition() > defaultOffset) {
-      let topBlock = scrollPosition() + elem.top;
-      var scrollTop = document.querySelector(this).scrollTop();
-
-      document.querySelector(".main__background").style.opacity = function () {
-        var elementHeight = document.querySelector(this).height();
-        console.log(1 - (elementHeight - scrollTop) / elementHeight);
-        return 1 - (elementHeight - scrollTop) / elementHeight;
-      };
-      background.style.top = 0;
-      if (
-        topBlock - header.clientHeight - 200 >
-        elem.top + background.clientHeight / 2
-      ) {
-        var scrollTop = document.querySelector(this).scrollTop;
-        //   var scrollTop = $(this).scrollTop();
-
-        document.querySelector(".main__background").style.opacity =
-          function () {
-            var elementHeight = document.querySelector.height(),
-              opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
-            // console.log(`opacity${opacity}`);
-            return opacity;
-          };
-      }
-    } else if (scrollPosition() < lastScroll) {
-      //scroll up
-      background.style.top = 0;
-      var scrollTop = document.querySelector(this).scrollTop();
-      document.querySelector(".main__background").style.opacity = function () {
-        var elementHeight = document.querySelector(this).height(),
-          opacity = (elementHeight - scrollTop) / elementHeight + 0.7;
-        return opacity;
-      };
-
-      if (scrollPosition() + 50 < elem.top) {
-        document.querySelector(".main__background").style.opacity =
-          function () {
-            var elementHeight = document.querySelector(this).height();
-            return 1 - (elementHeight - scrollTop) / elementHeight + 0.3;
-          };
-      }
-      if (scrollPosition() < 100) {
-        document.querySelector(".main__background").style.opacity =
-          function () {
-            var elementHeight = document.querySelector(this).height();
-            return 1 - (elementHeight - scrollTop) / elementHeight;
-          };
-      }
-    }
-
-    lastScroll = scrollPosition();
-  });
-}
+  if (scrollPosition() < background.clientHeight / 1.5) {
+    background.style.opacity = scrollPosition() * 0.002;
+  } else if (scrollPosition() > background.clientHeight / 1.5) {
+    background.style.opacity =
+      background.clientHeight * 0.003 - scrollPosition() * 0.002;
+    console.log(background.clientHeight * 0.003);
+  }
+});
