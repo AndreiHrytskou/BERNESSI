@@ -11677,16 +11677,18 @@ li::marker {
 	.banner .wrapper {
 		margin: 0 auto;
 	}
-
+		.banner .see-more{
+			max-width: 270px;
+		}
 	.banner {
-		height: -webkit-calc(320px + (400 - 320) * ((100vw - 320px) / (414 - 320)));
-		height: calc(320px + (400 - 320) * ((100vw - 320px) / (414 - 320)));
+		height: -webkit-calc(320px + (375 - 320) * ((100vw - 320px) / (414 - 320)));
+		height: calc(320px + (350 - 320) * ((100vw - 320px) / (414 - 320)));
 		max-width: 82%;
 	}
 
 	.banner__bg {
-		height: -webkit-calc(320px + (400 - 320) * ((100vw - 320px) / (414 - 320)));
-		height: calc(320px + (400 - 320) * ((100vw - 320px) / (414 - 320)));
+		height: -webkit-calc(320px + (350 - 320) * ((100vw - 320px) / (414 - 320)));
+		height: calc(320px + (350 - 320) * ((100vw - 320px) / (414 - 320)));
 	}
 
 	.category {
