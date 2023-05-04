@@ -63,16 +63,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //  my slider
-
-  if (window.outerWidth < 577) {
-    var swiper120 = new Swiper(".section__wrapper", {
-      slidesPerView: 1,
-      navigation: {
-        nextEl: ".next",
-        prevEl: ".prev",
-      },
-    });
-  }
+  window.addEventListener(
+    "resize",
+    function () {
+      if (window.outerWidth < 577) {
+        var swiper120 = new Swiper(".section__wrapper", {
+          slidesPerView: 1,
+          navigation: {
+            nextEl: ".next",
+            prevEl: ".prev",
+          },
+        });
+      }
+    },
+    false
+  );
   // scroll
   const header = document.querySelector(".header");
   const baner = document.querySelector("#baner");
