@@ -54,11 +54,15 @@ document.addEventListener("DOMContentLoaded", function () {
   buttonAdd.classList.add("button__fixed");
   document.addEventListener("scroll", () => {
     buttonAdd.classList.add("button__fixed");
-    const counter = document.querySelector(".size__modal");
+    const counter = document.querySelector(".counter");
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     let top = counter.getBoundingClientRect().bottom;
-    console.log(`position - (${top + scrollTop})`);
-    if (scrollTop + 600 > top + scrollTop) {
+    //  console.log(`top: ${top}`);
+    //  console.log(`position - (${top + scrollTop})`);
+    if (
+      scrollTop + window.outerHeight >
+      top + scrollTop + buttonAdd.clientHeight
+    ) {
       buttonAdd.classList.remove("button__fixed");
     }
   });

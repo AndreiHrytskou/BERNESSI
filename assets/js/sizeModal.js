@@ -31,11 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       }
-      //  table.forEach((t) => {
-      //    if (e.checked.dataset.input == t.dataset.table) {
-      //      t.classList.add("table__visible");
-      //    }
-      //  });
     });
   });
 });
