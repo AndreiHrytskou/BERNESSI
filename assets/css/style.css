@@ -10358,27 +10358,27 @@ li::marker {
 
 	.catalog .swiper-noname,
 	.mySwiper1,
-	.catalog .mySwiper {
+	.catalog .mySwiper,
+	.swiper__recommend {
 		padding: 30px 1.3%;
 	}
 
 	.catalog .swiper-button-next_first,
 	.catalog .swiper-button-next_1,
 	.catalog .swiper-button-next_2,
-	.catalog .swiper-button-next {
+	.catalog .swiper-button-next,
+	.catalog .swiper__recommend-next {
 		right: -2%;
 	}
 
 	.catalog .swiper-button-prev_first,
 	.catalog .swiper-button-prev_1,
 	.catalog .swiper-button-prev_2,
-	.catalog .swiper-button-prev {
+	.catalog .swiper-button-prev,
+	.catalog .swiper__recommend-prev {
 		left: -2%;
 	}
 
-	/* .category{
-		padding: 0 10px;
-	} */
 	.card::before,
 	.card2::before {
 		content: "";
@@ -11374,7 +11374,8 @@ li::marker {
 
 	.catalog .swiper-noname,
 	.mySwiper1,
-	.catalog .mySwiper {
+	.catalog .mySwiper,
+	.swiper__recommend {
 		padding: 30px 15px;
 	}
 
@@ -11400,7 +11401,8 @@ li::marker {
 	.category,
 	.catalog .swiper-noname,
 	.mySwiper1,
-	.catalog .mySwiper {
+	.catalog .mySwiper,
+	.swiper__recommend {
 		max-width: 95%;
 	}
 
@@ -11934,6 +11936,7 @@ li::marker {
 
 	.catalog .swiper-noname,
 	.mySwiper1,
+	.swiper__recommend,
 	.catalog .mySwiper {
 		max-width: 95%;
 	}
