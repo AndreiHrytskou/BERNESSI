@@ -3037,10 +3037,10 @@ a {
 .preview__img {
 	opacity: 0.5;
 	cursor: pointer;
-	height: calc(118px + (200 - 118) * ((100vw - 1201px) / (2560 - 1201)));
+	height: calc(118px + (410 - 118) * ((100vw - 1201px) / (3840 - 1201)));
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	max-height: 200px;
+	max-height: 410px;
 }
 
 .preview__img.filter {
@@ -3146,7 +3146,7 @@ a {
 		max-width: 620px;
 		z-index: 12;
 		position: fixed;
-		top: 50px;
+		top: 108px;
 		left: 50%;
 		display: none;
 		flex-direction: column;
@@ -3174,18 +3174,21 @@ a {
 	.table__cm.table__visible {
 		display: block;
 		width: 100%;
-		max-width: 98%;
+		max-width: 100%;
 		margin: 0 auto;
 	}
-
+	.table__cm-body{
+		width: 100%;
+		max-width: 100%;
+	}
 	.table__wrapper {
-		max-width: 98%;
+		max-width: 100%;
 		width: 100%;
 	}
 
 	.table__cm tr th,
 	.table__cm tr td {
-		width: 19%;
+		width: 19.2%;
 	}
 
 	.table__cm tr {
@@ -3194,13 +3197,13 @@ a {
 
 	.table__cm tr th:first-child,
 	.table__cm tr td:first-child {
-		width: 24%;
+		width: 21%;
 		text-align: left;
 	}
 
 	.table__cm tr>th {
 		background-color: #FF42C9;
-		padding: 20px;
+		padding: 20px 0;
 		color: #ffffff;
 		font-family: 'Roboto';
 		font-style: normal;
@@ -3213,7 +3216,7 @@ a {
 
 	.table__cm td {
 		border: 1px solid #ff42c9;
-		padding: 20px;
+		padding: 20px 10px;
 		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;
@@ -3226,10 +3229,12 @@ a {
 	.table__cm tr td:first-child {
 		border-left: none;
 		border-bottom-left-radius: 30px;
+		padding: 20px;
 	}
 
 	.table__cm tr td:last-child {
 		border-right: none;
+		width: 19.5%;
 	}
 
 	.table__cm tr:last-child td {
@@ -3293,8 +3298,8 @@ a {
 .item__img {
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	height: calc(500px + (1067 - 500) * ((100vw - 1201px) / (2560 - 1201)));
-	max-height: 800px;
+	height: calc(500px + (1707 - 500) * ((100vw - 1201px) / (3840 - 1201)));
+	max-height: 1707px;
 }
 
 .item__description {
@@ -9412,6 +9417,9 @@ li::marker {
 }
 
 @media screen and (max-width: 1366px) {
+	.description__item-text{
+		font-size: 10px;
+	}
 	.catalog__list .subcatalog .semi {
 		max-width: 48.4%;
 	}
@@ -9541,6 +9549,10 @@ li::marker {
 
 @media screen and (max-width: 1200px) {
 	/* product page */
+	.description .description__block{
+		justify-content: center;
+		gap: 10px;
+	}
 	.size__container {
 		gap: 50px;
 		justify-content: space-between;
@@ -9997,7 +10009,7 @@ li::marker {
 	}
 
 	.submenu-active .submenu__wrapper {
-		top: 90px;
+		top: 80px;
 		bottom: 0;
 		display: block;
 		padding: 20px;
@@ -10243,6 +10255,9 @@ li::marker {
 
 @media screen and (max-width: 992px) {
 	/*  */
+	.description__item-text{
+		font-size: 8.6px;
+	}
 	.size__container {
 		flex-direction: column;
 		gap: 0px;
@@ -10729,6 +10744,14 @@ li::marker {
 
 @media screen and (max-width: 768px) {
 	/* product page */
+	.size__table{
+		position: absolute;
+		top: 0;
+		max-width: 369px;
+	}
+	.description__item-text {
+		font-size: 10px;
+	}
 	.description__block{
 		width: 100%;
 		justify-content: center;
@@ -10778,9 +10801,9 @@ li::marker {
 		height: calc(125px + (320 - 125) * ((100vw - 320px) / (768 - 320)));
 		max-height: 320px;
 	}
-	.size__table{
+	/* .size__table{
 		max-width: 369px;
-	}
+	} */
 	.table__cm tr th,
 	.table__cm tr td{
 		padding: 20px 10px;
@@ -11326,6 +11349,23 @@ li::marker {
 }
 
 @media screen and (max-width: 576px) {
+	.size__table{
+		max-width: 95%;
+	}
+	.table__cm tr td:first-child{
+		padding: 10px;
+		text-align: center;
+	}
+	.table__cm tr th,
+	.table__cm tr td{
+		padding: 10px 0;
+	}
+	.table__cm tr>th{
+		font-size: 12px;
+	}
+	.table__cm td{
+		font-size: 10px;
+	}
 
 	.section .prev,
 	.section .next {
@@ -11828,6 +11868,9 @@ li::marker {
 }
 
 @media screen and (max-width: 414px) {
+	.description__item-text{
+		font-size: 9px;
+	}
 	.social__icon {
 		width: 30px;
 		padding: 15px 0;
@@ -12252,6 +12295,7 @@ li::marker {
 }
 
 .description__block {
+	width: 100%;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -12260,7 +12304,7 @@ li::marker {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
-	gap: 10px;
+	justify-content: space-between;
 }
 
 .footer-nav {
