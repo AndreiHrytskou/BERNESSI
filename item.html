@@ -751,7 +751,7 @@
 	<!--end header-->
 <div class="page">
 <div class="wrapper">
-  <div class="item" id="product">
+  <div class="item" id="product" itemscope itemtype="https://schema.org/Product">
     <div class="container">
       <div class="cloth">
         <div class="item__gallery">
@@ -789,7 +789,7 @@
 				</div>
 			 </div>
           <div class="preview__pic">
-            <img class="item__img" src="" alt="item" id="myimage">
+            <img class="item__img" src="" alt="item" id="myimage" itemprop="image">
           </div>
         </div>
         <div class="item__description">
@@ -805,8 +805,14 @@
             	<span class="bread-text">Shorts TIE-DYE</span>
             </div>
           </div>
-          <h1 class="item__title">Shorts TIE-DYE</h1>
-          <p class="price">178 AED</p>
+          <h1 class="item__title" itemprop="name">Shorts TIE-DYE</h1>
+          <p class="price" itemprop="price" content="178.00">178 AED</p>
+			<div itemprop="offers" itemtype="https://schema.org/AggregateOffer" itemscope>
+				<meta itemprop="lowPrice" content="178.00" />
+				<meta itemprop="highPrice" content="178.00" />
+				<meta itemprop="offerCount" content="6" />
+				<meta itemprop="priceCurrency" content="AED" />
+				</div>
           <div class="color-product">
             <p class="color__title">Shorts TIE-DYE color</p>
             <div id="input-option40" class="color__wrap">
@@ -1177,7 +1183,7 @@ body and to the touch, allow the skin to breathe.<o:p></o:p></span></p><p class=
   </div>
 </div>
           
-                      <div class="delivery">
+<div class="delivery">
           <p class="description__title">Local Delivery (same day)<br></p><p class="MsoNormal"><span style="font-size:9.0pt;line-height:
 107%"><o:p></o:p>
 </span></p>
