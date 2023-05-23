@@ -606,8 +606,9 @@
 						<li class="about__item"><a href="#">About us</a></li>
 					</ul>
 					<div class="person">
-						<div class="search">
-							<input type="text" name="search" id="search" placeholder="Type of search...">
+						<div class="search" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+							<meta itemprop="target" content="http://example.com/search?q={query}"/>
+							<input itemprop="query" type="text" name="search" id="search" placeholder="Type of search...">
 							<button class="search__btn">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20.84" height="20.844" viewBox="0 0 20.84 20.844">
 									<path fill='none' stroke="rgb(136, 140, 149)" stroke-width='1px' fill-rule="evenodd"

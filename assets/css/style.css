@@ -10814,9 +10814,7 @@ li::marker {
 		height: calc(125px + (320 - 125) * ((100vw - 320px) / (768 - 320)));
 		max-height: 320px;
 	}
-	/* .size__table{
-		max-width: 369px;
-	} */
+	
 	.table__cm tr th,
 	.table__cm tr td{
 		padding: 20px 10px;
@@ -11881,6 +11879,10 @@ li::marker {
 }
 
 @media screen and (max-width: 414px) {
+	.add_to_cart .add-text{
+		padding: 5px 0 5px 10%;
+		text-align: left;
+	}
 	.description__item-text{
 		font-size: 9px;
 	}
