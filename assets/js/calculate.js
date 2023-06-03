@@ -42,14 +42,6 @@ selectOutput.addEventListener("click", () => {
   });
 });
 
-// const recommendItem = document.querySelector(".recommend__item");
-// const sizeOutput = document.querySelector(".size-output");
-// sizeOutput.innerHTML = "87%";
-// recommendItem.style.width = sizeOutput.innerHTML;
-// const recommendItem2 = document.querySelector(".recommend2__item");
-// const sizeOutput2 = document.querySelector(".size2-output");
-// sizeOutput2.innerHTML = "8%";
-// recommendItem2.style.width = sizeOutput2.innerHTML;
 
 const stepBtn = document.querySelectorAll(".next__btn");
 const prevBtn = document.querySelectorAll(".prev__btn ");
