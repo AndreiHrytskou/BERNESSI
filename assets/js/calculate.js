@@ -67,12 +67,3 @@ prevBtn.forEach((e) => {
     window.scrollTo(pageXOffset, 250);
   });
 });
-
-let a = document.querySelector("#outputft");
-let b = document.querySelector("#ss");
-a.addEventListener("click", ()=>{
-	console.log("1s");
-})
-b.addEventListener("click", ()=>{
-	console.log("2s");
-})
