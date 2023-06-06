@@ -5411,7 +5411,7 @@ a {
 .size-text {
 	max-width: 30%;
 	width: 100%;
-	padding: 9.2px 20px;
+	padding: 0 20px;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -5436,6 +5436,7 @@ a {
 }
 
 .size-text .size-input {
+	height: 50px;
 	width: 80%;
 	border: none;
 	outline: none;
