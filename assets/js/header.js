@@ -47,15 +47,21 @@ document.addEventListener("DOMContentLoaded", function () {
     burger.classList.toggle("burger-menu--closed");
     menuHide.classList.toggle("menu-active");
   });
+  const item = document.querySelectorAll(".header .submenu__container");
   if (window.innerWidth >= 1201) {
     const menuItem = document.querySelectorAll(".header .menu__item");
     const submenu = document.querySelectorAll(".submenu__wrapper");
+	 item.forEach((i)=>{
+		if(i){
+			let link = i.parentElement.childNodes[1];
+			link.removeAttribute("href")
+		}
+	 })
     menuItem.forEach((e) => {
 		// console.log(e.childNodes);
 		if(e.childNodes.length > 3){
 			e.childNodes[1].removeAttribute("href");
-		
-		 e.addEventListener("click", () => {
+			e.addEventListener("click", () => {
 				let category = e.dataset.cat;
 				submenu.forEach((el) => {
 					let subcategory = el.dataset.cat;
@@ -83,6 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuItem = document.querySelectorAll(".menu__block-span");
   const submenuItem = document.querySelectorAll(".submenu__item-span");
   if (window.innerWidth <= 1200) {
+	 item.forEach((i)=>{
+		if(i){
+			let link = i.parentElement.childNodes[1];
+			link.removeAttribute("href")
+		}
+	 })
     menuItem.forEach((e) => {
 		console.log(e.parentNode.childNodes.length);
 		if(e.parentNode.childNodes.length > 3){
