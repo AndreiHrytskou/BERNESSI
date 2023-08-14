@@ -3245,6 +3245,24 @@ a {
    align-items: center;
    justify-content: center;
 }
+@media screen and (max-width: 992px) {
+	.btn__inner{
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 768px) {
+	.discount__block{
+		justify-content: center;
+	}
+	.btn__inner{
+		flex-direction: row;
+	}
+}
+@media screen and (max-width: 414px) {
+	.btn__inner{
+		flex-direction: column;
+	}
+}
 
 /* конец бегущей строки */
 
