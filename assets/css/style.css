@@ -1370,6 +1370,8 @@ a {
 	transition: 0.5s;
 }
 
+.catalog .card__img,
+.catalog .card2__img,
 .subcatalog .card__img,
 .subcatalog .card2__img {
 	height: -webkit-calc(380px + (1200 - 380) * ((100vw - 1366px) / (3840 - 1366)));
