@@ -10228,6 +10228,9 @@ html[dir="rtl"] .order__product__list .total {
 	color: #FF28C2;
 	border-bottom: 2px solid #FF28C2;
 }
+.mobile__wrapper{
+	display: none;
+}
 
 
 /* dir=rtl finish style */
@@ -11882,6 +11885,45 @@ html[dir="rtl"] .order__product__list .total {
 
 
 @media screen and (max-width: 768px) {
+	.mobile__wrapper .price{
+		text-align: center;
+	}
+	.mobile__wrapper{
+		display: flex;
+   	flex-direction: column;
+   	align-items: center;
+   	margin: 0 auto;
+	}
+	.mobile__products .with__list,
+	.mobile__products{
+		display: block;
+	}
+	.item{
+		padding-bottom: 0;
+	}
+	.mobile__products .subtitle{
+		text-align: center;
+		margin-top: 35px;
+		margin-bottom: 23px;
+	}
+	.popular__subcatalog{
+		max-width: 100%;
+	}
+	.size__box{
+		flex-direction: column-reverse;
+		margin-top: 32px;
+	}
+	.size__modal{
+		margin-top: 0;
+	}
+	.item__popular,
+	.inner .popular__list,
+	.inner .with__list,
+	.item__description .bread-band,
+	.item__description .item__title,
+	.item__description .item__price{
+		display: none;
+	}
 	.popular__swiper .card__img,
 	.popular__swiper .card2__img,
 	.with__swiper .card__img,
@@ -13498,6 +13540,9 @@ html[dir="rtl"] .order__product__list .total {
 
 	.subcatalog {
 		padding: 20px 15px 0;
+	}
+	.popular__subcatalog{
+		padding: 20px 0 0;
 	}
 
 	.main-filter .baner-catalog,
