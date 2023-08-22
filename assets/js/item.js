@@ -66,4 +66,81 @@ document.addEventListener("DOMContentLoaded", function () {
       buttonAdd.classList.remove("button__fixed");
     }
   });
+  //   modal
+
+  const learn = document.querySelector(".learn");
+  const pointsModal = document.querySelector(".points__modal");
+  const closeModal = document.querySelector(".points__modal svg");
+  const save = document.querySelector(".save");
+  const saveModal = document.querySelector(".save__modal");
+  const closesaveModal = document.querySelector(".save__modal svg");
+  const recycle = document.querySelector(".recycle");
+  const recycleModal = document.querySelector(".recycle__modal");
+  const closerecycleModal = document.querySelector(".recycle__modal svg");
+  learn.addEventListener("click", () => {
+    const div = document.createElement("div");
+    div.className = "dark";
+    document.body.append(div);
+    pointsModal.classList.add("visible");
+    closeModal.addEventListener("click", () => {
+      div.remove();
+      pointsModal.classList.remove("visible");
+    });
+    div.addEventListener("click", () => {
+      div.remove();
+      pointsModal.classList.remove("visible");
+    });
+  });
+  save.addEventListener("click", () => {
+    const div = document.createElement("div");
+    div.className = "dark";
+    document.body.append(div);
+    saveModal.classList.add("visible");
+    closesaveModal.addEventListener("click", () => {
+      div.remove();
+      saveModal.classList.remove("visible");
+    });
+    div.addEventListener("click", () => {
+      div.remove();
+      saveModal.classList.remove("visible");
+    });
+  });
+  recycle.addEventListener("click", () => {
+    const div = document.createElement("div");
+    div.className = "dark";
+    document.body.append(div);
+    recycleModal.classList.add("visible");
+    closerecycleModal.addEventListener("click", () => {
+      div.remove();
+      recycleModal.classList.remove("visible");
+    });
+    div.addEventListener("click", () => {
+      div.remove();
+      recycleModal.classList.remove("visible");
+    });
+  });
+
+  //   input
+
+  const buy = document.querySelector("#buy");
+  const popularList = document.querySelector(".popular__list");
+  const withList = document.querySelector(".with__list");
+  const recom = document.querySelector("#recom");
+  buy.addEventListener("input", () => {
+    if (buy.checked) {
+      popularList.style.display = "block";
+      withList.style.display = "none";
+    }
+  });
+  recom.addEventListener("input", () => {
+    if (recom.checked) {
+      popularList.style.display = "none";
+      withList.style.display = "block";
+    }
+  });
+  buy.addEventListener("input", () => {
+    if (buy.checked) {
+      console.log("das");
+    }
+  });
 });
