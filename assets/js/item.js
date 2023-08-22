@@ -36,14 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   if (window.outerWidth < 769) {
     var swiper = new Swiper(".swiper__product", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       breakpoints: {
         320: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
       },
     });
