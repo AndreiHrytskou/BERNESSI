@@ -68,29 +68,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   //   modal
 
-  const learn = document.querySelector(".learn");
-  const pointsModal = document.querySelector(".points__modal");
-  const closeModal = document.querySelector(".points__modal svg");
   const save = document.querySelector(".save");
   const saveModal = document.querySelector(".save__modal");
   const closesaveModal = document.querySelector(".save__modal svg");
   const recycle = document.querySelector(".recycle");
   const recycleModal = document.querySelector(".recycle__modal");
   const closerecycleModal = document.querySelector(".recycle__modal svg");
-  learn.addEventListener("click", () => {
-    const div = document.createElement("div");
-    div.className = "dark";
-    document.body.append(div);
-    pointsModal.classList.add("visible");
-    closeModal.addEventListener("click", () => {
-      div.remove();
-      pointsModal.classList.remove("visible");
-    });
-    div.addEventListener("click", () => {
-      div.remove();
-      pointsModal.classList.remove("visible");
-    });
-  });
   save.addEventListener("click", () => {
     const div = document.createElement("div");
     div.className = "dark";
