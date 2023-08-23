@@ -10228,7 +10228,8 @@ html[dir="rtl"] .order__product__list .total {
 	color: #FF28C2;
 	border-bottom: 2px solid #FF28C2;
 }
-.mobile__wrapper{
+.mobile__wrapper,
+.mobile__products{
 	display: none;
 }
 
