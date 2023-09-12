@@ -10368,6 +10368,15 @@ html[dir="rtl"] .order__product__list .total {
 	outline: none;
 	border: none;
 }
+.promo__input input::placeholder{
+	color: #888C95;
+	font-family: "Roboto";
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 25px;
+	opacity: 0.15;
+}
 .promo__input input{
 	width: 100%;
 	border: none;
