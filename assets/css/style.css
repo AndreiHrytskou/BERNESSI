@@ -13353,6 +13353,9 @@ html[dir="rtl"] .order__product__list .total {
 }
 
 @media screen and (max-width: 576px) {
+	.promo__input{
+		width: 100%;
+	}
 	.total__block{
 		margin-top: 20px;
 		padding: 20px;
