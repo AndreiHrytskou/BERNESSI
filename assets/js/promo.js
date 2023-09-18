@@ -127,6 +127,7 @@ function fillBody(indicator = currentIndicator) {
 function selectDay(day) {
   if (!selectedInitialDate && !selectedEndDate) {
     selectedInitialDate = day;
+	 console.log(selectedInitialDate);
     selectedEndDate = day;
    //  datepickerClearButton.style.display = "block";
   } else if (
@@ -276,7 +277,7 @@ function generateDayElement(day) {
   if (day.getMonth() !== currentMonth) {
     element.className += " datepicker-list-item-outday"; // Out month days class
   }
-  if (Date.now() - DAY_TIME - day > 0) {
+  if (Date.now() == DAY_TIME - day) {
     element.className += " datepicker-list-item-unavaliable"; // Unavaliable or past days class
   } else {
     element.addEventListener("mousedown", evt => selectDay(day));
@@ -291,7 +292,7 @@ function generateDayElement(day) {
       }
     }
   }
-  return element;
+   return element;
 }
 
 /**
@@ -324,7 +325,7 @@ function generateMonthElement(date = new Date(currentYear)) {
     (new Date().getMonth() > date.getMonth() &&
       new Date().getFullYear() === date.getFullYear())
   ) {
-    element.className += " datepicker-list-item-unavaliable";
+   //  element.className += " datepicker-list-item-unavaliable";
   } else {
     element.addEventListener("click", evt =>
       fillMonth(new Date(currentYear, date.getMonth()))
@@ -340,23 +341,23 @@ function generateMonthElement(date = new Date(currentYear)) {
       } else if (
         date.getFullYear() === selectedInitialDate.getFullYear() ||
         date.getFullYear() === selectedEndDate.getFullYear()
-      ) {
+		  ) {
         if (
           selectedInitialDate.getFullYear() === selectedEndDate.getFullYear()
         ) {
-          if (
-            date.getMonth() > selectedInitialDate.getMonth() &&
-            date.getMonth() < selectedEndDate.getMonth()
-          ) {
-            element.className += " datepicker-list-item-between";
-          }
-        } else {
-          if (
-            (date.getFullYear() === selectedInitialDate.getFullYear() &&
-              date.getMonth() > selectedInitialDate.getMonth()) ||
-            (date.getFullYear() === selectedEndDate.getFullYear() &&
-              date.getMonth() < selectedEndDate.getMonth())
-          ) {
+			  if (
+				  date.getMonth() > selectedInitialDate.getMonth() &&
+				  date.getMonth() < selectedEndDate.getMonth()
+				  ) {
+					  element.className += " datepicker-list-item-between";
+					}
+				} else {
+					if (
+						(date.getFullYear() === selectedInitialDate.getFullYear() &&
+						date.getMonth() > selectedInitialDate.getMonth()) ||
+						(date.getFullYear() === selectedEndDate.getFullYear() &&
+						date.getMonth() < selectedEndDate.getMonth())
+						) {
             element.className += " datepicker-list-item-between";
           }
         }
@@ -383,7 +384,7 @@ function generateYearElement(fullYear) {
     element.className += " datepicker-list-item-today";
   }
   if (new Date().getFullYear() > fullYear) {
-    element.className += " datepicker-list-item-unavaliable";
+   //  element.className += " datepicker-list-item-unavaliable";
   } else {
     element.addEventListener("click", evt => fillYear(fullYear));
     if (selectedInitialDate && selectedEndDate) {
