@@ -644,14 +644,6 @@
 		<div class="wrapper">
 			<div class="container">
 				<div class="promo">
-					<div class="promo__input" for="promo">
-						<input type="search" name="promo" id="promo" placeholder="Promo code">
-						<button class="promo__btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-						  		<path d="M8.2 11.8025L1 19.0041M12.7 1C13.946 1 15.1641 1.36957 16.2001 2.06198C17.2362 2.75439 18.0436 3.73854 18.5205 4.88998C18.9973 6.04142 19.122 7.30843 18.8789 8.53079C18.6359 9.75315 18.0358 10.876 17.1547 11.7572C16.2737 12.6385 15.1511 13.2387 13.929 13.4818C12.707 13.7249 11.4402 13.6002 10.2891 13.1232C9.13788 12.6463 8.15398 11.8386 7.46172 10.8023C6.76947 9.76607 6.4 8.54775 6.4 7.30144C6.4 5.6302 7.06379 4.0274 8.24527 2.84565C9.42675 1.6639 11.0291 1 12.7 1Z" stroke="#FF28C2" stroke-width="0.900021"/>
-							</svg>
-						</button>
-					</div>
 					<h2 class="promo__title">Enter promo code</h2>
 					<p class="promo__text">Select a date</p>
 					<div id="datepicker">
@@ -662,36 +654,43 @@
 						</svg>
 					</button>
 					<div id="datepicker-container">
-					<div class="datepicker-header">
-						<button class="datepicker-button-change" id="datepicker-previous-button">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-								<path d="M4.2421 13.755L10.2609 19.2375L10.8673 18.5835L4.84846 13.101C4.37858 12.6735 4.06984 12.0976 3.97394 11.4696H20.7969V10.5809H3.97319C4.06872 9.95245 4.37749 9.37593 4.84771 8.94811L10.8665 3.46561L10.2617 2.81158L4.2421 8.29409C3.86189 8.64032 3.55797 9.06195 3.34969 9.53212C3.14141 10.0023 3.03335 10.5107 3.03238 11.0249C3.03341 11.539 3.1415 12.0473 3.34978 12.5173C3.55806 12.9874 3.86195 13.4089 4.2421 13.755Z" fill="#FF28C2"/>
-							</svg>
-						</button>
-						<div id="datepicker-indicator"></div>
-						<button class="datepicker-button-change" id="datepicker-next-button">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
-								<path d="M19.586 13.755L13.5672 19.2375L12.9608 18.5835L18.9797 13.101C19.4495 12.6735 19.7583 12.0976 19.8542 11.4696H3.03125V10.5809H19.8549C19.7594 9.95245 19.4506 9.37593 18.9804 8.94811L12.9616 3.46561L13.5664 2.81158L19.586 8.29409C19.9662 8.64032 20.2702 9.06195 20.4784 9.53212C20.6867 10.0023 20.7948 10.5107 20.7957 11.0249C20.7947 11.539 20.6866 12.0473 20.4783 12.5173C20.2701 12.9874 19.9662 13.4089 19.586 13.755Z" fill="#FF28C2"/>
-							</svg>
-						</button>
+						<div class="datepicker-header">
+							<button class="datepicker-button-change" id="datepicker-previous-button">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M4.2421 13.755L10.2609 19.2375L10.8673 18.5835L4.84846 13.101C4.37858 12.6735 4.06984 12.0976 3.97394 11.4696H20.7969V10.5809H3.97319C4.06872 9.95245 4.37749 9.37593 4.84771 8.94811L10.8665 3.46561L10.2617 2.81158L4.2421 8.29409C3.86189 8.64032 3.55797 9.06195 3.34969 9.53212C3.14141 10.0023 3.03335 10.5107 3.03238 11.0249C3.03341 11.539 3.1415 12.0473 3.34978 12.5173C3.55806 12.9874 3.86195 13.4089 4.2421 13.755Z" fill="#FF28C2"/>
+								</svg>
+							</button>
+							<div id="datepicker-indicator"></div>
+							<button class="datepicker-button-change" id="datepicker-next-button">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
+									<path d="M19.586 13.755L13.5672 19.2375L12.9608 18.5835L18.9797 13.101C19.4495 12.6735 19.7583 12.0976 19.8542 11.4696H3.03125V10.5809H19.8549C19.7594 9.95245 19.4506 9.37593 18.9804 8.94811L12.9616 3.46561L13.5664 2.81158L19.586 8.29409C19.9662 8.64032 20.2702 9.06195 20.4784 9.53212C20.6867 10.0023 20.7948 10.5107 20.7957 11.0249C20.7947 11.539 20.6866 12.0473 20.4783 12.5173C20.2701 12.9874 19.9662 13.4089 19.586 13.755Z" fill="#FF28C2"/>
+								</svg>
+							</button>
+						</div>
+      				<ul id="datepicker-week-title"></ul>
+      				<div id="datepicker-body"></div>
+      				<div class="datepicker-footer">
+							<button class="select">
+								<span class="select__text">Select</span>
+								<svg class="select__arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2162 15.19L14.1362 22.55L13.3222 21.672L21.4022 14.313C22.0482 13.724 22.4442 12.959 22.5762 12.121H-0.0078125V10.928H22.5772C22.4442 10.09 22.0482 9.32402 21.4032 8.73702L13.3222 1.37702L14.1352 0.499023L22.2162 7.85902C23.2482 8.79902 23.8402 10.135 23.8402 11.525C23.8402 12.914 23.2482 14.251 22.2162 15.19Z" fill="#FF28C2"/>
+								</svg>
+							</button>
+      				</div>
 					</div>
-      			<ul id="datepicker-week-title"></ul>
-      			<div id="datepicker-body"></div>
-      			<div class="datepicker-footer">
-						<button class="select">
-							<span class="select__text">Select</span>
-							<svg class="select__arrow" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2162 15.19L14.1362 22.55L13.3222 21.672L21.4022 14.313C22.0482 13.724 22.4442 12.959 22.5762 12.121H-0.0078125V10.928H22.5772C22.4442 10.09 22.0482 9.32402 21.4032 8.73702L13.3222 1.37702L14.1352 0.499023L22.2162 7.85902C23.2482 8.79902 23.8402 10.135 23.8402 11.525C23.8402 12.914 23.2482 14.251 22.2162 15.19Z" fill="#FF28C2"/>
-							</svg>
-						</button>
-      			</div>
-					</div>
-    			</div>
 				</div>
-				
-  </div>
+				<div class="promo__input" for="promo">
+					<input type="text" name="promo" id="promo" placeholder="Promo code">
+				</div>
+				<button class="promo__button">Search promo code
+					<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 25 24" fill="none">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.7162 15.19L14.6362 22.55L13.8222 21.672L21.9022 14.313C22.5482 13.724 22.9442 12.959 23.0762 12.121H0.492188V10.928H23.0772C22.9442 10.09 22.5482 9.32402 21.9032 8.73702L13.8222 1.37702L14.6352 0.499023L22.7162 7.85902C23.7482 8.79902 24.3402 10.135 24.3402 11.525C24.3402 12.914 23.7482 14.251 22.7162 15.19Z" fill="#FF28C2"/>
+					</svg>
+				</button>
 			</div>
 		</div>
+	</div>
+</div>
 		<div class="line"></div>
 		<div class="wrapper">
 			<div class="container">
