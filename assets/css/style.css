@@ -10794,10 +10794,17 @@ html[dir="rtl"] .order__product__list .total {
 	width: 100%;
 	gap: 30px;
 }
-.popular__list .thing__name, .popular__list .price {
+.popular__list .thing__name, .popular__list .price,
+.with__list .thing__name, .with__list .price {
 	font-size: 12px;
+	width: 100%;
+	max-width: 60%;
 }
-.popular__list .price .discount {
+ .popular__list .price, .with__list .price {
+	max-width: 35%;
+ }
+.popular__list .price .discount,
+.with__list .price .discount {
 	font-size: 10px;
 	position: relative;
 	bottom: auto;
