@@ -14047,6 +14047,9 @@ html[dir="rtl"] .order__product__list .total {
 }
 
 @media screen and (max-width: 414px) {
+	.promo__button{
+		width: 100%;
+	}
 	.about picture {
 		margin: 0 auto;
 		max-width: 95%;
